@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Privacy Policy — Cap",
+	title: "Privacy Policy| FrameCast",
 };
 
 export default function App() {

@@ -29,9 +29,9 @@ const countryCodeToIcon = (countryCode: string | undefined | null) => {
 };
 
 const formatNumber = (value?: number | null) =>
-	value == null ? "—" : value.toLocaleString();
+	value == null ? "-" : value.toLocaleString();
 const formatPercentage = (value?: number | null) =>
-	value == null ? "—" : `${Math.round(value * 100)}%`;
+	value == null ? "-" : `${Math.round(value * 100)}%`;
 const skeletonBar = (width = 48) => (
 	<div
 		className="h-4 rounded bg-gray-4 animate-pulse"

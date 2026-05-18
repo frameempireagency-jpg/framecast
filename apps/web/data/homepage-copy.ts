@@ -126,14 +126,14 @@ export interface HomePageCopy {
 export const homepageCopy: HomePageCopy = {
 	header: {
 		announcement: {
-			text: "Early Adopter Pricing Ends Soon — Lock In Your Discount",
+			text: "Early Adopter Pricing Ends Soon - Lock In Your Discount",
 			href: "/pricing",
 		},
 		variants: {
 			default: {
 				title: "Beautiful, Shareable Screen Recordings",
 				description:
-					"Cap is the open-source alternative to Loom — native, fast, and yours to control. Record locally with full editing power, or share instantly while you record. Bring your own S3 bucket, your own domain, your own rules.",
+					"Cap is the open-source alternative to Loom - native, fast, and yours to control. Record locally with full editing power, or share instantly while you record. Bring your own S3 bucket, your own domain, your own rules.",
 			},
 		},
 		cta: {
@@ -143,7 +143,7 @@ export const homepageCopy: HomePageCopy = {
 			seeOtherOptionsText: "More download options",
 		},
 	},
-	textReveal: "Record. Edit. Share. — On Your Terms.",
+	textReveal: "Record. Edit. Share. - On Your Terms.",
 	recordingModes: {
 		title: "Three Modes, Zero Compromise",
 		subtitle:
@@ -169,7 +169,7 @@ export const homepageCopy: HomePageCopy = {
 			{
 				title: "Your Storage, Your Rules",
 				description:
-					"Connect your own S3 bucket, use Cap Cloud, or keep everything local. You're never locked into our infrastructure — perfect for teams with compliance requirements or anyone who values data sovereignty.",
+					"Connect your own S3 bucket, use Cap Cloud, or keep everything local. You're never locked into our infrastructure - perfect for teams with compliance requirements or anyone who values data sovereignty.",
 			},
 			{
 				title: "Privacy by Default, Sharing by Choice",
@@ -184,7 +184,7 @@ export const homepageCopy: HomePageCopy = {
 			{
 				title: "Cross-Platform For Your Entire Team",
 				description:
-					"Native apps for macOS and Windows that feel at home on each platform. No janky Electron apps or browser extensions — just fast, reliable recording that works with your existing tools and workflow.",
+					"Native apps for macOS and Windows that feel at home on each platform. No janky Electron apps or browser extensions - just fast, reliable recording that works with your existing tools and workflow.",
 			},
 			{
 				title: "Quality That Makes You Look Professional",
@@ -212,19 +212,19 @@ export const homepageCopy: HomePageCopy = {
 		eyebrow: "Why Cap",
 		title: "Built To Be Yours",
 		subtitle:
-			"Every feature respects how you actually work — your storage, your platform, your workflow. No vendor lock-in, no compromises.",
+			"Every feature respects how you actually work - your storage, your platform, your workflow. No vendor lock-in, no compromises.",
 		cards: [
 			{
 				key: "storage",
 				title: "Bring Your Own Storage",
 				description:
-					"Plug in your own S3 bucket, route to Cap Cloud, or keep recordings entirely local. Your videos, your bucket, your bill — no vendor lock-in, ever.",
+					"Plug in your own S3 bucket, route to Cap Cloud, or keep recordings entirely local. Your videos, your bucket, your bill - no vendor lock-in, ever.",
 			},
 			{
 				key: "ai",
 				title: "Cap AI Does The Busywork",
 				description:
-					"Every recording gets an AI-generated title, summary, clickable chapters, and a fully searchable transcript — so the work after the recording is already done.",
+					"Every recording gets an AI-generated title, summary, clickable chapters, and a fully searchable transcript - so the work after the recording is already done.",
 			},
 			{
 				key: "async",
@@ -236,7 +236,7 @@ export const homepageCopy: HomePageCopy = {
 				key: "native",
 				title: "Native, Not An Electron Tab",
 				description:
-					"Built on Tauri and Rust for genuinely native performance on macOS and Windows. No bloated browser, no battery hit — just a fast, lightweight recorder.",
+					"Built on Tauri and Rust for genuinely native performance on macOS and Windows. No bloated browser, no battery hit - just a fast, lightweight recorder.",
 			},
 			{
 				key: "oss",
@@ -248,7 +248,7 @@ export const homepageCopy: HomePageCopy = {
 				key: "pixel",
 				title: "Pixel-Perfect Capture",
 				description:
-					"Record up to 4K at 60fps with hardware-accelerated encoding. Crisp text, smooth motion, sane file sizes — the quality your work deserves.",
+					"Record up to 4K at 60fps with hardware-accelerated encoding. Crisp text, smooth motion, sane file sizes - the quality your work deserves.",
 			},
 		],
 		cta: {
@@ -369,7 +369,7 @@ export const homepageCopy: HomePageCopy = {
 			{
 				question: "Is my data secure?",
 				answer:
-					"Security is core to Cap. As an open source project, our code is fully auditable and transparent — you can see exactly how your data is handled. End-to-end encryption for cloud storage, option to use your own infrastructure, and community-driven security reviews keep your content safe.",
+					"Security is core to Cap. As an open source project, our code is fully auditable and transparent - you can see exactly how your data is handled. End-to-end encryption for cloud storage, option to use your own infrastructure, and community-driven security reviews keep your content safe.",
 			},
 			{
 				question: "What about GDPR/HIPAA compliance?",

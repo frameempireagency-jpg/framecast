@@ -260,7 +260,7 @@ export const agenciesContent: SeoPageContent = {
 		{
 			question: "What's the difference between Instant Mode and Studio Mode?",
 			answer:
-				"Instant Mode generates a shareable link immediately after recording—perfect for quick updates. Studio Mode records locally for the highest quality and includes precision editing tools for professional client presentations.",
+				"Instant Mode generates a shareable link immediately after recording-perfect for quick updates. Studio Mode records locally for the highest quality and includes precision editing tools for professional client presentations.",
 		},
 		{
 			question: "How long can we record on the free version?",

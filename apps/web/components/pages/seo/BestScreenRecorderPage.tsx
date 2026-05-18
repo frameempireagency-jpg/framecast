@@ -5,19 +5,19 @@ import { SeoPageTemplate } from "../../seo/SeoPageTemplate";
 import type { SeoPageContent } from "../../seo/types";
 
 export const bestScreenRecorderContent: SeoPageContent = {
-	title: "Best Screen Recorder in 2026 — Free, No Watermark, 4K Quality",
+	title: "Best Screen Recorder in 2026 - Free, No Watermark, 4K Quality",
 	description:
 		"Cap is the best screen recorder for Mac and Windows. Record in 4K with audio and webcam overlay, then share instantly. Completely free with no watermarks and no time limits in Studio Mode.",
 
 	featuresTitle: "Why Cap is the Best Screen Recorder Available",
 	featuresDescription:
-		"Cap delivers everything you need from a top-tier screen recorder — quality, simplicity, and instant sharing — all in one free app",
+		"Cap delivers everything you need from a top-tier screen recorder - quality, simplicity, and instant sharing - all in one free app",
 
 	features: [
 		{
 			title: "4K Recording at 60fps",
 			description:
-				"Capture crystal-clear recordings at up to 4K resolution and 60 frames per second. Every click, scroll, and animation is reproduced with absolute clarity — making Cap the best screen recorder for professional-grade output.",
+				"Capture crystal-clear recordings at up to 4K resolution and 60 frames per second. Every click, scroll, and animation is reproduced with absolute clarity - making Cap the best screen recorder for professional-grade output.",
 		},
 		{
 			title: "Completely Free, Zero Watermarks",
@@ -27,7 +27,7 @@ export const bestScreenRecorderContent: SeoPageContent = {
 		{
 			title: "Instant Shareable Links",
 			description:
-				"Get a shareable link the moment you stop recording. Paste it in Slack, email, or any chat — no uploading, no waiting. Cap's instant sharing is what makes it the best screen recorder for async teams.",
+				"Get a shareable link the moment you stop recording. Paste it in Slack, email, or any chat - no uploading, no waiting. Cap's instant sharing is what makes it the best screen recorder for async teams.",
 		},
 		{
 			title: "Screen and Webcam Simultaneously",
@@ -42,24 +42,24 @@ export const bestScreenRecorderContent: SeoPageContent = {
 		{
 			title: "AI-Powered Captions",
 			description:
-				"Automatically generate accurate captions from your recording audio with zero manual effort. Make your content accessible, searchable, and more engaging — a key reason Cap stands out as the best screen recorder for content creators.",
+				"Automatically generate accurate captions from your recording audio with zero manual effort. Make your content accessible, searchable, and more engaging - a key reason Cap stands out as the best screen recorder for content creators.",
 		},
 		{
 			title: "Thread Comments on Recordings",
 			description:
-				"Viewers can leave timestamped comments directly on your recordings. Collect structured feedback without email threads or follow-up calls — built-in collaboration sets Cap apart from basic screen recorders.",
+				"Viewers can leave timestamped comments directly on your recordings. Collect structured feedback without email threads or follow-up calls - built-in collaboration sets Cap apart from basic screen recorders.",
 		},
 		{
 			title: "Open Source and Privacy-First",
 			description:
-				"Cap is fully open-source and supports custom S3-compatible storage so your recordings stay under your control. No proprietary lock-in, no third-party data access — the best screen recorder for privacy-conscious users and teams.",
+				"Cap is fully open-source and supports custom S3-compatible storage so your recordings stay under your control. No proprietary lock-in, no third-party data access - the best screen recorder for privacy-conscious users and teams.",
 		},
 	],
 
 	recordingModes: {
 		title: "Two Recording Modes for Every Use Case",
 		description:
-			"Cap adapts to your workflow — whether you need a quick share or a polished, professional video",
+			"Cap adapts to your workflow - whether you need a quick share or a polished, professional video",
 		modes: [
 			{
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
@@ -153,17 +153,17 @@ export const bestScreenRecorderContent: SeoPageContent = {
 		{
 			title: "Cap vs OBS Studio",
 			description:
-				"OBS is powerful and free but requires significant configuration — it's built for streamers, not everyday screen recording. Cap is designed for simplicity and instant sharing, making it the best screen recorder for teams and professionals who don't want to spend time on setup. <a href='/screen-recording-software'>Compare screen recording software in detail</a>.",
+				"OBS is powerful and free but requires significant configuration - it's built for streamers, not everyday screen recording. Cap is designed for simplicity and instant sharing, making it the best screen recorder for teams and professionals who don't want to spend time on setup. <a href='/screen-recording-software'>Compare screen recording software in detail</a>.",
 		},
 		{
 			title: "Cap vs Loom",
 			description:
-				"Cap starts at $9.99/month compared to Loom's $18/month, and Cap's Studio Mode is completely free with no watermarks. Cap is also open-source, supports custom S3 storage, and records at up to 4K — quality that Loom's free and paid plans don't match. <a href='/loom-alternative'>See the full Cap vs Loom comparison</a>.",
+				"Cap starts at $9.99/month compared to Loom's $18/month, and Cap's Studio Mode is completely free with no watermarks. Cap is also open-source, supports custom S3 storage, and records at up to 4K - quality that Loom's free and paid plans don't match. <a href='/loom-alternative'>See the full Cap vs Loom comparison</a>.",
 		},
 		{
 			title: "Cap vs Camtasia",
 			description:
-				"Camtasia costs $299.99 as a one-time purchase and is primarily an editing-focused tool. Cap is free and built for the full workflow from recording to sharing — making it the best screen recorder for users who want professional results without enterprise pricing.",
+				"Camtasia costs $299.99 as a one-time purchase and is primarily an editing-focused tool. Cap is free and built for the full workflow from recording to sharing - making it the best screen recorder for users who want professional results without enterprise pricing.",
 		},
 		{
 			title: "Cap vs macOS / Windows Built-in Tools",
@@ -174,7 +174,7 @@ export const bestScreenRecorderContent: SeoPageContent = {
 
 	useCasesTitle: "Who Uses Cap as Their Best Screen Recorder",
 	useCasesDescription:
-		"Cap is trusted across industries and roles — from solo creators to enterprise teams",
+		"Cap is trusted across industries and roles - from solo creators to enterprise teams",
 
 	useCases: [
 		{
@@ -214,7 +214,7 @@ export const bestScreenRecorderContent: SeoPageContent = {
 		{
 			question: "What is the best screen recorder?",
 			answer:
-				"Cap is the best screen recorder for most users — it records in 4K at 60fps, works on Mac and Windows, has no watermarks, and generates shareable links instantly. It's free, open-source, and designed to be simple enough for first-time users while powerful enough for professionals. For streaming-focused use cases, OBS Studio is also excellent but requires more configuration.",
+				"Cap is the best screen recorder for most users - it records in 4K at 60fps, works on Mac and Windows, has no watermarks, and generates shareable links instantly. It's free, open-source, and designed to be simple enough for first-time users while powerful enough for professionals. For streaming-focused use cases, OBS Studio is also excellent but requires more configuration.",
 		},
 		{
 			question: "What is the best free screen recorder?",
@@ -239,7 +239,7 @@ export const bestScreenRecorderContent: SeoPageContent = {
 		{
 			question: "What is the best screen recorder for beginners?",
 			answer:
-				"Cap is designed to be the best screen recorder for beginners. Download the app, click record, and get a shareable link when you stop — no configuration, no settings maze. The interface is clean and straightforward, getting you from idea to shared recording in under 60 seconds.",
+				"Cap is designed to be the best screen recorder for beginners. Download the app, click record, and get a shareable link when you stop - no configuration, no settings maze. The interface is clean and straightforward, getting you from idea to shared recording in under 60 seconds.",
 		},
 		{
 			question: "Does Cap screen recorder capture system audio?",
@@ -249,7 +249,7 @@ export const bestScreenRecorderContent: SeoPageContent = {
 		{
 			question: "What is the best screen recorder for teams?",
 			answer:
-				"Cap is the best screen recorder for teams because of its built-in sharing and collaboration features. Instant shareable links work anywhere — Slack, email, Notion, Jira. Viewers can leave timestamped comments directly on recordings, making async feedback fast and structured. Cap Pro adds unlimited recording time, custom branding, and team management.",
+				"Cap is the best screen recorder for teams because of its built-in sharing and collaboration features. Instant shareable links work anywhere - Slack, email, Notion, Jira. Viewers can leave timestamped comments directly on recordings, making async feedback fast and structured. Cap Pro adds unlimited recording time, custom branding, and team management.",
 		},
 	],
 

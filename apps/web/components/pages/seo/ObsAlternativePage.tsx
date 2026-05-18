@@ -5,7 +5,7 @@ import { SeoPageTemplate } from "../../seo/SeoPageTemplate";
 import type { SeoPageContent } from "../../seo/types";
 
 export const obsAlternativeContent: SeoPageContent = {
-	title: "OBS Alternative — Easier Screen Recording with Instant Sharing",
+	title: "OBS Alternative - Easier Screen Recording with Instant Sharing",
 	description:
 		"Cap is the modern OBS alternative built for async screen sharing, not live streaming. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
 
@@ -13,13 +13,13 @@ export const obsAlternativeContent: SeoPageContent = {
 
 	featuresTitle: "Why Teams Choose Cap Over OBS Studio",
 	featuresDescription:
-		"OBS is powerful for live streaming — but for everyday async recording and sharing, Cap is faster, simpler, and built for teams",
+		"OBS is powerful for live streaming - but for everyday async recording and sharing, Cap is faster, simpler, and built for teams",
 
 	features: [
 		{
 			title: "Zero Configuration",
 			description:
-				"OBS requires scene setup, audio routing, encoder tuning, and plugin management before you can record. Cap works out of the box — install it, click record, and your link is ready in seconds. No scenes, no profiles, no bitrate math.",
+				"OBS requires scene setup, audio routing, encoder tuning, and plugin management before you can record. Cap works out of the box - install it, click record, and your link is ready in seconds. No scenes, no profiles, no bitrate math.",
 		},
 		{
 			title: "Instant Shareable Links",
@@ -29,7 +29,7 @@ export const obsAlternativeContent: SeoPageContent = {
 		{
 			title: "Built-In Async Collaboration",
 			description:
-				"Cap viewers can leave timestamped comments directly on your recording — no third-party platform needed. OBS has no built-in sharing or commenting. Teams using OBS end up uploading to YouTube, Loom, or Dropbox just to share a clip.",
+				"Cap viewers can leave timestamped comments directly on your recording - no third-party platform needed. OBS has no built-in sharing or commenting. Teams using OBS end up uploading to YouTube, Loom, or Dropbox just to share a clip.",
 		},
 		{
 			title: "Webcam Overlay Without Plugins",
@@ -39,7 +39,7 @@ export const obsAlternativeContent: SeoPageContent = {
 		{
 			title: "AI Captions Included",
 			description:
-				"Cap automatically generates accurate captions from your recordings using AI transcription. OBS has no transcription capability — you need separate software, manual uploads to YouTube, or a third-party service to add captions to OBS recordings.",
+				"Cap automatically generates accurate captions from your recordings using AI transcription. OBS has no transcription capability - you need separate software, manual uploads to YouTube, or a third-party service to add captions to OBS recordings.",
 		},
 		{
 			title: "4K Recording at 60fps",
@@ -49,7 +49,7 @@ export const obsAlternativeContent: SeoPageContent = {
 		{
 			title: "Cloud Storage and Self-Hosting",
 			description:
-				"Cap uploads recordings automatically and generates links. For teams with data requirements, Cap supports any S3-compatible storage — AWS S3, Cloudflare R2, or your own MinIO instance. OBS saves locally by default with no cloud integration.",
+				"Cap uploads recordings automatically and generates links. For teams with data requirements, Cap supports any S3-compatible storage - AWS S3, Cloudflare R2, or your own MinIO instance. OBS saves locally by default with no cloud integration.",
 		},
 		{
 			title: "Open Source Like OBS",
@@ -61,7 +61,7 @@ export const obsAlternativeContent: SeoPageContent = {
 	recordingModes: {
 		title: "Two Recording Modes for Every Workflow",
 		description:
-			"Cap gives you two distinct modes so you always have the right tool — whether you need a quick update or a polished tutorial",
+			"Cap gives you two distinct modes so you always have the right tool - whether you need a quick update or a polished tutorial",
 		modes: [
 			{
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
@@ -79,13 +79,13 @@ export const obsAlternativeContent: SeoPageContent = {
 				),
 				title: "Studio Mode",
 				description:
-					"Completely free for personal use with no time limits. Records screen and webcam as separate tracks for post-production flexibility. Ideal for tutorials, product demos, and training content where you want full control — without the complexity of OBS scene management.",
+					"Completely free for personal use with no time limits. Records screen and webcam as separate tracks for post-production flexibility. Ideal for tutorials, product demos, and training content where you want full control - without the complexity of OBS scene management.",
 			},
 		],
 	},
 
 	comparisonTable: {
-		title: "Cap vs OBS Studio — Feature Comparison",
+		title: "Cap vs OBS Studio - Feature Comparison",
 		headers: ["Feature", "Cap", "OBS Studio", "Loom", "Camtasia"],
 		rows: [
 			[
@@ -98,13 +98,13 @@ export const obsAlternativeContent: SeoPageContent = {
 			[
 				"Instant share link",
 				{ text: "Yes", status: "positive" },
-				{ text: "No — local file only", status: "negative" },
+				{ text: "No - local file only", status: "negative" },
 				{ text: "Yes", status: "positive" },
 				{ text: "No", status: "negative" },
 			],
 			[
 				"Built-in commenting",
-				{ text: "Yes — timestamped", status: "positive" },
+				{ text: "Yes - timestamped", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "Yes", status: "positive" },
 				{ text: "No", status: "negative" },
@@ -118,21 +118,21 @@ export const obsAlternativeContent: SeoPageContent = {
 			],
 			[
 				"Open source",
-				{ text: "Yes — MIT licensed", status: "positive" },
-				{ text: "Yes — GPL licensed", status: "positive" },
+				{ text: "Yes - MIT licensed", status: "positive" },
+				{ text: "Yes - GPL licensed", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 			],
 			[
 				"Cloud storage",
-				{ text: "Yes — auto upload", status: "positive" },
-				{ text: "No — local only", status: "negative" },
+				{ text: "Yes - auto upload", status: "positive" },
+				{ text: "No - local only", status: "negative" },
 				{ text: "Yes", status: "positive" },
 				{ text: "No", status: "negative" },
 			],
 			[
 				"Self-hostable storage",
-				{ text: "Yes — any S3", status: "positive" },
+				{ text: "Yes - any S3", status: "positive" },
 				{ text: "N/A", status: "neutral" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
@@ -146,15 +146,15 @@ export const obsAlternativeContent: SeoPageContent = {
 			],
 			[
 				"Free to use",
-				{ text: "Yes — free plan + Studio Mode", status: "positive" },
-				{ text: "Yes — fully free", status: "positive" },
+				{ text: "Yes - free plan + Studio Mode", status: "positive" },
+				{ text: "Yes - fully free", status: "positive" },
 				{ text: "Limited", status: "warning" },
 				{ text: "$299.99 one-time", status: "negative" },
 			],
 			[
 				"Live streaming",
 				{ text: "No", status: "negative" },
-				{ text: "Yes — primary use case", status: "positive" },
+				{ text: "Yes - primary use case", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 			],
@@ -163,18 +163,18 @@ export const obsAlternativeContent: SeoPageContent = {
 
 	comparisonTitle: "When to Use Cap vs OBS Studio",
 	comparisonDescription:
-		"OBS and Cap are both open source — but they solve completely different problems",
+		"OBS and Cap are both open source - but they solve completely different problems",
 
 	comparison: [
 		{
 			title: "Cap vs OBS for Async Team Communication",
 			description:
-				"OBS has no sharing layer — it saves files locally and you handle the rest. Cap is built specifically for async communication: record, get a link, share, and receive comments. If you're recording to share with teammates, customers, or stakeholders, Cap is the right tool.",
+				"OBS has no sharing layer - it saves files locally and you handle the rest. Cap is built specifically for async communication: record, get a link, share, and receive comments. If you're recording to share with teammates, customers, or stakeholders, Cap is the right tool.",
 		},
 		{
 			title: "Cap vs OBS for Tutorials and Product Demos",
 			description:
-				"OBS can record tutorials but requires exporting, uploading to a host, and sharing a third-party link. Cap handles all of this automatically — your tutorial is shareable the moment you stop recording. <a href='/open-source-screen-recorder'>See Cap's full open source approach</a>.",
+				"OBS can record tutorials but requires exporting, uploading to a host, and sharing a third-party link. Cap handles all of this automatically - your tutorial is shareable the moment you stop recording. <a href='/open-source-screen-recorder'>See Cap's full open source approach</a>.",
 		},
 		{
 			title: "Cap vs OBS for Live Streaming",
@@ -184,7 +184,7 @@ export const obsAlternativeContent: SeoPageContent = {
 		{
 			title: "Cap vs Loom for Screen Sharing",
 			description:
-				"Both Cap and Loom are built for async screen sharing with instant links. Cap is open source, supports self-hosted storage, and starts at $9.99/month versus Loom's $18/month — with Studio Mode completely free. <a href='/loom-alternative'>See the full Cap vs Loom comparison</a>.",
+				"Both Cap and Loom are built for async screen sharing with instant links. Cap is open source, supports self-hosted storage, and starts at $9.99/month versus Loom's $18/month - with Studio Mode completely free. <a href='/loom-alternative'>See the full Cap vs Loom comparison</a>.",
 		},
 	],
 
@@ -201,7 +201,7 @@ export const obsAlternativeContent: SeoPageContent = {
 		{
 			title: "Product and Design Teams",
 			description:
-				"Product managers record feature walkthroughs and design feedback with Cap. Stakeholders leave timestamped comments directly on the recording — no scheduling calls, no writing long documents to explain what they saw.",
+				"Product managers record feature walkthroughs and design feedback with Cap. Stakeholders leave timestamped comments directly on the recording - no scheduling calls, no writing long documents to explain what they saw.",
 		},
 		{
 			title: "Customer Support Teams",
@@ -216,7 +216,7 @@ export const obsAlternativeContent: SeoPageContent = {
 		{
 			title: "Educators and Course Creators",
 			description:
-				"Teachers record lessons and tutorials with Cap. Studio Mode is completely free with no time limits — a major advantage over OBS's manual upload workflow. <a href='/solutions/online-classroom-tools'>Learn how Cap supports online teaching</a>.",
+				"Teachers record lessons and tutorials with Cap. Studio Mode is completely free with no time limits - a major advantage over OBS's manual upload workflow. <a href='/solutions/online-classroom-tools'>Learn how Cap supports online teaching</a>.",
 		},
 		{
 			title: "Startups and Small Teams",
@@ -228,12 +228,12 @@ export const obsAlternativeContent: SeoPageContent = {
 	migrationGuide: {
 		title: "How to Switch from OBS to Cap",
 		steps: [
-			"Download Cap for Mac or Windows — installation takes under 2 minutes with no configuration required",
+			"Download Cap for Mac or Windows - installation takes under 2 minutes with no configuration required",
 			"Open Cap and select your recording area: full screen, a specific window, or a custom region",
 			"Toggle webcam and microphone on or off directly in the recording toolbar",
-			"Click Record — Cap captures your screen at up to 4K with system audio and webcam overlay",
+			"Click Record - Cap captures your screen at up to 4K with system audio and webcam overlay",
 			"Stop recording and Cap automatically uploads and generates a shareable link",
-			"Paste the link into Slack, email, GitHub, or any tool — your team can watch and comment immediately",
+			"Paste the link into Slack, email, GitHub, or any tool - your team can watch and comment immediately",
 			"For self-hosted storage, connect Cap to your own S3-compatible bucket in settings",
 		],
 	},
@@ -243,7 +243,7 @@ export const obsAlternativeContent: SeoPageContent = {
 		{
 			question: "Why would I use Cap instead of OBS Studio?",
 			answer:
-				"OBS Studio is the best tool for live streaming, but it's complex and saves files locally. Cap is designed for async screen sharing — you get a shareable link the moment you stop recording, with built-in commenting and AI captions. If you're recording to share with teammates or customers rather than to stream live, Cap is faster and simpler.",
+				"OBS Studio is the best tool for live streaming, but it's complex and saves files locally. Cap is designed for async screen sharing - you get a shareable link the moment you stop recording, with built-in commenting and AI captions. If you're recording to share with teammates or customers rather than to stream live, Cap is faster and simpler.",
 		},
 		{
 			question: "Is Cap free like OBS?",
@@ -253,12 +253,12 @@ export const obsAlternativeContent: SeoPageContent = {
 		{
 			question: "Is Cap open source like OBS?",
 			answer:
-				"Yes. Cap is fully open source and MIT-licensed on GitHub. You can inspect the complete codebase, contribute features, and self-host the entire platform. Both Cap and OBS are open source — but Cap uses the permissive MIT License while OBS uses the GPL.",
+				"Yes. Cap is fully open source and MIT-licensed on GitHub. You can inspect the complete codebase, contribute features, and self-host the entire platform. Both Cap and OBS are open source - but Cap uses the permissive MIT License while OBS uses the GPL.",
 		},
 		{
 			question: "Can Cap do live streaming like OBS?",
 			answer:
-				"No. Cap is built for async screen recording and sharing, not live streaming. If you need to broadcast live to Twitch, YouTube, or other platforms, OBS Studio remains the best tool. Cap and OBS are complementary — use OBS for live streaming and Cap for async recording and team sharing.",
+				"No. Cap is built for async screen recording and sharing, not live streaming. If you need to broadcast live to Twitch, YouTube, or other platforms, OBS Studio remains the best tool. Cap and OBS are complementary - use OBS for live streaming and Cap for async recording and team sharing.",
 		},
 		{
 			question: "Does Cap support the same recording quality as OBS?",
@@ -268,7 +268,7 @@ export const obsAlternativeContent: SeoPageContent = {
 		{
 			question: "What happens to my recordings after I stop recording in Cap?",
 			answer:
-				"Cap automatically uploads your recording and generates a shareable link in seconds. You can paste this link anywhere — Slack, email, GitHub, Notion — and viewers can watch without downloading any files. You can also configure Cap to store recordings in your own S3-compatible bucket for complete data control.",
+				"Cap automatically uploads your recording and generates a shareable link in seconds. You can paste this link anywhere - Slack, email, GitHub, Notion - and viewers can watch without downloading any files. You can also configure Cap to store recordings in your own S3-compatible bucket for complete data control.",
 		},
 		{
 			question: "Does Cap work on Mac and Windows like OBS?",

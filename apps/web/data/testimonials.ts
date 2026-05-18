@@ -169,7 +169,7 @@ export const testimonials = [
 		handle: "@Greg__LD",
 		image: "/testimonials/Greg__LD.jpg",
 		content:
-			"No brainer instant purchase this morning: was looking for a solid screen recorder, for my new MacBook Pro,  gave @cap a try, got myself a license within 10 mins — flawless UX sometimes speaks louder than lengthy marketer's words !",
+			"No brainer instant purchase this morning: was looking for a solid screen recorder, for my new MacBook Pro,  gave @cap a try, got myself a license within 10 mins - flawless UX sometimes speaks louder than lengthy marketer's words !",
 		url: "https://x.com/Greg__LD/status/1913515902139523366",
 	},
 	{

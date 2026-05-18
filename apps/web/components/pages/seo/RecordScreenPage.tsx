@@ -5,19 +5,19 @@ import { SeoPageTemplate } from "../../seo/SeoPageTemplate";
 import type { SeoPageContent } from "../../seo/types";
 
 export const recordScreenContent: SeoPageContent = {
-	title: "Record Screen — Capture Your Screen Instantly and Share with a Link",
+	title: "Record Screen - Capture Your Screen Instantly and Share with a Link",
 	description:
 		"Cap makes it easy to record your screen on Mac or Windows. Capture in HD with audio and webcam, then share with a link in seconds. Free, open-source, no watermarks.",
 
 	featuresTitle: "Everything You Need to Record Your Screen Professionally",
 	featuresDescription:
-		"Cap gives you a complete screen recording workflow — from one-click capture to instant sharing — without the complexity",
+		"Cap gives you a complete screen recording workflow - from one-click capture to instant sharing - without the complexity",
 
 	features: [
 		{
 			title: "One-Click Screen Recording",
 			description:
-				"Record your screen in seconds. Launch Cap, select your recording region, and hit record — no complicated setup, no configuration. Stop recording and your shareable link is ready immediately.",
+				"Record your screen in seconds. Launch Cap, select your recording region, and hit record - no complicated setup, no configuration. Stop recording and your shareable link is ready immediately.",
 		},
 		{
 			title: "HD Recording Up to 4K at 60fps",
@@ -32,12 +32,12 @@ export const recordScreenContent: SeoPageContent = {
 		{
 			title: "Capture System Audio and Microphone",
 			description:
-				"Record both system audio and your microphone simultaneously. Narrate as you go or capture existing audio from apps and browsers — Cap handles both audio tracks cleanly and in sync.",
+				"Record both system audio and your microphone simultaneously. Narrate as you go or capture existing audio from apps and browsers - Cap handles both audio tracks cleanly and in sync.",
 		},
 		{
 			title: "Instant Shareable Link",
 			description:
-				"The moment you stop recording, Cap generates a shareable link. No uploading, no waiting — paste the link anywhere and viewers get instant access to your screen recording.",
+				"The moment you stop recording, Cap generates a shareable link. No uploading, no waiting - paste the link anywhere and viewers get instant access to your screen recording.",
 		},
 		{
 			title: "Free with Zero Watermarks",
@@ -47,7 +47,7 @@ export const recordScreenContent: SeoPageContent = {
 		{
 			title: "AI-Powered Captions",
 			description:
-				"Automatically generate accurate captions from your screen recording. Make recordings accessible, searchable, and easier to follow — no manual transcription needed.",
+				"Automatically generate accurate captions from your screen recording. Make recordings accessible, searchable, and easier to follow - no manual transcription needed.",
 		},
 		{
 			title: "Thread Comments on Recordings",
@@ -140,18 +140,18 @@ export const recordScreenContent: SeoPageContent = {
 
 	comparisonTitle: "How Cap Compares for Recording Your Screen",
 	comparisonDescription:
-		"Cap is built for the full screen recording workflow — from capture to sharing — without setup overhead",
+		"Cap is built for the full screen recording workflow - from capture to sharing - without setup overhead",
 
 	comparison: [
 		{
 			title: "Cap vs Loom",
 			description:
-				"Both Cap and Loom let you record your screen and share with a link, but Cap is significantly more affordable — starting at $9.99/month versus Loom's $18/month. Cap's Studio Mode is completely free for personal use with no watermarks, and Cap is fully open-source. <a href='/loom-alternative'>See the full Cap vs Loom comparison</a>.",
+				"Both Cap and Loom let you record your screen and share with a link, but Cap is significantly more affordable - starting at $9.99/month versus Loom's $18/month. Cap's Studio Mode is completely free for personal use with no watermarks, and Cap is fully open-source. <a href='/loom-alternative'>See the full Cap vs Loom comparison</a>.",
 		},
 		{
 			title: "Cap vs OBS Studio",
 			description:
-				"OBS is a powerful free tool but is designed primarily for live streaming and requires significant configuration to simply record your screen. Cap is purpose-built for screen recording and instant sharing — start recording in under 60 seconds with zero setup.",
+				"OBS is a powerful free tool but is designed primarily for live streaming and requires significant configuration to simply record your screen. Cap is purpose-built for screen recording and instant sharing - start recording in under 60 seconds with zero setup.",
 		},
 		{
 			title: "Cap vs macOS Built-in Recorder",
@@ -167,7 +167,7 @@ export const recordScreenContent: SeoPageContent = {
 
 	useCasesTitle: "Why People Use Cap to Record Their Screen",
 	useCasesDescription:
-		"From quick async updates to polished tutorials — Cap fits every screen recording workflow",
+		"From quick async updates to polished tutorials - Cap fits every screen recording workflow",
 
 	useCases: [
 		{
@@ -207,7 +207,7 @@ export const recordScreenContent: SeoPageContent = {
 		{
 			question: "How do I record my screen?",
 			answer:
-				"With Cap, recording your screen takes under a minute. Download Cap for Mac or Windows, launch the app, select your recording region (full screen, a specific window, or a custom area), and click Record. When you stop, Cap instantly generates a shareable link. No uploading, no waiting — your screen recording is live and ready to share.",
+				"With Cap, recording your screen takes under a minute. Download Cap for Mac or Windows, launch the app, select your recording region (full screen, a specific window, or a custom area), and click Record. When you stop, Cap instantly generates a shareable link. No uploading, no waiting - your screen recording is live and ready to share.",
 		},
 		{
 			question: "Is it free to record your screen with Cap?",
@@ -237,12 +237,12 @@ export const recordScreenContent: SeoPageContent = {
 		{
 			question: "Is there a time limit when recording your screen with Cap?",
 			answer:
-				"Studio Mode in Cap has no time limit on screen recordings — record as long as you need completely free. Instant Mode on the free plan supports recordings up to 5 minutes. Upgrading to Cap Pro removes this limit for Instant Mode as well.",
+				"Studio Mode in Cap has no time limit on screen recordings - record as long as you need completely free. Instant Mode on the free plan supports recordings up to 5 minutes. Upgrading to Cap Pro removes this limit for Instant Mode as well.",
 		},
 		{
 			question: "How do I share a screen recording?",
 			answer:
-				"Cap automatically generates a shareable link the moment you stop recording. Copy the link and paste it anywhere — Slack, email, Notion, Jira, or any chat tool. Viewers get instant access to your screen recording without downloading any software.",
+				"Cap automatically generates a shareable link the moment you stop recording. Copy the link and paste it anywhere - Slack, email, Notion, Jira, or any chat tool. Viewers get instant access to your screen recording without downloading any software.",
 		},
 	],
 

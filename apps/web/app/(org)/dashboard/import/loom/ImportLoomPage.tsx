@@ -514,8 +514,8 @@ export const ImportLoomPage = () => {
 						</h1>
 						<p className="mt-1 max-w-xl text-sm text-gray-10">
 							{isOrganizationOwner
-								? "Bring a single Loom video into Cap, or bulk import recordings for organization members from a CSV."
-								: "Paste a Loom share link to bring it into Cap."}
+								? "Bring a single Loom video into FrameCast, or bulk import recordings for organization members from a CSV."
+								: "Paste a Loom share link to bring it into FrameCast."}
 						</p>
 					</div>
 				</div>
@@ -822,10 +822,10 @@ export const ImportLoomPage = () => {
 																	{row.rowNumber}
 																</TableCell>
 																<TableCell className="max-w-[260px] truncate">
-																	{row.loomUrl || "—"}
+																	{row.loomUrl || "-"}
 																</TableCell>
-																<TableCell>{row.userEmail || "—"}</TableCell>
-																<TableCell>{row.spaceName || "—"}</TableCell>
+																<TableCell>{row.userEmail || "-"}</TableCell>
+																<TableCell>{row.spaceName || "-"}</TableCell>
 																<TableCell>
 																	<StatusPill ready={valid} />
 																</TableCell>
@@ -914,8 +914,8 @@ export const ImportLoomPage = () => {
 													<TableCell className="text-gray-10">
 														{row.rowNumber}
 													</TableCell>
-													<TableCell>{row.userEmail || "—"}</TableCell>
-													<TableCell>{row.spaceName || "—"}</TableCell>
+													<TableCell>{row.userEmail || "-"}</TableCell>
+													<TableCell>{row.spaceName || "-"}</TableCell>
 													<TableCell
 														className={
 															row.success && !row.error

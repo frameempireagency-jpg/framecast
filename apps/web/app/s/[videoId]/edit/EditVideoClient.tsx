@@ -1916,7 +1916,7 @@ export function EditVideoClient({ video }: { video: EditableVideo }) {
 				<div className="mt-4 flex items-center justify-between gap-3 px-1 sm:mt-5">
 					<button
 						type="button"
-						title="Click to split — hold to add multiple"
+						title="Click to split - hold to add multiple"
 						onPointerDown={handleSplitButtonPointerDown}
 						onPointerUp={handleSplitButtonPointerUp}
 						className={[

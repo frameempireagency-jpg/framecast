@@ -125,7 +125,7 @@ describe("DeveloperDocumentationVideosPage FAQ schema", () => {
 		{
 			question: "How do I share a documentation video with my team or users?",
 			answer:
-				"Cap generates a shareable link immediately when you stop recording — no upload wait, no file attachment.",
+				"Cap generates a shareable link immediately when you stop recording - no upload wait, no file attachment.",
 		},
 		{
 			question: "Can I record videos for private internal documentation?",

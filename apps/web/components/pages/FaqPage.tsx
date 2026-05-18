@@ -35,7 +35,7 @@ const faqContent: FaqItem[] = [
 	{
 		title: "Can I import my Loom videos to Cap?",
 		answer:
-			"Yes! Cap Pro includes a built-in Loom video importer that lets you seamlessly transfer your existing Loom recordings into Cap. Just paste your Loom video links and Cap handles the rest — keeping all your content organized in one place.",
+			"Yes! Cap Pro includes a built-in Loom video importer that lets you seamlessly transfer your existing Loom recordings into Cap. Just paste your Loom video links and Cap handles the rest - keeping all your content organized in one place.",
 	},
 	{
 		title: "Can I self-host Cap?",

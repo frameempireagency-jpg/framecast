@@ -5,13 +5,13 @@ import { SeoPageTemplate } from "../../seo/SeoPageTemplate";
 import type { SeoPageContent } from "../../seo/types";
 
 export const screenRecordingContent: SeoPageContent = {
-	title: "Screen Recording — Capture, Share & Collaborate Instantly with Cap",
+	title: "Screen Recording - Capture, Share & Collaborate Instantly with Cap",
 	description:
 		"Cap makes screen recording effortless. Record your screen in HD with audio and webcam overlay, then share instantly with a link. Free, open-source, and available on Mac and Windows.",
 
 	featuresTitle: "Everything You Need for Professional Screen Recording",
 	featuresDescription:
-		"Cap delivers a complete screen recording experience from capture to sharing — no extra tools required",
+		"Cap delivers a complete screen recording experience from capture to sharing - no extra tools required",
 
 	features: [
 		{
@@ -22,7 +22,7 @@ export const screenRecordingContent: SeoPageContent = {
 		{
 			title: "Instant Shareable Links",
 			description:
-				"Get a shareable link the moment you stop recording. No uploading, no waiting — paste the link anywhere and your recording is immediately accessible to viewers.",
+				"Get a shareable link the moment you stop recording. No uploading, no waiting - paste the link anywhere and your recording is immediately accessible to viewers.",
 		},
 		{
 			title: "Webcam and Screen Together",
@@ -32,7 +32,7 @@ export const screenRecordingContent: SeoPageContent = {
 		{
 			title: "System Audio and Microphone",
 			description:
-				"Capture both system audio and microphone input in your screen recordings. Narrate as you go or let the original audio play through — Cap records both tracks cleanly.",
+				"Capture both system audio and microphone input in your screen recordings. Narrate as you go or let the original audio play through - Cap records both tracks cleanly.",
 		},
 		{
 			title: "AI-Powered Captions",
@@ -42,7 +42,7 @@ export const screenRecordingContent: SeoPageContent = {
 		{
 			title: "Open Source and Privacy-First",
 			description:
-				"Cap is fully open-source and lets you connect your own S3-compatible storage for complete data ownership. Your screen recordings stay under your control — always.",
+				"Cap is fully open-source and lets you connect your own S3-compatible storage for complete data ownership. Your screen recordings stay under your control - always.",
 		},
 		{
 			title: "Free with No Watermarks",
@@ -59,7 +59,7 @@ export const screenRecordingContent: SeoPageContent = {
 	recordingModes: {
 		title: "Two Recording Modes Built for Every Workflow",
 		description:
-			"Cap adapts to how you work — whether you need a quick share or a polished production",
+			"Cap adapts to how you work - whether you need a quick share or a polished production",
 		modes: [
 			{
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
@@ -95,7 +95,7 @@ export const screenRecordingContent: SeoPageContent = {
 		{
 			title: "Cap vs OBS Studio",
 			description:
-				"OBS is a powerful open-source recorder built for streamers, but it requires significant configuration. Cap is designed for simplicity — start recording in seconds with instant sharing, cloud storage, and a clean interface that anyone can use.",
+				"OBS is a powerful open-source recorder built for streamers, but it requires significant configuration. Cap is designed for simplicity - start recording in seconds with instant sharing, cloud storage, and a clean interface that anyone can use.",
 		},
 		{
 			title: "Cap vs macOS Built-in Recorder",
@@ -111,7 +111,7 @@ export const screenRecordingContent: SeoPageContent = {
 
 	useCasesTitle: "How Teams and Creators Use Screen Recording",
 	useCasesDescription:
-		"From quick async updates to polished training content — Cap fits every screen recording use case",
+		"From quick async updates to polished training content - Cap fits every screen recording use case",
 
 	useCases: [
 		{
@@ -151,7 +151,7 @@ export const screenRecordingContent: SeoPageContent = {
 		{
 			question: "What is screen recording?",
 			answer:
-				"Screen recording is the process of capturing the visual output of your computer display as a video file. Modern screen recording tools like Cap also capture audio — both system sounds and microphone input — alongside optional webcam footage. The result is a complete video that shows exactly what happened on screen, ideal for tutorials, demos, bug reports, and async communication.",
+				"Screen recording is the process of capturing the visual output of your computer display as a video file. Modern screen recording tools like Cap also capture audio - both system sounds and microphone input - alongside optional webcam footage. The result is a complete video that shows exactly what happened on screen, ideal for tutorials, demos, bug reports, and async communication.",
 		},
 		{
 			question: "Is Cap's screen recording free?",
@@ -171,7 +171,7 @@ export const screenRecordingContent: SeoPageContent = {
 		{
 			question: "What is the best screen recording software?",
 			answer:
-				"The best screen recording software depends on your needs. For simplicity and instant sharing, Cap is the top choice — it is free, open-source, and produces professional results without any setup. For advanced streaming, OBS is powerful but complex. For team sharing, Cap's built-in link sharing and thread comments make it the best option for async collaboration. <a href='/screen-recording-software'>See a full comparison of screen recording software</a>.",
+				"The best screen recording software depends on your needs. For simplicity and instant sharing, Cap is the top choice - it is free, open-source, and produces professional results without any setup. For advanced streaming, OBS is powerful but complex. For team sharing, Cap's built-in link sharing and thread comments make it the best option for async collaboration. <a href='/screen-recording-software'>See a full comparison of screen recording software</a>.",
 		},
 		{
 			question: "How do I start screen recording on Mac?",
@@ -186,7 +186,7 @@ export const screenRecordingContent: SeoPageContent = {
 		{
 			question: "Does Cap screen recording have a time limit?",
 			answer:
-				"Studio Mode in Cap has no time limit on recordings — record as long as you need. Instant Mode on the free plan supports recordings up to 5 minutes. Cap Pro removes this limit for Instant Mode recordings as well.",
+				"Studio Mode in Cap has no time limit on recordings - record as long as you need. Instant Mode on the free plan supports recordings up to 5 minutes. Cap Pro removes this limit for Instant Mode recordings as well.",
 		},
 	],
 

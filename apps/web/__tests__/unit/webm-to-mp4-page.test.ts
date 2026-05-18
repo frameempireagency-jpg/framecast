@@ -64,7 +64,7 @@ describe("WebM to MP4 FAQ schema validity", () => {
 		{
 			question: "How do I convert WebM to MP4 online?",
 			answer:
-				"Open Cap's WebM to MP4 converter, drag and drop your WebM file (or click to browse), then click Convert. The entire process runs in your browser — your file never leaves your device. Once complete, click Download to save the MP4 file.",
+				"Open Cap's WebM to MP4 converter, drag and drop your WebM file (or click to browse), then click Convert. The entire process runs in your browser - your file never leaves your device. Once complete, click Download to save the MP4 file.",
 		},
 		{
 			question: "Is the WebM to MP4 converter free?",
@@ -74,7 +74,7 @@ describe("WebM to MP4 FAQ schema validity", () => {
 		{
 			question: "Why convert WebM to MP4?",
 			answer:
-				"WebM is an open-source format developed by Google using VP8 or VP9 video codecs — it's the default output of browser-based screen recorders, Chrome MediaRecorder, and many web-based tools. However, WebM files are not supported by iPhones, many Android video editors, Windows Media Player, or social platforms like Instagram and TikTok. MP4 (H.264) is the universal standard supported by virtually every device, platform, browser, and video hosting service. Converting to MP4 ensures your video plays anywhere without compatibility issues.",
+				"WebM is an open-source format developed by Google using VP8 or VP9 video codecs - it's the default output of browser-based screen recorders, Chrome MediaRecorder, and many web-based tools. However, WebM files are not supported by iPhones, many Android video editors, Windows Media Player, or social platforms like Instagram and TikTok. MP4 (H.264) is the universal standard supported by virtually every device, platform, browser, and video hosting service. Converting to MP4 ensures your video plays anywhere without compatibility issues.",
 		},
 		{
 			question: "Will converting WebM to MP4 reduce video quality?",
@@ -99,7 +99,7 @@ describe("WebM to MP4 FAQ schema validity", () => {
 		{
 			question: "Do I need to install any software?",
 			answer:
-				"No. The converter runs entirely in your browser — no downloads, no plugins, no extensions required. Just open the page and start converting. All processing happens locally on your device for complete privacy.",
+				"No. The converter runs entirely in your browser - no downloads, no plugins, no extensions required. Just open the page and start converting. All processing happens locally on your device for complete privacy.",
 		},
 	];
 
@@ -141,7 +141,7 @@ describe("WebM to MP4 HowTo schema validity", () => {
 		},
 		{
 			name: "Start the conversion",
-			text: "Click Convert. The file is processed entirely in your browser using local compute — nothing is uploaded to any server. Conversion time depends on file size and your device speed.",
+			text: "Click Convert. The file is processed entirely in your browser using local compute - nothing is uploaded to any server. Conversion time depends on file size and your device speed.",
 		},
 		{
 			name: "Download your MP4",

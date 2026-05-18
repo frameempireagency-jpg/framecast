@@ -6,7 +6,7 @@ import { SeoPageTemplate } from "../../seo/SeoPageTemplate";
 import type { SeoPageContent } from "../../seo/types";
 
 export const screenRecordingSoftwareContent: SeoPageContent = {
-	title: "Screen Recording Software — Free HD Screen Capture for Mac & Windows",
+	title: "Screen Recording Software - Free HD Screen Capture for Mac & Windows",
 	description:
 		"Cap is free, open-source screen recording software that captures HD video with audio on Mac and Windows. Record your screen, share instantly with a link, and keep full ownership of your data.",
 
@@ -23,7 +23,7 @@ export const screenRecordingSoftwareContent: SeoPageContent = {
 		{
 			title: "User-Friendly Interface",
 			description:
-				"Start recording in seconds with Cap's intuitive design. No complicated settings or technical knowledge required — just click record and go.",
+				"Start recording in seconds with Cap's intuitive design. No complicated settings or technical knowledge required - just click record and go.",
 		},
 		{
 			title: "Free Access to Full Features",
@@ -96,7 +96,7 @@ export const screenRecordingSoftwareContent: SeoPageContent = {
 		{
 			title: "Cap vs OBS Studio",
 			description:
-				"OBS is powerful but complex. Cap delivers a simpler experience with instant sharing links, cloud storage, and a clean interface — no configuration needed. Both are open-source and free, but Cap is built for sharing, not just recording.",
+				"OBS is powerful but complex. Cap delivers a simpler experience with instant sharing links, cloud storage, and a clean interface - no configuration needed. Both are open-source and free, but Cap is built for sharing, not just recording.",
 		},
 		{
 			title: "Cap vs Windows Built-in (Xbox Game Bar)",
@@ -189,7 +189,7 @@ export const screenRecordingSoftwareContent: SeoPageContent = {
 	},
 
 	cta: {
-		title: "Get Started with Cap — Free Screen Recording Software",
+		title: "Get Started with Cap - Free Screen Recording Software",
 		buttonText: "Download Cap Free",
 		secondaryButtonText: "Try Instant Mode in Browser",
 	},

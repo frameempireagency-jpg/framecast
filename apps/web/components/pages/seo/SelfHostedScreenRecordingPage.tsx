@@ -6,7 +6,7 @@ import type { SeoPageContent } from "../../seo/types";
 
 export const selfHostedScreenRecordingContent: SeoPageContent = {
 	title:
-		"Self-Hosted Screen Recording — Own Your Data, Own Your Infrastructure",
+		"Self-Hosted Screen Recording - Own Your Data, Own Your Infrastructure",
 	description:
 		"Cap lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, MinIO, or Backblaze and every recording goes directly to your infrastructure. Open source, no vendor lock-in, full data sovereignty.",
 
@@ -20,7 +20,7 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 		{
 			title: "Connect Any S3-Compatible Storage",
 			description:
-				"Cap supports AWS S3, Cloudflare R2, Backblaze B2, MinIO, Wasabi, and any other S3-compatible object storage. Configure your bucket credentials once in Cap's settings and every recording uploads directly to your infrastructure — not Cap's cloud.",
+				"Cap supports AWS S3, Cloudflare R2, Backblaze B2, MinIO, Wasabi, and any other S3-compatible object storage. Configure your bucket credentials once in Cap's settings and every recording uploads directly to your infrastructure - not Cap's cloud.",
 		},
 		{
 			title: "Recordings Never Touch Third-Party Servers",
@@ -30,17 +30,17 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 		{
 			title: "Self-Host the Entire Cap Platform",
 			description:
-				"Go beyond storage — deploy the complete Cap web platform on your own infrastructure. The dashboard, sharing layer, API, and all services run within your network perimeter. Full control over the entire recording and sharing pipeline.",
+				"Go beyond storage - deploy the complete Cap web platform on your own infrastructure. The dashboard, sharing layer, API, and all services run within your network perimeter. Full control over the entire recording and sharing pipeline.",
 		},
 		{
 			title: "Open Source and Auditable",
 			description:
-				"Cap is MIT-licensed and fully open source on GitHub. Your security team can audit every line of code that handles recording, uploading, and sharing. No black-box behavior, no undisclosed data flows — complete transparency for enterprise security reviews.",
+				"Cap is MIT-licensed and fully open source on GitHub. Your security team can audit every line of code that handles recording, uploading, and sharing. No black-box behavior, no undisclosed data flows - complete transparency for enterprise security reviews.",
 		},
 		{
 			title: "Instant Shareable Links from Your Own Storage",
 			description:
-				"Self-hosted storage doesn't mean sacrificing the instant sharing experience. Stop recording, get a shareable link immediately — but the video is served from your S3 bucket, not Cap's CDN. Your infrastructure, your links, Cap's instant-share UX.",
+				"Self-hosted storage doesn't mean sacrificing the instant sharing experience. Stop recording, get a shareable link immediately - but the video is served from your S3 bucket, not Cap's CDN. Your infrastructure, your links, Cap's instant-share UX.",
 		},
 		{
 			title: "Password-Protected Sharing",
@@ -55,14 +55,14 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 		{
 			title: "Custom Domain Support",
 			description:
-				"Serve Cap's sharing pages from your own custom domain. Combined with self-hosted storage, recordings are fully within your brand and infrastructure — from the video file in your S3 bucket to the sharing link your viewers click.",
+				"Serve Cap's sharing pages from your own custom domain. Combined with self-hosted storage, recordings are fully within your brand and infrastructure - from the video file in your S3 bucket to the sharing link your viewers click.",
 		},
 	],
 
 	recordingModes: {
 		title: "Two Self-Hostable Recording Modes",
 		description:
-			"Both Cap recording modes work fully with self-hosted storage — choose the right workflow for your team",
+			"Both Cap recording modes work fully with self-hosted storage - choose the right workflow for your team",
 		modes: [
 			{
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
@@ -91,21 +91,21 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 		rows: [
 			[
 				"Self-hosted storage",
-				{ text: "Yes — any S3", status: "positive" },
+				{ text: "Yes - any S3", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 				{ text: "On-premise only", status: "warning" },
 			],
 			[
 				"Self-hostable platform",
-				{ text: "Yes — full stack", status: "positive" },
+				{ text: "Yes - full stack", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 				{ text: "Yes (enterprise)", status: "warning" },
 			],
 			[
 				"Open source",
-				{ text: "Yes — MIT", status: "positive" },
+				{ text: "Yes - MIT", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
@@ -133,14 +133,14 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 			],
 			[
 				"Free tier",
-				{ text: "Yes — Studio Mode", status: "positive" },
+				{ text: "Yes - Studio Mode", status: "positive" },
 				{ text: "Limited", status: "warning" },
 				{ text: "Limited", status: "warning" },
 				{ text: "No", status: "negative" },
 			],
 			[
 				"Auditable code",
-				{ text: "Yes — full codebase", status: "positive" },
+				{ text: "Yes - full codebase", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
@@ -150,7 +150,7 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 
 	comparisonTitle: "Why Self-Host Your Screen Recordings with Cap",
 	comparisonDescription:
-		"Most screen recorders lock your data to their cloud — Cap is built from the ground up to run entirely on your own infrastructure",
+		"Most screen recorders lock your data to their cloud - Cap is built from the ground up to run entirely on your own infrastructure",
 
 	comparison: [
 		{
@@ -161,12 +161,12 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 		{
 			title: "Cap vs Panopto for Self-Hosting",
 			description:
-				"Panopto offers on-premise deployment for enterprise customers at significant cost. Cap's self-hosting is available to any team — configure your S3 bucket in minutes, or deploy the full platform from the open-source repository. No enterprise contract required.",
+				"Panopto offers on-premise deployment for enterprise customers at significant cost. Cap's self-hosting is available to any team - configure your S3 bucket in minutes, or deploy the full platform from the open-source repository. No enterprise contract required.",
 		},
 		{
 			title: "Cap vs OBS for Self-Hosted Recording",
 			description:
-				"OBS records locally but lacks any sharing or collaboration layer. Cap gives you OBS-level data control — recordings stay on your infrastructure — combined with async sharing links, thread commenting, and a web dashboard your team can actually use.",
+				"OBS records locally but lacks any sharing or collaboration layer. Cap gives you OBS-level data control - recordings stay on your infrastructure - combined with async sharing links, thread commenting, and a web dashboard your team can actually use.",
 		},
 		{
 			title: "Cap for Regulated Industries",
@@ -188,7 +188,7 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 		{
 			title: "Healthcare Organizations",
 			description:
-				"Cap with AWS S3 self-hosting keeps recorded content within HIPAA-eligible infrastructure. Clinical training videos, EHR walkthroughs, and patient education recordings stay on your AWS account — covered by your existing BAA. <a href='/hipaa-compliant-screen-recording'>Learn more about HIPAA-compliant recording</a>.",
+				"Cap with AWS S3 self-hosting keeps recorded content within HIPAA-eligible infrastructure. Clinical training videos, EHR walkthroughs, and patient education recordings stay on your AWS account - covered by your existing BAA. <a href='/hipaa-compliant-screen-recording'>Learn more about HIPAA-compliant recording</a>.",
 		},
 		{
 			title: "Financial Services and Legal Teams",
@@ -198,7 +198,7 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 		{
 			title: "Developer and Engineering Teams",
 			description:
-				"Engineers who want to verify what software does with their data run Cap with self-hosted storage. Record bug reports, architecture walkthroughs, and code reviews — all stored in your team's S3 bucket. Open-source code means the data handling is verifiable, not just promised.",
+				"Engineers who want to verify what software does with their data run Cap with self-hosted storage. Record bug reports, architecture walkthroughs, and code reviews - all stored in your team's S3 bucket. Open-source code means the data handling is verifiable, not just promised.",
 		},
 		{
 			title: "Agencies and Client Services Teams",
@@ -208,20 +208,20 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 		{
 			title: "Self-Hosting Enthusiasts and Privacy Advocates",
 			description:
-				"Individuals and teams who prefer to own their tools deploy the full Cap platform — web app, API, and storage — on their own VPS or cloud account. MIT-licensed code means no restrictions on how you run it or modify it for your needs.",
+				"Individuals and teams who prefer to own their tools deploy the full Cap platform - web app, API, and storage - on their own VPS or cloud account. MIT-licensed code means no restrictions on how you run it or modify it for your needs.",
 		},
 	],
 
 	migrationGuide: {
 		title: "How to Set Up Self-Hosted Screen Recording with Cap",
 		steps: [
-			"Create an S3-compatible bucket — AWS S3, Cloudflare R2, Backblaze B2, or a self-hosted MinIO instance all work",
+			"Create an S3-compatible bucket - AWS S3, Cloudflare R2, Backblaze B2, or a self-hosted MinIO instance all work",
 			"Generate access credentials for your bucket with read/write permissions",
-			"Download Cap for Mac or Windows — installation takes under 2 minutes",
+			"Download Cap for Mac or Windows - installation takes under 2 minutes",
 			"Open Cap settings and navigate to the storage configuration section",
 			"Enter your bucket name, region, access key, secret key, and optional custom endpoint",
-			"Record a test video — verify the file appears in your bucket directly after stopping",
-			"Share the recording link — the video is now served from your own storage",
+			"Record a test video - verify the file appears in your bucket directly after stopping",
+			"Share the recording link - the video is now served from your own storage",
 			"Optionally deploy the full Cap web platform for complete infrastructure ownership",
 		],
 	},
@@ -231,7 +231,7 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 		{
 			question: "Can Cap be self-hosted?",
 			answer:
-				"Yes. Cap supports two levels of self-hosting. First, you can configure Cap to use your own S3-compatible storage bucket — recordings upload directly to your infrastructure. Second, you can deploy the entire Cap platform (web dashboard, API, sharing layer) on your own servers using the open-source repository. Both options are available to all users with no enterprise contract required.",
+				"Yes. Cap supports two levels of self-hosting. First, you can configure Cap to use your own S3-compatible storage bucket - recordings upload directly to your infrastructure. Second, you can deploy the entire Cap platform (web dashboard, API, sharing layer) on your own servers using the open-source repository. Both options are available to all users with no enterprise contract required.",
 		},
 		{
 			question: "What storage providers does Cap support for self-hosting?",
@@ -252,7 +252,7 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 		{
 			question: "Can I self-host the entire Cap platform, not just storage?",
 			answer:
-				"Yes. Cap is fully open source under the MIT license. You can deploy the complete Cap platform — including the Next.js web application, API, and all services — on your own infrastructure. See Cap's self-hosting documentation for deployment instructions and configuration options.",
+				"Yes. Cap is fully open source under the MIT license. You can deploy the complete Cap platform - including the Next.js web application, API, and all services - on your own infrastructure. See Cap's self-hosting documentation for deployment instructions and configuration options.",
 		},
 		{
 			question: "Is self-hosted Cap suitable for HIPAA compliance?",
@@ -268,7 +268,7 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 		{
 			question: "What is the best self-hosted screen recorder?",
 			answer:
-				"Cap is the best self-hosted screen recorder for teams that need both data control and a modern async video experience. It combines S3-compatible custom storage, instant shareable links, webcam overlay, AI captions, and thread commenting — all in an MIT-licensed open-source package. Unlike local-only recorders, Cap gives you the collaboration layer. Unlike closed-source SaaS tools, Cap gives you full data ownership.",
+				"Cap is the best self-hosted screen recorder for teams that need both data control and a modern async video experience. It combines S3-compatible custom storage, instant shareable links, webcam overlay, AI captions, and thread commenting - all in an MIT-licensed open-source package. Unlike local-only recorders, Cap gives you the collaboration layer. Unlike closed-source SaaS tools, Cap gives you full data ownership.",
 		},
 	],
 

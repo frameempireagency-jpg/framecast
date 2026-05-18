@@ -184,7 +184,7 @@ export const POST = async (req: Request) => {
 
 					if (existingTxn) {
 						console.log(
-							"Duplicate webhook delivery — transaction already exists:",
+							"Duplicate webhook delivery - transaction already exists:",
 							existingTxn.id,
 						);
 						return NextResponse.json({ received: true });

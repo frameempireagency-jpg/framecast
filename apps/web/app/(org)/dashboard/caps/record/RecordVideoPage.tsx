@@ -47,7 +47,7 @@ export const RecordVideoPage = () => {
 					<div className="mx-auto w-full max-w-[560px] min-w-0">
 						<div className="flex flex-col items-center">
 							<p className="max-w-md text-gray-10 text-md">
-								Choose how you'd like to record your Cap
+								Choose how you'd like to record your video
 							</p>
 						</div>
 						<div className="flex flex-wrap gap-3 justify-center items-center mt-4">
@@ -75,8 +75,8 @@ const FaqAccordion = () => {
 	const items = [
 		{
 			id: "what-is-cap",
-			q: "What is a Cap?",
-			a: "A Cap is a quick video recording of your screen, camera, or both that you can share instantly with a link.",
+			q: "What is a recording?",
+			a: "A recording is a quick video recording of your screen, camera, or both that you can share instantly with a link.",
 		},
 		{
 			id: "how-it-works",
@@ -91,7 +91,7 @@ const FaqAccordion = () => {
 		{
 			id: "pip",
 			q: "How do I keep my webcam visible?",
-			a: "On compatible browsers, selecting a camera opens a picture‑in‑picture window that’s captured when you record fullscreen. We recommend recording fullscreen to keep it on top. If PiP capture isn’t supported, your camera stays within the Cap recorder tab.",
+			a: "On compatible browsers, selecting a camera opens a picture‑in‑picture window that’s captured when you record fullscreen. We recommend recording fullscreen to keep it on top. If PiP capture isn’t supported, your camera stays within the FrameCast recorder tab.",
 		},
 		{
 			id: "what-can-i-record",

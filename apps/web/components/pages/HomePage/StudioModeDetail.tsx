@@ -706,7 +706,7 @@ const StudioModeDetail = () => {
 					Record in full quality, edit before you share
 				</h2>
 				<p className="text-base md:text-lg text-gray-10 max-w-[600px] mx-auto">
-					Studio mode records at the highest quality directly to your device —
+					Studio mode records at the highest quality directly to your device -
 					no compression, no upload. Then customize backgrounds, padding,
 					corners, and more before sharing.
 				</p>

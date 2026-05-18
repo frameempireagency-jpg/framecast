@@ -131,7 +131,7 @@ describe("MacScreenRecordingWithAudioPage FAQ schema", () => {
 			question:
 				"Can I record Mac screen with both microphone and system audio?",
 			answer:
-				"Yes — with Cap you can record both microphone and system audio simultaneously on Mac.",
+				"Yes - with Cap you can record both microphone and system audio simultaneously on Mac.",
 		},
 		{
 			question: "Does Cap require BlackHole or Loopback for audio on Mac?",

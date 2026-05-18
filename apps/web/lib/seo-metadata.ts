@@ -1,7 +1,7 @@
 export const seoMetadata = {
 	"best-screen-recorder": {
 		title:
-			"Best Screen Recorder in 2026 — Free, No Watermark, 4K Quality | Cap",
+			"Best Screen Recorder in 2026 - Free, No Watermark, 4K Quality | Cap",
 		description:
 			"Cap is the best screen recorder for Mac and Windows. Record in 4K with audio and webcam overlay, then share instantly. 100% free with no watermarks, no time limits in Studio Mode.",
 		keywords: [
@@ -41,7 +41,7 @@ export const seoMetadata = {
 	"screen-recorder-windows": {
 		title: "Best Free Screen Recorder for Windows 10 & 11 | Cap",
 		description:
-			"Record your screen on Windows with Cap — free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks. Works on Windows 10 & 11.",
+			"Record your screen on Windows with Cap - free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks. Works on Windows 10 & 11.",
 		keywords: [
 			"screen record windows",
 			"screen recorder windows",
@@ -67,7 +67,7 @@ export const seoMetadata = {
 		ogImage: "/og.png",
 	},
 	"screen-recording": {
-		title: "Screen Recording — Free HD Capture, Instant Sharing | Cap",
+		title: "Screen Recording - Free HD Capture, Instant Sharing | Cap",
 		description:
 			"Record your screen in HD with audio and webcam overlay, then share instantly with a link. Cap is free, open-source screen recording software for Mac and Windows.",
 		keywords: [
@@ -134,7 +134,7 @@ export const seoMetadata = {
 		ogImage: "/og.png",
 	},
 	"solutions/agencies": {
-		title: "Cap for Agencies — Faster Client Updates with Instant Video Links",
+		title: "Cap for Agencies - Faster Client Updates with Instant Video Links",
 		description:
 			"Send clearer client updates in minutes. Share instant links with comments, or craft polished walkthroughs. Cap for Agencies on macOS & Windows.",
 		keywords: [
@@ -148,7 +148,7 @@ export const seoMetadata = {
 	"solutions/daily-standup-software": {
 		title: "Daily Standup Software: Streamline Your Agile Meetings with Cap",
 		description:
-			"Looking for daily standup software? Discover how Cap helps remote or hybrid teams run async standups efficiently—no more timezone conflicts!",
+			"Looking for daily standup software? Discover how Cap helps remote or hybrid teams run async standups efficiently-no more timezone conflicts!",
 		keywords: [
 			"daily standup software",
 			"async standup",
@@ -183,7 +183,7 @@ export const seoMetadata = {
 		ogImage: "/og.png",
 	},
 	"open-source-screen-recorder": {
-		title: "Open Source Screen Recorder — Free, Private, Self-Hostable | Cap",
+		title: "Open Source Screen Recorder - Free, Private, Self-Hostable | Cap",
 		description:
 			"Cap is the leading open-source screen recorder for Mac and Windows. Audit the code, self-host your recordings, and own your data. MIT-licensed, 4K quality, no watermarks.",
 		keywords: [
@@ -197,7 +197,7 @@ export const seoMetadata = {
 		ogImage: "/og.png",
 	},
 	"video-recording-software": {
-		title: "Video Recording Software — Free HD Capture, Instant Sharing | Cap",
+		title: "Video Recording Software - Free HD Capture, Instant Sharing | Cap",
 		description:
 			"Cap is free video recording software for Mac and Windows. Record your screen, webcam, and audio in HD, then share instantly with a link. Open-source, no watermarks, no time limits in Studio Mode.",
 		keywords: [
@@ -211,7 +211,7 @@ export const seoMetadata = {
 		ogImage: "/og.png",
 	},
 	"mac-screen-recording-with-audio": {
-		title: "Mac Screen Recording with Audio — Capture System Sound & Mic | Cap",
+		title: "Mac Screen Recording with Audio - Capture System Sound & Mic | Cap",
 		description:
 			"Record your Mac screen with system audio and microphone using Cap. No BlackHole, no plugins required. Free, open-source screen recorder for macOS.",
 		keywords: [
@@ -226,7 +226,7 @@ export const seoMetadata = {
 	},
 	"obs-alternative": {
 		title:
-			"OBS Alternative — Easier Screen Recording with Instant Sharing | Cap",
+			"OBS Alternative - Easier Screen Recording with Instant Sharing | Cap",
 		description:
 			"Cap is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
 		keywords: [
@@ -241,7 +241,7 @@ export const seoMetadata = {
 	},
 	"hipaa-compliant-screen-recording": {
 		title:
-			"HIPAA-Compliant Screen Recording — Secure Healthcare Recordings | Cap",
+			"HIPAA-Compliant Screen Recording - Secure Healthcare Recordings | Cap",
 		description:
 			"Cap enables HIPAA-compliant screen recording for healthcare teams. Self-host recordings on your own AWS S3 bucket, keep PHI off third-party servers, and audit every line of open-source code.",
 		keywords: [
@@ -256,9 +256,9 @@ export const seoMetadata = {
 	},
 	"self-hosted-screen-recording": {
 		title:
-			"Self-Hosted Screen Recording — Own Your Data, No Vendor Lock-In | Cap",
+			"Self-Hosted Screen Recording - Own Your Data, No Vendor Lock-In | Cap",
 		description:
-			"Cap lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, or MinIO — recordings go directly to your infrastructure. Open source, MIT-licensed, free to use.",
+			"Cap lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, or MinIO - recordings go directly to your infrastructure. Open source, MIT-licensed, free to use.",
 		keywords: [
 			"self hosted screen recording",
 			"self hosted screen recorder",
@@ -270,7 +270,7 @@ export const seoMetadata = {
 		ogImage: "/og.png",
 	},
 	"async-video-code-reviews": {
-		title: "Async Video Code Reviews — Ship Faster Without the Meetings | Cap",
+		title: "Async Video Code Reviews - Ship Faster Without the Meetings | Cap",
 		description:
 			"Record screen walkthroughs of pull requests and share a timestamped link your team watches on their schedule. Cap makes async code reviews faster and calendar-free.",
 		keywords: [
@@ -285,7 +285,7 @@ export const seoMetadata = {
 	},
 	"developer-documentation-videos": {
 		title:
-			"Developer Documentation Videos — Record API Demos and SDK Walkthroughs | Cap",
+			"Developer Documentation Videos - Record API Demos and SDK Walkthroughs | Cap",
 		description:
 			"Create professional developer documentation videos with screen recording. Record API demos, SDK walkthroughs, and technical tutorials instantly. Cap is free, open-source, 4K quality, and built for developers.",
 		keywords: [

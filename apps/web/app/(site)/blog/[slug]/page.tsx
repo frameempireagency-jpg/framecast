@@ -111,7 +111,7 @@ export default async function PostPage(props: PostProps) {
 									"MMMM dd, yyyy",
 								)}
 							</span>
-							<span>—</span>
+							<span>-</span>
 							<span>{readingTime} min read</span>
 						</p>
 					</header>

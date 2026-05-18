@@ -211,7 +211,7 @@ export async function checkHasAudioTrack(videoUrl: string): Promise<boolean> {
 			`[checkHasAudioTrack] ffmpeg binary not found, cannot check audio track:`,
 			err,
 		);
-		throw new Error("ffmpeg binary not available — cannot check audio track");
+		throw new Error("ffmpeg binary not available - cannot check audio track");
 	}
 	const ffmpegArgs = ["-i", videoUrl, "-hide_banner"];
 
@@ -237,7 +237,7 @@ export async function checkHasAudioTrack(videoUrl: string): Promise<boolean> {
 
 			if (!hasVideo) {
 				console.error(
-					`[checkHasAudioTrack] No video stream found — ffmpeg may not be able to read the file. stderr: ${stderr.substring(0, 500)}`,
+					`[checkHasAudioTrack] No video stream found - ffmpeg may not be able to read the file. stderr: ${stderr.substring(0, 500)}`,
 				);
 				reject(
 					new Error(`ffmpeg could not read video file: no streams detected`),

@@ -51,7 +51,7 @@ describe("developer domain validation regex", () => {
 		];
 
 		for (const [domain, reason] of invalidDomains) {
-			it(`rejects ${domain || "(empty string)"} — ${reason}`, () => {
+			it(`rejects ${domain || "(empty string)"} - ${reason}`, () => {
 				expect(urlPattern.test(domain)).toBe(false);
 			});
 		}

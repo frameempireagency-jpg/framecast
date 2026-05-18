@@ -73,7 +73,7 @@ const modes: ModeDetail[] = [
 		title: "Instant Mode",
 		tagline: "Record & share in seconds",
 		description:
-			"Your recording uploads as you capture. Stop recording and instantly get a shareable link — no waiting.",
+			"Your recording uploads as you capture. Stop recording and instantly get a shareable link - no waiting.",
 		icon: IconCapInstant,
 		features: [
 			"Instant shareable link",
@@ -700,7 +700,7 @@ function ModesOverviewStep(props: { active: boolean }) {
 					One app, every workflow
 				</h2>
 				<p class="text-[14px] text-gray-10 leading-relaxed">
-					Whether you need speed, studio quality, or a quick screenshot — Cap
+					Whether you need speed, studio quality, or a quick screenshot - Cap
 					has a mode for it.
 				</p>
 			</div>
@@ -1086,7 +1086,7 @@ function FaqStep(props: { active: boolean }) {
 				</FaqItem>
 				<FaqItem question="What's the difference between Instant and Studio?">
 					<p class="text-[13px] text-gray-10 leading-relaxed">
-						Instant mode uploads as you record — stop recording and you'll have
+						Instant mode uploads as you record - stop recording and you'll have
 						a shareable link immediately. Studio mode records locally in full
 						quality, letting you edit with backgrounds, effects, and more before
 						sharing.

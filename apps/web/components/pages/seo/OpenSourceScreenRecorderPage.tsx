@@ -5,13 +5,13 @@ import { SeoPageTemplate } from "../../seo/SeoPageTemplate";
 import type { SeoPageContent } from "../../seo/types";
 
 export const openSourceScreenRecorderContent: SeoPageContent = {
-	title: "Open Source Screen Recorder — Free, Private, and Community-Built",
+	title: "Open Source Screen Recorder - Free, Private, and Community-Built",
 	description:
 		"Cap is the leading open-source screen recorder for Mac and Windows. Audit the code, self-host your recordings, and stay in full control of your data. Free forever with no vendor lock-in.",
 
 	featuresTitle: "Why Choose an Open Source Screen Recorder",
 	featuresDescription:
-		"Open source means full transparency, real privacy, and the freedom to use Cap exactly how you want — without compromise",
+		"Open source means full transparency, real privacy, and the freedom to use Cap exactly how you want - without compromise",
 
 	features: [
 		{
@@ -22,12 +22,12 @@ export const openSourceScreenRecorderContent: SeoPageContent = {
 		{
 			title: "Self-Host Your Recordings",
 			description:
-				"Connect Cap to any S3-compatible storage — AWS S3, Cloudflare R2, Backblaze, or your own MinIO instance. Your recordings never touch Cap's servers unless you want them to. True data ownership.",
+				"Connect Cap to any S3-compatible storage - AWS S3, Cloudflare R2, Backblaze, or your own MinIO instance. Your recordings never touch Cap's servers unless you want them to. True data ownership.",
 		},
 		{
 			title: "No Vendor Lock-In",
 			description:
-				"With a closed-source tool, you're dependent on a company's pricing, policies, and survival. Cap is open source — fork it, modify it, or self-host the entire platform. Your workflow is never held hostage.",
+				"With a closed-source tool, you're dependent on a company's pricing, policies, and survival. Cap is open source - fork it, modify it, or self-host the entire platform. Your workflow is never held hostage.",
 		},
 		{
 			title: "Community-Driven Development",
@@ -37,7 +37,7 @@ export const openSourceScreenRecorderContent: SeoPageContent = {
 		{
 			title: "Privacy-First Architecture",
 			description:
-				"Because Cap is open source, privacy isn't a marketing claim — it's verifiable. Review the data handling code yourself, run the app locally, and configure storage to keep recordings entirely within your infrastructure.",
+				"Because Cap is open source, privacy isn't a marketing claim - it's verifiable. Review the data handling code yourself, run the app locally, and configure storage to keep recordings entirely within your infrastructure.",
 		},
 		{
 			title: "4K Recording at 60fps",
@@ -52,7 +52,7 @@ export const openSourceScreenRecorderContent: SeoPageContent = {
 		{
 			title: "AI Captions Without Compromise",
 			description:
-				"Automatically generate accurate captions from your screen recordings. The AI pipeline is part of the open-source codebase — you can see exactly how transcription works and run it on your own infrastructure.",
+				"Automatically generate accurate captions from your screen recordings. The AI pipeline is part of the open-source codebase - you can see exactly how transcription works and run it on your own infrastructure.",
 		},
 	],
 
@@ -77,7 +77,7 @@ export const openSourceScreenRecorderContent: SeoPageContent = {
 				),
 				title: "Studio Mode",
 				description:
-					"Completely free for personal use with no time limits. Records at full quality up to 4K with separate screen and webcam tracks. Ideal for tutorials, product demos, and training content — no subscription required.",
+					"Completely free for personal use with no time limits. Records at full quality up to 4K with separate screen and webcam tracks. Ideal for tutorials, product demos, and training content - no subscription required.",
 			},
 		],
 	},
@@ -88,28 +88,28 @@ export const openSourceScreenRecorderContent: SeoPageContent = {
 		rows: [
 			[
 				"Open source",
-				{ text: "Yes — MIT licensed", status: "positive" },
+				{ text: "Yes - MIT licensed", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 			],
 			[
 				"Self-hostable",
-				{ text: "Yes — any S3 storage", status: "positive" },
+				{ text: "Yes - any S3 storage", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 			],
 			[
 				"Auditable code",
-				{ text: "Yes — full codebase", status: "positive" },
+				{ text: "Yes - full codebase", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 			],
 			[
 				"Free to use",
-				{ text: "Yes — free plan + Studio Mode", status: "positive" },
+				{ text: "Yes - free plan + Studio Mode", status: "positive" },
 				{ text: "Limited", status: "warning" },
 				{ text: "Limited", status: "warning" },
 				{ text: "$299.99 one-time", status: "negative" },
@@ -147,18 +147,18 @@ export const openSourceScreenRecorderContent: SeoPageContent = {
 
 	comparisonTitle: "How Cap Stands Apart as an Open Source Screen Recorder",
 	comparisonDescription:
-		"The open-source difference goes beyond price — it's about trust, control, and long-term sustainability",
+		"The open-source difference goes beyond price - it's about trust, control, and long-term sustainability",
 
 	comparison: [
 		{
 			title: "Cap vs Loom",
 			description:
-				"Loom is a closed-source SaaS that owns your recording data and can change pricing at any time. Cap is open source with custom storage support, starting at $9.99/month versus Loom's $18/month — and Cap's Studio Mode is completely free. <a href='/loom-alternative'>See the full Cap vs Loom comparison</a>.",
+				"Loom is a closed-source SaaS that owns your recording data and can change pricing at any time. Cap is open source with custom storage support, starting at $9.99/month versus Loom's $18/month - and Cap's Studio Mode is completely free. <a href='/loom-alternative'>See the full Cap vs Loom comparison</a>.",
 		},
 		{
 			title: "Cap vs OBS Studio",
 			description:
-				"OBS is also open source but built for live streaming, not async screen sharing. Cap brings the open-source ethos to everyday recording with instant shareable links, cloud storage, and built-in commenting — features OBS doesn't offer.",
+				"OBS is also open source but built for live streaming, not async screen sharing. Cap brings the open-source ethos to everyday recording with instant shareable links, cloud storage, and built-in commenting - features OBS doesn't offer.",
 		},
 		{
 			title: "Cap vs Vidyard",
@@ -174,7 +174,7 @@ export const openSourceScreenRecorderContent: SeoPageContent = {
 
 	useCasesTitle: "Who Uses Cap as Their Open Source Screen Recorder",
 	useCasesDescription:
-		"From privacy-conscious developers to enterprises with compliance requirements — Cap fits every team that values transparency",
+		"From privacy-conscious developers to enterprises with compliance requirements - Cap fits every team that values transparency",
 
 	useCases: [
 		{
@@ -214,12 +214,12 @@ export const openSourceScreenRecorderContent: SeoPageContent = {
 		{
 			question: "Is Cap really open source?",
 			answer:
-				"Yes. Cap is fully open source and MIT-licensed. The complete codebase — desktop app, web app, Rust media processing pipeline, and all backend services — is publicly available on GitHub. You can inspect every line, fork the project, and contribute back to the community.",
+				"Yes. Cap is fully open source and MIT-licensed. The complete codebase - desktop app, web app, Rust media processing pipeline, and all backend services - is publicly available on GitHub. You can inspect every line, fork the project, and contribute back to the community.",
 		},
 		{
 			question: "Can I self-host Cap's screen recordings?",
 			answer:
-				"Yes. Cap supports any S3-compatible storage provider, including AWS S3, Cloudflare R2, Backblaze B2, and self-hosted MinIO. Configure your own bucket in Cap's settings and your recordings are stored entirely within your infrastructure — Cap's servers never see your content.",
+				"Yes. Cap supports any S3-compatible storage provider, including AWS S3, Cloudflare R2, Backblaze B2, and self-hosted MinIO. Configure your own bucket in Cap's settings and your recordings are stored entirely within your infrastructure - Cap's servers never see your content.",
 		},
 		{
 			question: "What is the best open source screen recorder?",
@@ -235,12 +235,12 @@ export const openSourceScreenRecorderContent: SeoPageContent = {
 			question:
 				"How does Cap compare to OBS Studio as an open source recorder?",
 			answer:
-				"Both Cap and OBS Studio are open source, but they serve different workflows. OBS requires significant setup and is built for live streaming. Cap is designed for async screen sharing — you record, get a shareable link in seconds, and viewers can leave timestamped comments. Cap is the better open source screen recorder for teams and everyday recording.",
+				"Both Cap and OBS Studio are open source, but they serve different workflows. OBS requires significant setup and is built for live streaming. Cap is designed for async screen sharing - you record, get a shareable link in seconds, and viewers can leave timestamped comments. Cap is the better open source screen recorder for teams and everyday recording.",
 		},
 		{
 			question: "Can I contribute to Cap's development?",
 			answer:
-				"Absolutely. Cap welcomes contributions of all kinds — bug reports, feature requests, code contributions, and documentation improvements. Visit Cap's GitHub repository to file issues, browse open tasks, or submit a pull request. The roadmap is public and shaped by community feedback.",
+				"Absolutely. Cap welcomes contributions of all kinds - bug reports, feature requests, code contributions, and documentation improvements. Visit Cap's GitHub repository to file issues, browse open tasks, or submit a pull request. The roadmap is public and shaped by community feedback.",
 		},
 		{
 			question: "Does Cap work on Mac and Windows?",

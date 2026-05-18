@@ -2,7 +2,7 @@ export const recordScreenWindowsContent = {
 	slug: "windows-11-record-screen-system-audio-no-stereo-mix",
 	title: "Record Screen + System Audio on Windows 11 (No Stereo Mix)",
 	description:
-		"Learn how to record your screen with crisp internal audio on Windows 11—without Stereo Mix. Capture mic + system sound together using Cap. Step-by-step setup, fixes, and FAQs.",
+		"Learn how to record your screen with crisp internal audio on Windows 11-without Stereo Mix. Capture mic + system sound together using Cap. Step-by-step setup, fixes, and FAQs.",
 	publishedAt: "2025-09-17",
 	category: "Tutorials",
 	author: "Cap Team",
@@ -119,7 +119,7 @@ export const recordScreenWindowsContent = {
 			{
 				question: "Can't find Stereo Mix on Windows 11",
 				answer:
-					"Many modern devices hide Stereo Mix or don't include it. You don't need it—Cap uses WASAPI loopback to record internal audio directly from your default output device.",
+					"Many modern devices hide Stereo Mix or don't include it. You don't need it-Cap uses WASAPI loopback to record internal audio directly from your default output device.",
 			},
 		],
 	},

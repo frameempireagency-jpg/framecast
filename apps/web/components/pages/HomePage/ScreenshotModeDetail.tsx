@@ -836,7 +836,7 @@ const ScreenshotModeDetail = () => {
 					transition={{ duration: 0.5, delay: 0.2 }}
 				>
 					Take a screenshot with a hotkey, then instantly enhance it with
-					backgrounds, padding, annotations, and more — ready to share in
+					backgrounds, padding, annotations, and more - ready to share in
 					seconds.
 				</motion.p>
 			</motion.div>

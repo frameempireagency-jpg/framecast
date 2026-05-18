@@ -5,13 +5,13 @@ import { SeoPageTemplate } from "../../seo/SeoPageTemplate";
 import type { SeoPageContent } from "../../seo/types";
 
 export const videoRecordingSoftwareContent: SeoPageContent = {
-	title: "Video Recording Software — Free, HD Quality, Instant Sharing | Cap",
+	title: "Video Recording Software - Free, HD Quality, Instant Sharing | Cap",
 	description:
 		"Cap is free video recording software for Mac and Windows. Record your screen, webcam, and audio in HD, then share instantly with a link. Open-source, no watermarks, no time limits in Studio Mode.",
 
 	featuresTitle: "Why Cap is the Best Video Recording Software",
 	featuresDescription:
-		"Everything you need to capture, share, and collaborate on video recordings — completely free and open-source",
+		"Everything you need to capture, share, and collaborate on video recordings - completely free and open-source",
 
 	features: [
 		{
@@ -42,7 +42,7 @@ export const videoRecordingSoftwareContent: SeoPageContent = {
 		{
 			title: "Separate Screen and Webcam Tracks",
 			description:
-				"In Studio Mode, screen and webcam video are saved as independent tracks. Edit them separately in your video editor for full post-production control — ideal for tutorials, product demos, and professional training content.",
+				"In Studio Mode, screen and webcam video are saved as independent tracks. Edit them separately in your video editor for full post-production control - ideal for tutorials, product demos, and professional training content.",
 		},
 		{
 			title: "AI-Powered Captions",
@@ -52,7 +52,7 @@ export const videoRecordingSoftwareContent: SeoPageContent = {
 		{
 			title: "Built-In Thread Commenting",
 			description:
-				"Viewers can leave timestamped comments directly on your video recordings. Collect structured feedback without long email threads or follow-up calls — collaboration is built into every recording Cap shares.",
+				"Viewers can leave timestamped comments directly on your video recordings. Collect structured feedback without long email threads or follow-up calls - collaboration is built into every recording Cap shares.",
 		},
 	],
 
@@ -77,7 +77,7 @@ export const videoRecordingSoftwareContent: SeoPageContent = {
 				),
 				title: "Studio Mode",
 				description:
-					"Completely free for personal use with no time limits. Records at full quality up to 4K with separate screen and webcam tracks. Ideal for tutorials, polished product demos, and professional training videos — no subscription required.",
+					"Completely free for personal use with no time limits. Records at full quality up to 4K with separate screen and webcam tracks. Ideal for tutorials, polished product demos, and professional training videos - no subscription required.",
 			},
 		],
 	},
@@ -147,18 +147,18 @@ export const videoRecordingSoftwareContent: SeoPageContent = {
 
 	comparisonTitle: "How Cap Compares to Other Video Recording Software",
 	comparisonDescription:
-		"The best video recording software for your workflow depends on what you need — here's how Cap stacks up",
+		"The best video recording software for your workflow depends on what you need - here's how Cap stacks up",
 
 	comparison: [
 		{
 			title: "Cap vs Loom",
 			description:
-				"Cap starts at $9.99/month versus Loom's $18/month, and Cap's Studio Mode is completely free with no watermarks. Cap records at up to 4K, is open-source, and supports custom S3 storage — quality and flexibility that Loom's free and paid plans don't match. <a href='/loom-alternative'>See the full Cap vs Loom comparison</a>.",
+				"Cap starts at $9.99/month versus Loom's $18/month, and Cap's Studio Mode is completely free with no watermarks. Cap records at up to 4K, is open-source, and supports custom S3 storage - quality and flexibility that Loom's free and paid plans don't match. <a href='/loom-alternative'>See the full Cap vs Loom comparison</a>.",
 		},
 		{
 			title: "Cap vs Camtasia",
 			description:
-				"Camtasia costs $299.99 and is built around editing rather than instant sharing. Cap is free and covers the full workflow from video recording to sharing — making it the better choice for users who want professional results without enterprise pricing.",
+				"Camtasia costs $299.99 and is built around editing rather than instant sharing. Cap is free and covers the full workflow from video recording to sharing - making it the better choice for users who want professional results without enterprise pricing.",
 		},
 		{
 			title: "Cap vs OBS Studio",
@@ -174,7 +174,7 @@ export const videoRecordingSoftwareContent: SeoPageContent = {
 
 	useCasesTitle: "Who Uses Cap as Their Video Recording Software",
 	useCasesDescription:
-		"From solo developers to enterprise teams — Cap fits every workflow that needs fast, professional video recordings",
+		"From solo developers to enterprise teams - Cap fits every workflow that needs fast, professional video recordings",
 
 	useCases: [
 		{
@@ -224,7 +224,7 @@ export const videoRecordingSoftwareContent: SeoPageContent = {
 		{
 			question: "Is Cap video recording software free?",
 			answer:
-				"Yes. Cap's Studio Mode is completely free for personal use with no time limits, no watermarks, and no hidden fees. Instant Mode is free for recordings up to 5 minutes. Cap Pro at $9.99/month removes Instant Mode limits and adds team features — but the core video recording software is free to use forever.",
+				"Yes. Cap's Studio Mode is completely free for personal use with no time limits, no watermarks, and no hidden fees. Instant Mode is free for recordings up to 5 minutes. Cap Pro at $9.99/month removes Instant Mode limits and adds team features - but the core video recording software is free to use forever.",
 		},
 		{
 			question: "Does Cap video recording software work on Mac and Windows?",
@@ -249,7 +249,7 @@ export const videoRecordingSoftwareContent: SeoPageContent = {
 		{
 			question: "Is Cap open-source video recording software?",
 			answer:
-				"Yes. Cap is fully open-source and MIT-licensed. The complete codebase — desktop app, web app, and media processing pipeline — is publicly available on GitHub. You can audit every line of code, fork the project, and contribute back to the community. <a href='/open-source-screen-recorder'>Learn more about Cap as open-source software</a>.",
+				"Yes. Cap is fully open-source and MIT-licensed. The complete codebase - desktop app, web app, and media processing pipeline - is publicly available on GitHub. You can audit every line of code, fork the project, and contribute back to the community. <a href='/open-source-screen-recorder'>Learn more about Cap as open-source software</a>.",
 		},
 	],
 

@@ -122,7 +122,7 @@ function makeCheckoutSession(overrides: Record<string, unknown> = {}) {
 	};
 }
 
-describe("Stripe webhook — developer credits", () => {
+describe("Stripe webhook - developer credits", () => {
 	let POST: typeof import("@/app/api/webhooks/stripe/route").POST;
 
 	beforeEach(async () => {

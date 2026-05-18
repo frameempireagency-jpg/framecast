@@ -64,7 +64,7 @@ describe("AVI to MP4 FAQ schema validity", () => {
 		{
 			question: "How do I convert AVI to MP4 online?",
 			answer:
-				"Open Cap's AVI to MP4 converter, drag and drop your AVI file (or click to browse), then click Convert. The entire process runs in your browser — your file never leaves your device. Once complete, click Download to save the MP4 file.",
+				"Open Cap's AVI to MP4 converter, drag and drop your AVI file (or click to browse), then click Convert. The entire process runs in your browser - your file never leaves your device. Once complete, click Download to save the MP4 file.",
 		},
 		{
 			question: "Is the AVI to MP4 converter free?",
@@ -99,7 +99,7 @@ describe("AVI to MP4 FAQ schema validity", () => {
 		{
 			question: "Do I need to install any software?",
 			answer:
-				"No. The converter runs entirely in your browser — no downloads, no plugins, no extensions required. Just open the page and start converting. All processing happens locally on your device for complete privacy.",
+				"No. The converter runs entirely in your browser - no downloads, no plugins, no extensions required. Just open the page and start converting. All processing happens locally on your device for complete privacy.",
 		},
 	];
 
@@ -141,7 +141,7 @@ describe("AVI to MP4 HowTo schema validity", () => {
 		},
 		{
 			name: "Start the conversion",
-			text: "Click Convert. The file is processed entirely in your browser using local compute — nothing is uploaded to any server. Conversion time depends on file size and your device speed.",
+			text: "Click Convert. The file is processed entirely in your browser using local compute - nothing is uploaded to any server. Conversion time depends on file size and your device speed.",
 		},
 		{
 			name: "Download your MP4",

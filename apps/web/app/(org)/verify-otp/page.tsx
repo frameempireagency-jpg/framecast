@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import { VerifyOTPForm } from "./form";
 
 export const metadata = {
-	title: "Verify Code | Cap",
+	title: "Verify Code | FrameCast",
 };
 
 export default async function VerifyOTPPage(props: {

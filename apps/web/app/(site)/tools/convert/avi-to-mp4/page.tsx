@@ -5,7 +5,7 @@ import type { ToolPageContent } from "@/components/tools/types";
 import { createBreadcrumbSchema } from "@/utils/web-schema";
 
 export const metadata: Metadata = {
-	title: "AVI to MP4 Converter — Free Online Video Converter | Cap",
+	title: "AVI to MP4 Converter - Free Online Video Converter | Cap",
 	description:
 		"Convert AVI videos to MP4 format directly in your browser. Free, private, no upload needed. Works with old camcorder footage, downloaded files, and any AVI video.",
 	keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		"convert avi video online",
 	],
 	openGraph: {
-		title: "AVI to MP4 Converter — Free Online Video Converter | Cap",
+		title: "AVI to MP4 Converter - Free Online Video Converter | Cap",
 		description:
 			"Convert AVI videos to the universally compatible MP4 format directly in your browser. No uploads, no installs, 100% private. Works with camcorder footage and any AVI file.",
 		url: "https://cap.so/tools/convert/avi-to-mp4",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 				url: "https://cap.so/og.png",
 				width: 1200,
 				height: 630,
-				alt: "Cap AVI to MP4 Converter — Free Online Video Converter",
+				alt: "Cap AVI to MP4 Converter - Free Online Video Converter",
 			},
 		],
 		locale: "en_US",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "AVI to MP4 Converter — Free Online Video Converter | Cap",
+		title: "AVI to MP4 Converter - Free Online Video Converter | Cap",
 		description:
 			"Convert AVI to MP4 directly in your browser. No uploads, no installs, 100% private.",
 		images: ["https://cap.so/og.png"],
@@ -50,7 +50,7 @@ const faqs = [
 	{
 		question: "How do I convert AVI to MP4 online?",
 		answer:
-			"Open Cap's AVI to MP4 converter, drag and drop your AVI file (or click to browse), then click Convert. The entire process runs in your browser — your file never leaves your device. Once complete, click Download to save the MP4 file.",
+			"Open Cap's AVI to MP4 converter, drag and drop your AVI file (or click to browse), then click Convert. The entire process runs in your browser - your file never leaves your device. Once complete, click Download to save the MP4 file.",
 	},
 	{
 		question: "Is the AVI to MP4 converter free?",
@@ -85,7 +85,7 @@ const faqs = [
 	{
 		question: "Do I need to install any software?",
 		answer:
-			"No. The converter runs entirely in your browser — no downloads, no plugins, no extensions required. Just open the page and start converting. All processing happens locally on your device for complete privacy.",
+			"No. The converter runs entirely in your browser - no downloads, no plugins, no extensions required. Just open the page and start converting. All processing happens locally on your device for complete privacy.",
 	},
 ];
 
@@ -96,7 +96,7 @@ const howToSteps = [
 	},
 	{
 		name: "Start the conversion",
-		text: "Click Convert. The file is processed entirely in your browser using local compute — nothing is uploaded to any server. Conversion time depends on file size and your device speed.",
+		text: "Click Convert. The file is processed entirely in your browser using local compute - nothing is uploaded to any server. Conversion time depends on file size and your device speed.",
 	},
 	{
 		name: "Download your MP4",
@@ -149,15 +149,15 @@ export default function AVIToMP4Page() {
 	const pageContent: ToolPageContent = {
 		title: "AVI to MP4 Converter",
 		description:
-			"Convert legacy AVI videos to the universally compatible MP4 format directly in your browser — free, private, and no installation required",
+			"Convert legacy AVI videos to the universally compatible MP4 format directly in your browser - free, private, and no installation required",
 		featuresTitle: "Why Use This AVI to MP4 Converter",
 		featuresDescription:
-			"A fast, free, and private way to convert AVI files to MP4 — entirely in your browser with no uploads and no quality loss.",
+			"A fast, free, and private way to convert AVI files to MP4 - entirely in your browser with no uploads and no quality loss.",
 		features: [
 			{
 				title: "100% Browser-Based",
 				description:
-					"The entire conversion runs locally in your browser. No server uploads, no processing queues — your files stay on your device at all times.",
+					"The entire conversion runs locally in your browser. No server uploads, no processing queues - your files stay on your device at all times.",
 			},
 			{
 				title: "Works with Old Camcorder & Downloaded Files",
@@ -177,7 +177,7 @@ export default function AVIToMP4Page() {
 			{
 				title: "No Sign-Up or Installation",
 				description:
-					"No software downloads, browser extensions, or accounts required. Just open the page and start converting — works instantly in Chrome, Edge, and Brave.",
+					"No software downloads, browser extensions, or accounts required. Just open the page and start converting - works instantly in Chrome, Edge, and Brave.",
 			},
 			{
 				title: "Unlimited Free Conversions",
@@ -189,7 +189,7 @@ export default function AVIToMP4Page() {
 		cta: {
 			title: "Cap is the open source Loom alternative",
 			description:
-				"Record, edit, and share video messages with Cap. 100% open source and privacy focused. Records directly to MP4 — no conversion needed.",
+				"Record, edit, and share video messages with Cap. 100% open source and privacy focused. Records directly to MP4 - no conversion needed.",
 			buttonText: "Download Cap Free",
 		},
 	};

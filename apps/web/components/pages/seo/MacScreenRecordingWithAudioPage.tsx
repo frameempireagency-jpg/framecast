@@ -5,34 +5,34 @@ import { SeoPageTemplate } from "../../seo/SeoPageTemplate";
 import type { SeoPageContent } from "../../seo/types";
 
 export const macScreenRecordingWithAudioContent: SeoPageContent = {
-	title: "Mac Screen Recording with Audio — Capture System Sound & Mic | Cap",
+	title: "Mac Screen Recording with Audio - Capture System Sound & Mic | Cap",
 	description:
-		"Record your Mac screen with both system audio and microphone using Cap. The free, open-source solution to macOS's missing internal audio recording. No plugins, no setup — just press record.",
+		"Record your Mac screen with both system audio and microphone using Cap. The free, open-source solution to macOS's missing internal audio recording. No plugins, no setup - just press record.",
 
 	featuresTitle: "Everything You Need for Mac Screen Recording with Audio",
 	featuresDescription:
-		"Cap solves the biggest frustration with Mac screen recording — capturing internal audio — and adds professional features on top",
+		"Cap solves the biggest frustration with Mac screen recording - capturing internal audio - and adds professional features on top",
 
 	features: [
 		{
 			title: "System Audio Capture Built In",
 			description:
-				"macOS does not capture internal audio by default. Cap solves this natively — no BlackHole, no Loopback, no virtual audio drivers required. Enable system audio in Cap's settings and it records app sounds, music, and notification audio alongside your screen without any extra configuration.",
+				"macOS does not capture internal audio by default. Cap solves this natively - no BlackHole, no Loopback, no virtual audio drivers required. Enable system audio in Cap's settings and it records app sounds, music, and notification audio alongside your screen without any extra configuration.",
 		},
 		{
 			title: "Microphone and System Audio Simultaneously",
 			description:
-				"Cap records your microphone and system audio at the same time in a single recording. Narrate your screen while keeping all the original application sounds — perfect for software tutorials, walkthroughs, and presentation recordings on Mac.",
+				"Cap records your microphone and system audio at the same time in a single recording. Narrate your screen while keeping all the original application sounds - perfect for software tutorials, walkthroughs, and presentation recordings on Mac.",
 		},
 		{
 			title: "Up to 4K at 60fps on macOS",
 			description:
-				"Cap is natively optimized for macOS and records at resolutions up to 4K at 60 frames per second. Every screen recording is sharp, smooth, and professional — ideal for Retina displays on MacBook Pro and iMac.",
+				"Cap is natively optimized for macOS and records at resolutions up to 4K at 60 frames per second. Every screen recording is sharp, smooth, and professional - ideal for Retina displays on MacBook Pro and iMac.",
 		},
 		{
 			title: "Webcam Overlay While Recording",
 			description:
-				"Add a picture-in-picture webcam overlay to any Mac screen recording with audio. Record your face alongside your screen for a more personal, engaging experience — great for tutorials, product demos, and async video messages.",
+				"Add a picture-in-picture webcam overlay to any Mac screen recording with audio. Record your face alongside your screen for a more personal, engaging experience - great for tutorials, product demos, and async video messages.",
 		},
 		{
 			title: "Instant Shareable Links",
@@ -47,12 +47,12 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 		{
 			title: "AI-Generated Captions from Your Audio",
 			description:
-				"Cap automatically transcribes your screen recording audio into accurate captions. Whether you are recording a tutorial narration or capturing a presentation, captions are generated automatically — no manual effort required.",
+				"Cap automatically transcribes your screen recording audio into accurate captions. Whether you are recording a tutorial narration or capturing a presentation, captions are generated automatically - no manual effort required.",
 		},
 		{
 			title: "Open Source and Privacy-First",
 			description:
-				"Cap is fully open-source and supports your own S3-compatible storage for complete data ownership. Your Mac screen recordings with audio stay private and under your control — always. <a href='/open-source-screen-recorder'>Learn more about Cap as open-source software</a>.",
+				"Cap is fully open-source and supports your own S3-compatible storage for complete data ownership. Your Mac screen recordings with audio stay private and under your control - always. <a href='/open-source-screen-recorder'>Learn more about Cap as open-source software</a>.",
 		},
 	],
 
@@ -159,7 +159,7 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 		{
 			title: "Cap vs macOS Cmd+Shift+5",
 			description:
-				"The macOS built-in screenshot toolbar (Cmd+Shift+5) can record your screen but cannot capture system audio. It records microphone only. Cap captures both system audio and microphone natively on macOS without any additional tools — making it the far superior choice for anyone who needs audio in their Mac screen recordings. <a href='/screen-recorder-mac'>See all reasons to use Cap on Mac</a>.",
+				"The macOS built-in screenshot toolbar (Cmd+Shift+5) can record your screen but cannot capture system audio. It records microphone only. Cap captures both system audio and microphone natively on macOS without any additional tools - making it the far superior choice for anyone who needs audio in their Mac screen recordings. <a href='/screen-recorder-mac'>See all reasons to use Cap on Mac</a>.",
 		},
 		{
 			title: "Cap vs QuickTime Player",
@@ -169,7 +169,7 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 		{
 			title: "Cap vs OBS Studio for Mac",
 			description:
-				"OBS Studio can record Mac screen with audio, but it requires installing and configuring a virtual audio device like BlackHole to capture system sound — a multi-step process that is easy to get wrong. Cap handles all audio routing automatically with zero configuration. <a href='/screen-recording-software'>Compare all screen recording software</a>.",
+				"OBS Studio can record Mac screen with audio, but it requires installing and configuring a virtual audio device like BlackHole to capture system sound - a multi-step process that is easy to get wrong. Cap handles all audio routing automatically with zero configuration. <a href='/screen-recording-software'>Compare all screen recording software</a>.",
 		},
 		{
 			title: "Cap vs Loom on Mac",
@@ -181,16 +181,16 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 	migrationGuide: {
 		title: "How to Record Your Mac Screen with Audio Using Cap",
 		steps: [
-			"Download Cap for free from cap.so/download and install it on your Mac. Grant the required Screen Recording and Microphone permissions when prompted — these are needed to capture your display and audio.",
+			"Download Cap for free from cap.so/download and install it on your Mac. Grant the required Screen Recording and Microphone permissions when prompted - these are needed to capture your display and audio.",
 			"Open Cap from your menu bar. In the recording settings, toggle on Microphone and System Audio. You can enable one or both depending on whether you want narration, app sounds, or both in your recording.",
-			"Choose your recording source — full screen, a specific window, or a custom region. Click the record button to begin capturing your Mac screen with audio immediately.",
+			"Choose your recording source - full screen, a specific window, or a custom region. Click the record button to begin capturing your Mac screen with audio immediately.",
 			"When you are done, click Stop. Cap processes your recording and gives you a shareable link instantly, or you can export it as an MP4 file for use in editing software or local storage.",
 		],
 	},
 
 	useCasesTitle: "Why People Record Mac Screen with Audio",
 	useCasesDescription:
-		"From tutorial creators to remote teams — here are the most common reasons Mac users need screen recording with audio",
+		"From tutorial creators to remote teams - here are the most common reasons Mac users need screen recording with audio",
 
 	useCases: [
 		{
@@ -201,12 +201,12 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 		{
 			title: "Recording Video Calls and Presentations",
 			description:
-				"Capture Zoom calls, Google Meet sessions, or Keynote presentations in full — screen and audio together. Cap records system audio natively on Mac, so you never miss a word from participants or presenter.",
+				"Capture Zoom calls, Google Meet sessions, or Keynote presentations in full - screen and audio together. Cap records system audio natively on Mac, so you never miss a word from participants or presenter.",
 		},
 		{
 			title: "Bug Reports with Sound Context",
 			description:
-				"Some bugs involve audio — unexpected sounds, missing audio feedback, or broken voice responses. Recording Mac screen with audio gives your development team the full picture when you file a bug report.",
+				"Some bugs involve audio - unexpected sounds, missing audio feedback, or broken voice responses. Recording Mac screen with audio gives your development team the full picture when you file a bug report.",
 		},
 		{
 			title: "Async Team Communication",
@@ -225,12 +225,12 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 		},
 	],
 
-	faqsTitle: "Mac Screen Recording with Audio — FAQ",
+	faqsTitle: "Mac Screen Recording with Audio - FAQ",
 	faqs: [
 		{
 			question: "Why doesn't macOS record internal audio by default?",
 			answer:
-				"Apple restricts internal audio capture on macOS for privacy and copyright protection reasons. The built-in recorder (Cmd+Shift+5) and QuickTime Player can only record your microphone — not sounds playing from apps or the system. To capture internal audio on Mac, you either need a third-party audio routing tool like BlackHole or an app like Cap that handles system audio capture natively without any extra configuration.",
+				"Apple restricts internal audio capture on macOS for privacy and copyright protection reasons. The built-in recorder (Cmd+Shift+5) and QuickTime Player can only record your microphone - not sounds playing from apps or the system. To capture internal audio on Mac, you either need a third-party audio routing tool like BlackHole or an app like Cap that handles system audio capture natively without any extra configuration.",
 		},
 		{
 			question: "How do I record my Mac screen with internal audio?",
@@ -241,7 +241,7 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 			question:
 				"Can I record Mac screen with both microphone and system audio?",
 			answer:
-				"Yes — with Cap you can record both microphone and system audio simultaneously on Mac. Before starting a recording, enable both audio sources in Cap's settings. Cap mixes or captures both tracks and includes them in your recording. This is ideal for tutorials where you narrate while application sounds play, or for recording video calls where you want to capture all participants.",
+				"Yes - with Cap you can record both microphone and system audio simultaneously on Mac. Before starting a recording, enable both audio sources in Cap's settings. Cap mixes or captures both tracks and includes them in your recording. This is ideal for tutorials where you narrate while application sounds play, or for recording video calls where you want to capture all participants.",
 		},
 		{
 			question: "Does Cap require BlackHole or Loopback for audio on Mac?",
@@ -261,7 +261,7 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 		{
 			question: "How do I share a Mac screen recording with audio?",
 			answer:
-				"With Cap, sharing is automatic. When you stop recording, Cap processes your Mac screen recording with audio and generates a shareable link in seconds. Copy the link and paste it anywhere — Slack, email, Notion, or a browser. Viewers get instant access without needing to download anything.",
+				"With Cap, sharing is automatic. When you stop recording, Cap processes your Mac screen recording with audio and generates a shareable link in seconds. Copy the link and paste it anywhere - Slack, email, Notion, or a browser. Viewers get instant access without needing to download anything.",
 		},
 		{
 			question: "Can I record a specific app window with audio on Mac?",
@@ -277,7 +277,7 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 	},
 
 	cta: {
-		title: "Record Your Mac Screen with Audio — Free",
+		title: "Record Your Mac Screen with Audio - Free",
 		buttonText: "Download Cap Free for Mac",
 		secondaryButtonText: "Try Instant Mode in Browser",
 	},

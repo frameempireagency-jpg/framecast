@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 	title:
 		"Video Speed Controller Online – Speed Up or Slow Down Videos Free | Cap",
 	description:
-		"Free online video speed controller. Adjust playback from 0.25× to 3× without quality loss — processed locally in your browser for complete privacy. No uploads required.",
+		"Free online video speed controller. Adjust playback from 0.25× to 3× without quality loss - processed locally in your browser for complete privacy. No uploads required.",
 	keywords: [
 		"video speed controller",
 		"speed up video online",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 		title:
 			"Video Speed Controller Online – Speed Up or Slow Down Videos Free | Cap",
 		description:
-			"Adjust video playback speed from 0.25× to 3× directly in your browser. Free, private, no uploads — works with MP4, WebM, MOV, AVI and MKV.",
+			"Adjust video playback speed from 0.25× to 3× directly in your browser. Free, private, no uploads - works with MP4, WebM, MOV, AVI and MKV.",
 		url: "https://cap.so/tools/video-speed-controller",
 		siteName: "Cap",
 		images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 				url: "https://cap.so/og.png",
 				width: 1200,
 				height: 630,
-				alt: "Cap Video Speed Controller — Free Online Video Speed Changer",
+				alt: "Cap Video Speed Controller - Free Online Video Speed Changer",
 			},
 		],
 		locale: "en_US",
@@ -53,12 +53,12 @@ const faqs = [
 	{
 		question: "How do I change the speed of a video online?",
 		answer:
-			"Open Cap's Video Speed Controller, drag and drop your video file (or click to browse), select your target speed from 0.25× to 3×, then click Speed Up or Slow Down Video. The entire process runs in your browser — your file never leaves your device. Once processing is complete, preview and download the result.",
+			"Open Cap's Video Speed Controller, drag and drop your video file (or click to browse), select your target speed from 0.25× to 3×, then click Speed Up or Slow Down Video. The entire process runs in your browser - your file never leaves your device. Once processing is complete, preview and download the result.",
 	},
 	{
 		question: "What video formats does the speed controller support?",
 		answer:
-			"MP4, WebM, MOV, AVI and MKV are all supported — essentially any video format modern browsers can decode. Chrome is recommended for the best compatibility and performance.",
+			"MP4, WebM, MOV, AVI and MKV are all supported - essentially any video format modern browsers can decode. Chrome is recommended for the best compatibility and performance.",
 	},
 	{
 		question: "Is the video speed controller free?",
@@ -68,7 +68,7 @@ const faqs = [
 	{
 		question: "Will my video quality change when I adjust the speed?",
 		answer:
-			"No. The tool preserves your original resolution and bitrate — only the playback speed changes. There is no re-encoding that degrades visual quality. Audio pitch is also automatically corrected to stay natural at the new speed.",
+			"No. The tool preserves your original resolution and bitrate - only the playback speed changes. There is no re-encoding that degrades visual quality. Audio pitch is also automatically corrected to stay natural at the new speed.",
 	},
 	{
 		question: "Is there a file size limit?",
@@ -83,12 +83,12 @@ const faqs = [
 	{
 		question: "Does this work on iPhone or Android?",
 		answer:
-			"Yes — modern Safari, Chrome, and Firefox on mobile are supported, though Chrome on desktop delivers the most reliable performance. If you encounter issues on mobile, try Chrome or Firefox instead of the default browser.",
+			"Yes - modern Safari, Chrome, and Firefox on mobile are supported, though Chrome on desktop delivers the most reliable performance. If you encounter issues on mobile, try Chrome or Firefox instead of the default browser.",
 	},
 	{
 		question: "Do I need to install any software?",
 		answer:
-			"No. The tool runs entirely in your browser — no downloads, no plugins, no extensions required. Just open the page and start adjusting your video speed. All processing happens locally on your device for complete privacy.",
+			"No. The tool runs entirely in your browser - no downloads, no plugins, no extensions required. Just open the page and start adjusting your video speed. All processing happens locally on your device for complete privacy.",
 	},
 ];
 
@@ -103,7 +103,7 @@ const howToSteps = [
 	},
 	{
 		name: "Process and download your video",
-		text: "Click Speed Up or Slow Down Video. Processing runs entirely in your browser — nothing is uploaded to any server. Once complete, preview the result and click Download to save the speed-adjusted video.",
+		text: "Click Speed Up or Slow Down Video. Processing runs entirely in your browser - nothing is uploaded to any server. Once complete, preview the result and click Download to save the speed-adjusted video.",
 	},
 ];
 
@@ -151,15 +151,15 @@ export default function SpeedControllerPage() {
 	const pageContent: ToolPageContent = {
 		title: "Video Speed Controller (0.25×–3×)",
 		description:
-			"Speed up or slow down any video directly in your browser — free, private, and no installation required",
+			"Speed up or slow down any video directly in your browser - free, private, and no installation required",
 		featuresTitle: "Why Use This Online Video Speed Controller",
 		featuresDescription:
-			"A fast, free, and private way to adjust video speed — entirely in your browser with no uploads and no quality loss.",
+			"A fast, free, and private way to adjust video speed - entirely in your browser with no uploads and no quality loss.",
 		features: [
 			{
 				title: "100% Browser-Based",
 				description:
-					"All processing runs locally in your browser. No server uploads, no processing queues — your files stay on your device at all times.",
+					"All processing runs locally in your browser. No server uploads, no processing queues - your files stay on your device at all times.",
 			},
 			{
 				title: "Wide Speed Range (0.25×–3×)",
@@ -169,7 +169,7 @@ export default function SpeedControllerPage() {
 			{
 				title: "No Quality Loss",
 				description:
-					"The tool preserves your original resolution and bitrate. Only the playback speed changes — there is no re-encoding that degrades visual quality.",
+					"The tool preserves your original resolution and bitrate. Only the playback speed changes - there is no re-encoding that degrades visual quality.",
 			},
 			{
 				title: "Complete Privacy",
@@ -179,7 +179,7 @@ export default function SpeedControllerPage() {
 			{
 				title: "No Sign-Up or Installation",
 				description:
-					"No software downloads, browser extensions, or accounts required. Just open the page and start adjusting — works instantly in Chrome, Edge, and Brave.",
+					"No software downloads, browser extensions, or accounts required. Just open the page and start adjusting - works instantly in Chrome, Edge, and Brave.",
 			},
 			{
 				title: "Supports All Common Formats",
@@ -191,7 +191,7 @@ export default function SpeedControllerPage() {
 		cta: {
 			title: "Cap is the open source Loom alternative",
 			description:
-				"Record, edit, and share video messages with Cap. 100% open source and privacy focused. No speed adjustments needed — just hit record.",
+				"Record, edit, and share video messages with Cap. 100% open source and privacy focused. No speed adjustments needed - just hit record.",
 			buttonText: "Download Cap Free",
 		},
 	};

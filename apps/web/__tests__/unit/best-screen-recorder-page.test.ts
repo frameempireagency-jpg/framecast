@@ -88,7 +88,7 @@ describe("BestScreenRecorderPage FAQ schema", () => {
 		{
 			question: "What is the best screen recorder?",
 			answer:
-				"Cap is the best screen recorder for most users — it records in 4K at 60fps, works on Mac and Windows, has no watermarks, and generates shareable links instantly.",
+				"Cap is the best screen recorder for most users - it records in 4K at 60fps, works on Mac and Windows, has no watermarks, and generates shareable links instantly.",
 		},
 		{
 			question: "What is the best free screen recorder?",

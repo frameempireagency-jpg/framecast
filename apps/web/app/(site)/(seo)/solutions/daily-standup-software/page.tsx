@@ -4,11 +4,11 @@ import { DailyStandupSoftwarePage } from "@/components/pages/seo/DailyStandupSof
 export const metadata: Metadata = {
 	title: "Daily Standup Software: Streamline Your Agile Meetings with Cap",
 	description:
-		"Looking for daily standup software? Discover how Cap helps remote or hybrid teams run async standups efficiently—no more timezone conflicts!",
+		"Looking for daily standup software? Discover how Cap helps remote or hybrid teams run async standups efficiently-no more timezone conflicts!",
 	openGraph: {
 		title: "Daily Standup Software: Streamline Your Agile Meetings with Cap",
 		description:
-			"Looking for daily standup software? Discover how Cap helps remote or hybrid teams run async standups efficiently—no more timezone conflicts!",
+			"Looking for daily standup software? Discover how Cap helps remote or hybrid teams run async standups efficiently-no more timezone conflicts!",
 		url: "https://cap.so/solutions/daily-standup-software",
 		siteName: "Cap",
 		images: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		title: "Daily Standup Software: Streamline Your Agile Meetings with Cap",
 		description:
-			"Looking for daily standup software? Discover how Cap helps remote or hybrid teams run async standups efficiently—no more timezone conflicts!",
+			"Looking for daily standup software? Discover how Cap helps remote or hybrid teams run async standups efficiently-no more timezone conflicts!",
 		images: ["https://cap.so/og.png"],
 	},
 	alternates: {

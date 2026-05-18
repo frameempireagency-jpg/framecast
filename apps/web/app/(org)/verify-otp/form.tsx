@@ -224,24 +224,7 @@ export function VerifyOTPForm({
 			</div>
 
 			<p className="mt-6 text-xs text-center text-gray-9">
-				By entering your email, you acknowledge that you have both read and
-				agree to Cap's{" "}
-				<Link
-					href="/terms"
-					target="_blank"
-					className="text-xs font-semibold text-gray-12 hover:text-blue-300"
-				>
-					Terms of Service
-				</Link>{" "}
-				and{" "}
-				<Link
-					href="/privacy"
-					target="_blank"
-					className="text-xs font-semibold text-gray-12 hover:text-blue-300"
-				>
-					Privacy Policy
-				</Link>
-				.
+				Internal Frame Empire use only.
 			</p>
 		</motion.div>
 	);

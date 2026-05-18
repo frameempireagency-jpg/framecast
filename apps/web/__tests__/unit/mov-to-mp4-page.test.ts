@@ -59,7 +59,7 @@ describe("MOV to MP4 FAQ schema validity", () => {
 		{
 			question: "How do I convert MOV to MP4 online?",
 			answer:
-				"Open Cap's MOV to MP4 converter, drag and drop your MOV file (or click to browse), then click Convert. The entire process runs in your browser — your file never leaves your device. Once complete, click Download to save the MP4 file.",
+				"Open Cap's MOV to MP4 converter, drag and drop your MOV file (or click to browse), then click Convert. The entire process runs in your browser - your file never leaves your device. Once complete, click Download to save the MP4 file.",
 		},
 		{
 			question: "Is the MOV to MP4 converter free?",
@@ -74,7 +74,7 @@ describe("MOV to MP4 FAQ schema validity", () => {
 		{
 			question: "Will converting MOV to MP4 reduce video quality?",
 			answer:
-				"Quality is preserved as closely as possible during conversion. The converter uses your browser's native video decoding and re-encodes to H.264 MP4, which is visually lossless at typical settings. For most use cases — sharing, uploading, or playing on other devices — the output quality will look identical to the original.",
+				"Quality is preserved as closely as possible during conversion. The converter uses your browser's native video decoding and re-encodes to H.264 MP4, which is visually lossless at typical settings. For most use cases - sharing, uploading, or playing on other devices - the output quality will look identical to the original.",
 		},
 		{
 			question: "Is there a file size limit?",
@@ -94,7 +94,7 @@ describe("MOV to MP4 FAQ schema validity", () => {
 		{
 			question: "Do I need to install any software?",
 			answer:
-				"No. The converter runs entirely in your browser — no downloads, no plugins, no extensions required. Just open the page and start converting. All processing happens locally on your device for complete privacy.",
+				"No. The converter runs entirely in your browser - no downloads, no plugins, no extensions required. Just open the page and start converting. All processing happens locally on your device for complete privacy.",
 		},
 	];
 
@@ -136,7 +136,7 @@ describe("MOV to MP4 HowTo schema validity", () => {
 		},
 		{
 			name: "Start the conversion",
-			text: "Click Convert. The file is processed entirely in your browser using local compute — nothing is uploaded to any server. Conversion time depends on file size and your device speed.",
+			text: "Click Convert. The file is processed entirely in your browser using local compute - nothing is uploaded to any server. Conversion time depends on file size and your device speed.",
 		},
 		{
 			name: "Download your MP4",

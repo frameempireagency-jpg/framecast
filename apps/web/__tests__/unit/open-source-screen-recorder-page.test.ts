@@ -119,7 +119,7 @@ describe("OpenSourceScreenRecorderPage FAQ schema", () => {
 		{
 			question: "Can I contribute to Cap's development?",
 			answer:
-				"Absolutely. Cap welcomes contributions of all kinds — bug reports, feature requests, and code contributions.",
+				"Absolutely. Cap welcomes contributions of all kinds - bug reports, feature requests, and code contributions.",
 		},
 		{
 			question: "Does Cap work on Mac and Windows?",

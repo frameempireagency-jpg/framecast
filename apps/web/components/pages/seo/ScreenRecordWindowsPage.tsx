@@ -7,13 +7,13 @@ import type { SeoPageContent } from "../../seo/types";
 
 export const screenRecordWindowsContent: SeoPageContent = {
 	title:
-		"Free Screen Recorder for Windows 10 & 11 — Record Your Screen Instantly",
+		"Free Screen Recorder for Windows 10 & 11 - Record Your Screen Instantly",
 	description:
-		"Cap is the best free screen recorder for Windows. Record your screen in HD with audio, webcam overlay, and instant sharing on Windows 10 and Windows 11. No watermarks, no time limits — a lightweight alternative to OBS and Windows Game Bar.",
+		"Cap is the best free screen recorder for Windows. Record your screen in HD with audio, webcam overlay, and instant sharing on Windows 10 and Windows 11. No watermarks, no time limits - a lightweight alternative to OBS and Windows Game Bar.",
 
 	featuresTitle: "Why Cap Is the Best Screen Recorder for Windows",
 	featuresDescription:
-		"Everything Windows users need to record, edit, and share screen recordings — without the bloat of traditional screen recording software for PC",
+		"Everything Windows users need to record, edit, and share screen recordings - without the bloat of traditional screen recording software for PC",
 
 	features: [
 		{
@@ -24,12 +24,12 @@ export const screenRecordWindowsContent: SeoPageContent = {
 		{
 			title: "Webcam Overlay for Facecam Recordings",
 			description:
-				"Add a picture-in-picture webcam bubble to any screen recording. Resize and reposition the overlay anywhere on screen — perfect for product demos, presentations, and video messages where your audience needs to see you.",
+				"Add a picture-in-picture webcam bubble to any screen recording. Resize and reposition the overlay anywhere on screen - perfect for product demos, presentations, and video messages where your audience needs to see you.",
 		},
 		{
 			title: "Instant Link Sharing",
 			description:
-				"Finish recording and get a shareable link in seconds. No waiting for uploads or renders — Cap generates a link the moment you stop recording so you can paste it into Slack, email, or a support ticket immediately.",
+				"Finish recording and get a shareable link in seconds. No waiting for uploads or renders - Cap generates a link the moment you stop recording so you can paste it into Slack, email, or a support ticket immediately.",
 		},
 		{
 			title: "100% Free with No Watermarks",
@@ -39,12 +39,12 @@ export const screenRecordWindowsContent: SeoPageContent = {
 		{
 			title: "Lightweight & Fast on Any Windows PC",
 			description:
-				"Cap is built with native performance in mind. It uses minimal CPU and RAM so you can record smoothly even on older Windows 10 laptops. No lag, no dropped frames, no fan noise — just clean recordings every time.",
+				"Cap is built with native performance in mind. It uses minimal CPU and RAM so you can record smoothly even on older Windows 10 laptops. No lag, no dropped frames, no fan noise - just clean recordings every time.",
 		},
 		{
 			title: "Built-In Studio Editor",
 			description:
-				"Trim, crop, and add backgrounds to your recordings without leaving Cap. The studio editor lets you polish your screen recordings before sharing — no need to export to a separate video editor.",
+				"Trim, crop, and add backgrounds to your recordings without leaving Cap. The studio editor lets you polish your screen recordings before sharing - no need to export to a separate video editor.",
 		},
 		{
 			title: "System Audio + Microphone Recording",
@@ -54,19 +54,19 @@ export const screenRecordWindowsContent: SeoPageContent = {
 		{
 			title: "Open Source & Privacy-First",
 			description:
-				"Cap is fully <a href='https://github.com/CapSoftware/Cap'>open source</a>. Your recordings stay on your machine unless you choose to share them. No telemetry, no tracking, no data harvesting — a transparent <a href='/loom-alternative'>Loom alternative</a> you can trust.",
+				"Cap is fully <a href='https://github.com/CapSoftware/Cap'>open source</a>. Your recordings stay on your machine unless you choose to share them. No telemetry, no tracking, no data harvesting - a transparent <a href='/loom-alternative'>Loom alternative</a> you can trust.",
 		},
 	],
 
 	comparisonTitle: "Cap vs Windows Game Bar: Why Upgrade?",
 	comparisonDescription:
-		"Windows Game Bar (Win + G) ships with Windows 10 and 11, but it was designed for gaming clips — not professional screen recording. Here is how Cap compares",
+		"Windows Game Bar (Win + G) ships with Windows 10 and 11, but it was designed for gaming clips - not professional screen recording. Here is how Cap compares",
 
 	comparison: [
 		{
 			title: "Record Any Window or Region",
 			description:
-				"Windows Game Bar can only record a single application window and cannot capture the desktop or File Explorer. Cap lets you record your full screen, any window, or a custom-drawn region — perfect for multi-app workflows and tutorials.",
+				"Windows Game Bar can only record a single application window and cannot capture the desktop or File Explorer. Cap lets you record your full screen, any window, or a custom-drawn region - perfect for multi-app workflows and tutorials.",
 		},
 		{
 			title: "Webcam Overlay Built In",
@@ -76,7 +76,7 @@ export const screenRecordWindowsContent: SeoPageContent = {
 		{
 			title: "Instant Shareable Links",
 			description:
-				"Game Bar saves an MP4 to your Videos folder and that is it. Cap generates a shareable link the moment you stop recording — no manual upload required.",
+				"Game Bar saves an MP4 to your Videos folder and that is it. Cap generates a shareable link the moment you stop recording - no manual upload required.",
 		},
 		{
 			title: "No Time Limits or File Size Caps",
@@ -104,7 +104,7 @@ export const screenRecordWindowsContent: SeoPageContent = {
 			[
 				"Full Screen Recording",
 				{ text: "Yes", status: "positive" },
-				{ text: "No — single app only", status: "negative" },
+				{ text: "No - single app only", status: "negative" },
 				{ text: "Yes", status: "positive" },
 			],
 			[
@@ -127,7 +127,7 @@ export const screenRecordWindowsContent: SeoPageContent = {
 			],
 			[
 				"Instant Link Sharing",
-				{ text: "Yes — auto-generated", status: "positive" },
+				{ text: "Yes - auto-generated", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 			],
@@ -155,7 +155,7 @@ export const screenRecordWindowsContent: SeoPageContent = {
 	recordingModes: {
 		title: "Two Ways to Record on Windows",
 		description:
-			"Cap gives you flexible recording options to match your workflow — whether you need a quick screen capture or a polished studio recording",
+			"Cap gives you flexible recording options to match your workflow - whether you need a quick screen capture or a polished studio recording",
 		modes: [
 			{
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
@@ -173,7 +173,7 @@ export const screenRecordWindowsContent: SeoPageContent = {
 				),
 				title: "Studio Mode",
 				description:
-					"Record locally, then polish your video with the built-in editor before sharing. Add custom backgrounds, trim dead air, and produce professional-quality tutorials and demos — all free on Windows.",
+					"Record locally, then polish your video with the built-in editor before sharing. Add custom backgrounds, trim dead air, and produce professional-quality tutorials and demos - all free on Windows.",
 			},
 		],
 	},
@@ -191,7 +191,7 @@ export const screenRecordWindowsContent: SeoPageContent = {
 		{
 			title: "Product Demos & Sales Videos",
 			description:
-				"Show prospects exactly how your product works on their Windows PC. Cap lets you record polished demo videos with facecam and share them instantly — no editing software needed.",
+				"Show prospects exactly how your product works on their Windows PC. Cap lets you record polished demo videos with facecam and share them instantly - no editing software needed.",
 		},
 		{
 			title: "Bug Reports & QA Feedback",
@@ -201,7 +201,7 @@ export const screenRecordWindowsContent: SeoPageContent = {
 		{
 			title: "Remote Team Communication",
 			description:
-				"Replace long meetings with short, async screen recordings. Walk your team through code reviews, design feedback, or project updates — they can watch on their own time.",
+				"Replace long meetings with short, async screen recordings. Walk your team through code reviews, design feedback, or project updates - they can watch on their own time.",
 		},
 		{
 			title: "Educational Lectures & Training",
@@ -211,7 +211,7 @@ export const screenRecordWindowsContent: SeoPageContent = {
 		{
 			title: "Client Presentations & Reports",
 			description:
-				"Record your slide deck with a facecam overlay and narration. Share the link with clients who missed the live meeting — they get the full experience without scheduling another call.",
+				"Record your slide deck with a facecam overlay and narration. Share the link with clients who missed the live meeting - they get the full experience without scheduling another call.",
 		},
 	],
 
@@ -245,12 +245,12 @@ export const screenRecordWindowsContent: SeoPageContent = {
 		{
 			question: "How does Cap compare to OBS for Windows screen recording?",
 			answer:
-				"OBS is a powerful streaming and recording tool, but it is designed for broadcasters and has a steep learning curve. Cap is built for fast screen recording and sharing — you can go from zero to a shareable recording in under two minutes. If you need streaming overlays and multi-scene switching, use OBS. If you need quick, polished screen recordings with instant links, Cap is the better choice.",
+				"OBS is a powerful streaming and recording tool, but it is designed for broadcasters and has a steep learning curve. Cap is built for fast screen recording and sharing - you can go from zero to a shareable recording in under two minutes. If you need streaming overlays and multi-scene switching, use OBS. If you need quick, polished screen recordings with instant links, Cap is the better choice.",
 		},
 		{
 			question: "Can I record a specific window or region on Windows?",
 			answer:
-				"Yes. Cap supports three capture modes on Windows: full screen, single window, and custom region. Select your mode before recording, and Cap captures exactly what you need — nothing more, nothing less.",
+				"Yes. Cap supports three capture modes on Windows: full screen, single window, and custom region. Select your mode before recording, and Cap captures exactly what you need - nothing more, nothing less.",
 		},
 		{
 			question: "Does Cap add a watermark to recordings?",
@@ -266,7 +266,7 @@ export const screenRecordWindowsContent: SeoPageContent = {
 			question:
 				"Is Cap better than Windows Snipping Tool for screen recording?",
 			answer:
-				"Windows Snipping Tool (available on Windows 11) can record your screen but offers no audio recording, no webcam overlay, no editing, and no sharing features. Cap records with audio, adds facecam, includes a built-in editor, and generates instant share links — making it a far more complete <a href='/screen-recording-software'>screen recording solution</a> for Windows.",
+				"Windows Snipping Tool (available on Windows 11) can record your screen but offers no audio recording, no webcam overlay, no editing, and no sharing features. Cap records with audio, adds facecam, includes a built-in editor, and generates instant share links - making it a far more complete <a href='/screen-recording-software'>screen recording solution</a> for Windows.",
 		},
 	],
 

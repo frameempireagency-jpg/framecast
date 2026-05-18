@@ -10,7 +10,7 @@ export const recordScreenMacContent = {
 	gradientColors: ["#fed7aa", "#fdba74", "#fb923c"], // pastel oranges/yellows for macOS Big Sur
 
 	heroTLDR:
-		"Want to record your Mac screen with internal audio without expensive software? Here's how to do it in 2 clicks with Cap—completely free, no audio routing hacks needed.",
+		"Want to record your Mac screen with internal audio without expensive software? Here's how to do it in 2 clicks with Cap-completely free, no audio routing hacks needed.",
 
 	comparisonTable: {
 		title: "4 Ways to Capture System Audio on macOS",
@@ -95,7 +95,7 @@ export const recordScreenMacContent = {
               <li>Configure QuickTime to use BlackHole as input</li>
               <li>Remember to switch your audio setup back when done</li>
             </ol>
-            <p><strong>Skip the hacks and try Cap instead</strong> — no audio configuration required.</p>
+            <p><strong>Skip the hacks and try Cap instead</strong> - no audio configuration required.</p>
           `,
 				},
 			],

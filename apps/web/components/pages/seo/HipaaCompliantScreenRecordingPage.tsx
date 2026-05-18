@@ -17,14 +17,14 @@ export const hipaaCompliantScreenRecordingContent: SeoPageContent = {
 
 	features: [
 		{
-			title: "Self-Hosted Storage — PHI Never Leaves Your Infrastructure",
+			title: "Self-Hosted Storage - PHI Never Leaves Your Infrastructure",
 			description:
-				"Connect Cap to your own AWS S3 bucket, Cloudflare R2, or any S3-compatible storage. Recorded video files are uploaded directly to your infrastructure — no PHI ever touches Cap's servers. You maintain complete custody of all recorded data.",
+				"Connect Cap to your own AWS S3 bucket, Cloudflare R2, or any S3-compatible storage. Recorded video files are uploaded directly to your infrastructure - no PHI ever touches Cap's servers. You maintain complete custody of all recorded data.",
 		},
 		{
 			title: "Open-Source and Auditable",
 			description:
-				"Cap is MIT-licensed and fully open source on GitHub. Your security and compliance teams can audit every line of code. No black-box behavior, no undisclosed data collection — full transparency for your compliance reviews and vendor assessments.",
+				"Cap is MIT-licensed and fully open source on GitHub. Your security and compliance teams can audit every line of code. No black-box behavior, no undisclosed data collection - full transparency for your compliance reviews and vendor assessments.",
 		},
 		{
 			title: "Access-Controlled Sharing",
@@ -44,7 +44,7 @@ export const hipaaCompliantScreenRecordingContent: SeoPageContent = {
 		{
 			title: "Separate Screen and Webcam Tracks",
 			description:
-				"Studio Mode saves your screen recording and webcam as separate video tracks. This gives you precise control over what is stored, shared, or redacted — useful for recordings where on-screen PHI needs to be reviewed separately.",
+				"Studio Mode saves your screen recording and webcam as separate video tracks. This gives you precise control over what is stored, shared, or redacted - useful for recordings where on-screen PHI needs to be reviewed separately.",
 		},
 		{
 			title: "AI Transcription Under Your Control",
@@ -54,20 +54,20 @@ export const hipaaCompliantScreenRecordingContent: SeoPageContent = {
 		{
 			title: "Self-Hostable Platform",
 			description:
-				"The entire Cap platform — including the web dashboard and sharing layer — can be self-hosted on your own infrastructure. Run Cap completely within your network perimeter so no component of the system is outside your compliance controls.",
+				"The entire Cap platform - including the web dashboard and sharing layer - can be self-hosted on your own infrastructure. Run Cap completely within your network perimeter so no component of the system is outside your compliance controls.",
 		},
 	],
 
 	recordingModes: {
 		title: "Two Recording Modes for Healthcare Workflows",
 		description:
-			"Cap offers two modes to match different use cases — from quick clinical updates to structured medical training content",
+			"Cap offers two modes to match different use cases - from quick clinical updates to structured medical training content",
 		modes: [
 			{
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
 				title: "Instant Mode",
 				description:
-					"Record a clinical walkthrough or patient education video and get a shareable link immediately. Combined with self-hosted storage, the link points to your own S3 bucket — keeping the data within your HIPAA-covered environment. Free plan supports recordings up to 5 minutes.",
+					"Record a clinical walkthrough or patient education video and get a shareable link immediately. Combined with self-hosted storage, the link points to your own S3 bucket - keeping the data within your HIPAA-covered environment. Free plan supports recordings up to 5 minutes.",
 			},
 			{
 				icon: (
@@ -90,35 +90,35 @@ export const hipaaCompliantScreenRecordingContent: SeoPageContent = {
 		rows: [
 			[
 				"Self-hosted storage",
-				{ text: "Yes — any S3", status: "positive" },
+				{ text: "Yes - any S3", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 			],
 			[
 				"Open-source code",
-				{ text: "Yes — MIT", status: "positive" },
+				{ text: "Yes - MIT", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 			],
 			[
 				"AWS S3 HIPAA support",
-				{ text: "Yes — via your BAA", status: "positive" },
+				{ text: "Yes - via your BAA", status: "positive" },
 				{ text: "N/A", status: "neutral" },
 				{ text: "BAA available", status: "warning" },
 				{ text: "N/A", status: "neutral" },
 			],
 			[
 				"PHI off third-party servers",
-				{ text: "Yes — with self-hosting", status: "positive" },
+				{ text: "Yes - with self-hosting", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "No", status: "negative" },
 				{ text: "Local only", status: "warning" },
 			],
 			[
 				"AI captions optional",
-				{ text: "Yes — can disable", status: "positive" },
+				{ text: "Yes - can disable", status: "positive" },
 				{ text: "Always on (paid)", status: "warning" },
 				{ text: "Always on", status: "warning" },
 				{ text: "Optional", status: "positive" },
@@ -139,7 +139,7 @@ export const hipaaCompliantScreenRecordingContent: SeoPageContent = {
 			],
 			[
 				"Free for personal use",
-				{ text: "Yes — Studio Mode", status: "positive" },
+				{ text: "Yes - Studio Mode", status: "positive" },
 				{ text: "Limited", status: "warning" },
 				{ text: "Limited", status: "warning" },
 				{ text: "$299.99 one-time", status: "negative" },
@@ -149,7 +149,7 @@ export const hipaaCompliantScreenRecordingContent: SeoPageContent = {
 
 	comparisonTitle: "How Cap Enables HIPAA-Compliant Recording",
 	comparisonDescription:
-		"Most screen recorders store recordings on third-party servers by default — Cap gives healthcare teams the controls to change that",
+		"Most screen recorders store recordings on third-party servers by default - Cap gives healthcare teams the controls to change that",
 
 	comparison: [
 		{
@@ -160,7 +160,7 @@ export const hipaaCompliantScreenRecordingContent: SeoPageContent = {
 		{
 			title: "Cap vs Zoom for Recording",
 			description:
-				"Zoom offers HIPAA BAAs for video conferencing but stores cloud recordings on Zoom's infrastructure. Cap records asynchronously to your own S3 bucket — no third-party cloud storage required. Better suited for recorded training content, EHR walkthroughs, and async clinical communications.",
+				"Zoom offers HIPAA BAAs for video conferencing but stores cloud recordings on Zoom's infrastructure. Cap records asynchronously to your own S3 bucket - no third-party cloud storage required. Better suited for recorded training content, EHR walkthroughs, and async clinical communications.",
 		},
 		{
 			title: "Cap for Medical Education Content",
@@ -197,12 +197,12 @@ export const hipaaCompliantScreenRecordingContent: SeoPageContent = {
 		{
 			title: "IT and Security Team Walkthroughs",
 			description:
-				"Healthcare IT teams use Cap to create internal security documentation, system configuration walkthroughs, and incident response training. Recordings are stored directly to your S3 bucket — no recording content traverses external networks.",
+				"Healthcare IT teams use Cap to create internal security documentation, system configuration walkthroughs, and incident response training. Recordings are stored directly to your S3 bucket - no recording content traverses external networks.",
 		},
 		{
 			title: "Patient Education Videos",
 			description:
-				"Create recorded patient education content — post-procedure care instructions, medication guides, and condition management walkthroughs. Password-protected Cap links restrict access to the intended patient, and self-hosted storage keeps video data in your environment.",
+				"Create recorded patient education content - post-procedure care instructions, medication guides, and condition management walkthroughs. Password-protected Cap links restrict access to the intended patient, and self-hosted storage keeps video data in your environment.",
 		},
 		{
 			title: "Medical Device and Software Demonstrations",
@@ -214,11 +214,11 @@ export const hipaaCompliantScreenRecordingContent: SeoPageContent = {
 	migrationGuide: {
 		title: "How to Set Up HIPAA-Compliant Screen Recording with Cap",
 		steps: [
-			"Create a HIPAA-eligible AWS S3 bucket in your AWS account — ensure your AWS account is covered by an AWS BAA",
+			"Create a HIPAA-eligible AWS S3 bucket in your AWS account - ensure your AWS account is covered by an AWS BAA",
 			"Configure Cap's storage settings to point to your AWS S3 bucket using your AWS access key and secret",
-			"Download Cap for Mac or Windows — installation takes under 2 minutes",
+			"Download Cap for Mac or Windows - installation takes under 2 minutes",
 			"Disable AI auto-captions in Cap settings if your HIPAA policy restricts external audio transcription",
-			"Test a recording — stop recording and verify the file appears in your S3 bucket, not Cap's storage",
+			"Test a recording - stop recording and verify the file appears in your S3 bucket, not Cap's storage",
 			"Configure password protection on shared links for any recordings containing clinical content",
 			"For full platform control, deploy the Cap self-hosted web application within your own infrastructure",
 		],
@@ -230,12 +230,12 @@ export const hipaaCompliantScreenRecordingContent: SeoPageContent = {
 		{
 			question: "Can Cap be used for HIPAA-compliant screen recording?",
 			answer:
-				"Cap supports HIPAA-compliant workflows when configured with self-hosted storage. By connecting Cap to your own AWS S3 bucket (covered under your AWS BAA) or another HIPAA-eligible S3-compatible storage provider, all recorded video files are stored on your infrastructure — not Cap's servers. Combined with optional AI caption disabling and password-protected links, Cap gives healthcare organizations the controls needed for compliant screen recording workflows.",
+				"Cap supports HIPAA-compliant workflows when configured with self-hosted storage. By connecting Cap to your own AWS S3 bucket (covered under your AWS BAA) or another HIPAA-eligible S3-compatible storage provider, all recorded video files are stored on your infrastructure - not Cap's servers. Combined with optional AI caption disabling and password-protected links, Cap gives healthcare organizations the controls needed for compliant screen recording workflows.",
 		},
 		{
 			question: "Does Cap store recordings on its own servers?",
 			answer:
-				"By default, Cap uploads recordings to Cap's cloud storage. However, Cap fully supports custom S3-compatible storage — connect your own AWS S3, Cloudflare R2, or private MinIO instance and all recordings go directly to your bucket. With self-hosted storage enabled, no recording data touches Cap's infrastructure.",
+				"By default, Cap uploads recordings to Cap's cloud storage. However, Cap fully supports custom S3-compatible storage - connect your own AWS S3, Cloudflare R2, or private MinIO instance and all recordings go directly to your bucket. With self-hosted storage enabled, no recording data touches Cap's infrastructure.",
 		},
 		{
 			question:
@@ -256,7 +256,7 @@ export const hipaaCompliantScreenRecordingContent: SeoPageContent = {
 		{
 			question: "Can the entire Cap platform be self-hosted?",
 			answer:
-				"Yes. The complete Cap platform — including the web dashboard, sharing layer, and API — can be self-hosted on your own infrastructure. For healthcare organizations requiring full network perimeter control, self-hosting eliminates any reliance on Cap's cloud services. See Cap's self-hosting documentation for deployment instructions.",
+				"Yes. The complete Cap platform - including the web dashboard, sharing layer, and API - can be self-hosted on your own infrastructure. For healthcare organizations requiring full network perimeter control, self-hosting eliminates any reliance on Cap's cloud services. See Cap's self-hosting documentation for deployment instructions.",
 		},
 		{
 			question:
@@ -267,7 +267,7 @@ export const hipaaCompliantScreenRecordingContent: SeoPageContent = {
 		{
 			question: "What screen recording tools are HIPAA-compliant?",
 			answer:
-				"A screen recorder can support HIPAA-compliant workflows if it allows you to control where recordings are stored, restricts third-party access to data, and provides auditable behavior. Cap with self-hosted S3 storage meets these requirements. Tools that only offer cloud storage on the vendor's servers — like standard Loom — require additional BAA agreements and vendor review. Local-only recorders like Camtasia avoid cloud storage entirely but lack Cap's async sharing capabilities.",
+				"A screen recorder can support HIPAA-compliant workflows if it allows you to control where recordings are stored, restricts third-party access to data, and provides auditable behavior. Cap with self-hosted S3 storage meets these requirements. Tools that only offer cloud storage on the vendor's servers - like standard Loom - require additional BAA agreements and vendor review. Local-only recorders like Camtasia avoid cloud storage entirely but lack Cap's async sharing capabilities.",
 		},
 	],
 

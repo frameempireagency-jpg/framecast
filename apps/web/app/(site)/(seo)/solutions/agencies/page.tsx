@@ -18,7 +18,7 @@ const createFaqStructuredData = () => {
 		{
 			question: "What's the difference between Instant Mode and Studio Mode?",
 			answer:
-				"Instant Mode generates a shareable link immediately after recording—perfect for quick updates. Studio Mode records locally for the highest quality and includes precision editing tools for professional client presentations.",
+				"Instant Mode generates a shareable link immediately after recording-perfect for quick updates. Studio Mode records locally for the highest quality and includes precision editing tools for professional client presentations.",
 		},
 		{
 			question: "How long can we record on the free version?",
@@ -63,7 +63,7 @@ const createSoftwareStructuredData = () => {
 	const softwareStructuredData = {
 		"@context": "https://schema.org",
 		"@type": "SoftwareApplication",
-		name: "Cap — Screen Recorder",
+		name: "Cap - Screen Recorder",
 		operatingSystem: ["macOS", "Windows"],
 		applicationCategory: "BusinessApplication",
 		description:
@@ -84,11 +84,11 @@ const createSoftwareStructuredData = () => {
 };
 
 export const metadata: Metadata = {
-	title: "Cap for Agencies — Faster Client Updates with Instant Video Links",
+	title: "Cap for Agencies - Faster Client Updates with Instant Video Links",
 	description:
 		"Send clearer client updates in minutes. Share instant links with comments, or craft polished walkthroughs. Cap for Agencies on macOS & Windows.",
 	openGraph: {
-		title: "Cap for Agencies — Faster Client Updates with Instant Video Links",
+		title: "Cap for Agencies - Faster Client Updates with Instant Video Links",
 		description:
 			"Send clearer client updates in minutes. Share instant links with comments, or craft polished walkthroughs. Cap for Agencies on macOS & Windows.",
 		url: "https://cap.so/solutions/agencies",
@@ -106,7 +106,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Cap for Agencies — Faster Client Updates with Instant Video Links",
+		title: "Cap for Agencies - Faster Client Updates with Instant Video Links",
 		description:
 			"Send clearer client updates in minutes. Share instant links with comments, or craft polished walkthroughs. Cap for Agencies on macOS & Windows.",
 		images: ["https://cap.so/og.png"],

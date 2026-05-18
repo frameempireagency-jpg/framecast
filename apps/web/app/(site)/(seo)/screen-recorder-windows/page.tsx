@@ -4,11 +4,11 @@ import { ScreenRecordWindowsPage } from "@/components/pages/seo/ScreenRecordWind
 export const metadata: Metadata = {
 	title: "Best Free Screen Recorder for Windows 10 & 11 | Cap",
 	description:
-		"Record your screen on Windows with Cap — free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks. Works on Windows 10 & 11.",
+		"Record your screen on Windows with Cap - free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks. Works on Windows 10 & 11.",
 	openGraph: {
 		title: "Best Free Screen Recorder for Windows 10 & 11 | Cap",
 		description:
-			"Record your screen on Windows with Cap — free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks. Works on Windows 10 & 11.",
+			"Record your screen on Windows with Cap - free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks. Works on Windows 10 & 11.",
 		url: "https://cap.so/screen-recorder-windows",
 		siteName: "Cap",
 		images: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		title: "Best Free Screen Recorder for Windows 10 & 11 | Cap",
 		description:
-			"Record your screen on Windows with Cap — free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks.",
+			"Record your screen on Windows with Cap - free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks.",
 		images: ["https://cap.so/og.png"],
 	},
 	alternates: {

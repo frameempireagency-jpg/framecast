@@ -7,17 +7,17 @@ import { createFAQSchema } from "@/utils/web-schema";
 
 export const metadata: Metadata = {
 	title:
-		"Self-Hosted Screen Recording — Own Your Data, No Vendor Lock-In | Cap",
+		"Self-Hosted Screen Recording - Own Your Data, No Vendor Lock-In | Cap",
 	description:
-		"Cap lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, or MinIO — recordings go directly to your infrastructure. Open source, MIT-licensed, free to use.",
+		"Cap lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, or MinIO - recordings go directly to your infrastructure. Open source, MIT-licensed, free to use.",
 	alternates: {
 		canonical: "https://cap.so/self-hosted-screen-recording",
 	},
 	openGraph: {
 		title:
-			"Self-Hosted Screen Recording — Own Your Data, No Vendor Lock-In | Cap",
+			"Self-Hosted Screen Recording - Own Your Data, No Vendor Lock-In | Cap",
 		description:
-			"Cap lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, or MinIO — recordings go directly to your infrastructure. Open source and free.",
+			"Cap lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, or MinIO - recordings go directly to your infrastructure. Open source and free.",
 		url: "https://cap.so/self-hosted-screen-recording",
 		siteName: "Cap",
 		images: [
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title:
-			"Self-Hosted Screen Recording — Own Your Data, No Vendor Lock-In | Cap",
+			"Self-Hosted Screen Recording - Own Your Data, No Vendor Lock-In | Cap",
 		description:
-			"Cap lets you self-host screen recordings on your own S3-compatible storage. AWS S3, Cloudflare R2, MinIO — your infrastructure, instant shareable links.",
+			"Cap lets you self-host screen recordings on your own S3-compatible storage. AWS S3, Cloudflare R2, MinIO - your infrastructure, instant shareable links.",
 		images: ["https://cap.so/og.png"],
 	},
 };

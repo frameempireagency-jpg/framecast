@@ -77,7 +77,7 @@ export async function transcribeVideo(
 		}
 		return {
 			success: true,
-			message: "Transcription disabled for video — skipping transcription",
+			message: "Transcription disabled for video - skipping transcription",
 		};
 	}
 

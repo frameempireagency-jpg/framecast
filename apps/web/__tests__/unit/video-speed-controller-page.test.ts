@@ -59,12 +59,12 @@ describe("Video Speed Controller FAQ schema validity", () => {
 		{
 			question: "How do I change the speed of a video online?",
 			answer:
-				"Open Cap's Video Speed Controller, drag and drop your video file (or click to browse), select your target speed from 0.25× to 3×, then click Speed Up or Slow Down Video. The entire process runs in your browser — your file never leaves your device. Once processing is complete, preview and download the result.",
+				"Open Cap's Video Speed Controller, drag and drop your video file (or click to browse), select your target speed from 0.25× to 3×, then click Speed Up or Slow Down Video. The entire process runs in your browser - your file never leaves your device. Once processing is complete, preview and download the result.",
 		},
 		{
 			question: "What video formats does the speed controller support?",
 			answer:
-				"MP4, WebM, MOV, AVI and MKV are all supported — essentially any video format modern browsers can decode. Chrome is recommended for the best compatibility and performance.",
+				"MP4, WebM, MOV, AVI and MKV are all supported - essentially any video format modern browsers can decode. Chrome is recommended for the best compatibility and performance.",
 		},
 		{
 			question: "Is the video speed controller free?",
@@ -74,7 +74,7 @@ describe("Video Speed Controller FAQ schema validity", () => {
 		{
 			question: "Will my video quality change when I adjust the speed?",
 			answer:
-				"No. The tool preserves your original resolution and bitrate — only the playback speed changes. There is no re-encoding that degrades visual quality. Audio pitch is also automatically corrected to stay natural at the new speed.",
+				"No. The tool preserves your original resolution and bitrate - only the playback speed changes. There is no re-encoding that degrades visual quality. Audio pitch is also automatically corrected to stay natural at the new speed.",
 		},
 		{
 			question: "Is there a file size limit?",
@@ -89,12 +89,12 @@ describe("Video Speed Controller FAQ schema validity", () => {
 		{
 			question: "Does this work on iPhone or Android?",
 			answer:
-				"Yes — modern Safari, Chrome, and Firefox on mobile are supported, though Chrome on desktop delivers the most reliable performance. If you encounter issues on mobile, try Chrome or Firefox instead of the default browser.",
+				"Yes - modern Safari, Chrome, and Firefox on mobile are supported, though Chrome on desktop delivers the most reliable performance. If you encounter issues on mobile, try Chrome or Firefox instead of the default browser.",
 		},
 		{
 			question: "Do I need to install any software?",
 			answer:
-				"No. The tool runs entirely in your browser — no downloads, no plugins, no extensions required. Just open the page and start adjusting your video speed. All processing happens locally on your device for complete privacy.",
+				"No. The tool runs entirely in your browser - no downloads, no plugins, no extensions required. Just open the page and start adjusting your video speed. All processing happens locally on your device for complete privacy.",
 		},
 	];
 
@@ -140,7 +140,7 @@ describe("Video Speed Controller HowTo schema validity", () => {
 		},
 		{
 			name: "Process and download your video",
-			text: "Click Speed Up or Slow Down Video. Processing runs entirely in your browser — nothing is uploaded to any server. Once complete, preview the result and click Download to save the speed-adjusted video.",
+			text: "Click Speed Up or Slow Down Video. Processing runs entirely in your browser - nothing is uploaded to any server. Once complete, preview the result and click Download to save the speed-adjusted video.",
 		},
 	];
 

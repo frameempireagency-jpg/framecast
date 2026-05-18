@@ -99,7 +99,7 @@ function isActivePhase(phase: JobPhase): boolean {
 	return phase !== "complete" && phase !== "error" && phase !== "cancelled";
 }
 
-// Derived from actual job state — no manual increment/decrement that can drift
+// Derived from actual job state - no manual increment/decrement that can drift
 export function getActiveVideoProcessCount(): number {
 	let count = 0;
 	for (const job of jobs.values()) {

@@ -14,14 +14,14 @@ const toolCategories: ToolCategory[] = [
 	{
 		title: "Loom Video Importer",
 		description:
-			"Import your existing Loom recordings directly into Cap — seamless migration",
+			"Import your existing Loom recordings directly into Cap - seamless migration",
 		href: "/loom-alternative",
 		icon: "M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15m0-3l-3-3m0 0l-3 3m3-3V15",
 	},
 	{
 		title: "Loom Video Downloader",
 		description:
-			"Download any public Loom video as an MP4 file — free and instant",
+			"Download any public Loom video as an MP4 file - free and instant",
 		href: "/tools/loom-downloader",
 		icon: "M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3",
 	},

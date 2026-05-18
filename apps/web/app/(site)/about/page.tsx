@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AboutPage } from "@/components/pages/AboutPage";
 
 export const metadata: Metadata = {
-	title: "About — Cap",
+	title: "About| FrameCast",
 	description:
 		"Cap is the open source alternative to Loom. Learn why we started Cap and our commitment to privacy, transparency, and community-driven development.",
 };

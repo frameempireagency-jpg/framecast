@@ -5,7 +5,7 @@ import { SeoPageTemplate } from "../../seo/SeoPageTemplate";
 import type { SeoPageContent } from "../../seo/types";
 
 export const asyncVideoCodeReviewsContent: SeoPageContent = {
-	title: "Async Video Code Reviews — Ship Faster Without the Meetings",
+	title: "Async Video Code Reviews - Ship Faster Without the Meetings",
 	description:
 		"Record your screen, walk through pull requests and diffs, and share a timestamped video link your team can watch on their own schedule. Cap makes async code reviews faster, clearer, and calendar-free.",
 
@@ -13,18 +13,18 @@ export const asyncVideoCodeReviewsContent: SeoPageContent = {
 
 	featuresTitle: "Everything You Need for Async Video Code Reviews",
 	featuresDescription:
-		"Cap gives engineering teams a faster way to give and receive code feedback — no scheduled calls, no back-and-forth in PR comments",
+		"Cap gives engineering teams a faster way to give and receive code feedback - no scheduled calls, no back-and-forth in PR comments",
 
 	features: [
 		{
 			title: "Record Any PR or Diff Walkthrough",
 			description:
-				"Open your IDE, point your camera at the diff, and talk through your feedback in real time. Cap records your screen and webcam simultaneously so reviewers see exactly what you see — cursor movements, code highlights, and all. No more writing long PR comments that take longer to read than a 90-second video.",
+				"Open your IDE, point your camera at the diff, and talk through your feedback in real time. Cap records your screen and webcam simultaneously so reviewers see exactly what you see - cursor movements, code highlights, and all. No more writing long PR comments that take longer to read than a 90-second video.",
 		},
 		{
-			title: "Instant Shareable Link — No Upload Wait",
+			title: "Instant Shareable Link - No Upload Wait",
 			description:
-				"Stop recording and Cap generates a shareable link immediately. Paste it into your PR comment, Slack message, or Linear ticket. Reviewers click the link and the video plays in their browser — no app install, no login required on their end.",
+				"Stop recording and Cap generates a shareable link immediately. Paste it into your PR comment, Slack message, or Linear ticket. Reviewers click the link and the video plays in their browser - no app install, no login required on their end.",
 		},
 		{
 			title: "Timestamped Comments and Threads",
@@ -34,12 +34,12 @@ export const asyncVideoCodeReviewsContent: SeoPageContent = {
 		{
 			title: "4K Recording at 60fps for Sharp Code Legibility",
 			description:
-				"Syntax highlighting, font rendering, and editor themes are captured at full fidelity. Cap records at up to 4K resolution and 60fps so reviewers can pause the video and read every line of code clearly — even on smaller screens.",
+				"Syntax highlighting, font rendering, and editor themes are captured at full fidelity. Cap records at up to 4K resolution and 60fps so reviewers can pause the video and read every line of code clearly - even on smaller screens.",
 		},
 		{
 			title: "Studio Mode for Architecture Walkthroughs",
 			description:
-				"For longer code reviews — RFC feedback, architecture diagrams, or onboarding walkthroughs — <a href='/screen-recording-software'>Studio Mode</a> records screen and webcam as separate tracks with no time limits. Edit your recording before sharing if you want to trim the intro or add chapter markers.",
+				"For longer code reviews - RFC feedback, architecture diagrams, or onboarding walkthroughs - <a href='/screen-recording-software'>Studio Mode</a> records screen and webcam as separate tracks with no time limits. Edit your recording before sharing if you want to trim the intro or add chapter markers.",
 		},
 		{
 			title: "AI-Generated Captions for Accessibility",
@@ -54,7 +54,7 @@ export const asyncVideoCodeReviewsContent: SeoPageContent = {
 		{
 			title: "Works With GitHub, GitLab, Linear, and Jira",
 			description:
-				"Cap links are just URLs — paste them anywhere your team already works. Drop a Cap link in your GitHub PR description, GitLab MR comment, Linear issue, or Jira ticket. No integration setup, no webhooks, no OAuth.",
+				"Cap links are just URLs - paste them anywhere your team already works. Drop a Cap link in your GitHub PR description, GitLab MR comment, Linear issue, or Jira ticket. No integration setup, no webhooks, no OAuth.",
 		},
 	],
 
@@ -85,7 +85,7 @@ export const asyncVideoCodeReviewsContent: SeoPageContent = {
 				),
 				title: "Studio Mode",
 				description:
-					"Built for thorough architecture reviews, RFC walkthroughs, and technical onboarding sessions. No time limits — record as long as your review requires. Separate screen and webcam tracks give you more control over the final recording.",
+					"Built for thorough architecture reviews, RFC walkthroughs, and technical onboarding sessions. No time limits - record as long as your review requires. Separate screen and webcam tracks give you more control over the final recording.",
 			},
 		],
 	},
@@ -117,7 +117,7 @@ export const asyncVideoCodeReviewsContent: SeoPageContent = {
 			],
 			[
 				"Free unlimited recording",
-				{ text: "Yes — Studio Mode", status: "positive" },
+				{ text: "Yes - Studio Mode", status: "positive" },
 				{ text: "Limited", status: "warning" },
 				{ text: "Free", status: "positive" },
 				{ text: "Paid required", status: "warning" },
@@ -138,14 +138,14 @@ export const asyncVideoCodeReviewsContent: SeoPageContent = {
 			],
 			[
 				"Open source",
-				{ text: "Yes — MIT", status: "positive" },
+				{ text: "Yes - MIT", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "Open source (GitHub)", status: "positive" },
 				{ text: "No", status: "negative" },
 			],
 			[
 				"Self-hosted storage",
-				{ text: "Yes — S3", status: "positive" },
+				{ text: "Yes - S3", status: "positive" },
 				{ text: "No", status: "negative" },
 				{ text: "N/A", status: "neutral" },
 				{ text: "No", status: "negative" },
@@ -155,7 +155,7 @@ export const asyncVideoCodeReviewsContent: SeoPageContent = {
 
 	comparisonTitle: "Why Engineering Teams Choose Cap for Code Reviews",
 	comparisonDescription:
-		"Async video code reviews cut context-switching and make feedback more precise — here's how Cap compares",
+		"Async video code reviews cut context-switching and make feedback more precise - here's how Cap compares",
 
 	comparison: [
 		{
@@ -166,12 +166,12 @@ export const asyncVideoCodeReviewsContent: SeoPageContent = {
 		{
 			title: "Cap vs Written PR Comments",
 			description:
-				"Written PR comments are slow to compose and easy to misread. A 2-minute Cap recording replaces a wall of inline comments — reviewers see the exact context you're referring to, hear your tone, and understand intent without the ambiguity of text. Video feedback also reduces the back-and-forth clarification round trips that slow code review cycles.",
+				"Written PR comments are slow to compose and easy to misread. A 2-minute Cap recording replaces a wall of inline comments - reviewers see the exact context you're referring to, hear your tone, and understand intent without the ambiguity of text. Video feedback also reduces the back-and-forth clarification round trips that slow code review cycles.",
 		},
 		{
 			title: "Cap vs Zoom or Google Meet for Code Reviews",
 			description:
-				"Synchronous video calls require scheduling across time zones, force reviewers to be present at a specific time, and produce recordings that aren't easily linked, timestamped, or commented on. Cap gives you the clarity of a face-to-face walkthrough with the flexibility of async — reviewers watch when it suits them and leave timestamped comments.",
+				"Synchronous video calls require scheduling across time zones, force reviewers to be present at a specific time, and produce recordings that aren't easily linked, timestamped, or commented on. Cap gives you the clarity of a face-to-face walkthrough with the flexibility of async - reviewers watch when it suits them and leave timestamped comments.",
 		},
 		{
 			title: "Cap for Distributed Engineering Teams",
@@ -220,10 +220,10 @@ export const asyncVideoCodeReviewsContent: SeoPageContent = {
 	migrationGuide: {
 		title: "How to Start Doing Async Video Code Reviews with Cap",
 		steps: [
-			"Download Cap for Mac or Windows — setup takes under 2 minutes",
+			"Download Cap for Mac or Windows - setup takes under 2 minutes",
 			"Open your IDE or GitHub/GitLab in your browser and pull up the diff you want to review",
 			"Click the Cap icon in your menu bar and choose Instant Mode for quick reviews or Studio Mode for longer walkthroughs",
-			"Start recording — Cap captures your screen and webcam simultaneously",
+			"Start recording - Cap captures your screen and webcam simultaneously",
 			"Talk through your feedback naturally as you scroll through the code",
 			"Stop recording to get an instant shareable link",
 			"Paste the Cap link into your PR comment, Slack message, or Linear ticket",
@@ -236,7 +236,7 @@ export const asyncVideoCodeReviewsContent: SeoPageContent = {
 		{
 			question: "What is an async video code review?",
 			answer:
-				"An async video code review is a screen recording walkthrough of a pull request, diff, or codebase where the reviewer (or PR author) explains their feedback on video instead of — or alongside — written comments. The recording is shared as a link that the recipient can watch on their own schedule without needing a live meeting.",
+				"An async video code review is a screen recording walkthrough of a pull request, diff, or codebase where the reviewer (or PR author) explains their feedback on video instead of - or alongside - written comments. The recording is shared as a link that the recipient can watch on their own schedule without needing a live meeting.",
 		},
 		{
 			question: "Why use video instead of written comments for code reviews?",
@@ -246,13 +246,13 @@ export const asyncVideoCodeReviewsContent: SeoPageContent = {
 		{
 			question: "How does Cap make code reviews faster?",
 			answer:
-				"Cap generates a shareable link the moment you stop recording — no upload wait, no file attachment, no third-party viewer required. Paste the link into your PR and reviewers can watch immediately. Timestamped comments let reviewers leave feedback at specific points in the video, keeping discussion organized without cluttering the PR comment thread.",
+				"Cap generates a shareable link the moment you stop recording - no upload wait, no file attachment, no third-party viewer required. Paste the link into your PR and reviewers can watch immediately. Timestamped comments let reviewers leave feedback at specific points in the video, keeping discussion organized without cluttering the PR comment thread.",
 		},
 		{
 			question:
 				"Does Cap work with GitHub, GitLab, Linear, and other developer tools?",
 			answer:
-				"Yes. Cap produces a standard URL that you can paste anywhere. Drop the link in a GitHub PR description or comment, a GitLab MR, a Linear issue, a Jira ticket, or a Slack message. No integration or webhook setup required — the link opens in any browser and the video plays without requiring the viewer to install Cap.",
+				"Yes. Cap produces a standard URL that you can paste anywhere. Drop the link in a GitHub PR description or comment, a GitLab MR, a Linear issue, a Jira ticket, or a Slack message. No integration or webhook setup required - the link opens in any browser and the video plays without requiring the viewer to install Cap.",
 		},
 		{
 			question: "Can I record code in 4K so reviewers can read it clearly?",
@@ -262,7 +262,7 @@ export const asyncVideoCodeReviewsContent: SeoPageContent = {
 		{
 			question: "How long can a Cap code review recording be?",
 			answer:
-				"In Instant Mode, recordings are optimized for quick async sharing. In Studio Mode, there is no recording time limit — you can record an entire architecture walkthrough, RFC review, or extended pair programming session without interruption. Studio Mode is completely free for personal use.",
+				"In Instant Mode, recordings are optimized for quick async sharing. In Studio Mode, there is no recording time limit - you can record an entire architecture walkthrough, RFC review, or extended pair programming session without interruption. Studio Mode is completely free for personal use.",
 		},
 		{
 			question:

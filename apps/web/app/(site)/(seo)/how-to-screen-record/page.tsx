@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 				url: "https://cap.so/og.png",
 				width: 1200,
 				height: 630,
-				alt: "How to Screen Record — Complete 2026 Guide by Cap",
+				alt: "How to Screen Record - Complete 2026 Guide by Cap",
 			},
 		],
 		locale: "en_US",

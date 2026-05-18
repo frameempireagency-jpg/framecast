@@ -59,7 +59,7 @@ describe("MP4 to GIF FAQ schema validity", () => {
 		{
 			question: "How do I convert MP4 to GIF?",
 			answer:
-				"Open the Cap MP4 to GIF converter, drag and drop your MP4 file (or click to browse), adjust your settings if needed, then click Convert. The entire process runs in your browser — your file never leaves your device. Once complete, download the GIF instantly.",
+				"Open the Cap MP4 to GIF converter, drag and drop your MP4 file (or click to browse), adjust your settings if needed, then click Convert. The entire process runs in your browser - your file never leaves your device. Once complete, download the GIF instantly.",
 		},
 		{
 			question: "Is the MP4 to GIF converter free?",
@@ -94,7 +94,7 @@ describe("MP4 to GIF FAQ schema validity", () => {
 		{
 			question: "Do I need to install any software?",
 			answer:
-				"No. The converter runs entirely in your browser — no downloads, no plugins, no extensions required. Just open the page and start converting. All processing happens locally on your device for complete privacy.",
+				"No. The converter runs entirely in your browser - no downloads, no plugins, no extensions required. Just open the page and start converting. All processing happens locally on your device for complete privacy.",
 		},
 	];
 
@@ -140,7 +140,7 @@ describe("MP4 to GIF HowTo schema validity", () => {
 		},
 		{
 			name: "Convert and download your GIF",
-			text: "Click Convert. The file is processed entirely in your browser — nothing is uploaded to any server. Once done, click Download to save the animated GIF.",
+			text: "Click Convert. The file is processed entirely in your browser - nothing is uploaded to any server. Once done, click Download to save the animated GIF.",
 		},
 	];
 

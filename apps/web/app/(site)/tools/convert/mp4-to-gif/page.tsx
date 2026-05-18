@@ -5,11 +5,11 @@ import type { ToolPageContent } from "@/components/tools/types";
 import { createBreadcrumbSchema } from "@/utils/web-schema";
 
 export const metadata: Metadata = {
-	title: "MP4 to GIF Converter — Free Online Animated GIF Maker | Cap",
+	title: "MP4 to GIF Converter - Free Online Animated GIF Maker | Cap",
 	description:
 		"Convert MP4 videos to animated GIF images directly in your browser. Free, private, no upload needed. Adjust FPS, quality, and dimensions for the perfect GIF.",
 	openGraph: {
-		title: "MP4 to GIF Converter — Free Online Animated GIF Maker | Cap",
+		title: "MP4 to GIF Converter - Free Online Animated GIF Maker | Cap",
 		description:
 			"Convert MP4 to animated GIF directly in your browser. No uploads, no installs, 100% private. Customize FPS, quality, and size.",
 		url: "https://cap.so/tools/convert/mp4-to-gif",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 				url: "https://cap.so/og.png",
 				width: 1200,
 				height: 630,
-				alt: "Cap MP4 to GIF Converter — Free Online Animated GIF Maker",
+				alt: "Cap MP4 to GIF Converter - Free Online Animated GIF Maker",
 			},
 		],
 		locale: "en_US",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "MP4 to GIF Converter — Free Online Animated GIF Maker | Cap",
+		title: "MP4 to GIF Converter - Free Online Animated GIF Maker | Cap",
 		description:
 			"Convert MP4 to animated GIF directly in your browser. No uploads, no installs, 100% private.",
 		images: ["https://cap.so/og.png"],
@@ -41,7 +41,7 @@ const faqs = [
 	{
 		question: "How do I convert MP4 to GIF?",
 		answer:
-			"Open the Cap MP4 to GIF converter, drag and drop your MP4 file (or click to browse), adjust your settings if needed, then click Convert. The entire process runs in your browser — your file never leaves your device. Once complete, download the GIF instantly.",
+			"Open the Cap MP4 to GIF converter, drag and drop your MP4 file (or click to browse), adjust your settings if needed, then click Convert. The entire process runs in your browser - your file never leaves your device. Once complete, download the GIF instantly.",
 	},
 	{
 		question: "Is the MP4 to GIF converter free?",
@@ -76,7 +76,7 @@ const faqs = [
 	{
 		question: "Do I need to install any software?",
 		answer:
-			"No. The converter runs entirely in your browser — no downloads, no plugins, no extensions required. Just open the page and start converting. All processing happens locally on your device for complete privacy.",
+			"No. The converter runs entirely in your browser - no downloads, no plugins, no extensions required. Just open the page and start converting. All processing happens locally on your device for complete privacy.",
 	},
 ];
 
@@ -91,7 +91,7 @@ const howToSteps = [
 	},
 	{
 		name: "Convert and download your GIF",
-		text: "Click Convert. The file is processed entirely in your browser — nothing is uploaded to any server. Once done, click Download to save the animated GIF.",
+		text: "Click Convert. The file is processed entirely in your browser - nothing is uploaded to any server. Once done, click Download to save the animated GIF.",
 	},
 ];
 
@@ -140,15 +140,15 @@ export default function MP4ToGIFPage() {
 	const pageContent: ToolPageContent = {
 		title: "MP4 to GIF Converter",
 		description:
-			"Convert MP4 videos to animated GIF images directly in your browser — free, private, and no installation required",
+			"Convert MP4 videos to animated GIF images directly in your browser - free, private, and no installation required",
 		featuresTitle: "Why Use This MP4 to GIF Converter",
 		featuresDescription:
-			"A fast, free, and private way to turn MP4 videos into animated GIFs — entirely in your browser with full control over output settings.",
+			"A fast, free, and private way to turn MP4 videos into animated GIFs - entirely in your browser with full control over output settings.",
 		features: [
 			{
 				title: "100% Browser-Based",
 				description:
-					"The entire conversion runs locally in your browser. No server uploads, no waiting for processing queues — your files stay on your device at all times.",
+					"The entire conversion runs locally in your browser. No server uploads, no waiting for processing queues - your files stay on your device at all times.",
 			},
 			{
 				title: "Customizable Output Settings",
@@ -163,7 +163,7 @@ export default function MP4ToGIFPage() {
 			{
 				title: "No Sign-Up or Installation",
 				description:
-					"No software downloads, browser extensions, or accounts required. Just open the page and start converting — works instantly in Chrome, Edge, and Brave.",
+					"No software downloads, browser extensions, or accounts required. Just open the page and start converting - works instantly in Chrome, Edge, and Brave.",
 			},
 			{
 				title: "Unlimited Free Conversions",
@@ -180,7 +180,7 @@ export default function MP4ToGIFPage() {
 		cta: {
 			title: "Cap is the open source Loom alternative",
 			description:
-				"Record, edit, and share video messages with Cap. 100% open source and privacy focused. Export directly to MP4 — no conversion needed.",
+				"Record, edit, and share video messages with Cap. 100% open source and privacy focused. Export directly to MP4 - no conversion needed.",
 			buttonText: "Download Cap Free",
 		},
 	};

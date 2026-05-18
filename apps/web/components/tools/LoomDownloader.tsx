@@ -114,7 +114,7 @@ function MigrationBanner() {
 						Switch
 					</span>
 					<p className="text-sm font-semibold text-gray-900 sm:text-base">
-						Switch from Loom to Cap — save 20%
+						Switch from Loom to Cap - save 20%
 					</p>
 				</div>
 				<p className="text-xs leading-relaxed text-gray-600 sm:text-sm">
@@ -188,7 +188,7 @@ function MigrationSuccessState({
 					</h3>
 					<p className="text-sm leading-relaxed text-gray-700 sm:text-base">
 						Skip the one-by-one downloads. Cap Pro's built-in Loom importer
-						transfers your entire Loom workspace to Cap in a single click —
+						transfers your entire Loom workspace to Cap in a single click -
 						titles, transcripts, and all. Use{" "}
 						<span className="font-mono font-semibold text-blue-700">
 							{MIGRATE_PROMO_CODE}
@@ -205,7 +205,7 @@ function MigrationSuccessState({
 							href={MIGRATE_CHECKOUT_HREF}
 							className="w-full sm:w-auto"
 						>
-							Migrate with Cap Pro — save 20%
+							Migrate with Cap Pro - save 20%
 						</Button>
 						<Button
 							variant="white"
@@ -228,7 +228,7 @@ function MigrationSuccessState({
 					{[
 						"Import your entire Loom library",
 						"Keep titles, chapters & transcripts",
-						"Cancel anytime — 20% off locked in",
+						"Cancel anytime - 20% off locked in",
 					].map((line) => (
 						<li
 							key={line}

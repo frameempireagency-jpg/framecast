@@ -49,7 +49,7 @@ export const loomAlternativeContent: SeoPageContent = {
 		{
 			title: "Built-In Loom Video Importer",
 			description:
-				"Already using Loom? Cap's built-in video importer lets you seamlessly transfer your existing Loom recordings into Cap. No need to start from scratch — bring all your content with you when you switch.",
+				"Already using Loom? Cap's built-in video importer lets you seamlessly transfer your existing Loom recordings into Cap. No need to start from scratch - bring all your content with you when you switch.",
 		},
 	],
 
@@ -62,7 +62,7 @@ export const loomAlternativeContent: SeoPageContent = {
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
 				title: "Instant Mode",
 				description:
-					"Share your screen right away with a simple link—no waiting, just record and share in seconds. Record up to 5-minute shareable links for free, perfect for quick demos and explanations. Includes built-in thread commenting for easy collaboration.",
+					"Share your screen right away with a simple link-no waiting, just record and share in seconds. Record up to 5-minute shareable links for free, perfect for quick demos and explanations. Includes built-in thread commenting for easy collaboration.",
 			},
 			{
 				icon: (
@@ -107,7 +107,7 @@ export const loomAlternativeContent: SeoPageContent = {
 		{
 			title: "Effortless Migration from Loom",
 			description:
-				"Cap's built-in Loom video importer makes switching painless. Import your existing Loom recordings directly into Cap and keep all your content organized in one place — no downloads or re-uploads required.",
+				"Cap's built-in Loom video importer makes switching painless. Import your existing Loom recordings directly into Cap and keep all your content organized in one place - no downloads or re-uploads required.",
 		},
 	],
 

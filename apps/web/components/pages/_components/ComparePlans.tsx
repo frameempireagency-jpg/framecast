@@ -298,7 +298,7 @@ export const ComparePlans = () => {
 					icon={faCheckCircle}
 				/>
 			) : (
-				<span className="text-gray-8">—</span>
+				<span className="text-gray-8">-</span>
 			);
 		}
 		return <span className="text-gray-12">{value}</span>;

@@ -549,7 +549,7 @@ export const CapCard = ({
 										onClick={() => {
 											toast.promise(duplicateMutation.mutateAsync(), {
 												loading: "Duplicating cap...",
-												success: "Cap duplicated successfully",
+												success: "Recording duplicated successfully",
 												error: "Failed to duplicate cap",
 											});
 										}}
@@ -606,7 +606,7 @@ export const CapCard = ({
 					<ConfirmationDialog
 						open={confirmOpen}
 						icon={<FontAwesomeIcon icon={faVideo} />}
-						title="Delete Cap"
+						title="Delete Recording"
 						description={`Are you sure you want to delete the cap "${cap.name}"? This action cannot be undone.`}
 						confirmLabel={deleteMutation.isPending ? "Deleting..." : "Delete"}
 						cancelLabel="Cancel"

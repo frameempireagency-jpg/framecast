@@ -108,7 +108,7 @@ describe("AsyncVideoCodeReviewsPage FAQ schema", () => {
 		{
 			question: "How does Cap make code reviews faster?",
 			answer:
-				"Cap generates a shareable link the moment you stop recording — no upload wait, no file attachment.",
+				"Cap generates a shareable link the moment you stop recording - no upload wait, no file attachment.",
 		},
 		{
 			question:

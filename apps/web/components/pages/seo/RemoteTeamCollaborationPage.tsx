@@ -55,7 +55,7 @@ export const remoteTeamCollaborationContent: SeoPageContent = {
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
 				title: "Instant Mode",
 				description:
-					"Share your screen right away with a simple link—no waiting, just record and share in seconds. Record up to 5-minute shareable links for free, perfect for quick demos and explanations. Includes built-in thread commenting for easy collaboration.",
+					"Share your screen right away with a simple link-no waiting, just record and share in seconds. Record up to 5-minute shareable links for free, perfect for quick demos and explanations. Includes built-in thread commenting for easy collaboration.",
 			},
 			{
 				icon: (
@@ -103,7 +103,7 @@ export const remoteTeamCollaborationContent: SeoPageContent = {
 		{
 			question: "How does Cap help remote teams collaborate more effectively?",
 			answer:
-				"Cap enables asynchronous visual communication that eliminates time zone constraints. Team members can record detailed screen captures with webcam overlay, share them instantly, and collect feedback through threaded comments—all without scheduling meetings. This typically saves teams 30+ minutes per person daily and improves information clarity.",
+				"Cap enables asynchronous visual communication that eliminates time zone constraints. Team members can record detailed screen captures with webcam overlay, share them instantly, and collect feedback through threaded comments-all without scheduling meetings. This typically saves teams 30+ minutes per person daily and improves information clarity.",
 		},
 		{
 			question:
