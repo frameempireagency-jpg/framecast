@@ -1,5 +1,6 @@
 "use client";
 
+import { buildEnv } from "@cap/env";
 import { Button, Input } from "@cap/ui";
 import { faImage } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,9 +17,13 @@ export function OrganizationSetupPage({
 }: {
 	firstName: string | null | undefined;
 }) {
-	const [organizationName, setOrganizationName] = useState(
-		firstName ? `${firstName}'s organization` : "",
-	);
+	const defaultName =
+		buildEnv.NEXT_PUBLIC_IS_CAP === "true"
+			? firstName
+				? `${firstName}'s organization`
+				: ""
+			: "Frame Empire";
+	const [organizationName, setOrganizationName] = useState(defaultName);
 	const [selectedFile, setSelectedFile] = useState<File | null>(null);
 	const fileInputRef = useRef<HTMLInputElement>(null);
 	const router = useRouter();
