@@ -60,7 +60,7 @@ const options: Array<{
 		pro: true,
 	},
 	{
-		label: "Show Cap logo",
+		label: "Show logo on share page",
 		value: "hideShareableLinkCapLogo",
 		description: "Show Cap branding at the top of shareable links",
 		pro: true,
@@ -117,8 +117,8 @@ const CapSettingsCard = () => {
 						if (changedKey === "hideShareableLinkCapLogo") {
 							toast.success(
 								debouncedUpdateSettings[changedKey]
-									? "Cap logo hidden"
-									: "Cap logo shown",
+									? "Logo hidden"
+									: "Logo shown",
 							);
 						} else {
 							const isDisabled = debouncedUpdateSettings[changedKey];
