@@ -129,21 +129,13 @@ export const authOptions = (): NextAuthOptions => {
 						: typeof credentials?.email === "string"
 							? credentials.email
 							: null);
-				if (!rawEmail || typeof rawEmail !== "string") return true;
+				if (!rawEmail || typeof rawEmail !== "string") return false;
 				const userEmail = rawEmail.toLowerCase();
 
-				const [existingUser] = await db()
-					.select()
-					.from(users)
-					.where(eq(users.email, userEmail))
-					.limit(1);
-
-				// Only apply domain restrictions for new users, existing ones can always sign in
-				if (
-					!existingUser &&
-					!isEmailAllowedForSignup(userEmail, allowedDomains)
-				) {
-					console.warn(`Signup blocked for email domain: ${userEmail}`);
+				if (!isEmailAllowedForSignup(userEmail, allowedDomains)) {
+					console.warn(
+						`Sign-in blocked, email domain not on allowlist: ${userEmail}`,
+					);
 					return false;
 				}
 
