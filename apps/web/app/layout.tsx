@@ -61,16 +61,15 @@ const defaultFont = localFont({
 });
 
 export const metadata: Metadata = {
-	title: "Cap — Beautiful screen recordings, owned by you.",
+	title: "FrameCast | Frame Empire",
 	description:
-		"Cap is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share in seconds.",
+		"Internal screen recordings for Frame Empire. Record. Share. Move on.",
 	openGraph: {
-		title: "Cap — Beautiful screen recordings, owned by you.",
+		title: "FrameCast | Frame Empire",
 		description:
-			"Cap is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share in seconds.",
+			"Internal screen recordings for Frame Empire. Record. Share. Move on.",
 		type: "website",
-		url: "https://cap.so",
-		images: ["https://cap.so/og.png"],
+		images: ["/og.png"],
 	},
 };
 
@@ -83,28 +82,16 @@ export default ({ children }: PropsWithChildren) =>
 		return (
 			<html className={defaultFont.className} lang="en">
 				<head>
+					<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+					<link rel="alternate icon" href="/favicon.ico" />
 					<link
 						rel="apple-touch-icon"
 						sizes="180x180"
-						href="/apple-touch-icon.png"
+						href="/framecast-icon.svg"
 					/>
-					<link
-						rel="icon"
-						type="image/png"
-						sizes="32x32"
-						href="/favicon-32x32.png"
-					/>
-					<link
-						rel="icon"
-						type="image/png"
-						sizes="16x16"
-						href="/favicon-16x16.png"
-					/>
-					<link rel="manifest" href="/site.webmanifest" />
-					<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-					<link rel="shortcut icon" href="/favicon.ico" />
-					<meta name="msapplication-TileColor" content="#da532c" />
-					<meta name="theme-color" content="#ffffff" />
+					<link rel="mask-icon" href="/favicon.svg" color="#521F88" />
+					<meta name="msapplication-TileColor" content="#521F88" />
+					<meta name="theme-color" content="#521F88" />
 				</head>
 				<body suppressHydrationWarning>
 					<script

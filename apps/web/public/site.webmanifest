@@ -1,19 +1,14 @@
 {
-	"name": "",
-	"short_name": "",
+	"name": "FrameCast",
+	"short_name": "FrameCast",
 	"icons": [
 		{
-			"src": "/android-chrome-192x192.png",
-			"sizes": "192x192",
-			"type": "image/png"
-		},
-		{
-			"src": "/android-chrome-512x512.png",
-			"sizes": "512x512",
-			"type": "image/png"
+			"src": "/framecast-icon.svg",
+			"sizes": "any",
+			"type": "image/svg+xml"
 		}
 	],
-	"theme_color": "#ffffff",
-	"background_color": "#ffffff",
+	"theme_color": "#521F88",
+	"background_color": "#0C0A0C",
 	"display": "standalone"
 }

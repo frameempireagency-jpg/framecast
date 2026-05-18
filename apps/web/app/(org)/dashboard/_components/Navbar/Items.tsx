@@ -83,7 +83,7 @@ const AdminNavItems = ({ toggleMobileNav }: Props) => {
 			subNav: [],
 		},
 		{
-			name: "Record a Cap",
+			name: "Record",
 			href: `/dashboard/caps/record`,
 			icon: <RecordIcon />,
 			subNav: [],
@@ -386,7 +386,7 @@ const AdminNavItems = ({ toggleMobileNav }: Props) => {
 						</div>
 					)}
 					<p className="mt-2 text-xs text-center truncate text-gray-10">
-						Cap Software, Inc. {new Date().getFullYear()}.
+						Frame Empire {new Date().getFullYear()}.
 					</p>
 				</div>
 			</nav>

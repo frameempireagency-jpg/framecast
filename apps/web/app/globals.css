@@ -10,21 +10,26 @@
 @tailwind utilities;
 
 :root {
-	--primary: #005cb1;
-	--primary-2: #004c93;
-	--primary-3: #003b73;
-	--secondary: #2eb4ff;
-	--secondary-2: #1696e0;
-	--secondary-3: #117ebd;
-	--tertiary: #c5eaff;
-	--tertiary-2: #d3e5ff;
-	--tertiary-3: #e0edff;
+	--primary: #521F88;
+	--primary-2: #421670;
+	--primary-3: #310D58;
+	--secondary: #9C6DD4;
+	--secondary-2: #7E4DB7;
+	--secondary-3: #6438A0;
+	--tertiary: #EFE9F8;
+	--tertiary-2: #DBC9F0;
+	--tertiary-3: #C8A8E8;
+	--success: #25D366;
+	--success-2: #1FB856;
+	--success-3: #169E48;
+	--dark-bg: #0C0A0C;
+	--on-dark: #EFE9F8;
 	--filler: #efefef;
 	--filler-2: #e4e4e4;
 	--filler-3: #e2e2e2;
 	--filler-txt: #b3b3b3;
-	--text-primary: #0d1b2a;
-	--text-secondary: #ffffff;
+	--text-primary: #0C0A0C;
+	--text-secondary: #EFE9F8;
 	--shadow-gray-11: hsl(0, 0%, 13%);
 	--header-height: 80px;
 	--vh100-offset: calc(100vh - var(--header-height));
