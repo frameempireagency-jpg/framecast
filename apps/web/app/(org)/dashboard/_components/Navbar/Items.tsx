@@ -299,16 +299,18 @@ const AdminNavItems = ({ toggleMobileNav }: Props) => {
 												</CommandItem>
 											);
 										})}
-										<DialogTrigger asChild>
-											<Button
-												variant="dark"
-												size="sm"
-												className="flex gap-1 items-center my-2 w-[90%] mx-auto text-sm"
-											>
-												<Plus className="w-3.5 h-auto" />
-												New organization
-											</Button>
-										</DialogTrigger>
+										{buildEnv.NEXT_PUBLIC_IS_CAP === "true" && (
+											<DialogTrigger asChild>
+												<Button
+													variant="dark"
+													size="sm"
+													className="flex gap-1 items-center my-2 w-[90%] mx-auto text-sm"
+												>
+													<Plus className="w-3.5 h-auto" />
+													New organization
+												</Button>
+											</DialogTrigger>
+										)}
 									</CommandGroup>
 								</Command>
 							</PopoverContent>

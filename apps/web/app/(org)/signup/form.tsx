@@ -347,24 +347,7 @@ export function SignupForm() {
 							layout="position"
 							className="text-xs text-center text-gray-9"
 						>
-							By typing your email and clicking continue, you acknowledge that
-							you have both read and agree to FrameCast's{" "}
-							<Link
-								href="/terms"
-								target="_blank"
-								className="text-xs font-semibold text-gray-12 hover:text-blue-300"
-							>
-								Terms of Service
-							</Link>{" "}
-							and{" "}
-							<Link
-								href="/privacy"
-								target="_blank"
-								className="text-xs font-semibold text-gray-12 hover:text-blue-300"
-							>
-								Privacy Policy
-							</Link>
-							.
+							Internal Frame Empire use only.
 						</motion.p>
 					</motion.div>
 				</Suspense>

@@ -3,7 +3,6 @@ import { Button, Dialog, DialogContent, Input, LogoBadge } from "@cap/ui";
 import { faArrowLeft, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import Link from "next/link";
 import { useParams } from "next/navigation";
 import { signIn } from "next-auth/react";
 import { useId, useState } from "react";
@@ -88,24 +87,7 @@ export const AuthOverlay: React.FC<AuthOverlayProps> = ({
 							/>
 						)}
 						<p className="mt-6 text-xs text-center text-gray-9">
-							By entering your email, you acknowledge that you have both read
-							and agree to FrameCast's{" "}
-							<Link
-								href="/terms"
-								target="_blank"
-								className="text-xs font-semibold text-gray-12 hover:text-blue-300"
-							>
-								Terms of Service
-							</Link>{" "}
-							and{" "}
-							<Link
-								href="/privacy"
-								target="_blank"
-								className="text-xs font-semibold text-gray-12 hover:text-blue-300"
-							>
-								Privacy Policy
-							</Link>
-							.
+							Internal Frame Empire use only.
 						</p>
 					</div>
 				</div>

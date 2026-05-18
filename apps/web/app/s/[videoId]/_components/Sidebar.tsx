@@ -1,4 +1,5 @@
 import type { comments as commentsSchema } from "@cap/database/schema";
+import { buildEnv } from "@cap/env";
 import { classNames } from "@cap/utils";
 import type { ImageUpload, Video } from "@cap/web-domain";
 import clsx from "clsx";
@@ -94,13 +95,16 @@ export const Sidebar = forwardRef<{ scrollToBottom: () => void }, SidebarProps>(
 			isOwner || (user && data.organizationMembers?.includes(user.id)),
 		);
 
+		const aiAllowed = buildEnv.NEXT_PUBLIC_FEATURES_AI === "true";
 		const defaultTab = !(
 			videoSettings?.disableComments ?? data.orgSettings?.disableComments
 		)
 			? "activity"
-			: !(videoSettings?.disableSummary ?? data.orgSettings?.disableSummary)
+			: aiAllowed &&
+					!(videoSettings?.disableSummary ?? data.orgSettings?.disableSummary)
 				? "summary"
-				: !(
+				: aiAllowed &&
+						!(
 							videoSettings?.disableTranscript ??
 							data.orgSettings?.disableTranscript
 						)
@@ -121,14 +125,16 @@ export const Sidebar = forwardRef<{ scrollToBottom: () => void }, SidebarProps>(
 				id: "summary",
 				label: "Summary",
 				disabled:
-					videoSettings?.disableSummary ?? data.orgSettings?.disableSummary,
+					!aiAllowed ||
+					(videoSettings?.disableSummary ?? data.orgSettings?.disableSummary),
 			},
 			{
 				id: "transcript",
 				label: "Transcript",
 				disabled:
-					videoSettings?.disableTranscript ??
-					data.orgSettings?.disableTranscript,
+					!aiAllowed ||
+					(videoSettings?.disableTranscript ??
+						data.orgSettings?.disableTranscript),
 			},
 		];
 
