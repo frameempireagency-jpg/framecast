@@ -12,6 +12,24 @@ import { WebRecorderDialog } from "../components/web-recorder-dialog/web-recorde
 
 const isCap = buildEnv.NEXT_PUBLIC_IS_CAP === "true";
 
+function detectPlatform(): "windows" | "apple-silicon" | "apple-intel" {
+	if (typeof navigator === "undefined") return "apple-silicon";
+	const ua = navigator.userAgent.toLowerCase();
+	if (ua.includes("win")) return "windows";
+	if (
+		ua.includes("mac") &&
+		(ua.includes("arm") || (navigator as Navigator & { userAgentData?: { architecture?: string } }).userAgentData?.architecture === "arm")
+	)
+		return "apple-silicon";
+	if (ua.includes("mac")) return "apple-intel";
+	return "apple-silicon";
+}
+
+function getDesktopDownloadUrl(): string {
+	if (isCap) return "/download";
+	return `https://cap.so/download/${detectPlatform()}`;
+}
+
 export const RecordVideoPage = () => {
 	const checkingRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -35,7 +53,7 @@ export const RecordVideoPage = () => {
 				document.removeEventListener("visibilitychange", onChange);
 				window.removeEventListener("pagehide", onChange);
 				window.removeEventListener("blur", onChange);
-				window.location.assign("/download");
+				window.location.assign(getDesktopDownloadUrl());
 			}
 		}, 1500);
 	}, []);
@@ -54,19 +72,15 @@ export const RecordVideoPage = () => {
 							</p>
 						</div>
 						<div className="flex flex-wrap gap-3 justify-center items-center mt-4">
-							{isCap && (
-								<>
-									<Button
-										onClick={openDesktop}
-										className="flex relative gap-2 justify-center items-center"
-										variant="primary"
-									>
-										<FontAwesomeIcon className="size-3.5" icon={faDownload} />
-										Open Cap Desktop
-									</Button>
-									<p className="text-sm text-gray-10">or</p>
-								</>
-							)}
+							<Button
+								onClick={openDesktop}
+								className="flex relative gap-2 justify-center items-center"
+								variant="primary"
+							>
+								<FontAwesomeIcon className="size-3.5" icon={faDownload} />
+								Open FrameCast Desktop
+							</Button>
+							<p className="text-sm text-gray-10">or</p>
 							<WebRecorderDialog />
 						</div>
 						<FaqAccordion />
@@ -108,19 +122,13 @@ const FaqAccordion = () => {
 		{
 			id: "system-audio",
 			q: "Can I record system audio?",
-			a: isCap
-				? "Browsers limit system‑wide audio capture. We recommend using Cap Desktop for best results."
-				: "Browsers restrict system‑wide audio capture. Microphone audio works in the browser; for full system audio you'd need a separate desktop recorder.",
+			a: "Browsers limit system‑wide audio capture. We recommend using FrameCast Desktop for best results.",
 		},
-		...(isCap
-			? [
-					{
-						id: "install",
-						q: "Do I need to install the app?",
-						a: `No. You can record in your browser. For longer recordings, system audio, and advanced editing, use Cap Desktop. The Free plan supports up to ${freeMinutes} minutes per recording in the browser.`,
-					},
-				]
-			: []),
+		{
+			id: "install",
+			q: "Do I need to install the app?",
+			a: `No. You can record in your browser. For longer recordings, system audio, and advanced editing, use FrameCast Desktop. Browser recordings are capped at ${freeMinutes} minutes per session.`,
+		},
 	];
 
 	return (

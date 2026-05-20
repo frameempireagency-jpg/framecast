@@ -7,6 +7,20 @@ import { useTheme } from "../../Contexts";
 import { UploadCapButton } from "./UploadCapButton";
 import { WebRecorderDialog } from "./web-recorder-dialog/web-recorder-dialog";
 
+const isCap = buildEnv.NEXT_PUBLIC_IS_CAP === "true";
+
+function detectPlatform(): "windows" | "apple-silicon" | "apple-intel" {
+	if (typeof navigator === "undefined") return "apple-silicon";
+	const ua = navigator.userAgent.toLowerCase();
+	if (ua.includes("win")) return "windows";
+	if (ua.includes("mac")) return "apple-silicon";
+	return "apple-silicon";
+}
+
+const downloadHref = isCap
+	? "/download"
+	: `https://cap.so/download/${detectPlatform()}`;
+
 interface EmptyCapStateProps {
 	userName?: string;
 }
@@ -33,19 +47,15 @@ export const EmptyCapState: React.FC<EmptyCapStateProps> = ({ userName }) => {
 					</p>
 				</div>
 				<div className="flex flex-wrap gap-3 justify-center items-center mt-4">
-					{buildEnv.NEXT_PUBLIC_IS_CAP === "true" && (
-						<>
-							<Button
-								href="/download"
-								className="flex relative gap-2 justify-center items-center"
-								variant="primary"
-							>
-								<FontAwesomeIcon className="size-3.5" icon={faDownload} />
-								Download FrameCast
-							</Button>
-							<p className="text-sm text-gray-10">or</p>
-						</>
-					)}
+					<Button
+						href={downloadHref}
+						className="flex relative gap-2 justify-center items-center"
+						variant="primary"
+					>
+						<FontAwesomeIcon className="size-3.5" icon={faDownload} />
+						Download FrameCast
+					</Button>
+					<p className="text-sm text-gray-10">or</p>
 					<WebRecorderDialog />
 					<p className="text-sm text-gray-10">or</p>
 					<UploadCapButton />
