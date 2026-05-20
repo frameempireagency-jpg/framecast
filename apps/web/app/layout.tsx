@@ -4,7 +4,7 @@ import { STRIPE_PLAN_IDS } from "@cap/utils";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 import { Effect } from "effect";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { DM_Mono, Syne } from "next/font/google";
 import type { PropsWithChildren } from "react";
 import { SonnerToaster } from "@/components/SonnerToastProvider";
 import { runPromise } from "@/lib/server";
@@ -25,40 +25,23 @@ import { StripeContextProvider } from "./Layout/StripeContext";
 //@ts-expect-error
 import { script } from "./themeScript";
 
-const defaultFont = localFont({
-	src: [
-		{
-			path: "../public/fonts/NeueMontreal-Bold.otf",
-			weight: "700",
-			style: "normal",
-		},
-		{
-			path: "../public/fonts/NeueMontreal-Regular.otf",
-			weight: "400",
-			style: "normal",
-		},
-		{
-			path: "../public/fonts/NeueMontreal-Medium.otf",
-			weight: "500",
-			style: "normal",
-		},
-		{
-			path: "../public/fonts/NeueMontreal-MediumItalic.otf",
-			weight: "500",
-			style: "italic",
-		},
-		{
-			path: "../public/fonts/NeueMontreal-Italic.otf",
-			weight: "400",
-			style: "italic",
-		},
-		{
-			path: "../public/fonts/NeueMontreal-BoldItalic.otf",
-			weight: "700",
-			style: "italic",
-		},
-	],
+const syne = Syne({
+	subsets: ["latin"],
+	weight: ["400", "600", "700", "800"],
+	variable: "--font-heading",
+	display: "swap",
 });
+
+const dmMono = DM_Mono({
+	subsets: ["latin"],
+	weight: ["300", "400", "500"],
+	variable: "--font-mono",
+	display: "swap",
+});
+
+const defaultFont = {
+	className: `${syne.className} ${syne.variable} ${dmMono.variable}`,
+};
 
 export const metadata: Metadata = {
 	title: "FrameCast | Frame Empire",

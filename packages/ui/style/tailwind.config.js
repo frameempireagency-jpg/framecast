@@ -103,6 +103,10 @@ module.exports = (__app, _options) => {
 					"success-3": "var(--success-3)",
 					"dark-bg": "var(--dark-bg)",
 					"on-dark": "var(--on-dark)",
+					gold: "#FFD700",
+					lavender: "#c08fff",
+					coral: "#ff7070",
+					"brand-soft": "#f5f0fa",
 					filler: "var(--filler)",
 					"filler-2": "var(--filler-2)",
 					"filler-3": "var(--filler-3)",
@@ -164,7 +168,22 @@ module.exports = (__app, _options) => {
 						"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 				},
 				fontFamily: {
-					primary: ["var(--font-sf-pro-display)", "sans-serif"],
+					primary: [
+						"var(--font-heading)",
+						"Syne",
+						"-apple-system",
+						"BlinkMacSystemFont",
+						"Segoe UI",
+						"sans-serif",
+					],
+					heading: [
+						"var(--font-heading)",
+						"Syne",
+						"-apple-system",
+						"BlinkMacSystemFont",
+						"sans-serif",
+					],
+					mono: ["var(--font-mono)", "DM Mono", "ui-monospace", "monospace"],
 				},
 				keyframes: {
 					flyEmoji: {
