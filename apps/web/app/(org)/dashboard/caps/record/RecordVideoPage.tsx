@@ -1,5 +1,6 @@
 "use client";
 
+import { buildEnv } from "@cap/env";
 import { Button } from "@cap/ui";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,6 +9,8 @@ import { AnimatePresence, motion } from "motion/react";
 import { useCallback, useId, useRef, useState } from "react";
 import { FREE_PLAN_MAX_RECORDING_MS } from "../components/web-recorder-dialog/web-recorder-constants";
 import { WebRecorderDialog } from "../components/web-recorder-dialog/web-recorder-dialog";
+
+const isCap = buildEnv.NEXT_PUBLIC_IS_CAP === "true";
 
 export const RecordVideoPage = () => {
 	const checkingRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -51,15 +54,19 @@ export const RecordVideoPage = () => {
 							</p>
 						</div>
 						<div className="flex flex-wrap gap-3 justify-center items-center mt-4">
-							<Button
-								onClick={openDesktop}
-								className="flex relative gap-2 justify-center items-center"
-								variant="primary"
-							>
-								<FontAwesomeIcon className="size-3.5" icon={faDownload} />
-								Open Cap Desktop
-							</Button>
-							<p className="text-sm text-gray-10">or</p>
+							{isCap && (
+								<>
+									<Button
+										onClick={openDesktop}
+										className="flex relative gap-2 justify-center items-center"
+										variant="primary"
+									>
+										<FontAwesomeIcon className="size-3.5" icon={faDownload} />
+										Open Cap Desktop
+									</Button>
+									<p className="text-sm text-gray-10">or</p>
+								</>
+							)}
 							<WebRecorderDialog />
 						</div>
 						<FaqAccordion />
@@ -101,13 +108,19 @@ const FaqAccordion = () => {
 		{
 			id: "system-audio",
 			q: "Can I record system audio?",
-			a: "Browsers limit system‑wide audio capture. We recommend using Cap Desktop for best results.",
+			a: isCap
+				? "Browsers limit system‑wide audio capture. We recommend using Cap Desktop for best results."
+				: "Browsers restrict system‑wide audio capture. Microphone audio works in the browser; for full system audio you'd need a separate desktop recorder.",
 		},
-		{
-			id: "install",
-			q: "Do I need to install the app?",
-			a: `No. You can record in your browser. For longer recordings, system audio, and advanced editing, use Cap Desktop. The Free plan supports up to ${freeMinutes} minutes per recording in the browser.`,
-		},
+		...(isCap
+			? [
+					{
+						id: "install",
+						q: "Do I need to install the app?",
+						a: `No. You can record in your browser. For longer recordings, system audio, and advanced editing, use Cap Desktop. The Free plan supports up to ${freeMinutes} minutes per recording in the browser.`,
+					},
+				]
+			: []),
 	];
 
 	return (
