@@ -3,6 +3,7 @@
 import { Switch } from "@cap/ui";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowLeftIcon } from "lucide-react";
+import { BackgroundPicker } from "./BackgroundPicker";
 
 interface SettingsPanelProps {
 	open: boolean;
@@ -42,7 +43,10 @@ export const SettingsPanel = ({
 						</h2>
 						<span className="w-9 h-9" aria-hidden />
 					</div>
-					<div className="flex flex-col gap-3">
+					<div className="flex flex-col gap-3 overflow-y-auto">
+						<div className="p-4 rounded-xl border border-gray-3 bg-gray-1 dark:bg-gray-3">
+							<BackgroundPicker />
+						</div>
 						<div className="flex gap-4 justify-between items-start p-4 text-left rounded-xl border border-gray-3 bg-gray-1 dark:bg-gray-3">
 							<div className="flex flex-col gap-1 text-left">
 								<p className="text-sm font-medium text-gray-12">

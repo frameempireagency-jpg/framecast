@@ -12,6 +12,7 @@ import { ThumbnailRequest } from "@/lib/Requests/ThumbnailRequest";
 import { uploadWithTarget } from "@/utils/upload-target";
 import { useUploadingContext } from "../../UploadingContext";
 import { sendProgressUpdate } from "../sendProgressUpdate";
+import { createBackgroundProcessor } from "./background-processor";
 import {
 	InstantRecordingUploader,
 	initiateMultipartUpload,
@@ -30,6 +31,7 @@ import {
 	loadRecoveredRecordingSpools,
 	removeRecoveredRecordingSpoolFromCache,
 } from "./recovered-recording-cache";
+import { useBackgroundMode } from "./useBackgroundMode";
 import { useMediaRecorderSetup } from "./useMediaRecorderSetup";
 import { useRecordingTimer } from "./useRecordingTimer";
 import { useStreamManagement } from "./useStreamManagement";
@@ -158,6 +160,8 @@ export const useWebRecorder = ({
 	const {
 		displayStreamRef,
 		cameraStreamRef,
+		rawCameraStreamRef,
+		backgroundProcessorRef,
 		micStreamRef,
 		mixedStreamRef,
 		audioContextRef,
@@ -165,6 +169,12 @@ export const useWebRecorder = ({
 		detectionCleanupRef,
 		cleanupStreams,
 	} = useStreamManagement();
+
+	const { mode: backgroundMode } = useBackgroundMode();
+
+	useEffect(() => {
+		backgroundProcessorRef.current?.setMode(backgroundMode);
+	}, [backgroundMode, backgroundProcessorRef]);
 
 	const {
 		durationMs,
@@ -702,7 +712,7 @@ export const useWebRecorder = ({
 				if (!selectedCameraId) {
 					throw new Error("Camera ID is required for camera-only mode");
 				}
-				videoStream = await navigator.mediaDevices.getUserMedia({
+				const rawStream = await navigator.mediaDevices.getUserMedia({
 					video: {
 						deviceId: { exact: selectedCameraId },
 						frameRate: { ideal: 30 },
@@ -710,6 +720,23 @@ export const useWebRecorder = ({
 						height: { ideal: 1080 },
 					},
 				});
+				rawCameraStreamRef.current = rawStream;
+
+				try {
+					const processor = await createBackgroundProcessor(
+						rawStream,
+						backgroundMode,
+					);
+					backgroundProcessorRef.current = processor;
+					videoStream = processor.outputStream;
+				} catch (err) {
+					console.warn(
+						"background processor failed, recording raw camera",
+						err,
+					);
+					videoStream = rawStream;
+				}
+
 				cameraStreamRef.current = videoStream;
 				firstTrack = videoStream.getVideoTracks()[0] ?? null;
 			} else {

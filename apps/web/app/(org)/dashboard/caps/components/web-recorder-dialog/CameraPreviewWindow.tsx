@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { useBackgroundMode } from "./useBackgroundMode";
 
 type CameraPreviewSize = "sm" | "lg";
 type CameraPreviewShape = "round" | "square" | "full";
@@ -83,6 +84,7 @@ export const CameraPreviewWindow = ({
 	cameraId,
 	onClose,
 }: CameraPreviewWindowProps) => {
+	const { mode: backgroundMode } = useBackgroundMode();
 	const [size, setSize] = useState<CameraPreviewSize>("sm");
 	const [shape, setShape] = useState<CameraPreviewShape>("round");
 	const [mirrored, setMirrored] = useState(false);
@@ -168,19 +170,55 @@ export const CameraPreviewWindow = ({
 		};
 	}, []);
 
+	const processorRef = useRef<
+		import("./background-processor").BackgroundProcessor | null
+	>(null);
+	const rawStreamRef = useRef<MediaStream | null>(null);
+	const backgroundModeRef = useRef(backgroundMode);
 	useEffect(() => {
+		backgroundModeRef.current = backgroundMode;
+		processorRef.current?.setMode(backgroundMode);
+	}, [backgroundMode]);
+
+	useEffect(() => {
+		let cancelled = false;
+
 		const startCamera = async () => {
 			try {
-				const stream = await navigator.mediaDevices.getUserMedia({
-					video: {
-						deviceId: { exact: cameraId },
-					},
+				const rawStream = await navigator.mediaDevices.getUserMedia({
+					video: { deviceId: { exact: cameraId } },
 				});
+				if (cancelled) {
+					rawStream.getTracks().forEach((t) => {
+						t.stop();
+					});
+					return;
+				}
+				rawStreamRef.current = rawStream;
 
-				streamRef.current = stream;
+				let outputStream: MediaStream = rawStream;
+				try {
+					const { createBackgroundProcessor } = await import(
+						"./background-processor"
+					);
+					if (cancelled) return;
+					const processor = await createBackgroundProcessor(
+						rawStream,
+						backgroundModeRef.current,
+					);
+					if (cancelled) {
+						processor.stop();
+						return;
+					}
+					processorRef.current = processor;
+					outputStream = processor.outputStream;
+				} catch (err) {
+					console.warn("camera preview background processor failed", err);
+				}
 
+				streamRef.current = outputStream;
 				if (videoRef.current) {
-					videoRef.current.srcObject = stream;
+					videoRef.current.srcObject = outputStream;
 				}
 			} catch (err) {
 				console.error("Failed to start camera", err);
@@ -190,12 +228,20 @@ export const CameraPreviewWindow = ({
 		startCamera();
 
 		return () => {
-			if (streamRef.current) {
-				streamRef.current.getTracks().forEach((track) => {
-					track.stop();
-				});
-				streamRef.current = null;
+			cancelled = true;
+			if (processorRef.current) {
+				try {
+					processorRef.current.stop();
+				} catch {}
+				processorRef.current = null;
 			}
+			if (rawStreamRef.current) {
+				rawStreamRef.current.getTracks().forEach((t) => {
+					t.stop();
+				});
+				rawStreamRef.current = null;
+			}
+			streamRef.current = null;
 		};
 	}, [cameraId]);
 

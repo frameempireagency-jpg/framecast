@@ -292,28 +292,6 @@ export function DrizzleAdapter(db: MySql2Database): Adapter {
 		async createVerificationToken(verificationToken) {
 			const normalizedIdentifier =
 				verificationToken.identifier?.toLowerCase() ?? "";
-			const existingTokens = await db
-				.select()
-				.from(verificationTokens)
-				.where(eq(verificationTokens.identifier, normalizedIdentifier))
-				.limit(1);
-
-			if (existingTokens.length > 0) {
-				await db
-					.update(verificationTokens)
-					.set({
-						token: verificationToken.token,
-						expires: verificationToken.expires,
-					})
-					.where(eq(verificationTokens.identifier, normalizedIdentifier));
-
-				return await db
-					.select()
-					.from(verificationTokens)
-					.where(eq(verificationTokens.identifier, normalizedIdentifier))
-					.limit(1)
-					.then((rows) => rows[0]);
-			}
 
 			await db.insert(verificationTokens).values({
 				expires: verificationToken.expires,
