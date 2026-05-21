@@ -556,8 +556,8 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 				</Section>
 
 				<Section
-					title="Cap Pro"
-					description="Settings available with a Cap Pro license."
+					title="FrameCast Pro"
+					description="Settings available with a FrameCast Pro license."
 					pro
 				>
 					<SectionRows>

@@ -807,18 +807,20 @@ impl CapWindowId {
 
     pub fn title(&self) -> String {
         match self {
-            Self::Settings => "Cap Settings".to_string(),
-            Self::WindowCaptureOccluder { .. } => "Cap Window Capture Occluder".to_string(),
-            Self::CaptureArea => "Cap Capture Area".to_string(),
-            Self::RecordingControls => "Cap Recording Controls".to_string(),
-            Self::Editor { .. } => "Cap Editor".to_string(),
-            Self::ScreenshotEditor { .. } => "Cap Screenshot Editor".to_string(),
-            Self::ModeSelect => "Cap Mode Selection".to_string(),
-            Self::Onboarding => "Welcome to Cap".to_string(),
-            Self::Camera => "Cap Camera".to_string(),
-            Self::RecordingsOverlay => "Cap Recordings Overlay".to_string(),
-            Self::TargetSelectOverlay { .. } => "Cap Target Select".to_string(),
-            _ => "Cap".to_string(),
+            Self::Settings => "FrameCast Settings".to_string(),
+            Self::WindowCaptureOccluder { .. } => {
+                "FrameCast Window Capture Occluder".to_string()
+            }
+            Self::CaptureArea => "FrameCast Capture Area".to_string(),
+            Self::RecordingControls => "FrameCast Recording Controls".to_string(),
+            Self::Editor { .. } => "FrameCast Editor".to_string(),
+            Self::ScreenshotEditor { .. } => "FrameCast Screenshot Editor".to_string(),
+            Self::ModeSelect => "FrameCast Mode Selection".to_string(),
+            Self::Onboarding => "Welcome to FrameCast".to_string(),
+            Self::Camera => "FrameCast Camera".to_string(),
+            Self::RecordingsOverlay => "FrameCast Recordings Overlay".to_string(),
+            Self::TargetSelectOverlay { .. } => "FrameCast Target Select".to_string(),
+            _ => "FrameCast".to_string(),
         }
     }
 

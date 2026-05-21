@@ -85,15 +85,15 @@ impl MainWindowRecordingStartBehaviour {
 }
 
 const DEFAULT_EXCLUDED_WINDOW_TITLES: &[&str] = &[
-    "Cap",
-    "Cap Settings",
-    "Cap Recording Controls",
-    "Cap Camera",
-    "Cap Target Select",
-    "Cap Window Capture Occluder",
-    "Cap Capture Area",
-    "Cap Mode Selection",
-    "Cap Recordings Overlay",
+    "FrameCast",
+    "FrameCast Settings",
+    "FrameCast Recording Controls",
+    "FrameCast Camera",
+    "FrameCast Target Select",
+    "FrameCast Window Capture Occluder",
+    "FrameCast Capture Area",
+    "FrameCast Mode Selection",
+    "FrameCast Recordings Overlay",
 ];
 
 pub fn default_excluded_windows() -> Vec<WindowExclusion> {
@@ -219,7 +219,7 @@ fn default_max_fps() -> u32 {
 
 fn default_transcription_hints() -> Vec<String> {
     vec![
-        "Cap".to_string(),
+        "FrameCast".to_string(),
         "TypeScript".to_string(),
         "My Brand Name".to_string(),
         "mywebsite.com".to_string(),

@@ -1076,7 +1076,7 @@ function FaqStep(props: { active: boolean }) {
 						out our{" "}
 						<button
 							type="button"
-							onClick={() => shell.open("https://cap.so/pricing")}
+							onClick={() => shell.open("https://framecast.frameempire.co.uk/dashboard")}
 							class="text-blue-10 hover:text-blue-11 underline underline-offset-2"
 						>
 							pricing plans
@@ -1116,7 +1116,7 @@ function FaqStep(props: { active: boolean }) {
 
 			<button
 				type="button"
-				onClick={() => shell.open("https://cap.so/pricing")}
+				onClick={() => shell.open("https://framecast.frameempire.co.uk/dashboard")}
 				class={cx(
 					"flex items-center gap-1.5 text-[13px] text-blue-10 hover:text-blue-11 transition-all duration-500 delay-200",
 					visible() ? "opacity-100" : "opacity-0",
@@ -1921,7 +1921,7 @@ function StartupOverlay(props: {
 						/>
 					</div>
 					<h1 class="text-5xl md:text-5xl font-bold mb-4 mt-8 drop-shadow-[0_0_20px_rgba(0,0,0,0.2)]">
-						Welcome to Cap
+						Welcome to FrameCast
 					</h1>
 					<p class="text-xl md:text-2xl opacity-80 mx-auto drop-shadow-[0_0_20px_rgba(0,0,0,0.2)] whitespace-nowrap">
 						Beautiful screen recordings, owned by you.

@@ -101,7 +101,7 @@ export default function Settings(props: RouteSectionProps) {
 								<button
 									type="button"
 									class="text-gray-11 hover:text-gray-12 underline transition-colors"
-									onClick={() => shell.open("https://cap.so/download/versions")}
+									onClick={() => shell.open("https://framecast.frameempire.co.uk/download/versions")}
 								>
 									View previous versions
 								</button>

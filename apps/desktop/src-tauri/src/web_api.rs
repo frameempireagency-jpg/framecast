@@ -64,7 +64,7 @@ fn apply_env_headers(req: reqwest::RequestBuilder) -> reqwest::RequestBuilder {
 
 fn default_server_url() -> String {
     option_env!("VITE_SERVER_URL")
-        .unwrap_or("https://cap.so")
+        .unwrap_or("https://framecast.frameempire.co.uk")
         .to_string()
 }
 
