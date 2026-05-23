@@ -72,23 +72,61 @@ After that, FrameCast launches like any other app. No recurring nag.
 
 If you ever want to upgrade later, see "Future: enabling signing" near the bottom of this file.
 
-### 4. Build
+### 4. Native build dependencies (Windows)
+
+Before the first build, you need these on the machine (in addition to Node 20 + pnpm 10.5.2 already present):
+
+1. **Rust 1.88.0 via rustup** (repo pins this via `rust-toolchain.toml`). `rustup` will auto-fetch when you `cd` into the repo.
+2. **Visual Studio Build Tools 2026** (or 2022 17.12+) with the MSVC v143 C++ build tools component AND Windows 11 SDK 26100.
+3. **CMake** ≥ 3.20 on PATH. `scoop install cmake` works without admin.
+4. **libclang.dll from LLVM 18** (NOT 22+ - the latest LLVM has an ABI mismatch with `bindgen 0.70` that ships in `ffmpeg-sys-next 7.1.3`, producing opaque struct types for FFmpeg's bindings and making compilation fail). Easiest path: download `LLVM-18.1.8-win64.exe` from https://github.com/llvm/llvm-project/releases/tag/llvmorg-18.1.8, extract just `bin/libclang.dll` via 7-Zip (the installer file is a NullSoft archive, no need to actually install), and drop it anywhere. Then point `LIBCLANG_PATH` at it.
+
+The build also calls `bindgen` against MSVC headers, which requires `BINDGEN_EXTRA_CLANG_ARGS` with `--target=x86_64-pc-windows-msvc -fms-compatibility -fms-extensions -fdeclspec` plus `-isystem` flags for the MSVC and Windows SDK include directories. Paths with spaces in BINDGEN_EXTRA_CLANG_ARGS are unreliable, so the recommended workaround is to make junctions (no admin needed) from no-space paths to the actual MSVC + SDK include dirs:
+
+```powershell
+New-Item -ItemType Directory C:\msvc-headers | Out-Null
+cmd /c mklink /J C:\msvc-headers\msvc-include "C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\<your-MSVC-version>\include"
+cmd /c mklink /J C:\msvc-headers\sdk-ucrt   "C:\Program Files (x86)\Windows Kits\10\Include\<your-SDK-version>\ucrt"
+cmd /c mklink /J C:\msvc-headers\sdk-um     "C:\Program Files (x86)\Windows Kits\10\Include\<your-SDK-version>\um"
+cmd /c mklink /J C:\msvc-headers\sdk-shared "C:\Program Files (x86)\Windows Kits\10\Include\<your-SDK-version>\shared"
+```
+
+The `pnpm cap-setup` script auto-downloads FFmpeg 7.1 from Gyan.dev and writes `.cargo/config.toml` with `FFMPEG_DIR` and `LIBCLANG_PATH`. You'll need to manually edit that file to add `BINDGEN_EXTRA_CLANG_ARGS` and `CMAKE_GENERATOR = "Visual Studio 18 2026"` (the latter is needed because the Ninja generator puts whisper.cpp's output at `out/build/whisper.lib` while the `whisper-rs-sys` build script looks for it at `out/build/Release/whisper.lib`).
+
+Example final `.cargo/config.toml`:
+
+```toml
+[env]
+FFMPEG_DIR = { relative = true, force = true, value = "target/native-deps" }
+LIBCLANG_PATH = "C:/path/to/llvm18/bin/libclang.dll"
+CMAKE_GENERATOR = "Visual Studio 18 2026"
+BINDGEN_EXTRA_CLANG_ARGS = { force = true, value = "--target=x86_64-pc-windows-msvc -fms-compatibility -fms-extensions -fdeclspec -isystem C:/msvc-headers/msvc-include -isystem C:/msvc-headers/sdk-ucrt -isystem C:/msvc-headers/sdk-um -isystem C:/msvc-headers/sdk-shared" }
+```
+
+### 5. Build
 
 From the repo root:
 
 ```
-pnpm install
-pnpm tauri:build
+pnpm install        # if you haven't already
+pnpm cap-setup      # downloads FFmpeg, writes .cargo/config.toml
+pnpm tauri:build    # the actual build, 60 to 90 minutes first time
 ```
 
-This runs the production pipeline: builds the `cap-muxer` sidecar binary, runs the `preparescript` (vite/vinxi env prep), then `tauri build` which bundles the .msi.
+This runs the production pipeline:
+1. `cap-muxer` Rust sidecar (small, few minutes)
+2. `cap-exporter` Rust sidecar from `apps/cli` (huge - editor/export/rendering crates, 20 to 30 min)
+3. `preparescript` (vite/vinxi env prep, instant)
+4. Vinxi/Vite frontend bundle (few minutes)
+5. `cap-desktop` main Rust crate (huge, ~30 min)
+6. Tauri bundler wraps everything into `.msi` + NSIS `.exe` (few minutes)
 
 Output lands in `apps/desktop/src-tauri/target/release/bundle/`:
 - Windows: `.msi` and `.exe` (NSIS installer)
 - macOS: `.dmg` and `.app`
 - Linux: `.deb` and `.AppImage`
 
-First build is slow (Rust compilation, 30-60 min). Subsequent builds are minutes.
+Subsequent builds are minutes (caching via cargo target/ and the `target/native-deps` ffmpeg cache).
 
 ### 5. Distribute
 
