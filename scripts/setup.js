@@ -179,14 +179,45 @@ async function main() {
 
 		const { stdout: vcInstallDir } = await exec(
 			// biome-ignore lint/suspicious/noTemplateCurlyInString: PowerShell syntax, not JS template literal
-			'$(& "${env:ProgramFiles(x86)}/Microsoft Visual Studio/Installer/vswhere.exe" -latest -property installationPath)',
+			'$(& "${env:ProgramFiles(x86)}/Microsoft Visual Studio/Installer/vswhere.exe" -latest -products * -property installationPath)',
 			{ shell: "powershell.exe" },
 		);
 
-		const libclangPath = path.join(
-			vcInstallDir.trim(),
-			"VC/Tools/LLVM/x64/bin/libclang.dll",
-		);
+		const candidateLibclangPaths = [];
+		const trimmedVcDir = vcInstallDir.trim();
+		if (trimmedVcDir) {
+			candidateLibclangPaths.push(
+				path.join(trimmedVcDir, "VC/Tools/LLVM/x64/bin/libclang.dll"),
+			);
+		}
+		if (process.env.USERPROFILE) {
+			candidateLibclangPaths.push(
+				path.join(
+					process.env.USERPROFILE,
+					"scoop/apps/llvm/current/bin/libclang.dll",
+				),
+			);
+		}
+		candidateLibclangPaths.push("C:/Program Files/LLVM/bin/libclang.dll");
+
+		let libclangPath = null;
+		for (const candidate of candidateLibclangPaths) {
+			if (await fileExists(candidate)) {
+				libclangPath = candidate;
+				break;
+			}
+		}
+
+		if (!libclangPath) {
+			throw new Error(
+				`Could not find libclang.dll. Tried:\n` +
+					candidateLibclangPaths.map((p) => `  - ${p}`).join("\n") +
+					`\n\nInstall via one of:\n` +
+					`  - Visual Studio Installer: add "C++ Clang tools for Windows" component\n` +
+					`  - scoop install llvm\n` +
+					`  - Download from https://github.com/llvm/llvm-project/releases`,
+			);
+		}
 
 		cargoConfigContents += `LIBCLANG_PATH = "${libclangPath.replaceAll(
 			"\\",
