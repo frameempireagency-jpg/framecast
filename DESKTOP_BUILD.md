@@ -58,19 +58,19 @@ You also need:
 - Windows: nothing else (Tauri uses MSVC via Visual Studio Build Tools, the rustup installer offers to install them)
 - macOS: Xcode Command Line Tools (`xcode-select --install`)
 
-### 3. Code-signing certificate
+### 3. Code-signing certificate (DECIDED: skip for now)
 
-Without one, double-clicking the installer on a fresh Windows machine shows a "Windows protected your PC - SmartScreen" warning and employees must click "More info" then "Run anyway". macOS Gatekeeper is similar but harsher.
+Frame Empire decision: ship unsigned. The 6 employees receive the binary directly from you, click through SmartScreen once on first install, and FrameCast is then trusted on that machine. Standard for internal tools. Saves ~$120/year vs Azure Trusted Signing or ~$200/year vs Authenticode.
 
-Two options:
+What employees will see on first install:
+1. Double-click the .msi
+2. "Windows protected your PC" blue popup
+3. Click "More info" (small grey link at top)
+4. Click "Run anyway" button that appears
 
-**Microsoft Authenticode (~$200/year)**: Buy from a vendor like SSL.com, DigiCert, or Certum. Comes as a hardware token (USB or cloud-based). Tauri's bundler picks it up via the `tauri-build` config or signed post-build.
+After that, FrameCast launches like any other app. No recurring nag.
 
-**Azure Trusted Signing (~$10/month)**: Microsoft's cloud signing. Cheaper and easier. https://learn.microsoft.com/en-us/azure/trusted-signing/
-
-For 6 employees who are getting the binary directly from you, you can also just send them a self-signed installer and tell them to click through SmartScreen. Not ideal but works.
-
-For Apple notarization (macOS only): Apple Developer Program $99/year + a signing certificate generated via Xcode + `xcrun notarytool` after the build.
+If you ever want to upgrade later, see "Future: enabling signing" near the bottom of this file.
 
 ### 4. Build
 
@@ -78,8 +78,10 @@ From the repo root:
 
 ```
 pnpm install
-pnpm --filter @cap/desktop tauri build
+pnpm tauri:build
 ```
+
+This runs the production pipeline: builds the `cap-muxer` sidecar binary, runs the `preparescript` (vite/vinxi env prep), then `tauri build` which bundles the .msi.
 
 Output lands in `apps/desktop/src-tauri/target/release/bundle/`:
 - Windows: `.msi` and `.exe` (NSIS installer)
@@ -104,7 +106,19 @@ The desktop app talks to your FrameCast backend at `framecast.frameempire.co.uk`
 - Internal Rust types like `CapWindowId`, `CapWindowAttributes`. Code identifiers, not display strings.
 - All the `crates/cap-*` packages. Internal Rust crates.
 - Auto-generated Tauri bindings (`apps/desktop/src/utils/tauri.ts`).
-- WiX upgrade codes - if you ever ship a real Windows installer you need to generate a fresh UUID for `tauri.prod.conf.json` `windows.wix.upgradeCode`, otherwise installs will try to upgrade the upstream Cap if a user has it.
+- ~~WiX upgrade codes~~ DONE: fresh UUID `61d7d503-2cb4-4feb-84a6-1c452af9d73b` for FrameCast. No conflict with Cap if both happen to coexist on a machine.
+
+## Future: enabling signing (if internal trust isn't enough later)
+
+**Azure Trusted Signing (~$10/month, recommended path)**: https://learn.microsoft.com/en-us/azure/trusted-signing/
+- Requires an Azure subscription with billing enabled
+- Frame Empire identity verification by Microsoft (1-3 days)
+- Install Azure CLI + Trusted Signing extension on the build machine
+- Wire `signCommand` into `tauri.prod.conf.json` under `bundle.windows`
+
+**Microsoft Authenticode (~$200/year)**: Hardware token from SSL.com, DigiCert, or Certum.
+
+**Apple notarization (macOS only, ~$99/year)**: Apple Developer Program + signing certificate via Xcode + `xcrun notarytool`.
 
 ## Hosting the auto-updater (optional, do this later)
 
