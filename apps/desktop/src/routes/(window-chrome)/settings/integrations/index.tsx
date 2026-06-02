@@ -72,7 +72,7 @@ export default function AppsTab() {
 		{
 			name: "Google Drive",
 			description:
-				"Connect Google Drive for new shareable link uploads. Cap stores new videos in a private Cap folder in your Drive and continues serving them through Cap after normal access checks.",
+				"Connect Google Drive for new shareable link uploads. FrameCast stores new videos in a private FrameCast folder in your Drive and continues serving them through FrameCast after normal access checks.",
 			icon: GoogleDriveIcon,
 			url: "/settings/integrations/google-drive-config",
 			pro: true,
@@ -105,7 +105,7 @@ export default function AppsTab() {
 			<div class="flex flex-col pb-4 border-b border-gray-2">
 				<h2 class="text-lg font-medium text-gray-12">Integrations</h2>
 				<p class="text-sm text-gray-10">
-					Configure integrations to extend Cap's functionality and connect with
+					Configure integrations to extend FrameCast's functionality and connect with
 					third-party services.
 				</p>
 			</div>

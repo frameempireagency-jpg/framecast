@@ -287,8 +287,8 @@ export default function GoogleDriveConfigPage() {
 						<div class="p-4 space-y-4 animate-in fade-in">
 							<div class="pb-4 border-b border-gray-3">
 								<p class="text-sm text-gray-11">
-									Google Drive stores new uploads in a private Cap folder in
-									your Drive. Existing Cap-hosted and S3 videos keep using their
+									Google Drive stores new uploads in a private FrameCast folder in
+									your Drive. Existing FrameCast-hosted and S3 videos keep using their
 									current storage.
 								</p>
 								<Show when={managedByOrganization()}>

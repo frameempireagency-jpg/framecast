@@ -62,7 +62,7 @@ export default function FeedbackTab() {
 					<div class="flex flex-col pb-4 border-b border-gray-2">
 						<h2 class="text-lg font-medium text-gray-12">Send Feedback</h2>
 						<p class="text-sm text-gray-10">
-							Help us improve Cap by submitting feedback or reporting bugs.
+							Help us improve FrameCast by submitting feedback or reporting bugs.
 							We'll get right on it.
 						</p>
 					</div>
@@ -78,7 +78,7 @@ export default function FeedbackTab() {
 								<textarea
 									value={feedback()}
 									onInput={(e) => setFeedback(e.currentTarget.value)}
-									placeholder="Tell us what you think about Cap..."
+									placeholder="Tell us what you think about FrameCast..."
 									required
 									minLength={10}
 									class="p-2 w-full h-32 text-[13px] rounded-md border transition-colors duration-200 resize-none bg-gray-2 placeholder:text-gray-10 border-gray-3 text-primary focus:outline-none focus:ring-1 focus:ring-gray-8 hover:border-gray-6"
@@ -109,27 +109,10 @@ export default function FeedbackTab() {
 
 					<div class="pt-6 border-t border-gray-2">
 						<h3 class="text-sm font-medium text-gray-12 mb-2">
-							Join the Community
-						</h3>
-						<p class="text-sm text-gray-10 mb-3">
-							Have questions, want to share ideas, or just hang out? Join the
-							Cap Discord community.
-						</p>
-						<Button
-							onClick={() => shell.open("https://cap.link/discord")}
-							size="md"
-							variant="gray"
-						>
-							Join Discord
-						</Button>
-					</div>
-
-					<div class="pt-6 border-t border-gray-2">
-						<h3 class="text-sm font-medium text-gray-12 mb-2">
 							Debug Information
 						</h3>
 						<p class="text-sm text-gray-10 mb-3">
-							Upload your logs to help us diagnose issues with Cap. No personal
+							Upload your logs to help us diagnose issues with FrameCast. No personal
 							information is included.
 						</p>
 						<Button

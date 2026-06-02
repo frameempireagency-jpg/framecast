@@ -96,7 +96,7 @@ export const EXPORT_TO_OPTIONS = [
 		label: "Shareable Link",
 		value: "link",
 		icon: IconCapLink,
-		description: "Share via Cap cloud",
+		description: "Share via FrameCast",
 	},
 ] as const;
 
@@ -1671,7 +1671,7 @@ export function ExportPage() {
 																Upload Complete
 															</h1>
 															<p class="text-sm text-gray-11">
-																Your Cap has been uploaded successfully
+																Your recording has been uploaded successfully
 															</p>
 														</div>
 													</div>

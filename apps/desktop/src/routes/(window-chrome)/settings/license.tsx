@@ -276,7 +276,7 @@ function CommercialLicensePurchase() {
 					<div class="flex flex-col gap-4 justify-center items-center p-5 rounded-t-none rounded-b-xl border border-t-0 md:border-t md:border-l-0 md:rounded-bl-none md:rounded-tr-xl md:rounded-br-xl md:w-1/2 border-gray-3">
 						<ul class="flex flex-col gap-2 list-none">
 							{[
-								"Commercial Use of Cap Recorder + Editor",
+								"Commercial Use of FrameCast",
 								"Community Support",
 								"Local-only features",
 								"Perpetual license option",

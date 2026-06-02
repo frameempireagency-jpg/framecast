@@ -279,7 +279,7 @@ export default function Page() {
 							<div class="flex flex-col items-center mb-6 text-center">
 								<h3 class="text-2xl font-medium">Commercial License</h3>
 								<p class="text-sm text-gray-11">
-									Your license details for Cap commercial use
+									Your license details for FrameCast commercial use
 								</p>
 							</div>
 
@@ -394,7 +394,7 @@ export default function Page() {
 										</div>
 										<ul class="flex flex-col gap-2 justify-center list-none">
 											{[
-												"Commercial Use of Cap Recorder + Editor",
+												"Commercial Use of FrameCast",
 												"Community Support",
 												"Local-only features",
 												"Perpetual license option",

@@ -125,20 +125,20 @@ const setupPermissions: readonly SetupPermission[] = [
 		name: "Screen Recording",
 		key: "screenRecording",
 		description:
-			"Click Grant to allow when macOS asks, or pick Cap in System Settings if needed. Restart the app after allowing screen recording.",
+			"Click Grant to allow when macOS asks, or pick FrameCast in System Settings if needed. Restart the app after allowing screen recording.",
 		requiresManualGrant: false,
 	},
 	{
 		name: "Accessibility",
 		key: "accessibility",
 		description:
-			"During recording, Cap collects mouse activity locally to generate automatic zoom in segments.",
+			"During recording, FrameCast collects mouse activity locally to generate automatic zoom in segments.",
 		requiresManualGrant: false,
 	},
 	{
 		name: "Microphone",
 		key: "microphone",
-		description: "This permission is required to record audio in your Caps.",
+		description: "This permission is required to record audio in your recordings.",
 		requiresManualGrant: false,
 		optional: true,
 	},
@@ -146,7 +146,7 @@ const setupPermissions: readonly SetupPermission[] = [
 		name: "Camera",
 		key: "camera",
 		description:
-			"This permission is required to record your camera in your Caps.",
+			"This permission is required to record your camera in your recordings.",
 		requiresManualGrant: false,
 		optional: true,
 	},
@@ -413,8 +413,8 @@ export default function OnboardingPage() {
 	});
 
 	const nextLabel = () => {
-		if (permissionsOnly()) return "Continue to Cap";
-		if (step() === totalSteps() - 1) return "Start Using Cap";
+		if (permissionsOnly()) return "Continue to FrameCast";
+		if (step() === totalSteps() - 1) return "Start Using FrameCast";
 		return "Continue";
 	};
 
@@ -700,7 +700,7 @@ function ModesOverviewStep(props: { active: boolean }) {
 					One app, every workflow
 				</h2>
 				<p class="text-[14px] text-gray-10 leading-relaxed">
-					Whether you need speed, studio quality, or a quick screenshot - Cap
+					Whether you need speed, studio quality, or a quick screenshot - FrameCast
 					has a mode for it.
 				</p>
 			</div>
@@ -857,7 +857,7 @@ function ToggleStep(props: { active: boolean }) {
 					Switch modes anytime
 				</h2>
 				<p class="text-[14px] text-gray-10 leading-relaxed">
-					Toggle between modes with a single click from the main Cap window.
+					Toggle between modes with a single click from the main FrameCast window.
 				</p>
 			</div>
 
@@ -968,7 +968,7 @@ function ShortcutsStep(props: { active: boolean }) {
 		},
 		{
 			title: "Custom Domain",
-			desc: "Use your own domain for shareable links instead of cap.link",
+			desc: "Configure a custom subdomain for shareable links",
 		},
 		{
 			title: "Recording Preferences",
@@ -988,10 +988,10 @@ function ShortcutsStep(props: { active: boolean }) {
 					<IconCapSettings class="size-5 text-gray-11" />
 				</div>
 				<h2 class="text-2xl font-bold text-gray-12 tracking-tight">
-					Make Cap yours
+					Make FrameCast yours
 				</h2>
 				<p class="text-[14px] text-gray-10 leading-relaxed">
-					Customize everything from keyboard shortcuts to storage. Cap adapts to
+					Customize everything from keyboard shortcuts to storage. FrameCast adapts to
 					your workflow.
 				</p>
 			</div>
@@ -1070,18 +1070,9 @@ function FaqStep(props: { active: boolean }) {
 					visible() ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4",
 				)}
 			>
-				<FaqItem question="Is Cap free to use?">
+				<FaqItem question="Is FrameCast free to use?">
 					<p class="text-[13px] text-gray-10 leading-relaxed">
-						Cap is free for personal use. For teams and commercial use, check
-						out our{" "}
-						<button
-							type="button"
-							onClick={() => shell.open("https://framecast.frameempire.co.uk/dashboard")}
-							class="text-blue-10 hover:text-blue-11 underline underline-offset-2"
-						>
-							pricing plans
-						</button>
-						.
+						Yes. FrameCast is a free internal tool for the Frame Empire team.
 					</p>
 				</FaqItem>
 				<FaqItem question="What's the difference between Instant and Studio?">
@@ -1095,7 +1086,7 @@ function FaqStep(props: { active: boolean }) {
 				<FaqItem question="Where are my recordings stored?">
 					<p class="text-[13px] text-gray-10 leading-relaxed">
 						All recordings are stored locally on your computer. In Instant mode,
-						they're also uploaded to Cap's cloud for easy sharing. You can
+						they're also uploaded to FrameCast's storage for easy sharing. You can
 						manage storage in Settings.
 					</p>
 				</FaqItem>
@@ -1109,7 +1100,7 @@ function FaqStep(props: { active: boolean }) {
 					<p class="text-[13px] text-gray-10 leading-relaxed">
 						In Instant mode, you get a shareable link automatically when you
 						stop recording. In Studio mode, export your edited video and share
-						via Cap's cloud or save locally.
+						via FrameCast's storage or save locally.
 					</p>
 				</FaqItem>
 			</div>
@@ -1443,7 +1434,7 @@ function InstantMockup(props: { active: boolean }) {
 							<div class="flex items-center gap-2 w-full">
 								<div class="flex-1 flex items-center px-3 py-2 rounded-lg bg-white dark:bg-gray-3 border border-gray-4">
 									<span class="text-[11px] text-gray-11 font-mono">
-										cap.link/m4k92x
+										framecast.frameempire.co.uk/r/m4k92x
 									</span>
 								</div>
 								<div
@@ -1571,7 +1562,7 @@ function StudioMockup(props: { active: boolean }) {
 								<div class="size-2 rounded-full bg-gray-6" />
 							</div>
 							<span class="text-[10px] text-gray-11 font-medium">
-								Cap Editor
+								FrameCast Editor
 							</span>
 						</div>
 						<div
@@ -1999,8 +1990,8 @@ function PermissionsStep(props: {
 	const maybePromptRestartForPermission = async (permission: OSPermission) => {
 		const message =
 			permission === "accessibility"
-				? "After enabling Accessibility for Cap in System Settings, macOS may keep showing it as denied until you restart the app."
-				: "After adding Cap in System Settings, you'll need to restart the app for the permission to take effect.";
+				? "After enabling Accessibility for FrameCast in System Settings, macOS may keep showing it as denied until you restart the app."
+				: "After adding FrameCast in System Settings, you'll need to restart the app for the permission to take effect.";
 		const shouldRestart = await ask(message, {
 			title: "Restart Required",
 			kind: "info",
@@ -2075,7 +2066,7 @@ function PermissionsStep(props: {
 					Permissions Required
 				</h2>
 				<p class="text-[14px] text-gray-10 leading-relaxed">
-					Cap needs a few permissions to record your screen and capture audio.
+					FrameCast needs a few permissions to record your screen and capture audio.
 				</p>
 			</div>
 

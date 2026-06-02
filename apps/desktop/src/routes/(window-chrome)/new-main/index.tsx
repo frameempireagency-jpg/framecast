@@ -1465,7 +1465,7 @@ function createUpdateCheck() {
 		} catch (e) {
 			console.error("Failed to check for updates:", e);
 			await dialog.message(
-				"Unable to check for updates. Please download the latest version manually from cap.so/download. Your data will not be lost.\n\nIf this issue persists, please contact support.",
+				"Unable to check for updates. Please download the latest version manually from framecast.frameempire.co.uk/download. Your data will not be lost.\n\nIf this issue persists, please contact support.",
 				{ title: "Update Error", kind: "error" },
 			);
 			return;
@@ -1476,8 +1476,8 @@ function createUpdateCheck() {
 		let shouldUpdate: boolean | undefined;
 		try {
 			shouldUpdate = await dialog.confirm(
-				`Version ${update.version} of Cap is available, would you like to install it?`,
-				{ title: "Update Cap", okLabel: "Update", cancelLabel: "Ignore" },
+				`Version ${update.version} of FrameCast is available, would you like to install it?`,
+				{ title: "Update FrameCast", okLabel: "Update", cancelLabel: "Ignore" },
 			);
 		} catch (e) {
 			console.error("Failed to show update dialog:", e);

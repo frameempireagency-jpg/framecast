@@ -8,10 +8,9 @@ export type GeneralSettingsStore = TauriGeneralSettingsStore & {
 };
 
 export const DEFAULT_TRANSCRIPTION_HINTS = [
-	"Cap",
-	"TypeScript",
-	"My Brand Name",
-	"mywebsite.com",
+	"FrameCast",
+	"Frame Empire",
+	"frameempire.co.uk",
 ];
 
 export function createDefaultGeneralSettings(): GeneralSettingsStore {

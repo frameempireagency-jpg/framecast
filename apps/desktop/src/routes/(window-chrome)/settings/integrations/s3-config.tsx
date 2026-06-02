@@ -169,7 +169,7 @@ export default function S3ConfigPage() {
 							<div class="pb-4 border-b border-gray-3">
 								<p class="text-sm text-gray-11">
 									It should take under 10 minutes to set up and connect your
-									storage bucket to Cap. View the{" "}
+									storage bucket to FrameCast. View the{" "}
 									<a
 										href="https://cap.so/docs/s3-config"
 										target="_blank"

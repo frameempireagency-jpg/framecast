@@ -755,7 +755,7 @@ export function CaptionsTab(props: {
 										/>
 									</div>
 									<p class="text-xs text-gray-10">
-										This is the first version of captions in Cap. Active word
+										This is the first version of captions in FrameCast. Active word
 										highlighting may be inaccurate in some situations. We're
 										working on a fix for this and it will be released in
 										upcoming versions.

@@ -113,7 +113,7 @@ function AppearanceSection(props: {
 	return (
 		<Section
 			title="Appearance"
-			description="Match Cap to your system theme or pick a fixed look."
+			description="Match FrameCast to your system theme or pick a fixed look."
 		>
 			<SectionCard padded>
 				<div
@@ -409,18 +409,18 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 				{ostype === "macos" && (
 					<Section
 						title="App"
-						description="Choose how Cap shows up on your system."
+						description="Choose how FrameCast shows up on your system."
 					>
 						<SectionRows>
 							<ToggleSettingItem
 								label="Always show dock icon"
-								description="Keep Cap in the dock even when no windows are open."
+								description="Keep FrameCast in the dock even when no windows are open."
 								value={!settings.hideDockIcon}
 								onChange={(v) => handleChange("hideDockIcon", !v)}
 							/>
 							<ToggleSettingItem
 								label="System notifications"
-								description="Show notifications for clipboard copies, saved files, and more. You may need to allow Cap in your system's notification settings."
+								description="Show notifications for clipboard copies, saved files, and more. You may need to allow FrameCast in your system's notification settings."
 								value={!!settings.enableNotifications}
 								onChange={async (value) => {
 									if (value) {
@@ -504,7 +504,7 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 						/>
 						<ToggleSettingItem
 							label="Delete Instant recordings after upload"
-							description="Cap removes the local file once it has uploaded successfully."
+							description="FrameCast removes the local file once it has uploaded successfully."
 							value={settings.deleteInstantRecordingsAfterUpload ?? false}
 							onChange={(v) =>
 								handleChange("deleteInstantRecordingsAfterUpload", v)
@@ -625,7 +625,7 @@ function TelemetryCard(props: {
 			<SectionRows>
 				<ToggleSettingItem
 					label="Share anonymous telemetry"
-					description="Cap uses anonymous telemetry to improve reliability and fix bugs. We never collect recording contents, window titles, file paths, or personal information."
+					description="FrameCast uses anonymous telemetry to improve reliability and fix bugs. We never collect recording contents, window titles, file paths, or personal information."
 					value={props.value}
 					onChange={props.onChange}
 				/>
@@ -879,12 +879,12 @@ function ServerURLSetting(props: {
 	return (
 		<Section
 			title="Self-host"
-			description="Only change this if you are running your own instance of Cap Web."
+			description="Only change this if you are running your own instance of FrameCast."
 		>
 			<SectionCard padded>
 				<div class="flex flex-col gap-3">
 					<label class="flex flex-col gap-1.5">
-						<span class="text-[13px] text-gray-12">Cap Server URL</span>
+						<span class="text-[13px] text-gray-12">FrameCast Server URL</span>
 						<Input
 							class="bg-gray-3"
 							value={value()}
@@ -1168,7 +1168,7 @@ function ExcludedWindowsCard(props: {
 			title="Excluded windows"
 			description={
 				props.isWindows
-					? "Hide windows from recordings. On Windows, only Cap-related windows can be excluded."
+					? "Hide windows from recordings. On Windows, only FrameCast-related windows can be excluded."
 					: "Hide windows from recordings."
 			}
 			right={
