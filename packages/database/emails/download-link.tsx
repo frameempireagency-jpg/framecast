@@ -45,7 +45,7 @@ export function DownloadLink({ email = "" }: { email: string }) {
 									<td style={{ paddingBottom: "12px" }}>
 										<Link
 											className="block w-full rounded-lg bg-black px-6 py-3 text-center text-[13px] font-semibold text-white no-underline"
-											href="https://cap.so/download/apple-silicon"
+											href="https://framecast.frameempire.co.uk/download/apple-silicon"
 										>
 											Download for Mac (Apple Silicon)
 										</Link>
@@ -55,7 +55,7 @@ export function DownloadLink({ email = "" }: { email: string }) {
 									<td style={{ paddingBottom: "12px" }}>
 										<Link
 											className="block w-full rounded-lg border border-solid border-gray-300 bg-white px-6 py-3 text-center text-[13px] font-semibold text-black no-underline"
-											href="https://cap.so/download/apple-intel"
+											href="https://framecast.frameempire.co.uk/download/apple-intel"
 										>
 											Download for Mac (Intel)
 										</Link>
@@ -65,7 +65,7 @@ export function DownloadLink({ email = "" }: { email: string }) {
 									<td>
 										<Link
 											className="block w-full rounded-lg border border-solid border-gray-300 bg-white px-6 py-3 text-center text-[13px] font-semibold text-black no-underline"
-											href="https://cap.so/download/windows"
+											href="https://framecast.frameempire.co.uk/download/windows"
 										>
 											Download for Windows
 										</Link>

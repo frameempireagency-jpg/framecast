@@ -27,7 +27,7 @@ export default function () {
 				<div class="flex flex-col gap-4 items-center text-center max-w-md">
 					<p class="text-[--text-primary]">{updateError()}</p>
 					<p class="text-[--text-tertiary]">
-						Please download the latest version manually from cap.so/download.
+						Please download the latest version manually from framecast.frameempire.co.uk/download.
 						Your data will not be lost.
 					</p>
 					<p class="text-[--text-tertiary] text-xs">

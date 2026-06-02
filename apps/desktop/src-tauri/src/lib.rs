@@ -4290,7 +4290,7 @@ pub async fn run(recording_logging_handle: LoggingHandle, logs_dir: PathBuf) {
                 } else {
                     (
                         option_env!("VITE_SERVER_URL")
-                            .unwrap_or("https://cap.so")
+                            .unwrap_or("https://framecast.frameempire.co.uk")
                             .to_string(),
                         true,
                     )

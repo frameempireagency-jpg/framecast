@@ -16,7 +16,7 @@ const organizations: DesktopOrganization[] = [
 		canEditBrand: true,
 		iconUrl: null,
 		brandColors: {
-			primary: "#4785FF",
+			primary: "#521F88",
 			secondary: null,
 			accent: null,
 			background: null,

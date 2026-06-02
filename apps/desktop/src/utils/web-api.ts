@@ -36,7 +36,7 @@ export const apiClient = initClient(contract, {
 	api,
 });
 export const licenseApiClient = initClient(licenseContract, {
-	baseUrl: `https://l.cap.so/api`,
+	baseUrl: `https://framecast.frameempire.co.uk/api`,
 	api,
 });
 
@@ -62,7 +62,7 @@ export async function protectedHeaders() {
 	const { authorization } = await maybeProtectedHeaders();
 	if (!authorization)
 		throw new Error(
-			"Please sign in to continue. Alternatively, email hello@cap.so or join our Discord at cap.link/discord",
+			"Please sign in to continue. Alternatively, email hello@frameempire.co.uk for help",
 		);
 	return { authorization };
 }

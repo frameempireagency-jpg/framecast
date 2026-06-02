@@ -596,7 +596,7 @@ export const CapCard = ({
 										className="flex gap-2 items-center rounded-lg"
 									>
 										<FontAwesomeIcon className="size-3" icon={faTrash} />
-										<p className="text-sm text-gray-12">Delete Cap</p>
+										<p className="text-sm text-gray-12">Delete recording</p>
 									</DropdownMenuItem>
 								</>
 							)}

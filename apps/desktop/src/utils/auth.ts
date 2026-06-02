@@ -47,7 +47,7 @@ async function createSessionRequestUrl(
 	platform: "web" | "desktop",
 ) {
 	const serverUrl =
-		(await generalSettingsStore.get())?.serverUrl ?? "https://cap.so";
+		(await generalSettingsStore.get())?.serverUrl ?? "https://framecast.frameempire.co.uk";
 	const callbackUrl = new URL(
 		`/api/desktop/session/request?type=api_key`,
 		serverUrl,

@@ -228,7 +228,7 @@ fn default_transcription_hints() -> Vec<String> {
 
 fn default_server_url() -> String {
     std::option_env!("VITE_SERVER_URL")
-        .unwrap_or("https://cap.so")
+        .unwrap_or("https://framecast.frameempire.co.uk")
         .to_string()
 }
 

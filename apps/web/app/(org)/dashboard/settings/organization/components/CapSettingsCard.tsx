@@ -62,7 +62,7 @@ const options: Array<{
 	{
 		label: "Show logo on share page",
 		value: "hideShareableLinkCapLogo",
-		description: "Show Cap branding at the top of shareable links",
+		description: "Show FrameCast branding at the top of shareable links",
 		pro: true,
 	},
 ];
@@ -165,7 +165,7 @@ const CapSettingsCard = () => {
 	return (
 		<Card className="flex relative flex-col flex-1 gap-6 w-full min-h-fit">
 			<CardHeader>
-				<CardTitle>Cap Settings</CardTitle>
+				<CardTitle>FrameCast Settings</CardTitle>
 				<CardDescription>
 					Enable or disable specific settings for your organization. These
 					settings will be applied as defaults for new caps.

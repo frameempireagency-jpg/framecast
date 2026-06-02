@@ -589,7 +589,7 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 				/>
 
 				<ServerURLSetting
-					value={settings.serverUrl ?? "https://cap.so"}
+					value={settings.serverUrl ?? "https://framecast.frameempire.co.uk"}
 					onChange={async (v) => {
 						const url = new URL(v);
 						const origin = url.origin;
