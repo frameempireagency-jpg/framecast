@@ -1,7 +1,16 @@
 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0.5" y="0.5" width="79" height="79" rx="15.5" fill="#521F88"/>
-  <path d="M22 22 L22 34 L27 34 L27 27 L34 27 L34 22 Z" fill="#EFE9F8"/>
-  <path d="M58 22 L46 22 L46 27 L53 27 L53 34 L58 34 Z" fill="#EFE9F8"/>
-  <path d="M22 58 L22 46 L27 46 L27 53 L34 53 L34 58 Z" fill="#EFE9F8"/>
-  <path d="M58 58 L58 46 L53 46 L53 53 L46 53 L46 58 Z" fill="#EFE9F8"/>
+  <defs>
+    <linearGradient id="squareGrad" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6B2BAE"/>
+      <stop offset="1" stop-color="#3F1568"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="80" height="80" rx="18" fill="url(#squareGrad)"/>
+  <g stroke="#EFE9F8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M22 32 L22 22 L32 22"/>
+    <path d="M58 22 L48 22 M58 22 L58 32"/>
+    <path d="M22 48 L22 58 L32 58"/>
+    <path d="M58 48 L58 58 L48 58"/>
+  </g>
+  <circle cx="40" cy="40" r="4.5" fill="#EFE9F8"/>
 </svg>
