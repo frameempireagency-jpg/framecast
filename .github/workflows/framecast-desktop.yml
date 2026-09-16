@@ -51,39 +51,41 @@ jobs:
           - label: macOS (Apple Silicon)
             target: aarch64-apple-darwin
             runner: macos-latest
-            enabled: "${{ inputs.mac }}"
           - label: Windows (x64)
             target: x86_64-pc-windows-msvc
             runner: windows-2022
-            enabled: "${{ inputs.windows }}"
     runs-on: ${{ matrix.settings.runner }}
     timeout-minutes: 180
+    env:
+      # inputs are not readable from inside the matrix, so the tick boxes
+      # are resolved here, once per platform
+      ENABLED: ${{ (matrix.settings.target == 'aarch64-apple-darwin' && inputs.mac) || (matrix.settings.target == 'x86_64-pc-windows-msvc' && inputs.windows) }}
     steps:
       - name: Skipped by input
-        if: ${{ matrix.settings.enabled != 'true' }}
+        if: ${{ env.ENABLED != 'true' }}
         run: echo "This platform was not ticked; nothing to do."
 
       - name: Checkout repository
-        if: ${{ matrix.settings.enabled == 'true' }}
+        if: ${{ env.ENABLED == 'true' }}
         uses: actions/checkout@v4
 
       - name: Rust setup
-        if: ${{ matrix.settings.enabled == 'true' }}
+        if: ${{ env.ENABLED == 'true' }}
         uses: dtolnay/rust-toolchain@1.88.0
         with:
           targets: ${{ matrix.settings.target }}
 
       - uses: ./.github/actions/setup-rust-cache
-        if: ${{ matrix.settings.enabled == 'true' }}
+        if: ${{ env.ENABLED == 'true' }}
         with:
           target: ${{ matrix.settings.target }}
           save-cache: "true"
 
       - uses: ./.github/actions/setup-js
-        if: ${{ matrix.settings.enabled == 'true' }}
+        if: ${{ env.ENABLED == 'true' }}
 
       - name: Create .env file in root
-        if: ${{ matrix.settings.enabled == 'true' }}
+        if: ${{ env.ENABLED == 'true' }}
         shell: bash
         run: |
           echo "appVersion=${APP_VERSION}" >> .env
@@ -95,14 +97,14 @@ jobs:
           cp .env apps/desktop/.env
 
       - name: Run cap-setup
-        if: ${{ matrix.settings.enabled == 'true' }}
+        if: ${{ env.ENABLED == 'true' }}
         shell: bash
         run: pnpm -w cap-setup
         env:
           RUST_TARGET_TRIPLE: ${{ matrix.settings.target }}
 
       - name: Build cap-muxer sidecar
-        if: ${{ matrix.settings.enabled == 'true' }}
+        if: ${{ env.ENABLED == 'true' }}
         shell: bash
         run: ./scripts/build-cap-muxer.sh ${{ matrix.settings.target }}
 
@@ -110,7 +112,7 @@ jobs:
       # bundler drives Finder through AppleScript, which is flaky on a
       # headless runner, so a dmg failure must not throw the .app away.
       - name: Build app (macOS)
-        if: ${{ matrix.settings.enabled == 'true' && runner.os == 'macOS' }}
+        if: ${{ env.ENABLED == 'true' && runner.os == 'macOS' }}
         working-directory: apps/desktop
         continue-on-error: true
         run: pnpm build:tauri --target ${{ matrix.settings.target }} --config src-tauri/tauri.prod.conf.json --bundles app dmg
@@ -119,7 +121,7 @@ jobs:
           RUST_TARGET_TRIPLE: ${{ matrix.settings.target }}
 
       - name: Package app (macOS)
-        if: ${{ matrix.settings.enabled == 'true' && runner.os == 'macOS' }}
+        if: ${{ env.ENABLED == 'true' && runner.os == 'macOS' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -136,7 +138,7 @@ jobs:
           ls -la dist
 
       - name: Build app (Windows)
-        if: ${{ matrix.settings.enabled == 'true' && runner.os == 'Windows' }}
+        if: ${{ env.ENABLED == 'true' && runner.os == 'Windows' }}
         working-directory: apps/desktop
         run: pnpm build:tauri --target ${{ matrix.settings.target }} --config src-tauri/tauri.prod.conf.json --bundles msi
         env:
@@ -144,7 +146,7 @@ jobs:
           RUST_TARGET_TRIPLE: ${{ matrix.settings.target }}
 
       - name: Package installer (Windows)
-        if: ${{ matrix.settings.enabled == 'true' && runner.os == 'Windows' }}
+        if: ${{ env.ENABLED == 'true' && runner.os == 'Windows' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -153,7 +155,7 @@ jobs:
           ls -la dist
 
       - name: Upload artifacts
-        if: ${{ matrix.settings.enabled == 'true' }}
+        if: ${{ env.ENABLED == 'true' }}
         uses: actions/upload-artifact@v4
         with:
           name: framecast-${{ matrix.settings.target }}
