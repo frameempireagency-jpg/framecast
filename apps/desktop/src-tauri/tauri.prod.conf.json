@@ -2,7 +2,7 @@
 	"$schema": "https://schema.tauri.app/config/2",
 	"productName": "FrameCast",
 	"mainBinaryName": "FrameCast",
-	"identifier": "co.uk.frameempire.framecast",
+	"identifier": "uk.co.frameempire.framecast",
 	"build": {
 		"beforeBundleCommand": "node scripts/prodBeforeBundle.js"
 	},
@@ -15,13 +15,17 @@
 		}
 	},
 	"bundle": {
+		"createUpdaterArtifacts": false,
 		"macOS": {
-			"entitlements": "Entitlements.plist"
+			"entitlements": "Entitlements.plist",
+			"minimumSystemVersion": "11.0"
 		},
 		"windows": {
 			"wix": {
 				"upgradeCode": "61d7d503-2cb4-4feb-84a6-1c452af9d73b"
 			}
-		}
+		},
+		"copyright": "Copyright 2026 Frame Empire Ltd. Based on Cap, copyright Cap Software Inc, used under the AGPL-3.0. Source: https://framecast.frameempire.co.uk/source",
+		"category": "Productivity"
 	}
 }

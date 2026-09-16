@@ -1,0 +1,197 @@
+name: "FrameCast desktop installers"
+
+# Builds the FrameCast desktop app for the two machines callers actually
+# have: Apple Silicon Macs and 64-bit Windows PCs. Started by hand from the
+# Actions tab (Run workflow). Unsigned on purpose: see DESKTOP_BUILD.md,
+# "Frame Empire decision: ship unsigned".
+#
+# With "Publish to a GitHub release" ticked, the installers are attached to
+# the release for the given tag (created if it does not exist yet), which
+# is where the CRM's training pages send people:
+#   https://github.com/frameempireagency-jpg/framecast/releases/latest/download/<file>
+# Those links only work for people outside the org once the repository is
+# public. Until then the artifacts of the run are downloadable by anyone
+# logged in with access to the repo.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag, for example v0.4.87"
+        required: true
+        default: "v0.4.87"
+      publish:
+        description: "Publish to a GitHub release"
+        type: boolean
+        default: true
+      mac:
+        description: "Build the Mac installer (Apple Silicon)"
+        type: boolean
+        default: true
+      windows:
+        description: "Build the Windows installer"
+        type: boolean
+        default: true
+
+concurrency:
+  group: framecast-desktop-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  APP_VERSION: "0.4.87"
+  FRAMECAST_URL: "https://framecast.frameempire.co.uk"
+
+jobs:
+  build:
+    name: Build ${{ matrix.settings.label }}
+    strategy:
+      fail-fast: false
+      matrix:
+        settings:
+          - label: macOS (Apple Silicon)
+            target: aarch64-apple-darwin
+            runner: macos-latest
+            enabled: "${{ inputs.mac }}"
+          - label: Windows (x64)
+            target: x86_64-pc-windows-msvc
+            runner: windows-2022
+            enabled: "${{ inputs.windows }}"
+    runs-on: ${{ matrix.settings.runner }}
+    timeout-minutes: 180
+    steps:
+      - name: Skipped by input
+        if: ${{ matrix.settings.enabled != 'true' }}
+        run: echo "This platform was not ticked; nothing to do."
+
+      - name: Checkout repository
+        if: ${{ matrix.settings.enabled == 'true' }}
+        uses: actions/checkout@v4
+
+      - name: Rust setup
+        if: ${{ matrix.settings.enabled == 'true' }}
+        uses: dtolnay/rust-toolchain@1.88.0
+        with:
+          targets: ${{ matrix.settings.target }}
+
+      - uses: ./.github/actions/setup-rust-cache
+        if: ${{ matrix.settings.enabled == 'true' }}
+        with:
+          target: ${{ matrix.settings.target }}
+          save-cache: "true"
+
+      - uses: ./.github/actions/setup-js
+        if: ${{ matrix.settings.enabled == 'true' }}
+
+      - name: Create .env file in root
+        if: ${{ matrix.settings.enabled == 'true' }}
+        shell: bash
+        run: |
+          echo "appVersion=${APP_VERSION}" >> .env
+          echo "VITE_ENVIRONMENT=production" >> .env
+          echo "NEXT_PUBLIC_WEB_URL=${FRAMECAST_URL}" >> .env
+          echo "NEXTAUTH_URL=${FRAMECAST_URL}" >> .env
+          echo "VITE_SERVER_URL=${FRAMECAST_URL}" >> .env
+          echo "RUST_TARGET_TRIPLE=${{ matrix.settings.target }}" >> .env
+          cp .env apps/desktop/.env
+
+      - name: Run cap-setup
+        if: ${{ matrix.settings.enabled == 'true' }}
+        shell: bash
+        run: pnpm -w cap-setup
+        env:
+          RUST_TARGET_TRIPLE: ${{ matrix.settings.target }}
+
+      - name: Build cap-muxer sidecar
+        if: ${{ matrix.settings.enabled == 'true' }}
+        shell: bash
+        run: ./scripts/build-cap-muxer.sh ${{ matrix.settings.target }}
+
+      # macOS: the .app is what matters. The .dmg is a convenience and its
+      # bundler drives Finder through AppleScript, which is flaky on a
+      # headless runner, so a dmg failure must not throw the .app away.
+      - name: Build app (macOS)
+        if: ${{ matrix.settings.enabled == 'true' && runner.os == 'macOS' }}
+        working-directory: apps/desktop
+        continue-on-error: true
+        run: pnpm build:tauri --target ${{ matrix.settings.target }} --config src-tauri/tauri.prod.conf.json --bundles app dmg
+        env:
+          CI: false
+          RUST_TARGET_TRIPLE: ${{ matrix.settings.target }}
+
+      - name: Package app (macOS)
+        if: ${{ matrix.settings.enabled == 'true' && runner.os == 'macOS' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          B="target/${{ matrix.settings.target }}/release/bundle"
+          test -d "$B/macos/FrameCast.app" || { echo "No FrameCast.app was produced"; ls -R "$B" || true; exit 1; }
+          mkdir -p dist
+          # ditto keeps the code-signature and resource forks that zip drops
+          ditto -c -k --sequesterRsrc --keepParent "$B/macos/FrameCast.app" "dist/FrameCast_${APP_VERSION}_aarch64.app.zip"
+          if ls "$B"/dmg/*.dmg >/dev/null 2>&1; then
+            cp "$B"/dmg/*.dmg "dist/FrameCast_${APP_VERSION}_aarch64.dmg"
+          else
+            echo "::warning::No .dmg was produced; the zipped .app is the Mac download for this run."
+          fi
+          ls -la dist
+
+      - name: Build app (Windows)
+        if: ${{ matrix.settings.enabled == 'true' && runner.os == 'Windows' }}
+        working-directory: apps/desktop
+        run: pnpm build:tauri --target ${{ matrix.settings.target }} --config src-tauri/tauri.prod.conf.json --bundles msi
+        env:
+          CI: false
+          RUST_TARGET_TRIPLE: ${{ matrix.settings.target }}
+
+      - name: Package installer (Windows)
+        if: ${{ matrix.settings.enabled == 'true' && runner.os == 'Windows' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          cp target/${{ matrix.settings.target }}/release/bundle/msi/*.msi dist/
+          ls -la dist
+
+      - name: Upload artifacts
+        if: ${{ matrix.settings.enabled == 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: framecast-${{ matrix.settings.target }}
+          path: dist/*
+          if-no-files-found: error
+          retention-days: 30
+
+  release:
+    name: Publish release
+    needs: build
+    if: ${{ always() && inputs.publish && !cancelled() }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+
+      - name: List
+        run: ls -la dist
+
+      - name: Create or update the release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.tag }}
+          name: FrameCast ${{ inputs.tag }}
+          body: |
+            FrameCast desktop, the Frame Empire screen recorder.
+
+            - Windows (64-bit): `FrameCast_0.4.87_x64_en-US.msi`
+            - Mac (Apple Silicon, M1 to M4): `FrameCast_0.4.87_aarch64.dmg`, or the zipped app
+
+            Unsigned internal builds. Windows shows "Windows protected your PC": click More info, then Run anyway.
+            macOS blocks the first open: System Settings, Privacy & Security, Open Anyway.
+            Setup steps: https://frame-empire-crm.netlify.app/training/FE_Setup_And_Tools.html
+          files: dist/*
+          fail_on_unmatched_files: true
+          make_latest: true

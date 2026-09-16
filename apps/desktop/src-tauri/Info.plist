@@ -2,9 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<!--
+	  apps/desktop/src-tauri/Info.plist
+
+	  Tauri merges this into the Info.plist it generates. Everything here is
+	  a key Tauri does not produce on its own.
+
+	  This file was the last place Cap's branding survived. The three usage
+	  descriptions below are shown VERBATIM by macOS in the permission
+	  dialog, so a new contractor being asked to allow screen recording was
+	  reading a different product's name at the exact moment they were
+	  deciding whether to trust the software.
+	-->
+
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
+			<!-- The .cap extension stays. It is written by the recording
+			     engine and is compiled into the binary. Only the display
+			     name, which is the part shown in Finder, changes. -->
 			<key>CFBundleTypeExtensions</key>
 			<array>
 				<string>cap</string>
@@ -12,22 +28,37 @@
 			<key>CFBundleTypeIconFile</key>
 			<string>icon.icns</string>
 			<key>CFBundleTypeName</key>
-			<string>Cap Recording</string>
+			<string>FrameCast Recording</string>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>LSHandlerRank</key>
-			<string>Default</string>
+			<string>Owner</string>
+			<!-- A .cap is a folder, not a single file. Tauri's
+			     fileAssociations cannot express this, which is why this
+			     block lives here rather than in tauri.conf.json. -->
 			<key>LSTypeIsPackage</key>
 			<true/>
 		</dict>
 	</array>
+
 	<key>NSCameraUsageDescription</key>
-	<string>Cap uses your camera to record you in your Caps</string>
+	<string>FrameCast uses your camera so you can appear in the corner of a recording when you walk a client through their website preview.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Cap uses your microphone to record you in your Caps</string>
+	<string>FrameCast uses your microphone to record your voice over a screen recording, so clients hear you explain the work.</string>
 	<key>NSScreenCaptureUsageDescription</key>
-	<string>Cap captures your screen as part of recording your Caps</string>
+	<string>FrameCast records your screen so you can send a client a walkthrough of their website preview.</string>
 	<key>NSCameraUseContinuityCameraDeviceType</key>
 	<true/>
+
+	<!-- AGPL-3.0 attribution. FrameCast is a fork of Cap, and the licence
+	     requires the copyright notice and a source offer to be preserved.
+	     Rebranding is fine and is in fact required. Removing this is not. -->
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright 2026 Frame Empire Ltd. Based on Cap, copyright Cap Software Inc, used under the GNU Affero General Public License version 3. Source available at https://framecast.frameempire.co.uk/source</string>
+
+	<!-- Stops Apple asking for export compliance paperwork on every
+	     notarisation submission. -->
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 </dict>
 </plist>
