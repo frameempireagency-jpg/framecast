@@ -55,7 +55,7 @@ jobs:
             target: x86_64-pc-windows-msvc
             runner: windows-2022
     runs-on: ${{ matrix.settings.runner }}
-    timeout-minutes: 180
+    timeout-minutes: 360
     env:
       # inputs are not readable from inside the matrix, so the tick boxes
       # are resolved here, once per platform
