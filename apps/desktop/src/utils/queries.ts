@@ -16,6 +16,7 @@ import {
 	recordingSettingsStore,
 } from "~/store";
 import { createQueryInvalidate } from "./events";
+import { INSTANT_ENABLED } from "./instant";
 import {
 	type CameraInfo,
 	commands,
@@ -224,6 +225,17 @@ export function createOptionsQuery() {
 
 	const [state, setState] = makePersisted([_state, _setState], {
 		name: PERSIST_KEY,
+	});
+
+	// One guard for every way a mode arrives: the default, the persisted
+	// choice from an older build, the store, the tray, the onboarding tour.
+	// Without a server Instant can only fail, so it becomes Studio, and the
+	// Rust side is told too so a tray or hotkey start agrees with the window.
+	createEffect(() => {
+		if (!INSTANT_ENABLED && state.mode === "instant") {
+			setState("mode", "studio");
+			commands.setRecordingMode("studio");
+		}
 	});
 
 	return { rawOptions: state, setOptions: setState };

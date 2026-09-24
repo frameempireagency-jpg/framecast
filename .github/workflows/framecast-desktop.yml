@@ -14,12 +14,17 @@ name: "FrameCast desktop installers"
 # logged in with access to the repo.
 
 on:
+  # A pushed version tag builds and publishes with every box ticked. Added
+  # 2026-09-24 because the GitHub CLI on the build machine is not logged
+  # in, so a tag push was the only way to start a run from there.
+  push:
+    tags: ["v*"]
   workflow_dispatch:
     inputs:
       tag:
         description: "Release tag, for example v0.4.87"
         required: true
-        default: "v0.4.87"
+        default: "v0.4.88"
       publish:
         description: "Publish to a GitHub release"
         type: boolean
@@ -38,7 +43,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  APP_VERSION: "0.4.87"
+  APP_VERSION: "0.4.88"
   FRAMECAST_URL: "https://framecast.frameempire.co.uk"
 
 jobs:
@@ -59,7 +64,7 @@ jobs:
     env:
       # inputs are not readable from inside the matrix, so the tick boxes
       # are resolved here, once per platform
-      ENABLED: ${{ (matrix.settings.target == 'aarch64-apple-darwin' && inputs.mac) || (matrix.settings.target == 'x86_64-pc-windows-msvc' && inputs.windows) }}
+      ENABLED: ${{ (matrix.settings.target == 'aarch64-apple-darwin' && (github.event_name == 'push' || inputs.mac)) || (matrix.settings.target == 'x86_64-pc-windows-msvc' && (github.event_name == 'push' || inputs.windows)) }}
     steps:
       - name: Skipped by input
         if: ${{ env.ENABLED != 'true' }}
@@ -140,7 +145,7 @@ jobs:
       - name: Build app (Windows)
         if: ${{ env.ENABLED == 'true' && runner.os == 'Windows' }}
         working-directory: apps/desktop
-        run: pnpm build:tauri --target ${{ matrix.settings.target }} --config src-tauri/tauri.prod.conf.json --bundles msi
+        run: pnpm build:tauri --target ${{ matrix.settings.target }} --config src-tauri/tauri.prod.conf.json --bundles msi,nsis
         env:
           CI: false
           RUST_TARGET_TRIPLE: ${{ matrix.settings.target }}
@@ -152,6 +157,9 @@ jobs:
           set -euo pipefail
           mkdir -p dist
           cp target/${{ matrix.settings.target }}/release/bundle/msi/*.msi dist/
+          # The setup .exe installs for the current user only, so it needs no
+          # administrator password. The .msi installs for every user and does.
+          cp target/${{ matrix.settings.target }}/release/bundle/nsis/*-setup.exe dist/
           ls -la dist
 
       - name: Upload artifacts
@@ -166,7 +174,7 @@ jobs:
   release:
     name: Publish release
     needs: build
-    if: ${{ always() && inputs.publish && !cancelled() }}
+    if: ${{ always() && (github.event_name == 'push' || inputs.publish) && !cancelled() }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -183,17 +191,20 @@ jobs:
       - name: Create or update the release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ inputs.tag }}
-          name: FrameCast ${{ inputs.tag }}
+          tag_name: ${{ inputs.tag || github.ref_name }}
+          name: FrameCast ${{ inputs.tag || github.ref_name }}
           body: |
             FrameCast desktop, the Frame Empire screen recorder.
 
-            - Windows (64-bit): `FrameCast_0.4.87_x64_en-US.msi`
-            - Mac (Apple Silicon, M1 to M4): `FrameCast_0.4.87_aarch64.dmg`, or the zipped app
+            - Windows (64-bit): `FrameCast_${{ env.APP_VERSION }}_x64-setup.exe`. Installs for you only, no administrator password needed.
+            - Windows, installing for every user on the PC: `FrameCast_${{ env.APP_VERSION }}_x64_en-US.msi` (needs an administrator).
+            - Mac (Apple Silicon): `FrameCast_${{ env.APP_VERSION }}_aarch64.dmg`, or the zipped app.
 
+            Records in Studio mode, straight to your own computer; export the video as a file when you stop. No login needed.
             Unsigned internal builds. Windows shows "Windows protected your PC": click More info, then Run anyway.
             macOS blocks the first open: System Settings, Privacy & Security, Open Anyway.
             Setup steps: https://frame-empire-crm.netlify.app/training/FE_Setup_And_Tools.html
+
           files: dist/*
           fail_on_unmatched_files: true
-          make_latest: true
+          make_latest: false

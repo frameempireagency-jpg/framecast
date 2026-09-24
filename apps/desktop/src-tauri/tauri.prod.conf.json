@@ -18,7 +18,8 @@
 		"createUpdaterArtifacts": false,
 		"macOS": {
 			"entitlements": "Entitlements.plist",
-			"minimumSystemVersion": "11.0"
+			"minimumSystemVersion": "11.0",
+			"signingIdentity": "-"
 		},
 		"windows": {
 			"wix": {

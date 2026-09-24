@@ -1,6 +1,7 @@
 import { emit } from "@tauri-apps/api/event";
 import * as dialog from "@tauri-apps/plugin-dialog";
 import type { createOptionsQuery } from "./queries";
+import { INSTANT_ENABLED } from "./instant";
 import { commands, type RecordingAction } from "./tauri";
 
 export function handleRecordingResult(
@@ -10,6 +11,17 @@ export function handleRecordingResult(
 	return result
 		.then(async (result) => {
 			if (result === "Started") return;
+			if (result === "InvalidAuthentication" && !INSTANT_ENABLED) {
+				// No server to log in to, so never offer a login that goes
+				// nowhere. Switch to Studio and say where the video will be.
+				if (setOptions) setOptions({ mode: "studio" });
+				await commands.setRecordingMode("studio");
+				await dialog.message(
+					"FrameCast records to this computer in Studio mode. Press record again, and when you stop you can export the video as a file.",
+					{ title: "Switched to Studio mode" },
+				);
+				return;
+			}
 			if (result === "InvalidAuthentication") {
 				const buttons = setOptions
 					? {

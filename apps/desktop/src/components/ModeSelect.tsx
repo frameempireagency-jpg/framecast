@@ -2,6 +2,7 @@ import { cx } from "cva";
 import { type JSX, Show } from "solid-js";
 import { createOptionsQuery } from "~/utils/queries";
 import { commands, type RecordingMode } from "~/utils/tauri";
+import { INSTANT_ENABLED } from "~/utils/instant";
 
 interface ModeOptionProps {
 	mode: RecordingMode;
@@ -103,7 +104,7 @@ const ModeSelect = (props: { onClose?: () => void; standalone?: boolean }) => {
 			</Show>
 
 			<div class="grid grid-cols-3 gap-4">
-				{modeOptions.map((option) => (
+				{modeOptions.filter((o) => INSTANT_ENABLED || o.mode !== "instant").map((option) => (
 					<ModeOption
 						mode={option.mode}
 						title={option.title}

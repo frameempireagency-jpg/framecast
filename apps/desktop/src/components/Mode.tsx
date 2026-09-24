@@ -4,6 +4,7 @@ import { type JSX, Show } from "solid-js";
 
 import { useRecordingOptions } from "~/routes/(window-chrome)/OptionsContext";
 import { commands, events, type RecordingMode } from "~/utils/tauri";
+import { INSTANT_ENABLED } from "~/utils/instant";
 
 interface ModeProps {
 	onInfoClick?: () => void;
@@ -79,7 +80,7 @@ const Mode = (props: ModeProps) => {
 				<IconCapInfo class="invert transition-opacity duration-200 cursor-pointer size-2.5 dark:invert-0 group-hover:opacity-50" />
 			</button>
 
-			{MODE_BUTTONS.map((button) => {
+			{MODE_BUTTONS.filter((b) => INSTANT_ENABLED || b.mode !== "instant").map((button) => {
 				const isSelected = () => rawOptions.mode === button.mode;
 
 				return (

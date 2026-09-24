@@ -1,6 +1,6 @@
 [package]
 name = "cap-desktop"
-version = "0.4.87"
+version = "0.4.88"
 description = "FrameCast - Internal screen recordings for Frame Empire"
 authors = ["Frame Empire"]
 edition = "2024"

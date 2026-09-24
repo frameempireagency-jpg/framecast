@@ -2,6 +2,7 @@
 
 interface ImportMetaEnv {
 	readonly VITE_SERVER_URL: string;
+	readonly VITE_INSTANT_MODE?: string;
 	// more env variables...
 }
 
