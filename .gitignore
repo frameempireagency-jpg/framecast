@@ -77,3 +77,7 @@ analysis/
 analysis/plans/
 .ralphy
 tmp/
+
+# Claude Code working outputs (not part of FrameCast source)
+Claude outputs/
+
