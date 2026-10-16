@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@framecast/ui";
 import {
 	faBookOpen,
 	faCopy,
@@ -8,6 +7,7 @@ import {
 	faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button } from "@framecast/ui";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { toast } from "sonner";

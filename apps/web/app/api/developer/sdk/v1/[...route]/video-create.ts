@@ -1,6 +1,9 @@
 import { db } from "@framecast/database";
 import { nanoId } from "@framecast/database/helpers";
-import { developerCreditAccounts, developerVideos } from "@framecast/database/schema";
+import {
+	developerCreditAccounts,
+	developerVideos,
+} from "@framecast/database/schema";
 import { buildEnv } from "@framecast/env";
 import { zValidator } from "@hono/zod-validator";
 import { eq } from "drizzle-orm";

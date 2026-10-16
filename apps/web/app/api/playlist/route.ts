@@ -1,3 +1,11 @@
+import {
+	HttpApi,
+	HttpApiBuilder,
+	HttpApiEndpoint,
+	HttpApiError,
+	HttpApiGroup,
+	HttpServerResponse,
+} from "@effect/platform";
 import * as Db from "@framecast/database/schema";
 import { serverEnv } from "@framecast/env";
 import {
@@ -7,14 +15,6 @@ import {
 	Videos,
 } from "@framecast/web-backend";
 import { Video } from "@framecast/web-domain";
-import {
-	HttpApi,
-	HttpApiBuilder,
-	HttpApiEndpoint,
-	HttpApiError,
-	HttpApiGroup,
-	HttpServerResponse,
-} from "@effect/platform";
 import { eq } from "drizzle-orm";
 import { Effect, Layer, Option, Schema } from "effect";
 import { apiToHandler } from "@/lib/server";

@@ -16,7 +16,12 @@ import {
 	ImageUploads,
 	resolveEffectiveVideoRules,
 } from "@framecast/web-backend";
-import type { ImageUpload, Organisation, Space, Video } from "@framecast/web-domain";
+import type {
+	ImageUpload,
+	Organisation,
+	Space,
+	Video,
+} from "@framecast/web-domain";
 import { CurrentUser, Folder } from "@framecast/web-domain";
 import { and, desc, eq, inArray, isNull } from "drizzle-orm";
 import { sql } from "drizzle-orm/sql";

@@ -1,8 +1,8 @@
 "use client";
 
-import { Button } from "@framecast/ui";
 import { faFilm, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button } from "@framecast/ui";
 import NumberFlow from "@number-flow/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ConfirmationDialog } from "@/app/(org)/dashboard/_components/ConfirmationDialog";

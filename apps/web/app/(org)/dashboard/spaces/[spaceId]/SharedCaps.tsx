@@ -1,5 +1,11 @@
 "use client";
 
+import {
+	faFolderPlus,
+	faGear,
+	faInfoCircle,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { VideoMetadata } from "@framecast/database/types";
 import { Button } from "@framecast/ui";
 import type { SpaceRuleSource, ViewerSettingKey } from "@framecast/web-backend";
@@ -10,12 +16,6 @@ import type {
 	User,
 	Video,
 } from "@framecast/web-domain";
-import {
-	faFolderPlus,
-	faGear,
-	faInfoCircle,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import {

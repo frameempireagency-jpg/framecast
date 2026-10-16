@@ -1,7 +1,10 @@
 "use client";
 
 import { LogoSpinner } from "@framecast/ui";
-import { calculateStrokeDashoffset, getProgressCircleConfig } from "@framecast/utils";
+import {
+	calculateStrokeDashoffset,
+	getProgressCircleConfig,
+} from "@framecast/utils";
 import { useStore } from "@tanstack/react-store";
 import { type UploadStatus, useUploadingContext } from "../UploadingContext";
 

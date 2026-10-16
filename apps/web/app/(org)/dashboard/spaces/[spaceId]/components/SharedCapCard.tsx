@@ -1,10 +1,10 @@
 "use client";
 
+import { faBuilding, faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { VideoMetadata } from "@framecast/database/types";
 import type { SpaceRuleSource, ViewerSettingKey } from "@framecast/web-backend";
 import type { ImageUpload, Video } from "@framecast/web-domain";
-import { faBuilding, faUser } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CapCard } from "../../../caps/components/CapCard/CapCard";
 
 interface SharedCapCardProps {

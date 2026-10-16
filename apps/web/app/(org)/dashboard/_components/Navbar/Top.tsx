@@ -1,5 +1,7 @@
 "use client";
 
+import { faBell } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { buildEnv } from "@framecast/env";
 import {
 	Command,
@@ -9,8 +11,6 @@ import {
 	PopoverContent,
 	PopoverTrigger,
 } from "@framecast/ui";
-import { faBell } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useClickAway } from "@uidotdev/usehooks";
 import clsx from "clsx";
@@ -241,7 +241,8 @@ const User = () => {
 			{
 				name: "Download App",
 				icon: <DownloadIcon />,
-				onClick: () => window.open("https://framecast.frameempire.co.uk/download", "_blank"),
+				onClick: () =>
+					window.open("https://framecast.frameempire.co.uk/download", "_blank"),
 				iconClassName: "text-gray-11 group-hover:text-gray-12",
 				showCondition: true,
 			},

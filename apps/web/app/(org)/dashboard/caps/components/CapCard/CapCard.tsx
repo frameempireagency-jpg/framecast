@@ -1,17 +1,5 @@
 "use client";
 
-import type { videos as videosSchema } from "@framecast/database/schema";
-import type { VideoMetadata } from "@framecast/database/types";
-import { buildEnv, NODE_ENV } from "@framecast/env";
-import {
-	DropdownMenu,
-	DropdownMenuContent,
-	DropdownMenuItem,
-	DropdownMenuTrigger,
-} from "@framecast/ui";
-import { calculateStrokeDashoffset, getProgressCircleConfig } from "@framecast/utils";
-import type { SpaceRuleSource, ViewerSettingKey } from "@framecast/web-backend";
-import type { ImageUpload, Video } from "@framecast/web-domain";
 import { HttpClient } from "@effect/platform";
 import {
 	faChartSimple,
@@ -29,6 +17,21 @@ import {
 	faVideo,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import type { videos as videosSchema } from "@framecast/database/schema";
+import type { VideoMetadata } from "@framecast/database/types";
+import { buildEnv, NODE_ENV } from "@framecast/env";
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from "@framecast/ui";
+import {
+	calculateStrokeDashoffset,
+	getProgressCircleConfig,
+} from "@framecast/utils";
+import type { SpaceRuleSource, ViewerSettingKey } from "@framecast/web-backend";
+import type { ImageUpload, Video } from "@framecast/web-domain";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import clsx from "clsx";
 import { Effect, Option } from "effect";

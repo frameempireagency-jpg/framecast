@@ -1,9 +1,9 @@
 // million-ignore
 "use client";
 
-import { Button } from "@framecast/ui";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button } from "@framecast/ui";
 import { AnimatePresence, motion } from "framer-motion";
 import { useDetectPlatform } from "hooks/useDetectPlatform";
 import Image from "next/image";

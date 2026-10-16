@@ -1,3 +1,5 @@
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	Button,
 	Dialog,
@@ -7,8 +9,6 @@ import {
 	DialogTitle,
 	Input,
 } from "@framecast/ui";
-import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Effect } from "effect";
 import { useRouter } from "next/navigation";
 import { startTransition, useId, useState } from "react";

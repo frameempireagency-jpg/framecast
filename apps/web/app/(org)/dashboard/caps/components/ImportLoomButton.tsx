@@ -1,5 +1,7 @@
 "use client";
 
+import { faFileImport } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	Button,
 	Dialog,
@@ -9,8 +11,6 @@ import {
 	DialogTitle,
 	Input,
 } from "@framecast/ui";
-import { faFileImport } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "sonner";
@@ -101,8 +101,8 @@ export const ImportLoomButton = ({
 					</DialogHeader>
 					<div className="p-5">
 						<p className="mb-3 text-sm text-gray-11">
-							Paste a Loom video URL to import it to FrameCast. The video will be
-							downloaded and processed in the background.
+							Paste a Loom video URL to import it to FrameCast. The video will
+							be downloaded and processed in the background.
 						</p>
 						<Input
 							value={loomUrl}

@@ -6,8 +6,16 @@ import type { BackgroundMode } from "./background-processor";
 import { useBackgroundMode } from "./useBackgroundMode";
 
 const TEMPLATES: { id: string; label: string; url: string }[] = [
-	{ id: "framecast-purple", label: "Purple", url: "/backgrounds/framecast-purple.svg" },
-	{ id: "framecast-dark", label: "Dark", url: "/backgrounds/framecast-dark.svg" },
+	{
+		id: "framecast-purple",
+		label: "Purple",
+		url: "/backgrounds/framecast-purple.svg",
+	},
+	{
+		id: "framecast-dark",
+		label: "Dark",
+		url: "/backgrounds/framecast-dark.svg",
+	},
 	{ id: "office", label: "Warm", url: "/backgrounds/office.svg" },
 	{ id: "sky", label: "Sky", url: "/backgrounds/sky.svg" },
 	{ id: "studio-warm", label: "Studio", url: "/backgrounds/studio-warm.svg" },
@@ -144,7 +152,9 @@ export const BackgroundPicker = () => {
 								type="button"
 								onClick={() => setMode({ type: "image", url: tpl.url })}
 								className={`relative size-10 overflow-hidden rounded-md transition-all ${
-									active ? "ring-2 ring-primary" : "ring-1 ring-gray-4 hover:ring-gray-6"
+									active
+										? "ring-2 ring-primary"
+										: "ring-1 ring-gray-4 hover:ring-gray-6"
 								}`}
 								title={tpl.label}
 								aria-label={tpl.label}

@@ -35,8 +35,8 @@ export default function Page() {
 							</div>
 							<p class="text-center text-gray-11">
 								Your account is upgraded to{" "}
-								<span class="font-semibold text-blue-500">FrameCast Pro</span> and
-								already includes a commercial license.
+								<span class="font-semibold text-blue-500">FrameCast Pro</span>{" "}
+								and already includes a commercial license.
 							</p>
 						</div>
 					</div>

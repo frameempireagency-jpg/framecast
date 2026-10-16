@@ -44,7 +44,8 @@ export function FirstShareableLink({
 							Your video "{videoName}" is now ready to share with anyone.
 						</Text>
 						<Text className="text-sm leading-6 text-black">
-							Click the button below to view your recording and share it with others.
+							Click the button below to view your recording and share it with
+							others.
 						</Text>
 						<Section className="my-8 text-center">
 							<Link

@@ -1,8 +1,8 @@
 "use client";
 
-import { LogoBadge } from "@framecast/ui";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { LogoBadge } from "@framecast/ui";
 import clsx from "clsx";
 import { useRouter } from "next/navigation";
 

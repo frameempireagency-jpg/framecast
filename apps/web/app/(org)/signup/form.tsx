@@ -1,13 +1,13 @@
 "use client";
 
-import { Button, Input, LogoBadge } from "@framecast/ui";
-import { Organisation } from "@framecast/web-domain";
 import {
 	faArrowLeft,
 	faEnvelope,
 	faExclamationCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button, Input, LogoBadge } from "@framecast/ui";
+import { Organisation } from "@framecast/web-domain";
 import { AnimatePresence, motion } from "framer-motion";
 import Cookies from "js-cookie";
 import { LucideArrowUpRight } from "lucide-react";

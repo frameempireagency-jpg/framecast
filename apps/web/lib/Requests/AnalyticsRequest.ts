@@ -1,5 +1,5 @@
-import type { Video } from "@framecast/web-domain";
 import { dataLoader } from "@effect/experimental/RequestResolver";
+import type { Video } from "@framecast/web-domain";
 import { Effect, Exit, Request, RequestResolver } from "effect";
 import type { NonEmptyArray } from "effect/Array";
 import { Rpc } from "@/lib/Rpcs";

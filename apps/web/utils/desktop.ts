@@ -6,7 +6,9 @@ export function isFromDesktopSemver(
 ) {
 	const xFramecastVersion = request.header("X-FrameCast-Desktop-Version");
 
-	return xFramecastVersion ? isAtLeastSemver(xFramecastVersion, ...semver) : false;
+	return xFramecastVersion
+		? isAtLeastSemver(xFramecastVersion, ...semver)
+		: false;
 }
 
 export const UPLOAD_PROGRESS_VERSION = [0, 3, 68] as const;

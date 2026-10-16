@@ -1,4 +1,5 @@
 import { promises as fs } from "node:fs";
+import { createClient } from "@deepgram/sdk";
 import { db } from "@framecast/database";
 import {
 	organizations,
@@ -11,7 +12,6 @@ import { serverEnv } from "@framecast/env";
 import { userIsPro } from "@framecast/utils";
 import { Storage } from "@framecast/web-backend";
 import type { Video } from "@framecast/web-domain";
-import { createClient } from "@deepgram/sdk";
 import { eq } from "drizzle-orm";
 import { FatalError } from "workflow";
 import {

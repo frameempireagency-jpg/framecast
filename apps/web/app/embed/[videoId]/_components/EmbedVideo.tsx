@@ -1,7 +1,10 @@
 "use client";
 
 import type { userSelectProps } from "@framecast/database/auth/session";
-import type { comments as commentsSchema, videos } from "@framecast/database/schema";
+import type {
+	comments as commentsSchema,
+	videos,
+} from "@framecast/database/schema";
 import { NODE_ENV } from "@framecast/env";
 import { Avatar, Logo } from "@framecast/ui";
 import type { ViewerSettings } from "@framecast/web-backend";

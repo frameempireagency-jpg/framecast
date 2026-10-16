@@ -1,5 +1,7 @@
 "use client";
 
+import { faPlus, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	Button,
 	DropdownMenu,
@@ -8,8 +10,6 @@ import {
 	DropdownMenuTrigger,
 } from "@framecast/ui";
 import type { ImageUpload } from "@framecast/web-domain";
-import { faPlus, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
 import { ChevronDown } from "lucide-react";
 import { forwardRef, useEffect, useRef, useState } from "react";

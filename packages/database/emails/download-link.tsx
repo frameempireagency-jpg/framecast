@@ -35,8 +35,8 @@ export function DownloadLink({ email = "" }: { email: string }) {
 							Your FrameCast download links are here
 						</Heading>
 						<Text className="text-sm leading-6 text-black">
-							Thanks for your interest in FrameCast! Here are the download links for
-							every platform:
+							Thanks for your interest in FrameCast! Here are the download links
+							for every platform:
 						</Text>
 
 						<Section className="my-6">

@@ -1,4 +1,10 @@
 "use client";
+import {
+	faBuilding,
+	faCircleInfo,
+	faLink,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { buildEnv } from "@framecast/env";
 import {
 	Button,
@@ -18,12 +24,6 @@ import {
 	PopoverTrigger,
 } from "@framecast/ui";
 import { classNames } from "@framecast/utils";
-import {
-	faBuilding,
-	faCircleInfo,
-	faLink,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import { Check, ChevronDown, Plus } from "lucide-react";

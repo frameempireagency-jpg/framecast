@@ -1,5 +1,14 @@
 import "server-only";
 
+import {
+	FetchHttpClient,
+	Headers,
+	type HttpApi,
+	HttpApiBuilder,
+	HttpMiddleware,
+	HttpServer,
+} from "@effect/platform";
+import { RpcClient, RpcMiddleware } from "@effect/rpc";
 import { decrypt } from "@framecast/database/crypto";
 import { serverEnv } from "@framecast/env";
 import {
@@ -22,15 +31,6 @@ import {
 	Workflows,
 } from "@framecast/web-backend";
 import { type HttpAuthMiddleware, Video } from "@framecast/web-domain";
-import {
-	FetchHttpClient,
-	Headers,
-	type HttpApi,
-	HttpApiBuilder,
-	HttpMiddleware,
-	HttpServer,
-} from "@effect/platform";
-import { RpcClient, RpcMiddleware } from "@effect/rpc";
 import {
 	Cause,
 	Config,

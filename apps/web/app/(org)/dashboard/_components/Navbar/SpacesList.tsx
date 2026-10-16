@@ -1,7 +1,5 @@
 "use client";
 
-import { Button } from "@framecast/ui";
-import type { Space } from "@framecast/web-domain";
 import {
 	faLayerGroup,
 	faLock,
@@ -9,6 +7,8 @@ import {
 	faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button } from "@framecast/ui";
+import type { Space } from "@framecast/web-domain";
 import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown, ChevronUp } from "lucide-react";

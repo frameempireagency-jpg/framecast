@@ -1,9 +1,9 @@
 "use client";
 
-import { buildEnv } from "@framecast/env";
-import { Button } from "@framecast/ui";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { buildEnv } from "@framecast/env";
+import { Button } from "@framecast/ui";
 import { ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useCallback, useId, useRef, useState } from "react";
@@ -18,7 +18,9 @@ function detectPlatform(): "windows" | "apple-silicon" | "apple-intel" {
 	if (ua.includes("win")) return "windows";
 	if (
 		ua.includes("mac") &&
-		(ua.includes("arm") || (navigator as Navigator & { userAgentData?: { architecture?: string } }).userAgentData?.architecture === "arm")
+		(ua.includes("arm") ||
+			(navigator as Navigator & { userAgentData?: { architecture?: string } })
+				.userAgentData?.architecture === "arm")
 	)
 		return "apple-silicon";
 	if (ua.includes("mac")) return "apple-intel";

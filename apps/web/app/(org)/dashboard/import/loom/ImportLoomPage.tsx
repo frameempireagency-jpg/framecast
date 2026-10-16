@@ -1,6 +1,16 @@
 "use client";
 
 import {
+	faArrowLeft,
+	faCircleCheck,
+	faDownload,
+	faFileCsv,
+	faLink,
+	faTriangleExclamation,
+	faUpload,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
 	Button,
 	Dialog,
 	DialogContent,
@@ -16,16 +26,6 @@ import {
 	TableHeader,
 	TableRow,
 } from "@framecast/ui";
-import {
-	faArrowLeft,
-	faCircleCheck,
-	faDownload,
-	faFileCsv,
-	faLink,
-	faTriangleExclamation,
-	faUpload,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import Link from "next/link";

@@ -1,10 +1,13 @@
 "use client";
 
-import { LogoSpinner } from "@framecast/ui";
-import { calculateStrokeDashoffset, getProgressCircleConfig } from "@framecast/utils";
-import type { Video } from "@framecast/web-domain";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { LogoSpinner } from "@framecast/ui";
+import {
+	calculateStrokeDashoffset,
+	getProgressCircleConfig,
+} from "@framecast/utils";
+import type { Video } from "@framecast/web-domain";
 import { useQueryClient } from "@tanstack/react-query";
 import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";

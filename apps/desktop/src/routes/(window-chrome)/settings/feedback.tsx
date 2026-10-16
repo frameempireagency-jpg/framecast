@@ -62,8 +62,8 @@ export default function FeedbackTab() {
 					<div class="flex flex-col pb-4 border-b border-gray-2">
 						<h2 class="text-lg font-medium text-gray-12">Send Feedback</h2>
 						<p class="text-sm text-gray-10">
-							Help us improve FrameCast by submitting feedback or reporting bugs.
-							We'll get right on it.
+							Help us improve FrameCast by submitting feedback or reporting
+							bugs. We'll get right on it.
 						</p>
 					</div>
 					<form
@@ -112,8 +112,8 @@ export default function FeedbackTab() {
 							Debug Information
 						</h3>
 						<p class="text-sm text-gray-10 mb-3">
-							Upload your logs to help us diagnose issues with FrameCast. No personal
-							information is included.
+							Upload your logs to help us diagnose issues with FrameCast. No
+							personal information is included.
 						</p>
 						<Button
 							onClick={handleUploadLogs}

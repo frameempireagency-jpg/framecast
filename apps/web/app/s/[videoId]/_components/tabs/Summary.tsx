@@ -1,12 +1,12 @@
 "use client";
 
-import { Button } from "@framecast/ui";
-import type { Video } from "@framecast/web-domain";
 import {
 	faRectangleList,
 	faRotateRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button } from "@framecast/ui";
+import type { Video } from "@framecast/web-domain";
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 
@@ -152,9 +152,8 @@ export const Summary: React.FC<SummaryProps> = ({
 							Unlock FrameCast AI
 						</h3>
 						<p className="mb-4 text-sm leading-relaxed text-gray-600">
-							Upgrade to access AI-powered features including
-							automatic titles, video summaries, and intelligent chapter
-							generation.
+							Upgrade to access AI-powered features including automatic titles,
+							video summaries, and intelligent chapter generation.
 						</p>
 						<Button
 							href="/pricing"

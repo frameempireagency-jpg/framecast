@@ -1,5 +1,7 @@
 "use client";
 
+import { faPlus, faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	Button,
 	Dialog,
@@ -14,8 +16,6 @@ import {
 	Select,
 } from "@framecast/ui";
 import { type Space, User } from "@framecast/web-domain";
-import { faPlus, faUserGroup } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";

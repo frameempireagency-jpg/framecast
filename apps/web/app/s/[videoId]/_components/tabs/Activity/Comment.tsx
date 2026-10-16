@@ -1,7 +1,7 @@
-import { Button } from "@framecast/ui";
-import type { Comment } from "@framecast/web-domain";
 import { faReply, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button } from "@framecast/ui";
+import type { Comment } from "@framecast/web-domain";
 
 import clsx from "clsx";
 import { motion } from "framer-motion";

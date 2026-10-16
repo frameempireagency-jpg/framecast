@@ -1,15 +1,15 @@
 import {
+	faInfoCircle,
+	faWandMagicSparkles,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
 	Button,
 	DialogContent,
 	DialogFooter,
 	DialogHeader,
 	DialogTitle,
 } from "@framecast/ui";
-import {
-	faInfoCircle,
-	faWandMagicSparkles,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fit, Layout, useRive } from "@rive-app/react-canvas";
 import { useDashboardContext, useTheme } from "../../Contexts";
 

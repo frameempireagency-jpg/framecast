@@ -105,8 +105,8 @@ export default function AppsTab() {
 			<div class="flex flex-col pb-4 border-b border-gray-2">
 				<h2 class="text-lg font-medium text-gray-12">Integrations</h2>
 				<p class="text-sm text-gray-10">
-					Configure integrations to extend FrameCast's functionality and connect with
-					third-party services.
+					Configure integrations to extend FrameCast's functionality and connect
+					with third-party services.
 				</p>
 			</div>
 			<For each={apps}>

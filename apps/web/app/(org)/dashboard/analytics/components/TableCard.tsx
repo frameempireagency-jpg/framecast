@@ -1,6 +1,13 @@
 "use client";
 
 import {
+	faAppleWhole,
+	faDesktop,
+	faMobileScreen,
+	faTablet,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
 	LogoBadge,
 	Table,
 	TableBody,
@@ -9,13 +16,6 @@ import {
 	TableHeader,
 	TableRow,
 } from "@framecast/ui";
-import {
-	faAppleWhole,
-	faDesktop,
-	faMobileScreen,
-	faTablet,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
 import getUnicodeFlagIcon from "country-flag-icons/unicode";
 import Image from "next/image";

@@ -1,3 +1,5 @@
+import { faCopy, faShareNodes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	Button,
 	Dialog,
@@ -10,8 +12,6 @@ import {
 } from "@framecast/ui";
 import type { SpaceRuleSource, ViewerSettingKey } from "@framecast/web-backend";
 import { type ImageUpload, Space, type Video } from "@framecast/web-domain";
-import { faCopy, faShareNodes } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMutation } from "@tanstack/react-query";
 import clsx from "clsx";
 import { motion } from "framer-motion";

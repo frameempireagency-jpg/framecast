@@ -1,5 +1,3 @@
-import { Videos } from "@framecast/web-backend";
-import { HttpAuthMiddleware, Video } from "@framecast/web-domain";
 import {
 	HttpApi,
 	HttpApiBuilder,
@@ -7,6 +5,8 @@ import {
 	HttpApiError,
 	HttpApiGroup,
 } from "@effect/platform";
+import { Videos } from "@framecast/web-backend";
+import { HttpAuthMiddleware, Video } from "@framecast/web-domain";
 import { Effect, Layer, Schema } from "effect";
 import { apiToHandler } from "@/lib/server";
 

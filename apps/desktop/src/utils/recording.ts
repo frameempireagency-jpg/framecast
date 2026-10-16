@@ -1,7 +1,7 @@
 import { emit } from "@tauri-apps/api/event";
 import * as dialog from "@tauri-apps/plugin-dialog";
-import type { createOptionsQuery } from "./queries";
 import { INSTANT_ENABLED } from "./instant";
+import type { createOptionsQuery } from "./queries";
 import { commands, type RecordingAction } from "./tauri";
 
 export function handleRecordingResult(

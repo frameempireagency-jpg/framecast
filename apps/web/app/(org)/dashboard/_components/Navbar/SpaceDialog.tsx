@@ -1,6 +1,12 @@
 "use client";
 
 import {
+	faGear,
+	faLayerGroup,
+	faLock,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
 	Button,
 	CardDescription,
 	Dialog,
@@ -16,12 +22,6 @@ import {
 	Switch,
 } from "@framecast/ui";
 import type { ImageUpload } from "@framecast/web-domain";
-import {
-	faGear,
-	faLayerGroup,
-	faLock,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import type React from "react";

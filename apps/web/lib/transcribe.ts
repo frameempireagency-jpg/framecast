@@ -1,5 +1,9 @@
 import { db } from "@framecast/database";
-import { organizations, videos, videoUploads } from "@framecast/database/schema";
+import {
+	organizations,
+	videos,
+	videoUploads,
+} from "@framecast/database/schema";
 import { serverEnv } from "@framecast/env";
 import type { Video } from "@framecast/web-domain";
 import { eq } from "drizzle-orm";

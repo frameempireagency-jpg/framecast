@@ -2,9 +2,17 @@ import { db } from "@framecast/database";
 import { sendEmail } from "@framecast/database/emails/config";
 import { FirstView } from "@framecast/database/emails/first-view";
 import { nanoId } from "@framecast/database/helpers";
-import { comments, notifications, users, videos } from "@framecast/database/schema";
+import {
+	comments,
+	notifications,
+	users,
+	videos,
+} from "@framecast/database/schema";
 import { buildEnv, serverEnv } from "@framecast/env";
-import type { Notification, NotificationBase } from "@framecast/web-api-contract";
+import type {
+	Notification,
+	NotificationBase,
+} from "@framecast/web-api-contract";
 import { type Comment, User, Video } from "@framecast/web-domain";
 import { and, eq, gte, isNull, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";

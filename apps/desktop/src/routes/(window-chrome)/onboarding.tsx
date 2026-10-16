@@ -138,7 +138,8 @@ const setupPermissions: readonly SetupPermission[] = [
 	{
 		name: "Microphone",
 		key: "microphone",
-		description: "This permission is required to record audio in your recordings.",
+		description:
+			"This permission is required to record audio in your recordings.",
 		requiresManualGrant: false,
 		optional: true,
 	},
@@ -700,8 +701,8 @@ function ModesOverviewStep(props: { active: boolean }) {
 					One app, every workflow
 				</h2>
 				<p class="text-[14px] text-gray-10 leading-relaxed">
-					Whether you need speed, studio quality, or a quick screenshot - FrameCast
-					has a mode for it.
+					Whether you need speed, studio quality, or a quick screenshot -
+					FrameCast has a mode for it.
 				</p>
 			</div>
 
@@ -857,7 +858,8 @@ function ToggleStep(props: { active: boolean }) {
 					Switch modes anytime
 				</h2>
 				<p class="text-[14px] text-gray-10 leading-relaxed">
-					Toggle between modes with a single click from the main FrameCast window.
+					Toggle between modes with a single click from the main FrameCast
+					window.
 				</p>
 			</div>
 
@@ -991,8 +993,8 @@ function ShortcutsStep(props: { active: boolean }) {
 					Make FrameCast yours
 				</h2>
 				<p class="text-[14px] text-gray-10 leading-relaxed">
-					Customize everything from keyboard shortcuts to storage. FrameCast adapts to
-					your workflow.
+					Customize everything from keyboard shortcuts to storage. FrameCast
+					adapts to your workflow.
 				</p>
 			</div>
 
@@ -1086,8 +1088,8 @@ function FaqStep(props: { active: boolean }) {
 				<FaqItem question="Where are my recordings stored?">
 					<p class="text-[13px] text-gray-10 leading-relaxed">
 						All recordings are stored locally on your computer. In Instant mode,
-						they're also uploaded to FrameCast's storage for easy sharing. You can
-						manage storage in Settings.
+						they're also uploaded to FrameCast's storage for easy sharing. You
+						can manage storage in Settings.
 					</p>
 				</FaqItem>
 				<FaqItem question="Can I change my shortcuts later?">
@@ -1107,7 +1109,9 @@ function FaqStep(props: { active: boolean }) {
 
 			<button
 				type="button"
-				onClick={() => shell.open("https://framecast.frameempire.co.uk/dashboard")}
+				onClick={() =>
+					shell.open("https://framecast.frameempire.co.uk/dashboard")
+				}
 				class={cx(
 					"flex items-center gap-1.5 text-[13px] text-blue-10 hover:text-blue-11 transition-all duration-500 delay-200",
 					visible() ? "opacity-100" : "opacity-0",
@@ -2066,7 +2070,8 @@ function PermissionsStep(props: {
 					Permissions Required
 				</h2>
 				<p class="text-[14px] text-gray-10 leading-relaxed">
-					FrameCast needs a few permissions to record your screen and capture audio.
+					FrameCast needs a few permissions to record your screen and capture
+					audio.
 				</p>
 			</div>
 

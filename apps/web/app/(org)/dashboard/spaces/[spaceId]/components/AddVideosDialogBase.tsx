@@ -1,5 +1,7 @@
 "use client";
 
+import { faVideo } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	Button,
 	Dialog,
@@ -10,8 +12,6 @@ import {
 	LoadingSpinner,
 } from "@framecast/ui";
 import type { Video } from "@framecast/web-domain";
-import { faVideo } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import clsx from "clsx";

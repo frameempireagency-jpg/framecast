@@ -1,5 +1,7 @@
 "use client";
 
+import { faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	Button,
 	Dialog,
@@ -10,8 +12,6 @@ import {
 	Input,
 	Select,
 } from "@framecast/ui";
-import { faUserGroup } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMutation } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { useEffect, useId, useState } from "react";
