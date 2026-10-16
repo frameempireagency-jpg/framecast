@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import { useMutation } from "@tanstack/solid-query";
 import { createResource, createSignal, Show, Suspense } from "solid-js";
 import { createSelectedOrganization } from "~/utils/organization-branding";

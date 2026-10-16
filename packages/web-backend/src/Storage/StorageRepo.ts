@@ -1,13 +1,13 @@
 import { createHash } from "node:crypto";
-import { decrypt, encrypt } from "@cap/database/crypto";
-import { nanoId } from "@cap/database/helpers";
-import * as Db from "@cap/database/schema";
+import { decrypt, encrypt } from "@framecast/database/crypto";
+import { nanoId } from "@framecast/database/helpers";
+import * as Db from "@framecast/database/schema";
 import {
 	type Organisation,
 	Storage,
 	type User,
 	type Video,
-} from "@cap/web-domain";
+} from "@framecast/web-domain";
 import * as Dz from "drizzle-orm";
 import { Effect, Option } from "effect";
 

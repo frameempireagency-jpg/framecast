@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-vi.mock("@cap/database", () => {
+vi.mock("@framecast/database", () => {
 	const mockDb = {
 		select: vi.fn(() => mockDb),
 		insert: vi.fn(() => mockDb),
@@ -22,20 +22,20 @@ vi.mock("@cap/database", () => {
 	};
 });
 
-vi.mock("@cap/database/auth/session", () => ({
+vi.mock("@framecast/database/auth/session", () => ({
 	getCurrentUser: vi.fn(),
 }));
 
-vi.mock("@cap/database/helpers", () => ({
+vi.mock("@framecast/database/helpers", () => ({
 	nanoId: vi.fn(() => "test-nano-id"),
 	nanoIdLong: vi.fn(() => "test-nano-id-long-value"),
 }));
 
-vi.mock("@cap/database/crypto", () => ({
+vi.mock("@framecast/database/crypto", () => ({
 	encrypt: vi.fn(async (value: string) => `encrypted:${value}`),
 }));
 
-vi.mock("@cap/database/schema", () => ({
+vi.mock("@framecast/database/schema", () => ({
 	developerApps: {
 		id: "id",
 		ownerId: "ownerId",
@@ -86,8 +86,8 @@ vi.mock("drizzle-orm", () => ({
 	sql: vi.fn(),
 }));
 
-import * as capDatabase from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
+import * as capDatabase from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
 
 const mockGetCurrentUser = getCurrentUser as ReturnType<typeof vi.fn>;
 

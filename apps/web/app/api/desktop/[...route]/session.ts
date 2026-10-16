@@ -1,7 +1,7 @@
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { authApiKeys } from "@cap/database/schema";
-import { serverEnv } from "@cap/env";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { authApiKeys } from "@framecast/database/schema";
+import { serverEnv } from "@framecast/env";
 import { zValidator } from "@hono/zod-validator";
 import { Hono } from "hono";
 import { getCookie } from "hono/cookie";
@@ -195,7 +195,7 @@ app.get(
 		const localhostUrl = port
 			? `http://127.0.0.1:${port}?${params}`
 			: undefined;
-		const deepLinkUrl = `cap-desktop://signin?${params}`;
+		const deepLinkUrl = `framecast-desktop://signin?${params}`;
 
 		if (platform === "web" && localhostUrl) {
 			return Response.redirect(localhostUrl);

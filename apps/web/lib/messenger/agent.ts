@@ -1,7 +1,7 @@
 import "server-only";
 
-import type { MessengerMessageRole } from "@cap/database/schema";
-import { serverEnv } from "@cap/env";
+import type { MessengerMessageRole } from "@framecast/database/schema";
+import { serverEnv } from "@framecast/env";
 import { GROQ_MODEL, getGroqClient } from "@/lib/groq-client";
 import { CAP_REFERENCE_GUIDE, MESSENGER_AGENT_PROMPT } from "./constants";
 import { getKnowledgeTag, searchSupermemory } from "./supermemory";

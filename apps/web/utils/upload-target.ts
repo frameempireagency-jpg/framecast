@@ -1,4 +1,4 @@
-import type { Storage } from "@cap/web-domain";
+import type { Storage } from "@framecast/web-domain";
 
 type UploadTarget =
 	| Storage.UploadTarget

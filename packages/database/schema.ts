@@ -8,7 +8,7 @@ import type {
 	Storage,
 	User,
 	Video,
-} from "@cap/web-domain";
+} from "@framecast/web-domain";
 import { sql } from "drizzle-orm";
 import {
 	bigint,

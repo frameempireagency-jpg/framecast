@@ -1,6 +1,6 @@
 "use client";
 
-import { LogoSpinner } from "@cap/ui";
+import { LogoSpinner } from "@framecast/ui";
 
 export function RecordingInProgressOverlay({
 	onConfirmStopped,

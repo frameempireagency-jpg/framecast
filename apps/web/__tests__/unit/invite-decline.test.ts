@@ -1,4 +1,4 @@
-import { getCurrentUser } from "@cap/database/auth/session";
+import { getCurrentUser } from "@framecast/database/auth/session";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const mockDb = {
@@ -10,15 +10,15 @@ const mockDb = {
 	transaction: vi.fn(),
 };
 
-vi.mock("@cap/database", () => ({
+vi.mock("@framecast/database", () => ({
 	db: () => mockDb,
 }));
 
-vi.mock("@cap/database/auth/session", () => ({
+vi.mock("@framecast/database/auth/session", () => ({
 	getCurrentUser: vi.fn(),
 }));
 
-vi.mock("@cap/database/schema", () => ({
+vi.mock("@framecast/database/schema", () => ({
 	organizationInvites: {
 		id: "id",
 		invitedEmail: "invitedEmail",

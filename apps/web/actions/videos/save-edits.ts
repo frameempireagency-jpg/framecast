@@ -1,12 +1,12 @@
 "use server";
 
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { videoEdits, videos, videoUploads } from "@cap/database/schema";
-import type { VideoEditSpec } from "@cap/database/types";
-import { userIsPro } from "@cap/utils";
-import { Storage } from "@cap/web-backend";
-import type { Video } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { videoEdits, videos, videoUploads } from "@framecast/database/schema";
+import type { VideoEditSpec } from "@framecast/database/types";
+import { userIsPro } from "@framecast/utils";
+import { Storage } from "@framecast/web-backend";
+import type { Video } from "@framecast/web-domain";
 import { eq } from "drizzle-orm";
 import { Effect } from "effect";
 import { revalidatePath } from "next/cache";

@@ -1,7 +1,7 @@
 "use client";
 
-import { buildEnv } from "@cap/env";
-import { Card, CardDescription, CardHeader, CardTitle } from "@cap/ui";
+import { buildEnv } from "@framecast/env";
+import { Card, CardDescription, CardHeader, CardTitle } from "@framecast/ui";
 import { useDashboardContext } from "@/app/(org)/dashboard/Contexts";
 import {
 	canManageOrganizationBilling,

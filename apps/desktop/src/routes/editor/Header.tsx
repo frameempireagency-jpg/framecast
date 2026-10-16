@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import type { UnlistenFn } from "@tauri-apps/api/event";
 import { ask } from "@tauri-apps/plugin-dialog";
 import { revealItemInDir } from "@tauri-apps/plugin-opener";
@@ -168,7 +168,6 @@ export function Header() {
 
 				<div class="flex flex-row items-center">
 					<NameEditor name={meta().prettyName} />
-					<span class="text-sm text-gray-11">.cap</span>
 				</div>
 				<div data-tauri-drag-region class="flex-1 h-full" />
 				<EditorButton

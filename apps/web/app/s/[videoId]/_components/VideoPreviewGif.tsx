@@ -1,6 +1,6 @@
 "use client";
 
-import type { Video } from "@cap/web-domain";
+import type { Video } from "@framecast/web-domain";
 import clsx from "clsx";
 import Image from "next/image";
 import { useState } from "react";

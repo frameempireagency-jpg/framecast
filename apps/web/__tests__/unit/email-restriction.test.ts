@@ -1,4 +1,4 @@
-import { isEmailAllowedByRestriction } from "@cap/utils";
+import { isEmailAllowedByRestriction } from "@framecast/utils";
 import { describe, expect, it } from "vitest";
 
 describe("isEmailAllowedByRestriction", () => {

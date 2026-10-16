@@ -1,10 +1,10 @@
 "use server";
 
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { users } from "@cap/database/schema";
-import { serverEnv } from "@cap/env";
-import { stripe } from "@cap/utils";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { users } from "@framecast/database/schema";
+import { serverEnv } from "@framecast/env";
+import { stripe } from "@framecast/utils";
 import { eq } from "drizzle-orm";
 import type Stripe from "stripe";
 

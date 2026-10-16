@@ -1,4 +1,4 @@
-import type { VideoEditRange, VideoEditSpec } from "@cap/database/types";
+import type { VideoEditRange, VideoEditSpec } from "@framecast/database/types";
 
 const EPSILON = 0.001;
 const MIN_RANGE_DURATION = 0.05;

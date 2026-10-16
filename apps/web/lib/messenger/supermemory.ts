@@ -1,6 +1,6 @@
 import "server-only";
 
-import { serverEnv } from "@cap/env";
+import { serverEnv } from "@framecast/env";
 import Supermemory from "supermemory";
 import {
 	MESSENGER_ADMIN_EMAIL,

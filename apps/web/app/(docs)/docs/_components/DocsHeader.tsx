@@ -1,6 +1,6 @@
 "use client";
 
-import { Logo } from "@cap/ui";
+import { Logo } from "@framecast/ui";
 import { ExternalLink, Menu, Search } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";

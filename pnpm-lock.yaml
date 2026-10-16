@@ -38,16 +38,16 @@ importers:
       '@aerofoil/rive-solid-canvas':
         specifier: ^2.1.4
         version: 2.1.4
-      '@cap/database':
+      '@framecast/database':
         specifier: workspace:*
         version: link:../../packages/database
-      '@cap/ui-solid':
+      '@framecast/ui-solid':
         specifier: workspace:*
         version: link:../../packages/ui-solid
-      '@cap/utils':
+      '@framecast/utils':
         specifier: workspace:*
         version: link:../../packages/utils
-      '@cap/web-api-contract':
+      '@framecast/web-api-contract':
         specifier: workspace:*
         version: link:../../packages/web-api-contract
       '@corvu/tooltip':
@@ -323,7 +323,7 @@ importers:
 
   apps/storybook:
     dependencies:
-      '@cap/ui-solid':
+      '@framecast/ui-solid':
         specifier: workspace:*
         version: link:../../packages/ui-solid
       postcss-pseudo-companion-classes:
@@ -396,28 +396,28 @@ importers:
       '@aws-sdk/s3-request-presigner':
         specifier: ^3.485.0
         version: 3.804.0
-      '@cap/database':
+      '@framecast/database':
         specifier: workspace:*
         version: link:../../packages/database
-      '@cap/env':
+      '@framecast/env':
         specifier: workspace:*
         version: link:../../packages/env
-      '@cap/ui':
+      '@framecast/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@cap/utils':
+      '@framecast/utils':
         specifier: workspace:*
         version: link:../../packages/utils
-      '@cap/web-api-contract':
+      '@framecast/web-api-contract':
         specifier: workspace:*
         version: link:../../packages/web-api-contract
-      '@cap/web-api-contract-effect':
+      '@framecast/web-api-contract-effect':
         specifier: workspace:*
         version: link:../../packages/web-api-contract-effect
-      '@cap/web-backend':
+      '@framecast/web-backend':
         specifier: workspace:*
         version: link:../../packages/web-backend
-      '@cap/web-domain':
+      '@framecast/web-domain':
         specifier: workspace:*
         version: link:../../packages/web-domain
       '@deepgram/sdk':
@@ -835,10 +835,10 @@ importers:
 
   apps/web-cluster:
     dependencies:
-      '@cap/web-backend':
+      '@framecast/web-backend':
         specifier: workspace:*
         version: link:../../packages/web-backend
-      '@cap/web-domain':
+      '@framecast/web-domain':
         specifier: workspace:*
         version: link:../../packages/web-domain
       '@effect/cluster':
@@ -964,10 +964,10 @@ importers:
 
   packages/database:
     dependencies:
-      '@cap/env':
+      '@framecast/env':
         specifier: workspace:*
         version: link:../env
-      '@cap/web-domain':
+      '@framecast/web-domain':
         specifier: workspace:*
         version: link:../web-domain
       '@effect/sql-mysql2':
@@ -1025,10 +1025,10 @@ importers:
         specifier: ^3
         version: 3.25.76
     devDependencies:
-      '@cap/ui':
+      '@framecast/ui':
         specifier: workspace:*
         version: link:../ui
-      '@cap/utils':
+      '@framecast/utils':
         specifier: workspace:*
         version: link:../utils
       '@types/node':
@@ -1122,7 +1122,7 @@ importers:
 
   packages/ui:
     dependencies:
-      '@cap/utils':
+      '@framecast/utils':
         specifier: workspace:*
         version: link:../utils
       '@kobalte/tailwindcss':
@@ -1298,7 +1298,7 @@ importers:
       '@aws-sdk/client-s3':
         specifier: ^3.485.0
         version: 3.804.0
-      '@cap/env':
+      '@framecast/env':
         specifier: workspace:*
         version: link:../env
       clsx:
@@ -1368,16 +1368,16 @@ importers:
       '@aws-sdk/s3-request-presigner':
         specifier: ^3.485.0
         version: 3.804.0
-      '@cap/database':
+      '@framecast/database':
         specifier: workspace:*
         version: link:../database
-      '@cap/env':
+      '@framecast/env':
         specifier: workspace:*
         version: link:../env
-      '@cap/utils':
+      '@framecast/utils':
         specifier: workspace:*
         version: link:../utils
-      '@cap/web-domain':
+      '@framecast/web-domain':
         specifier: workspace:*
         version: link:../web-domain
       '@effect/cluster':

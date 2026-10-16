@@ -1,8 +1,8 @@
 "use client";
 
-import { LogoSpinner } from "@cap/ui";
-import { calculateStrokeDashoffset, getProgressCircleConfig } from "@cap/utils";
-import type { Video } from "@cap/web-domain";
+import { LogoSpinner } from "@framecast/ui";
+import { calculateStrokeDashoffset, getProgressCircleConfig } from "@framecast/utils";
+import type { Video } from "@framecast/web-domain";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useQueryClient } from "@tanstack/react-query";

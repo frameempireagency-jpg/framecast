@@ -1,5 +1,5 @@
-import { Avatar } from "@cap/ui";
-import type { ImageUpload } from "@cap/web-domain";
+import { Avatar } from "@framecast/ui";
+import type { ImageUpload } from "@framecast/web-domain";
 
 interface SignedImageUrlProps {
 	image: ImageUpload.ImageUrl | null | undefined;

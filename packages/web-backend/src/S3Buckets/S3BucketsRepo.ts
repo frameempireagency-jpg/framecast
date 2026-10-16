@@ -1,10 +1,10 @@
-import * as Db from "@cap/database/schema";
+import * as Db from "@framecast/database/schema";
 import {
 	type Organisation,
 	S3Bucket,
 	type User,
 	type Video,
-} from "@cap/web-domain";
+} from "@framecast/web-domain";
 import * as Dz from "drizzle-orm";
 import { Effect, Option } from "effect";
 

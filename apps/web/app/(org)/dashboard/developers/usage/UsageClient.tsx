@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardHeader, CardTitle } from "@cap/ui";
+import { Card, CardHeader, CardTitle } from "@framecast/ui";
 import { EnvironmentBadge } from "../_components/EnvironmentBadge";
 import { StatBox } from "../_components/StatBox";
 import { useDevelopersContext } from "../DevelopersContext";

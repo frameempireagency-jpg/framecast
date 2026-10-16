@@ -1,5 +1,5 @@
-import { db } from "@cap/database";
-import { developerCreditAccounts, developerVideos } from "@cap/database/schema";
+import { db } from "@framecast/database";
+import { developerCreditAccounts, developerVideos } from "@framecast/database/schema";
 import { and, count, eq, isNull, sql } from "drizzle-orm";
 import { Hono } from "hono";
 import { withDeveloperSecretAuth } from "../../../utils";

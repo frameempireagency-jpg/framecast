@@ -1,5 +1,5 @@
 {
-	"name": "@cap/sdk-embed",
+	"name": "@framecast/sdk-embed",
 	"version": "0.1.0",
 	"description": "Cap Embedding SDK for third-party integrations",
 	"type": "module",

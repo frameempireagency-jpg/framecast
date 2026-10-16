@@ -1,10 +1,10 @@
 "use server";
 
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { nanoIdLength } from "@cap/database/helpers";
-import { organizationMembers, spaceMembers } from "@cap/database/schema";
-import { type Organisation, Space, User } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { nanoIdLength } from "@framecast/database/helpers";
+import { organizationMembers, spaceMembers } from "@framecast/database/schema";
+import { type Organisation, Space, User } from "@framecast/web-domain";
 import { and, eq, inArray } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { v4 as uuidv4 } from "uuid";

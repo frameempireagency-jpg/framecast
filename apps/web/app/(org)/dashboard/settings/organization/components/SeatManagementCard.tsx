@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Card, CardDescription, CardHeader, CardTitle } from "@cap/ui";
+import { Button, Card, CardDescription, CardHeader, CardTitle } from "@framecast/ui";
 import NumberFlow from "@number-flow/react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Minus, Plus } from "lucide-react";

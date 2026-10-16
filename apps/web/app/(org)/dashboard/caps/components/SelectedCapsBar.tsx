@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@cap/ui";
+import { Button } from "@framecast/ui";
 import { faFilm, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NumberFlow from "@number-flow/react";
@@ -14,7 +14,7 @@ interface SelectedCapsBarProps {
 	isDeleting: boolean;
 }
 
-import type { Video } from "@cap/web-domain";
+import type { Video } from "@framecast/web-domain";
 import { useState } from "react";
 
 export const SelectedCapsBar = ({

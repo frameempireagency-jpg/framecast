@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import { A, type RouteSectionProps } from "@solidjs/router";
 import { getVersion } from "@tauri-apps/api/app";
 import * as shell from "@tauri-apps/plugin-shell";

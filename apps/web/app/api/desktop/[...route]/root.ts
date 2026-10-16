@@ -1,16 +1,16 @@
-import { db } from "@cap/database";
-import { sendEmail } from "@cap/database/emails/config";
-import { Feedback } from "@cap/database/emails/feedback";
+import { db } from "@framecast/database";
+import { sendEmail } from "@framecast/database/emails/config";
+import { Feedback } from "@framecast/database/emails/feedback";
 import {
 	organizationMembers,
 	organizations,
 	users,
-} from "@cap/database/schema";
-import { buildEnv, serverEnv } from "@cap/env";
-import { stripe, userIsPro } from "@cap/utils";
-import { OrganizationBrandingPatchBody } from "@cap/web-api-contract";
-import { ImageUploads } from "@cap/web-backend";
-import { type ImageUpload, Organisation } from "@cap/web-domain";
+} from "@framecast/database/schema";
+import { buildEnv, serverEnv } from "@framecast/env";
+import { stripe, userIsPro } from "@framecast/utils";
+import { OrganizationBrandingPatchBody } from "@framecast/web-api-contract";
+import { ImageUploads } from "@framecast/web-backend";
+import { type ImageUpload, Organisation } from "@framecast/web-domain";
 import { zValidator } from "@hono/zod-validator";
 import { and, eq, isNull, or } from "drizzle-orm";
 import { Effect, Option } from "effect";
@@ -267,7 +267,7 @@ app.post(
 
 			const formData = new FormData();
 			const logBlob = new Blob([log], { type: "text/plain" });
-			const fileName = `cap-desktop-${os || "unknown"}-${version || "unknown"}-${Date.now()}.log`;
+			const fileName = `framecast-desktop-${os || "unknown"}-${version || "unknown"}-${Date.now()}.log`;
 			formData.append("file", logBlob, fileName);
 
 			let diagnosticsContent = "";

@@ -1,4 +1,4 @@
-import { Button, Card, CardDescription, CardHeader, CardTitle } from "@cap/ui";
+import { Button, Card, CardDescription, CardHeader, CardTitle } from "@framecast/ui";
 import { useState } from "react";
 import {
 	canManageOrganizationBilling,

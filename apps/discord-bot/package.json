@@ -1,5 +1,5 @@
 {
-	"name": "@cap/discord-bot",
+	"name": "@framecast/discord-bot",
 	"private": true,
 	"scripts": {
 		"deploy": "wrangler deploy",

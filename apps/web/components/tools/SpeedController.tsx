@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@cap/ui";
+import { Button } from "@framecast/ui";
 import { useEffect, useRef, useState } from "react";
 import { trackEvent } from "@/app/utils/analytics";
 

@@ -1,7 +1,7 @@
 "use client";
 
-import { buildEnv } from "@cap/env";
-import { Button, Input } from "@cap/ui";
+import { buildEnv } from "@framecast/env";
+import { Button, Input } from "@framecast/ui";
 import { faImage } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Effect } from "effect";

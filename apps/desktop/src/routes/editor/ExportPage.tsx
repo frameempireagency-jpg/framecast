@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import { debounce } from "@solid-primitives/scheduled";
 import { makePersisted } from "@solid-primitives/storage";
 import { createMutation } from "@tanstack/solid-query";

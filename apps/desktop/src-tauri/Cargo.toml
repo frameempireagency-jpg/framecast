@@ -1,5 +1,5 @@
 [package]
-name = "cap-desktop"
+name = "framecast-desktop"
 version = "0.4.88"
 description = "FrameCast - Internal screen recordings for Frame Empire"
 authors = ["Frame Empire"]
@@ -9,7 +9,7 @@ edition = "2024"
 workspace = true
 
 [lib]
-name = "cap_desktop_lib"
+name = "framecast_desktop_lib"
 crate-type = ["lib", "cdylib", "staticlib"]
 
 [build-dependencies]

@@ -8,8 +8,8 @@ import {
 	DialogHeader,
 	DialogTitle,
 	DialogTrigger,
-} from "@cap/ui";
-import type { ImageUpload } from "@cap/web-domain";
+} from "@framecast/ui";
+import type { ImageUpload } from "@framecast/web-domain";
 import { faBuilding, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";

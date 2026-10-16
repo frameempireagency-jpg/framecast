@@ -7,8 +7,8 @@ import {
 	CardTitle,
 	Input,
 	Select,
-} from "@cap/ui";
-import { type ImageUpload, Organisation } from "@cap/web-domain";
+} from "@framecast/ui";
+import { type ImageUpload, Organisation } from "@framecast/web-domain";
 import { useMutation } from "@tanstack/react-query";
 import { Effect, Option } from "effect";
 import { useRouter } from "next/navigation";

@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@cap/ui";
-import type { Space } from "@cap/web-domain";
+import { Button } from "@framecast/ui";
+import type { Space } from "@framecast/web-domain";
 import {
 	faLayerGroup,
 	faLock,

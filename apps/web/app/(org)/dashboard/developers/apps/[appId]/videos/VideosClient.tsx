@@ -1,6 +1,6 @@
 "use client";
 
-import type { developerVideos } from "@cap/database/schema";
+import type { developerVideos } from "@framecast/database/schema";
 import {
 	Button,
 	Card,
@@ -8,7 +8,7 @@ import {
 	CardHeader,
 	CardTitle,
 	Input,
-} from "@cap/ui";
+} from "@framecast/ui";
 import { useMutation } from "@tanstack/react-query";
 import { Search, Trash2 } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";

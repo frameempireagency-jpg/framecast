@@ -1,7 +1,7 @@
 "use client";
 
-import { CardDescription, Label, Switch } from "@cap/ui";
-import type { Organisation } from "@cap/web-domain";
+import { CardDescription, Label, Switch } from "@framecast/ui";
+import type { Organisation } from "@framecast/web-domain";
 import { useMutation } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { useEffect, useId, useState } from "react";

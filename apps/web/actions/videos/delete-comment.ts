@@ -1,9 +1,9 @@
 "use server";
 
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { comments, notifications } from "@cap/database/schema";
-import type { Comment, Video } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { comments, notifications } from "@framecast/database/schema";
+import type { Comment, Video } from "@framecast/web-domain";
 import { and, eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 

@@ -1,8 +1,8 @@
 "use client";
 
-import type { VideoMetadata } from "@cap/database/types";
-import type { SpaceRuleSource, ViewerSettingKey } from "@cap/web-backend";
-import type { ImageUpload, Video } from "@cap/web-domain";
+import type { VideoMetadata } from "@framecast/database/types";
+import type { SpaceRuleSource, ViewerSettingKey } from "@framecast/web-backend";
+import type { ImageUpload, Video } from "@framecast/web-domain";
 import { faBuilding, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CapCard } from "../../../caps/components/CapCard/CapCard";

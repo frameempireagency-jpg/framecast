@@ -2,27 +2,27 @@
 
 import { createHmac } from "node:crypto";
 import { HeadBucketCommand, S3Client } from "@aws-sdk/client-s3";
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { decrypt, encrypt } from "@cap/database/crypto";
-import { nanoId } from "@cap/database/helpers";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { decrypt, encrypt } from "@framecast/database/crypto";
+import { nanoId } from "@framecast/database/helpers";
 import {
 	organizations,
 	s3Buckets,
 	storageIntegrations,
 	storageObjects,
 	videos,
-} from "@cap/database/schema";
-import { serverEnv } from "@cap/env";
-import { userIsPro } from "@cap/utils";
+} from "@framecast/database/schema";
+import { serverEnv } from "@framecast/env";
+import { userIsPro } from "@framecast/utils";
 import {
 	type GoogleDriveIntegrationConfig,
 	getGoogleDriveAccessToken,
 	getGoogleDriveAuthUrl,
 	getGoogleDriveFolderLocation,
 	getGoogleDriveUserEmail,
-} from "@cap/web-backend";
-import { type Organisation, S3Bucket, Storage } from "@cap/web-domain";
+} from "@framecast/web-backend";
+import { type Organisation, S3Bucket, Storage } from "@framecast/web-domain";
 import { and, desc, eq, isNull } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { runPromise } from "@/lib/server";

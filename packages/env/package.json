@@ -1,5 +1,5 @@
 {
-	"name": "@cap/env",
+	"name": "@framecast/env",
 	"private": true,
 	"type": "module",
 	"main": "./index.ts",

@@ -1,4 +1,4 @@
-import { buildEnv } from "@cap/env";
+import { buildEnv } from "@framecast/env";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { createMessengerConversation } from "@/actions/messenger";

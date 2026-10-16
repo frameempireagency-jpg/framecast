@@ -343,7 +343,7 @@ function listOtherCapProcesses(options) {
 				processInfo.command.startsWith(
 					`${INSTALLED_APP_COMMAND_PREFIX} --crash-reporter-server=`,
 				) ||
-				processInfo.command.endsWith("/target/debug/cap-desktop")),
+				processInfo.command.endsWith("/target/debug/framecast-desktop")),
 	);
 }
 

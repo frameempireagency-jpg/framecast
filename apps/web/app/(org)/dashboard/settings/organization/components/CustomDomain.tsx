@@ -1,5 +1,5 @@
-import { Button } from "@cap/ui";
-import { Organisation } from "@cap/web-domain";
+import { Button } from "@framecast/ui";
+import { Organisation } from "@framecast/web-domain";
 import {
 	faCheckCircle,
 	faExclamationCircle,

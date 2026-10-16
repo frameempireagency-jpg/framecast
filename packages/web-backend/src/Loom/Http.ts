@@ -1,4 +1,4 @@
-import { CurrentUser, Http, Policy } from "@cap/web-domain";
+import { CurrentUser, Http, Policy } from "@framecast/web-domain";
 import { HttpApiBuilder, HttpApiError } from "@effect/platform";
 import { Effect } from "effect";
 

@@ -1,4 +1,4 @@
-import { getCurrentUser } from "@cap/database/auth/session";
+import { getCurrentUser } from "@framecast/database/auth/session";
 import Bottom from "./components/Bottom";
 import Stepper from "./components/Stepper";
 

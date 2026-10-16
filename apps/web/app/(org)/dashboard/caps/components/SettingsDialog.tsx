@@ -6,9 +6,9 @@ import {
 	DialogHeader,
 	DialogTitle,
 	Switch,
-} from "@cap/ui";
-import type { SpaceRuleSource, ViewerSettingKey } from "@cap/web-backend";
-import type { Video } from "@cap/web-domain";
+} from "@framecast/ui";
+import type { SpaceRuleSource, ViewerSettingKey } from "@framecast/web-backend";
+import type { Video } from "@framecast/web-domain";
 import { faGear } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";

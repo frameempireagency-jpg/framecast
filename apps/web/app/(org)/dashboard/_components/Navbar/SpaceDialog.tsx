@@ -14,8 +14,8 @@ import {
 	Input,
 	Label,
 	Switch,
-} from "@cap/ui";
-import type { ImageUpload } from "@cap/web-domain";
+} from "@framecast/ui";
+import type { ImageUpload } from "@framecast/web-domain";
 import {
 	faGear,
 	faLayerGroup,

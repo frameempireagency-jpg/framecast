@@ -1,4 +1,4 @@
-import type { ImageUpload } from "@cap/web-domain";
+import type { ImageUpload } from "@framecast/web-domain";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SignedImageUrl } from "@/components/SignedImageUrl";

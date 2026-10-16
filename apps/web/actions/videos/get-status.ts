@@ -1,11 +1,11 @@
 "use server";
 
-import { db } from "@cap/database";
-import { users, videos, videoUploads } from "@cap/database/schema";
-import type { VideoMetadata } from "@cap/database/types";
-import { serverEnv } from "@cap/env";
-import { provideOptionalAuth, VideosPolicy } from "@cap/web-backend";
-import { Policy, type Video } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { users, videos, videoUploads } from "@framecast/database/schema";
+import type { VideoMetadata } from "@framecast/database/types";
+import { serverEnv } from "@framecast/env";
+import { provideOptionalAuth, VideosPolicy } from "@framecast/web-backend";
+import { Policy, type Video } from "@framecast/web-domain";
 import { eq } from "drizzle-orm";
 import { Effect, Exit } from "effect";
 import { startAiGeneration } from "@/lib/generate-ai";

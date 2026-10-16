@@ -1,10 +1,10 @@
 "use server";
 
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { spaces } from "@cap/database/schema";
-import { S3Buckets } from "@cap/web-backend";
-import { ImageUpload, type Space } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { spaces } from "@framecast/database/schema";
+import { S3Buckets } from "@framecast/web-backend";
+import { ImageUpload, type Space } from "@framecast/web-domain";
 import { eq } from "drizzle-orm";
 import { Option } from "effect";
 import { revalidatePath } from "next/cache";

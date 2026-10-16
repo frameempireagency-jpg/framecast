@@ -1,6 +1,6 @@
 "use client";
 
-import { Switch } from "@cap/ui";
+import { Switch } from "@framecast/ui";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowLeftIcon } from "lucide-react";
 import { BackgroundPicker } from "./BackgroundPicker";

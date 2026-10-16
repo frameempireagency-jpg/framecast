@@ -1,7 +1,7 @@
-import type { comments as commentsSchema } from "@cap/database/schema";
-import { buildEnv } from "@cap/env";
-import { classNames } from "@cap/utils";
-import type { ImageUpload, Video } from "@cap/web-domain";
+import type { comments as commentsSchema } from "@framecast/database/schema";
+import { buildEnv } from "@framecast/env";
+import { classNames } from "@framecast/utils";
+import type { ImageUpload, Video } from "@framecast/web-domain";
 import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
 import { forwardRef, Suspense, useState } from "react";

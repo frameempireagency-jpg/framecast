@@ -9,7 +9,7 @@ import {
 	DialogTitle,
 	Input,
 	Label,
-} from "@cap/ui";
+} from "@framecast/ui";
 import { useMutation } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { useId, useState } from "react";

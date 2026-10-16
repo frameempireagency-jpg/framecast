@@ -1,4 +1,4 @@
-import { type Folder, Policy, type Space } from "@cap/web-domain";
+import { type Folder, Policy, type Space } from "@framecast/web-domain";
 import { Effect } from "effect";
 
 import { Database } from "../Database.ts";

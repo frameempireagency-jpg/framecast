@@ -2,7 +2,7 @@ import { existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
 const DEV_APP_COMMAND_PREFIX = fileURLToPath(
-	new URL("../../../target/debug/cap-desktop", import.meta.url),
+	new URL("../../../target/debug/framecast-desktop", import.meta.url),
 );
 const INSTALLED_APP_COMMAND_PREFIX = "/Applications/Cap.app/Contents/MacOS/Cap";
 

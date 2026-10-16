@@ -1,7 +1,7 @@
 "use client";
 
-import { Button, Input, Label, Select } from "@cap/ui";
-import type { Organisation } from "@cap/web-domain";
+import { Button, Input, Label, Select } from "@framecast/ui";
+import type { Organisation } from "@framecast/web-domain";
 import {
 	ChevronRightIcon,
 	DatabaseIcon,

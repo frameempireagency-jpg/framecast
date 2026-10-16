@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import { createEventListener } from "@solid-primitives/event-listener";
 import { createElementSize } from "@solid-primitives/resize-observer";
 import { useSearchParams } from "@solidjs/router";

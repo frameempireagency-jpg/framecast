@@ -1,7 +1,7 @@
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { videos } from "@cap/database/schema";
-import { userIsPro } from "@cap/utils";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { videos } from "@framecast/database/schema";
+import { userIsPro } from "@framecast/utils";
 import { count, eq } from "drizzle-orm";
 
 export const dynamic = "force-dynamic";

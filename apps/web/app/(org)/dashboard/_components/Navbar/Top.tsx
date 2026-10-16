@@ -1,6 +1,6 @@
 "use client";
 
-import { buildEnv } from "@cap/env";
+import { buildEnv } from "@framecast/env";
 import {
 	Command,
 	CommandGroup,
@@ -8,7 +8,7 @@ import {
 	Popover,
 	PopoverContent,
 	PopoverTrigger,
-} from "@cap/ui";
+} from "@framecast/ui";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMutation, useQueryClient } from "@tanstack/react-query";

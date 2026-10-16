@@ -47,7 +47,7 @@ All patterns below are `deny` in the workspace `[workspace.lints]` in `Cargo.tom
 - **Recommended lint ruleset on**, with only `suspicious.noShadowRestrictedNames` disabled. Unused vars, `noExplicitAny`, dead code, etc. are all enforced.
 - Desktop (`apps/desktop/**`) has a11y rules off; everywhere else they apply.
 - CSS overrides: `noUnknownAtRules`, `noUnknownTypeSelector`, `noDescendingSpecificity` off for `**/*.css`.
-- Avoid `any`. Use `unknown` + narrowing, or existing shared types from `@cap/utils`, `@cap/web-domain`, generated bindings, etc.
+- Avoid `any`. Use `unknown` + narrowing, or existing shared types from `@framecast/utils`, `@framecast/web-domain`, generated bindings, etc.
 - Do not introduce `@ts-expect-error` / `@ts-ignore` / `// biome-ignore` without a real reason. Prefer fixing the underlying type or pattern.
 
 ## Project Overview
@@ -159,7 +159,7 @@ pnpm tauri:build                 # Build desktop app (release)
 - **Build System**: Turborepo
 - **Frontend (Web)**: React 19 + Next.js 14.2.x (App Router)
 - **Desktop**: Tauri v2, Rust 2024, SolidStart
-- **Styling**: Tailwind CSS (web consumes `@cap/ui/tailwind`)
+- **Styling**: Tailwind CSS (web consumes `@framecast/ui/tailwind`)
 - **Server State**: TanStack Query v5 on web; `@tanstack/solid-query` on desktop
 - **Database**: MySQL (PlanetScale) with Drizzle ORM
 - **AI Integration**: Groq preferred, OpenAI fallback; invoked in Next.js Server Actions
@@ -202,8 +202,8 @@ await events.uploadProgress.listen((event) => {
 ### Code Organization Principles
 1. **Follow Local Patterns**: Study neighboring files and shared packages first
 2. **Database Changes**: Always `pnpm db:generate` → `pnpm db:push` → test
-3. **Strict Typing**: Use existing types; validate config via `@cap/env`
-4. **Component Consistency**: Use `@cap/ui` (React) or `@cap/ui-solid` (Solid)
+3. **Strict Typing**: Use existing types; validate config via `@framecast/env`
+4. **Component Consistency**: Use `@framecast/ui` (React) or `@framecast/ui-solid` (Solid)
 5. **No Manual Edits**: Never touch auto-generated bindings or schemas
 
 ### Key Implementation Patterns
@@ -212,8 +212,8 @@ await events.uploadProgress.listen((event) => {
 ```typescript
 "use server";
 
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
 
 export async function updateVideo(data: FormData) {
   const user = await getCurrentUser();

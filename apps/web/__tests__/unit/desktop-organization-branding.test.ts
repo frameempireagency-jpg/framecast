@@ -1,4 +1,4 @@
-import { OrganizationBrandingPatchBody } from "@cap/web-api-contract";
+import { OrganizationBrandingPatchBody } from "@framecast/web-api-contract";
 import { describe, expect, it } from "vitest";
 import {
 	canEditOrganizationBranding,

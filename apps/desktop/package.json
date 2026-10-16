@@ -1,5 +1,5 @@
 {
-	"name": "@cap/desktop",
+	"name": "@framecast/desktop",
 	"type": "module",
 	"scripts": {
 		"dev": "pnpm -w cap-setup && pnpm build:sidecar && dotenv -e ../../.env -- pnpm run preparescript && dotenv -e ../../.env -- pnpm tauri dev",
@@ -14,10 +14,10 @@
 	},
 	"dependencies": {
 		"@aerofoil/rive-solid-canvas": "^2.1.4",
-		"@cap/database": "workspace:*",
-		"@cap/ui-solid": "workspace:*",
-		"@cap/utils": "workspace:*",
-		"@cap/web-api-contract": "workspace:*",
+		"@framecast/database": "workspace:*",
+		"@framecast/ui-solid": "workspace:*",
+		"@framecast/utils": "workspace:*",
+		"@framecast/web-api-contract": "workspace:*",
 		"@corvu/tooltip": "^0.2.1",
 		"@kobalte/core": "^0.13.7",
 		"@radix-ui/colors": "^3.0.0",

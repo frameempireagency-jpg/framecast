@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Input, Label } from "@cap/ui";
+import { Button, Input, Label } from "@framecast/ui";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "sonner";

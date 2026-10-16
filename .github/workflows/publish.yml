@@ -13,7 +13,7 @@ env:
   CN_APPLICATION: cap/cap
   APP_CARGO_TOML: apps/desktop/src-tauri/Cargo.toml
   SENTRY_ORG: cap-s2
-  SENTRY_PROJECT: cap-desktop
+  SENTRY_PROJECT: framecast-desktop
 
 jobs:
   draft:

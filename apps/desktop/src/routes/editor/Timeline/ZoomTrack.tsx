@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import { createEventListenerMap } from "@solid-primitives/event-listener";
 import { Menu } from "@tauri-apps/api/menu";
 import { cx } from "cva";

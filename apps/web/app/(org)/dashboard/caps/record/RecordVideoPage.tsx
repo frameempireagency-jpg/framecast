@@ -1,7 +1,7 @@
 "use client";
 
-import { buildEnv } from "@cap/env";
-import { Button } from "@cap/ui";
+import { buildEnv } from "@framecast/env";
+import { Button } from "@framecast/ui";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ChevronDown } from "lucide-react";
@@ -45,7 +45,7 @@ export const RecordVideoPage = () => {
 		window.addEventListener("pagehide", onChange, { once: true });
 		window.addEventListener("blur", onChange, { once: true });
 
-		window.location.href = "cap-desktop://";
+		window.location.href = "framecast-desktop://";
 
 		if (checkingRef.current) clearTimeout(checkingRef.current);
 		checkingRef.current = setTimeout(() => {

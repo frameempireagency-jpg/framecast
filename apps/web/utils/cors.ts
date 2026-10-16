@@ -1,4 +1,4 @@
-import { buildEnv } from "@cap/env";
+import { buildEnv } from "@framecast/env";
 
 export const allowedOrigins = [
 	buildEnv.NEXT_PUBLIC_WEB_URL,

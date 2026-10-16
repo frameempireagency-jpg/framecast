@@ -9,22 +9,22 @@ const selectMock = vi.fn(() => ({
 }));
 const insertMock = vi.fn();
 
-vi.mock("@cap/database", () => ({
+vi.mock("@framecast/database", () => ({
 	db: () => ({
 		select: selectMock,
 		insert: insertMock,
 	}),
 }));
 
-vi.mock("@cap/database/auth/session", () => ({
+vi.mock("@framecast/database/auth/session", () => ({
 	getCurrentUser: getCurrentUserMock,
 }));
 
-vi.mock("@cap/utils", () => ({
+vi.mock("@framecast/utils", () => ({
 	userIsPro: (user?: { isPro?: boolean } | null) => Boolean(user?.isPro),
 }));
 
-vi.mock("@cap/web-backend", () => ({
+vi.mock("@framecast/web-backend", () => ({
 	Storage: {
 		getAccessForVideo: vi.fn(),
 	},

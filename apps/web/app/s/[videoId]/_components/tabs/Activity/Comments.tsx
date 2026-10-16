@@ -1,5 +1,5 @@
-import { Button } from "@cap/ui";
-import { Comment, User, type Video } from "@cap/web-domain";
+import { Button } from "@framecast/ui";
+import { Comment, User, type Video } from "@framecast/web-domain";
 import { faCommentSlash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useSearchParams } from "next/navigation";

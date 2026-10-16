@@ -1,9 +1,9 @@
-import { db } from "@cap/database";
-import { nanoId } from "@cap/database/helpers";
-import { developerCreditTransactions, users } from "@cap/database/schema";
-import { buildEnv, serverEnv } from "@cap/env";
-import { stripe } from "@cap/utils";
-import { Organisation, User } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { nanoId } from "@framecast/database/helpers";
+import { developerCreditTransactions, users } from "@framecast/database/schema";
+import { buildEnv, serverEnv } from "@framecast/env";
+import { stripe } from "@framecast/utils";
+import { Organisation, User } from "@framecast/web-domain";
 import { and, eq } from "drizzle-orm";
 import { NextResponse } from "next/server";
 import { PostHog } from "posthog-node";

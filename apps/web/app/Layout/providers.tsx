@@ -1,6 +1,6 @@
 "use client";
 
-import { buildEnv } from "@cap/env";
+import { buildEnv } from "@framecast/env";
 import {
 	TanStackDevtools,
 	type TanStackDevtoolsReactInit,

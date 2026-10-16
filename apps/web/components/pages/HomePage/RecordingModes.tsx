@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@cap/ui";
+import { Button } from "@framecast/ui";
 import clsx from "clsx";
 import { useDetectPlatform } from "hooks/useDetectPlatform";
 import { Clapperboard, Zap } from "lucide-react";

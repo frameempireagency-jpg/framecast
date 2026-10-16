@@ -1,7 +1,7 @@
 "use server";
 
-import { sendEmail } from "@cap/database/emails/config";
-import { DownloadLink } from "@cap/database/emails/download-link";
+import { sendEmail } from "@framecast/database/emails/config";
+import { DownloadLink } from "@framecast/database/emails/download-link";
 import { checkRateLimit } from "@vercel/firewall";
 import { headers } from "next/headers";
 

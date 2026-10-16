@@ -1,4 +1,4 @@
-import { buildEnv } from "@cap/env";
+import { buildEnv } from "@framecast/env";
 import type { Metadata } from "next";
 import CapSettingsCard from "../components/CapSettingsCard";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Card, CardDescription, CardHeader, CardTitle } from "@cap/ui";
+import { Button, Card, CardDescription, CardHeader, CardTitle } from "@framecast/ui";
 import { useQuery } from "@tanstack/react-query";
 import { format } from "date-fns";
 import { useRouter } from "next/navigation";

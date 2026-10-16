@@ -8,7 +8,7 @@ import {
 	CardTitle,
 	Input,
 	Label,
-} from "@cap/ui";
+} from "@framecast/ui";
 import { useMutation } from "@tanstack/react-query";
 import { Trash2 } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";

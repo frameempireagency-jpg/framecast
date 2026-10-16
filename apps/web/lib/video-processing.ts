@@ -1,6 +1,6 @@
-import { db } from "@cap/database";
-import { videoUploads } from "@cap/database/schema";
-import type { S3Bucket, Video } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { videoUploads } from "@framecast/database/schema";
+import type { S3Bucket, Video } from "@framecast/web-domain";
 import { and, eq, ne } from "drizzle-orm";
 import { start } from "workflow/api";
 import { processVideoWorkflow } from "@/workflows/process-video";

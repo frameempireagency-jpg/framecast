@@ -1,4 +1,4 @@
-import { serverEnv } from "@cap/env";
+import { serverEnv } from "@framecast/env";
 import Replicate from "replicate";
 import {
 	convertAudioToMp3ViaMediaServer,

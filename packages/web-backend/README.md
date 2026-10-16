@@ -1,6 +1,6 @@
-# `@cap/web-backend`
+# `@framecast/web-backend`
 
-Implementations for the backend services of `@cap/web`.
+Implementations for the backend services of `@framecast/web`.
 
 ## Services
 
@@ -31,6 +31,6 @@ Domain Services are safe to export and consume inside HTTP/RPC handlers.
 
 ## RPC
 
-Some resources have RPC endpoint implementations as defined in `@cap/web-domain`.
+Some resources have RPC endpoint implementations as defined in `@framecast/web-domain`.
 In a lot of cases, endpoint implementations are thin wrappers around Domain Services.
 Endpoint implementations should never directly use Repository Services or they may introduce security vulnerabilities.

@@ -1,4 +1,4 @@
-import { contract } from "@cap/web-api-contract";
+import { contract } from "@framecast/web-api-contract";
 import { initClient } from "@ts-rest/core";
 import { useState } from "react";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Switch } from "@cap/ui";
+import { Button, Switch } from "@framecast/ui";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NumberFlow from "@number-flow/react";

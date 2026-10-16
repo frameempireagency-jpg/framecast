@@ -1,18 +1,18 @@
 "use server";
 
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { nanoId } from "@cap/database/helpers";
-import { videos, videoUploads } from "@cap/database/schema";
-import { buildEnv, NODE_ENV, serverEnv } from "@cap/env";
-import { dub, userIsPro } from "@cap/utils";
-import { Storage as StorageService } from "@cap/web-backend";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { nanoId } from "@framecast/database/helpers";
+import { videos, videoUploads } from "@framecast/database/schema";
+import { buildEnv, NODE_ENV, serverEnv } from "@framecast/env";
+import { dub, userIsPro } from "@framecast/utils";
+import { Storage as StorageService } from "@framecast/web-backend";
 import {
 	type Folder,
 	type Organisation,
 	type Storage,
 	Video,
-} from "@cap/web-domain";
+} from "@framecast/web-domain";
 import { Option } from "effect";
 import { revalidatePath } from "next/cache";
 import { requireOrganizationAccess } from "@/actions/organization/authorization";

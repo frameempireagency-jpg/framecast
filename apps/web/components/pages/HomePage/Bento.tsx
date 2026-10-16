@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@cap/ui";
+import { Button } from "@framecast/ui";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import type { ComponentType, ReactNode } from "react";

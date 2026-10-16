@@ -3,21 +3,21 @@ import {
 	CloudFrontClient,
 	CreateInvalidationCommand,
 } from "@aws-sdk/client-cloudfront";
-import { db } from "@cap/database";
+import { db } from "@framecast/database";
 import {
 	comments,
 	videoEdits,
 	videos,
 	videoUploads,
-} from "@cap/database/schema";
+} from "@framecast/database/schema";
 import type {
 	VideoEditRange,
 	VideoEditSpec,
 	VideoMetadata,
-} from "@cap/database/types";
-import { serverEnv } from "@cap/env";
-import { AwsCredentials, Storage } from "@cap/web-backend";
-import { Video } from "@cap/web-domain";
+} from "@framecast/database/types";
+import { serverEnv } from "@framecast/env";
+import { AwsCredentials, Storage } from "@framecast/web-backend";
+import { Video } from "@framecast/web-domain";
 import { and, eq } from "drizzle-orm";
 import { Effect } from "effect";
 import { FatalError } from "workflow";

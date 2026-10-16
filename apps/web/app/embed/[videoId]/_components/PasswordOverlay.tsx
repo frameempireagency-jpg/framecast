@@ -1,7 +1,7 @@
 "use client";
 
-import { Button, Dialog, DialogContent, Input, Logo } from "@cap/ui";
-import type { Video } from "@cap/web-domain";
+import { Button, Dialog, DialogContent, Input, Logo } from "@framecast/ui";
+import type { Video } from "@framecast/web-domain";
 import { useMutation } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

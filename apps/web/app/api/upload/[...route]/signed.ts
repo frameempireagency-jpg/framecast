@@ -1,7 +1,7 @@
-import { db, updateIfDefined } from "@cap/database";
-import * as Db from "@cap/database/schema";
-import { Storage } from "@cap/web-backend";
-import { Video } from "@cap/web-domain";
+import { db, updateIfDefined } from "@framecast/database";
+import * as Db from "@framecast/database/schema";
+import { Storage } from "@framecast/web-backend";
+import { Video } from "@framecast/web-domain";
 import { zValidator } from "@hono/zod-validator";
 import { and, eq } from "drizzle-orm";
 import { Effect } from "effect";

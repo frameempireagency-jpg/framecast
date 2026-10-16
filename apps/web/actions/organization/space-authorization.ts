@@ -1,13 +1,13 @@
 "use server";
 
-import { db } from "@cap/database";
+import { db } from "@framecast/database";
 import {
 	organizationMembers,
 	organizations,
 	spaceMembers,
 	spaces,
-} from "@cap/database/schema";
-import type { Organisation, Space, User } from "@cap/web-domain";
+} from "@framecast/database/schema";
+import type { Organisation, Space, User } from "@framecast/web-domain";
 import { and, eq, isNull } from "drizzle-orm";
 import {
 	canManageSpace,

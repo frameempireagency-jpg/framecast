@@ -1,5 +1,5 @@
 {
-	"name": "@cap/media-server",
+	"name": "@framecast/media-server",
 	"private": true,
 	"type": "module",
 	"scripts": {

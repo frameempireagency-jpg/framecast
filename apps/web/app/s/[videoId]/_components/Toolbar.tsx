@@ -1,5 +1,5 @@
-import { Button } from "@cap/ui";
-import { Comment } from "@cap/web-domain";
+import { Button } from "@framecast/ui";
+import { Comment } from "@framecast/web-domain";
 import { AnimatePresence, motion } from "motion/react";
 import { startTransition, useEffect, useState } from "react";
 import { newComment } from "@/actions/videos/new-comment";

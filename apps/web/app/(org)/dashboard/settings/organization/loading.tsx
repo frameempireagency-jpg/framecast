@@ -1,6 +1,6 @@
 "use client";
 
-import { SkeletonPage } from "@cap/ui";
+import { SkeletonPage } from "@framecast/ui";
 
 export default function Loading() {
 	return (

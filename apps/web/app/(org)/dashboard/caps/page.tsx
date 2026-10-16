@@ -1,5 +1,5 @@
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
 import {
 	comments,
 	folders,
@@ -10,14 +10,14 @@ import {
 	users,
 	videos,
 	videoUploads,
-} from "@cap/database/schema";
-import { serverEnv } from "@cap/env";
+} from "@framecast/database/schema";
+import { serverEnv } from "@framecast/env";
 import {
 	Database,
 	ImageUploads,
 	resolveEffectiveVideoRules,
-} from "@cap/web-backend";
-import { type ImageUpload, Video } from "@cap/web-domain";
+} from "@framecast/web-backend";
+import { type ImageUpload, Video } from "@framecast/web-domain";
 import { and, count, desc, eq, inArray, isNull, sql } from "drizzle-orm";
 import { type Array, Effect } from "effect";
 import type { Metadata } from "next";

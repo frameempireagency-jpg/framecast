@@ -1,9 +1,9 @@
 "use server";
 
-import { db } from "@cap/database";
-import { videos } from "@cap/database/schema";
-import { Tinybird } from "@cap/web-backend";
-import { Video } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { videos } from "@framecast/database/schema";
+import { Tinybird } from "@framecast/web-backend";
+import { Video } from "@framecast/web-domain";
 import { eq } from "drizzle-orm";
 import { Effect } from "effect";
 import { runPromise } from "@/lib/server";

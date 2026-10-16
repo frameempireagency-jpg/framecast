@@ -1,5 +1,5 @@
-import { LogoSpinner } from "@cap/ui";
-import type { Video } from "@cap/web-domain";
+import { LogoSpinner } from "@framecast/ui";
+import type { Video } from "@framecast/web-domain";
 import clsx from "clsx";
 import { Effect } from "effect";
 import moment from "moment";

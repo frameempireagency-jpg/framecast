@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@cap/ui";
+import { Button } from "@framecast/ui";
 
 export function CommercialGetStarted() {
 	const handleSmoothScroll = (

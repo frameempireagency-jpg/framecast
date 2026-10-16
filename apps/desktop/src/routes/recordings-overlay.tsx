@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import Tooltip from "@corvu/tooltip";
 import { createElementBounds } from "@solid-primitives/bounds";
 import { makePersisted } from "@solid-primitives/storage";

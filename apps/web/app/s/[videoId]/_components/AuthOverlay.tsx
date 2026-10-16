@@ -1,5 +1,5 @@
-import { NODE_ENV } from "@cap/env";
-import { Button, Dialog, DialogContent, Input, LogoBadge } from "@cap/ui";
+import { NODE_ENV } from "@framecast/env";
+import { Button, Dialog, DialogContent, Input, LogoBadge } from "@framecast/ui";
 import { faArrowLeft, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";

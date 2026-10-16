@@ -1,7 +1,7 @@
 "use client";
 
-import { CardDescription, Label } from "@cap/ui";
-import type { Organisation } from "@cap/web-domain";
+import { CardDescription, Label } from "@framecast/ui";
+import type { Organisation } from "@framecast/web-domain";
 import { Effect, Option } from "effect";
 import { useRouter } from "next/navigation";
 import { useId } from "react";

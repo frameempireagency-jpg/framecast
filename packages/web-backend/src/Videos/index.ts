@@ -1,7 +1,7 @@
-import * as Db from "@cap/database/schema";
-import { buildEnv, NODE_ENV, serverEnv } from "@cap/env";
-import { dub } from "@cap/utils";
-import { CurrentUser, type Folder, Policy, Video } from "@cap/web-domain";
+import * as Db from "@framecast/database/schema";
+import { buildEnv, NODE_ENV, serverEnv } from "@framecast/env";
+import { dub } from "@framecast/utils";
+import { CurrentUser, type Folder, Policy, Video } from "@framecast/web-domain";
 import * as Dz from "drizzle-orm";
 import { Array, Effect, Exit, Option } from "effect";
 import type { Schema } from "effect/Schema";

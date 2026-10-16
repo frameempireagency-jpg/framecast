@@ -1,5 +1,5 @@
 {
-	"name": "@cap/local-docker",
+	"name": "@framecast/local-docker",
 	"version": "0.0.0",
 	"main": "./src/index.tsx",
 	"types": "./src/index.tsx",

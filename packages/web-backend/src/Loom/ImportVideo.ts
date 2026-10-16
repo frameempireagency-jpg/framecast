@@ -1,4 +1,4 @@
-import { DatabaseError, Loom, S3Bucket, S3Error, Video } from "@cap/web-domain";
+import { DatabaseError, Loom, S3Bucket, S3Error, Video } from "@framecast/web-domain";
 import { Headers, HttpClient, HttpClientResponse } from "@effect/platform";
 import { Activity } from "@effect/workflow";
 import { Effect, Option, Schedule, Schema, Stream } from "effect";

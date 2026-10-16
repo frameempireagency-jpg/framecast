@@ -1,6 +1,6 @@
 "use client";
 
-import type { Video } from "@cap/web-domain";
+import type { Video } from "@framecast/web-domain";
 import { Effect, Exit } from "effect";
 import { useRouter } from "next/navigation";
 import { useMemo, useRef, useState } from "react";

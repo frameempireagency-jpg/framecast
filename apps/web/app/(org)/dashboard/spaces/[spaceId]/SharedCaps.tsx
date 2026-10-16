@@ -1,15 +1,15 @@
 "use client";
 
-import type { VideoMetadata } from "@cap/database/types";
-import { Button } from "@cap/ui";
-import type { SpaceRuleSource, ViewerSettingKey } from "@cap/web-backend";
+import type { VideoMetadata } from "@framecast/database/types";
+import { Button } from "@framecast/ui";
+import type { SpaceRuleSource, ViewerSettingKey } from "@framecast/web-backend";
 import type {
 	ImageUpload,
 	Organisation,
 	Space,
 	User,
 	Video,
-} from "@cap/web-domain";
+} from "@framecast/web-domain";
 import {
 	faFolderPlus,
 	faGear,

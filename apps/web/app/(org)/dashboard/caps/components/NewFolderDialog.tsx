@@ -8,8 +8,8 @@ import {
 	DialogHeader,
 	DialogTitle,
 	Input,
-} from "@cap/ui";
-import type { Folder, Space } from "@cap/web-domain";
+} from "@framecast/ui";
+import type { Folder, Space } from "@framecast/web-domain";
 import { faFolderPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { type RiveFile, useRiveFile } from "@rive-app/react-canvas";

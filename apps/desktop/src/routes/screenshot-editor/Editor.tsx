@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import { NumberField } from "@kobalte/core/number-field";
 import { makePersisted } from "@solid-primitives/storage";
 import { convertFileSrc } from "@tauri-apps/api/core";

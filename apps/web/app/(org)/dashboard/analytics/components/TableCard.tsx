@@ -8,7 +8,7 @@ import {
 	TableHead,
 	TableHeader,
 	TableRow,
-} from "@cap/ui";
+} from "@framecast/ui";
 import {
 	faAppleWhole,
 	faDesktop,

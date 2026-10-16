@@ -1,17 +1,17 @@
 "use client";
 
-import type { videos as videosSchema } from "@cap/database/schema";
-import type { VideoMetadata } from "@cap/database/types";
-import { buildEnv, NODE_ENV } from "@cap/env";
+import type { videos as videosSchema } from "@framecast/database/schema";
+import type { VideoMetadata } from "@framecast/database/types";
+import { buildEnv, NODE_ENV } from "@framecast/env";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuTrigger,
-} from "@cap/ui";
-import { calculateStrokeDashoffset, getProgressCircleConfig } from "@cap/utils";
-import type { SpaceRuleSource, ViewerSettingKey } from "@cap/web-backend";
-import type { ImageUpload, Video } from "@cap/web-domain";
+} from "@framecast/ui";
+import { calculateStrokeDashoffset, getProgressCircleConfig } from "@framecast/utils";
+import type { SpaceRuleSource, ViewerSettingKey } from "@framecast/web-backend";
+import type { ImageUpload, Video } from "@framecast/web-domain";
 import { HttpClient } from "@effect/platform";
 import {
 	faChartSimple,

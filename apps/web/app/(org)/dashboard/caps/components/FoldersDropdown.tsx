@@ -3,7 +3,7 @@ import {
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuTrigger,
-} from "@cap/ui";
+} from "@framecast/ui";
 import {
 	faEllipsis,
 	faPencil,

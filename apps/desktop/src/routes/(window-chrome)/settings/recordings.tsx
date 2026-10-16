@@ -1,4 +1,4 @@
-import { Button, ProgressCircle } from "@cap/ui-solid";
+import { Button, ProgressCircle } from "@framecast/ui-solid";
 import Tooltip from "@corvu/tooltip";
 import {
 	createMutation,

@@ -1,6 +1,6 @@
 "use client";
 
-import { Switch } from "@cap/ui";
+import { Switch } from "@framecast/ui";
 import { useState } from "react";
 
 interface SettingOption {

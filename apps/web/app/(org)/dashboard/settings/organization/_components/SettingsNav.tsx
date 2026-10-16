@@ -1,6 +1,6 @@
 "use client";
 
-import { buildEnv } from "@cap/env";
+import { buildEnv } from "@framecast/env";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import Link from "next/link";

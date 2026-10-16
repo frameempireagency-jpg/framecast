@@ -1,15 +1,15 @@
 "use server";
 
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { nanoId } from "@cap/database/helpers";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { nanoId } from "@framecast/database/helpers";
 import {
 	organizationMembers,
 	organizations,
 	sharedVideos,
 	videos,
-} from "@cap/database/schema";
-import type { Organisation, Video } from "@cap/web-domain";
+} from "@framecast/database/schema";
+import type { Organisation, Video } from "@framecast/web-domain";
 import { and, eq, inArray, isNull } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 

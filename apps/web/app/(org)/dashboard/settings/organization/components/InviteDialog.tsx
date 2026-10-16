@@ -9,7 +9,7 @@ import {
 	DialogTitle,
 	Input,
 	Select,
-} from "@cap/ui";
+} from "@framecast/ui";
 import { faUserGroup } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMutation } from "@tanstack/react-query";

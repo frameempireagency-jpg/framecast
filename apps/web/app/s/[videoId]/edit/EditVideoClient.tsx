@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@cap/ui";
-import type { Video } from "@cap/web-domain";
+import { Button } from "@framecast/ui";
+import type { Video } from "@framecast/web-domain";
 import {
 	ChevronLeft,
 	ChevronRight,

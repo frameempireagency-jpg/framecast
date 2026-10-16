@@ -5,8 +5,8 @@ import {
 	DialogFooter,
 	DialogHeader,
 	DialogTitle,
-} from "@cap/ui";
-import { Organisation } from "@cap/web-domain";
+} from "@framecast/ui";
+import { Organisation } from "@framecast/web-domain";
 import { faGlobe, faRefresh } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMutation } from "@tanstack/react-query";

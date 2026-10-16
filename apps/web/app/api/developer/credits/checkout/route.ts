@@ -1,11 +1,11 @@
-import { db } from "@cap/database";
+import { db } from "@framecast/database";
 import {
 	developerApps,
 	developerCreditAccounts,
 	users,
-} from "@cap/database/schema";
-import { buildEnv, serverEnv } from "@cap/env";
-import { STRIPE_DEVELOPER_CREDITS_PRODUCT_ID, stripe } from "@cap/utils";
+} from "@framecast/database/schema";
+import { buildEnv, serverEnv } from "@framecast/env";
+import { STRIPE_DEVELOPER_CREDITS_PRODUCT_ID, stripe } from "@framecast/utils";
 import { zValidator } from "@hono/zod-validator";
 import { and, eq, isNull } from "drizzle-orm";
 import { Hono } from "hono";

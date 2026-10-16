@@ -1,6 +1,6 @@
 "use client";
 
-import { LoadingSpinner } from "@cap/ui";
+import { LoadingSpinner } from "@framecast/ui";
 import clsx from "clsx";
 import {
 	Circle,

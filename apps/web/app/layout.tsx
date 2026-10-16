@@ -1,6 +1,6 @@
 import "@/app/globals.css";
-import { buildEnv, serverEnv } from "@cap/env";
-import { STRIPE_PLAN_IDS } from "@cap/utils";
+import { buildEnv, serverEnv } from "@framecast/env";
+import { STRIPE_PLAN_IDS } from "@framecast/utils";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 import { Effect } from "effect";
 import type { Metadata } from "next";

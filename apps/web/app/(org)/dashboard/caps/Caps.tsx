@@ -1,10 +1,10 @@
 "use client";
 
-import type { videos as videosSchema } from "@cap/database/schema";
-import type { VideoMetadata } from "@cap/database/types";
-import { Button } from "@cap/ui";
-import type { SpaceRuleSource, ViewerSettingKey } from "@cap/web-backend";
-import type { ImageUpload, Video } from "@cap/web-domain";
+import type { videos as videosSchema } from "@framecast/database/schema";
+import type { VideoMetadata } from "@framecast/database/types";
+import { Button } from "@framecast/ui";
+import type { SpaceRuleSource, ViewerSettingKey } from "@framecast/web-backend";
+import type { ImageUpload, Video } from "@framecast/web-domain";
 import { faFolderPlus, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Effect, Exit } from "effect";

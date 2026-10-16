@@ -8,7 +8,7 @@ describe("GET /", () => {
 		expect(response.status).toBe(200);
 		const data = await response.json();
 		expect(data).toEqual({
-			name: "@cap/media-server",
+			name: "@framecast/media-server",
 			version: "1.0.0",
 			endpoints: [
 				"/health",

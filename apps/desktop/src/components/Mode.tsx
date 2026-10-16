@@ -63,7 +63,7 @@ const Mode = (props: ModeProps) => {
 		section: "instant-quality" | "studio-quality",
 	) => {
 		try {
-			localStorage.setItem("cap.settings.scrollToSection", section);
+			localStorage.setItem("framecast.settings.scrollToSection", section);
 		} catch {}
 		await commands.showWindow({ Settings: { page: "general" } });
 		await events.requestScrollToSettingsSection.emit({ section });

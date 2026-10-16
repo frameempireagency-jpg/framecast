@@ -1,4 +1,4 @@
-import { buildEnv } from "@cap/env";
+import { buildEnv } from "@framecast/env";
 
 export const STRIPE_DEVELOPER_CREDITS_PRODUCT_ID: Record<string, string> = {
 	development: "prod_U4mswfBp0bFc39",

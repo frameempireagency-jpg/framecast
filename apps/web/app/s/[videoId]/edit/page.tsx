@@ -1,8 +1,8 @@
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { videos, videoUploads } from "@cap/database/schema";
-import { userIsPro } from "@cap/utils";
-import { Video } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { videos, videoUploads } from "@framecast/database/schema";
+import { userIsPro } from "@framecast/utils";
+import { Video } from "@framecast/web-domain";
 import { eq } from "drizzle-orm";
 import { notFound } from "next/navigation";
 import { reconcileStaleEditUpload } from "@/lib/video-edit-processing";

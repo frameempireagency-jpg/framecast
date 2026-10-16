@@ -1,4 +1,4 @@
-import { HttpLive } from "@cap/web-backend";
+import { HttpLive } from "@framecast/web-backend";
 import { HttpApiScalar } from "@effect/platform";
 import { Layer } from "effect";
 import { apiToHandler } from "@/lib/server";

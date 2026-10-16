@@ -1,9 +1,9 @@
 import { HeadBucketCommand, S3Client } from "@aws-sdk/client-s3";
-import { db } from "@cap/database";
-import { decrypt, encrypt } from "@cap/database/crypto";
-import { nanoId } from "@cap/database/helpers";
-import { s3Buckets } from "@cap/database/schema";
-import { Organisation, S3Bucket } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { decrypt, encrypt } from "@framecast/database/crypto";
+import { nanoId } from "@framecast/database/helpers";
+import { s3Buckets } from "@framecast/database/schema";
+import { Organisation, S3Bucket } from "@framecast/web-domain";
 import { zValidator } from "@hono/zod-validator";
 import { and, desc, eq, isNull } from "drizzle-orm";
 import { Hono } from "hono";

@@ -12,8 +12,8 @@ import {
 	FormControl,
 	FormField,
 	Select,
-} from "@cap/ui";
-import { type Space, User } from "@cap/web-domain";
+} from "@framecast/ui";
+import { type Space, User } from "@framecast/web-domain";
 import { faPlus, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { zodResolver } from "@hookform/resolvers/zod";

@@ -1,4 +1,4 @@
-import { serverEnv } from "@cap/env";
+import { serverEnv } from "@framecast/env";
 
 let hmacKeyCache: CryptoKey | null = null;
 

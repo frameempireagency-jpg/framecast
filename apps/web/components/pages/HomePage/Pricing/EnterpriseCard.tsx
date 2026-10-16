@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui";
+import { Button } from "@framecast/ui";
 import {
 	faDownload,
 	faHandshake,

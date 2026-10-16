@@ -1,9 +1,9 @@
 import { randomUUID } from "node:crypto";
-import { db } from "@cap/database";
-import { videos, videoUploads } from "@cap/database/schema";
-import { serverEnv } from "@cap/env";
-import { Storage } from "@cap/web-backend";
-import { Video } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { videos, videoUploads } from "@framecast/database/schema";
+import { serverEnv } from "@framecast/env";
+import { Storage } from "@framecast/web-backend";
+import { Video } from "@framecast/web-domain";
 import { eq } from "drizzle-orm";
 import { Effect } from "effect";
 import { FatalError } from "workflow";

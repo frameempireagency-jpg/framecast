@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@cap/ui";
-import type { Folder, Space } from "@cap/web-domain";
+import { Button } from "@framecast/ui";
+import type { Folder, Space } from "@framecast/web-domain";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/navigation";

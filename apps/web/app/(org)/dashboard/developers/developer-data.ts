@@ -1,6 +1,6 @@
-import { db } from "@cap/database";
-import type { userSelectProps } from "@cap/database/auth/session";
-import { decrypt } from "@cap/database/crypto";
+import { db } from "@framecast/database";
+import type { userSelectProps } from "@framecast/database/auth/session";
+import { decrypt } from "@framecast/database/crypto";
 import {
 	developerApiKeys,
 	developerAppDomains,
@@ -8,7 +8,7 @@ import {
 	developerCreditAccounts,
 	developerCreditTransactions,
 	developerVideos,
-} from "@cap/database/schema";
+} from "@framecast/database/schema";
 import { and, count, desc, eq, inArray, isNull, sql } from "drizzle-orm";
 
 export type DeveloperApiKey = Pick<

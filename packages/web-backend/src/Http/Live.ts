@@ -1,4 +1,4 @@
-import { Http } from "@cap/web-domain";
+import { Http } from "@framecast/web-domain";
 import { HttpApiBuilder } from "@effect/platform";
 import { Layer } from "effect";
 

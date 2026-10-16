@@ -1,4 +1,4 @@
-import { getCurrentUser } from "@cap/database/auth/session";
+import { getCurrentUser } from "@framecast/database/auth/session";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";

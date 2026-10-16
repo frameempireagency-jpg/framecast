@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import { Select as KSelect } from "@kobalte/core/select";
 import { appLocalDataDir, join } from "@tauri-apps/api/path";
 import { exists } from "@tauri-apps/plugin-fs";

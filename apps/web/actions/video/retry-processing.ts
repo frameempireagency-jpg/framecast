@@ -1,9 +1,9 @@
 "use server";
 
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { importedVideos, videos, videoUploads } from "@cap/database/schema";
-import type { Video } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { importedVideos, videos, videoUploads } from "@framecast/database/schema";
+import type { Video } from "@framecast/web-domain";
 import { eq } from "drizzle-orm";
 import { start } from "workflow/api";
 import {

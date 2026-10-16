@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import { NumberField } from "@kobalte/core/number-field";
 import { createElementBounds } from "@solid-primitives/bounds";
 import { trackDeep } from "@solid-primitives/deep";

@@ -1,4 +1,4 @@
-import { resolveEffectiveVideoRules } from "@cap/web-backend";
+import { resolveEffectiveVideoRules } from "@framecast/web-backend";
 import { describe, expect, it } from "vitest";
 
 describe("resolveEffectiveVideoRules", () => {

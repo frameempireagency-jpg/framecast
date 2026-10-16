@@ -7,7 +7,7 @@ import {
 	CardHeader,
 	CardTitle,
 	Input,
-} from "@cap/ui";
+} from "@framecast/ui";
 import { useMutation } from "@tanstack/react-query";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";

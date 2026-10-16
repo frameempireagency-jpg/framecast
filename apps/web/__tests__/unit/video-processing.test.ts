@@ -17,7 +17,7 @@ const dbMock = vi.fn(() => ({
 	})),
 }));
 
-vi.mock("@cap/database", () => ({
+vi.mock("@framecast/database", () => ({
 	db: dbMock,
 }));
 

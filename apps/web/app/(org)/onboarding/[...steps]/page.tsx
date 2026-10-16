@@ -1,5 +1,5 @@
-import { getCurrentUser } from "@cap/database/auth/session";
-import { buildEnv } from "@cap/env";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { buildEnv } from "@framecast/env";
 import { redirect } from "next/navigation";
 import { CustomDomainPage } from "../components/CustomDomainPage";
 import { DownloadPage } from "../components/DownloadPage";

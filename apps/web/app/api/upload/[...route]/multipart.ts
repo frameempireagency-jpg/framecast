@@ -1,6 +1,6 @@
-import { updateIfDefined } from "@cap/database";
-import * as Db from "@cap/database/schema";
-import { serverEnv } from "@cap/env";
+import { updateIfDefined } from "@framecast/database";
+import * as Db from "@framecast/database/schema";
+import { serverEnv } from "@framecast/env";
 import {
 	Database,
 	makeCurrentUserLayer,
@@ -8,8 +8,8 @@ import {
 	Storage,
 	VideosPolicy,
 	VideosRepo,
-} from "@cap/web-backend";
-import { Policy, Video } from "@cap/web-domain";
+} from "@framecast/web-backend";
+import { Policy, Video } from "@framecast/web-domain";
 import { zValidator } from "@hono/zod-validator";
 import { and, eq } from "drizzle-orm";
 import { Effect, Option, Schedule } from "effect";

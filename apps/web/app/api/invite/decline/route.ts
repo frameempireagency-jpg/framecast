@@ -1,6 +1,6 @@
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { organizationInvites } from "@cap/database/schema";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { organizationInvites } from "@framecast/database/schema";
 import { eq } from "drizzle-orm";
 import { type NextRequest, NextResponse } from "next/server";
 

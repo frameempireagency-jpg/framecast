@@ -1,9 +1,9 @@
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { nanoId } from "@cap/database/helpers";
-import { comments } from "@cap/database/schema";
-import { serverEnv } from "@cap/env";
-import { Comment, User, Video } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { nanoId } from "@framecast/database/helpers";
+import { comments } from "@framecast/database/schema";
+import { serverEnv } from "@framecast/env";
+import { Comment, User, Video } from "@framecast/web-domain";
 import { headers } from "next/headers";
 import type { NextRequest } from "next/server";
 import { rateLimitMiddleware } from "@/utils/helpers";

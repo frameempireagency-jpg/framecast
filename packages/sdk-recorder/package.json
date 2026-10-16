@@ -1,5 +1,5 @@
 {
-	"name": "@cap/sdk-recorder",
+	"name": "@framecast/sdk-recorder",
 	"version": "0.1.0",
 	"description": "Cap Recording SDK for third-party integrations",
 	"type": "module",

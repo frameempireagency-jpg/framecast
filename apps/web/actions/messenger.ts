@@ -1,12 +1,12 @@
 "use server";
 
-import { db } from "@cap/database";
-import { nanoId } from "@cap/database/helpers";
+import { db } from "@framecast/database";
+import { nanoId } from "@framecast/database/helpers";
 import {
 	messengerConversations,
 	messengerMessages,
-} from "@cap/database/schema";
-import { buildEnv } from "@cap/env";
+} from "@framecast/database/schema";
+import { buildEnv } from "@framecast/env";
 import { asc, desc, eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { generateMessengerAgentReply } from "@/lib/messenger/agent";

@@ -1,4 +1,4 @@
-import { buildEnv } from "@cap/env";
+import { buildEnv } from "@framecast/env";
 import type { PropsWithChildren } from "react";
 import { MessengerWidget } from "../Layout/MessengerWidget";
 

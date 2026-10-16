@@ -1,6 +1,6 @@
 "use client";
 
-import { LogoBadge } from "@cap/ui";
+import { LogoBadge } from "@framecast/ui";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";

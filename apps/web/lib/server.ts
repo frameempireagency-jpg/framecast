@@ -1,7 +1,7 @@
 import "server-only";
 
-import { decrypt } from "@cap/database/crypto";
-import { serverEnv } from "@cap/env";
+import { decrypt } from "@framecast/database/crypto";
+import { serverEnv } from "@framecast/env";
 import {
 	AwsCredentials,
 	Database,
@@ -20,8 +20,8 @@ import {
 	VideosPolicy,
 	VideosRepo,
 	Workflows,
-} from "@cap/web-backend";
-import { type HttpAuthMiddleware, Video } from "@cap/web-domain";
+} from "@framecast/web-backend";
+import { type HttpAuthMiddleware, Video } from "@framecast/web-domain";
 import {
 	FetchHttpClient,
 	Headers,

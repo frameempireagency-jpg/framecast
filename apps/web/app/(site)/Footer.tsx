@@ -1,6 +1,6 @@
 "use client";
 
-import { Logo } from "@cap/ui";
+import { Logo } from "@framecast/ui";
 import Link from "next/link";
 
 type FooterLink = {

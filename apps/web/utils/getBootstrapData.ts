@@ -1,4 +1,4 @@
-import { buildEnv, serverEnv } from "@cap/env";
+import { buildEnv, serverEnv } from "@framecast/env";
 import { cookies } from "next/headers";
 import { PostHog } from "posthog-node";
 import { cache } from "react";

@@ -1,14 +1,14 @@
 "use server";
 
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { encrypt } from "@cap/database/crypto";
-import { nanoId, nanoIdLong } from "@cap/database/helpers";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { encrypt } from "@framecast/database/crypto";
+import { nanoId, nanoIdLong } from "@framecast/database/helpers";
 import {
 	developerApiKeys,
 	developerApps,
 	developerCreditAccounts,
-} from "@cap/database/schema";
+} from "@framecast/database/schema";
 import { hashKey } from "@/lib/developer-key-hash";
 
 export async function createDeveloperApp(data: {

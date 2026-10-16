@@ -1,4 +1,4 @@
-import "@cap/ui-solid/main.css";
+import "@framecast/ui-solid/main.css";
 
 const preview: Preview = {
 	parameters: {

@@ -1,4 +1,4 @@
-import { DatabaseError, Http, S3Error } from "@cap/web-domain";
+import { DatabaseError, Http, S3Error } from "@framecast/web-domain";
 import { Effect, Schema } from "effect";
 import { InvalidRpcAuth } from "../Workflows.ts";
 

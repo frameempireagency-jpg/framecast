@@ -1,8 +1,8 @@
 "use client";
 
-import { buildEnv, NODE_ENV } from "@cap/env";
-import { Button, Logo } from "@cap/ui";
-import type { ViewerSettingKey } from "@cap/web-backend";
+import { buildEnv, NODE_ENV } from "@framecast/env";
+import { Button, Logo } from "@framecast/ui";
+import type { ViewerSettingKey } from "@framecast/web-backend";
 import {
 	faChartSimple,
 	faChevronDown,

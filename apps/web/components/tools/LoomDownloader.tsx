@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@cap/ui";
+import { Button } from "@framecast/ui";
 import { useCallback, useId, useRef, useState } from "react";
 import { toast } from "sonner";
 import { downloadLoomVideo } from "@/actions/loom";

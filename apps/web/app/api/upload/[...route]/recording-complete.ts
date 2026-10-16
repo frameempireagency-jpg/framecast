@@ -1,8 +1,8 @@
-import { db } from "@cap/database";
-import * as Db from "@cap/database/schema";
-import { serverEnv } from "@cap/env";
-import { Storage } from "@cap/web-backend";
-import { Video } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import * as Db from "@framecast/database/schema";
+import { serverEnv } from "@framecast/env";
+import { Storage } from "@framecast/web-backend";
+import { Video } from "@framecast/web-domain";
 import { zValidator } from "@hono/zod-validator";
 import { and, eq, notInArray } from "drizzle-orm";
 import { Effect, Option, Schema } from "effect";

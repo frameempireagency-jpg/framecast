@@ -1,7 +1,7 @@
 import * as S3 from "@aws-sdk/client-s3";
 import * as CloudFrontPresigner from "@aws-sdk/cloudfront-signer";
-import { decrypt } from "@cap/database/crypto";
-import type { Organisation, S3Bucket, User } from "@cap/web-domain";
+import { decrypt } from "@framecast/database/crypto";
+import type { Organisation, S3Bucket, User } from "@framecast/web-domain";
 import type { RequestPresigningArguments } from "@smithy/types";
 import { Config, Effect, Layer, Option } from "effect";
 

@@ -1,7 +1,7 @@
 "use client";
 
-import { Button, Input, LoadingSpinner } from "@cap/ui";
-import { ImageUpload } from "@cap/web-domain";
+import { Button, Input, LoadingSpinner } from "@framecast/ui";
+import { ImageUpload } from "@framecast/web-domain";
 import {
 	faCloudUpload,
 	faSpinner,

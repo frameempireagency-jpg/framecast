@@ -1,12 +1,12 @@
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { nanoId } from "@cap/database/helpers";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { nanoId } from "@framecast/database/helpers";
 import {
 	organizationInvites,
 	organizationMembers,
 	organizations,
 	users,
-} from "@cap/database/schema";
+} from "@framecast/database/schema";
 import { and, eq } from "drizzle-orm";
 import { type NextRequest, NextResponse } from "next/server";
 import { normalizeAssignableOrganizationRole } from "@/lib/permissions/roles";

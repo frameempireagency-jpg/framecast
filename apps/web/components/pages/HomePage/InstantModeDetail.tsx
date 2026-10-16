@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@cap/ui";
+import { Button } from "@framecast/ui";
 import { AnimatePresence, motion } from "framer-motion";
 import {
 	BookOpen,

@@ -1,9 +1,9 @@
 "use server";
 
-import { db } from "@cap/database";
-import { videos } from "@cap/database/schema";
-import { Storage } from "@cap/web-backend";
-import type { Video } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { videos } from "@framecast/database/schema";
+import { Storage } from "@framecast/web-backend";
+import type { Video } from "@framecast/web-domain";
 import { eq } from "drizzle-orm";
 import { Effect } from "effect";
 import { runPromise } from "@/lib/server";

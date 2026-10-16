@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@cap/ui";
+import { Button } from "@framecast/ui";
 import { Plus } from "lucide-react";
 import { useState } from "react";
 import { AppCard } from "../_components/AppCard";

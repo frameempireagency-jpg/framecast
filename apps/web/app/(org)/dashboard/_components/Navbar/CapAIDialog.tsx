@@ -4,7 +4,7 @@ import {
 	DialogFooter,
 	DialogHeader,
 	DialogTitle,
-} from "@cap/ui";
+} from "@framecast/ui";
 import {
 	faInfoCircle,
 	faWandMagicSparkles,

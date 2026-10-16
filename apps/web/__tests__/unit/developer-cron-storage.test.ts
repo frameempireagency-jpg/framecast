@@ -21,15 +21,15 @@ type MockDbChain = {
 	transaction?: ReturnType<typeof vi.fn>;
 };
 
-vi.mock("@cap/database", () => ({
+vi.mock("@framecast/database", () => ({
 	db: mockDb,
 }));
 
-vi.mock("@cap/database/helpers", () => ({
+vi.mock("@framecast/database/helpers", () => ({
 	nanoId: vi.fn(() => "test-nano-id"),
 }));
 
-vi.mock("@cap/database/schema", () => ({
+vi.mock("@framecast/database/schema", () => ({
 	developerApps: { id: "id", deletedAt: "deletedAt" },
 	developerCreditAccounts: {
 		id: "id",

@@ -1,4 +1,4 @@
-import { authOptions } from "@cap/database/auth/auth-options";
+import { authOptions } from "@framecast/database/auth/auth-options";
 import NextAuth from "next-auth";
 
 export const dynamic = "force-dynamic";

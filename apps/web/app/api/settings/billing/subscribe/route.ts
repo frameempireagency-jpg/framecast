@@ -1,8 +1,8 @@
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { users } from "@cap/database/schema";
-import { buildEnv, serverEnv } from "@cap/env";
-import { stripe, userIsPro } from "@cap/utils";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { users } from "@framecast/database/schema";
+import { buildEnv, serverEnv } from "@framecast/env";
+import { stripe, userIsPro } from "@framecast/utils";
 import { eq } from "drizzle-orm";
 import type { NextRequest } from "next/server";
 import { PostHog } from "posthog-node";

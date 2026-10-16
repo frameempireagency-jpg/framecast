@@ -1,9 +1,9 @@
-import { db } from "@cap/database";
-import { videos } from "@cap/database/schema";
-import type { VideoMetadata } from "@cap/database/types";
-import { serverEnv } from "@cap/env";
-import { Storage } from "@cap/web-backend";
-import type { Video } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { videos } from "@framecast/database/schema";
+import type { VideoMetadata } from "@framecast/database/types";
+import { serverEnv } from "@framecast/env";
+import { Storage } from "@framecast/web-backend";
+import type { Video } from "@framecast/web-domain";
 import { eq } from "drizzle-orm";
 import { Effect, Option } from "effect";
 import { FatalError } from "workflow";

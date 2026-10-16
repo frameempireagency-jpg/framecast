@@ -1,11 +1,11 @@
 "use server";
 
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { nanoId } from "@cap/database/helpers";
-import { comments } from "@cap/database/schema";
-import type { ImageUpload } from "@cap/web-domain";
-import { Comment, type Video } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { nanoId } from "@framecast/database/helpers";
+import { comments } from "@framecast/database/schema";
+import type { ImageUpload } from "@framecast/web-domain";
+import { Comment, type Video } from "@framecast/web-domain";
 import { revalidatePath } from "next/cache";
 import { createNotification } from "@/lib/Notification";
 

@@ -1,8 +1,8 @@
 "use server";
 
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { developerApps, developerCreditAccounts } from "@cap/database/schema";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { developerApps, developerCreditAccounts } from "@framecast/database/schema";
 import { and, eq, isNull } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 

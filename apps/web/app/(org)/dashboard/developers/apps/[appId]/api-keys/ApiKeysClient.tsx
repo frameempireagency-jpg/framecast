@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Card, CardHeader, CardTitle } from "@cap/ui";
+import { Button, Card, CardHeader, CardTitle } from "@framecast/ui";
 import { useMutation } from "@tanstack/react-query";
 import { RefreshCw } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";

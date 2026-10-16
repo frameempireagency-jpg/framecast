@@ -1,5 +1,5 @@
-import { db } from "@cap/database";
-import { users, videos } from "@cap/database/schema";
+import { db } from "@framecast/database";
+import { users, videos } from "@framecast/database/schema";
 import { and, eq, isNotNull, isNull, sql } from "drizzle-orm";
 
 const CHUNK_SIZE = 500;

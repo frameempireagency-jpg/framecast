@@ -1,7 +1,7 @@
 "use client";
 
-import type { comments as commentsSchema } from "@cap/database/schema";
-import type { ImageUpload, Video } from "@cap/web-domain";
+import type { comments as commentsSchema } from "@framecast/database/schema";
+import type { ImageUpload, Video } from "@framecast/web-domain";
 import { useQuery } from "@tanstack/react-query";
 import { useSearchParams } from "next/navigation";
 import {

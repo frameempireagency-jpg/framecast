@@ -1,4 +1,4 @@
-import type { Video } from "@cap/web-domain";
+import type { Video } from "@framecast/web-domain";
 import { dataLoader } from "@effect/experimental/RequestResolver";
 import { Effect, Request, RequestResolver } from "effect";
 import type { NonEmptyArray } from "effect/Array";

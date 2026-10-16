@@ -1,13 +1,13 @@
 import "server-only";
 
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { nanoIdLong } from "@cap/database/helpers";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { nanoIdLong } from "@framecast/database/helpers";
 import {
 	messengerConversations,
 	messengerMessages,
 	users,
-} from "@cap/database/schema";
+} from "@framecast/database/schema";
 import { and, asc, desc, eq, inArray, isNull } from "drizzle-orm";
 import { cookies } from "next/headers";
 import { MESSENGER_ADMIN_EMAIL, MESSENGER_ANON_COOKIE } from "./constants";

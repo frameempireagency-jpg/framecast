@@ -1,10 +1,10 @@
 "use client";
 
-import type { userSelectProps } from "@cap/database/auth/session";
-import type { comments as commentsSchema, videos } from "@cap/database/schema";
-import { NODE_ENV } from "@cap/env";
-import { Avatar, Logo } from "@cap/ui";
-import type { ViewerSettings } from "@cap/web-backend";
+import type { userSelectProps } from "@framecast/database/auth/session";
+import type { comments as commentsSchema, videos } from "@framecast/database/schema";
+import { NODE_ENV } from "@framecast/env";
+import { Avatar, Logo } from "@framecast/ui";
+import type { ViewerSettings } from "@framecast/web-backend";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranscript } from "hooks/use-transcript";
 import {

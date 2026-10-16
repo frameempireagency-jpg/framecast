@@ -10,8 +10,8 @@ import {
 	NavigationMenuList,
 	NavigationMenuTrigger,
 	navigationMenuTriggerStyle,
-} from "@cap/ui";
-import { classNames } from "@cap/utils";
+} from "@framecast/ui";
+import { classNames } from "@framecast/utils";
 import { Clapperboard, Zap } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";

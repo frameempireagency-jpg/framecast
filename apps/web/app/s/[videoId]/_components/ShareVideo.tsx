@@ -1,7 +1,7 @@
-import type { comments as commentsSchema } from "@cap/database/schema";
-import { NODE_ENV } from "@cap/env";
-import { Logo } from "@cap/ui";
-import type { ImageUpload } from "@cap/web-domain";
+import type { comments as commentsSchema } from "@framecast/database/schema";
+import { NODE_ENV } from "@framecast/env";
+import { Logo } from "@framecast/ui";
+import type { ImageUpload } from "@framecast/web-domain";
 import { useTranscript } from "hooks/use-transcript";
 import { useRouter } from "next/navigation";
 import {

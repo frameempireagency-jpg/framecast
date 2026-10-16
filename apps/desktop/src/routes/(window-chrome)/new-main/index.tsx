@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import { useNavigate } from "@solidjs/router";
 import { createMutation, queryOptions, useQuery } from "@tanstack/solid-query";
 import { Channel } from "@tauri-apps/api/core";

@@ -7,9 +7,9 @@ import {
 	DialogTitle,
 	Input,
 	Switch,
-} from "@cap/ui";
-import type { SpaceRuleSource, ViewerSettingKey } from "@cap/web-backend";
-import { type ImageUpload, Space, type Video } from "@cap/web-domain";
+} from "@framecast/ui";
+import type { SpaceRuleSource, ViewerSettingKey } from "@framecast/web-backend";
+import { type ImageUpload, Space, type Video } from "@framecast/web-domain";
 import { faCopy, faShareNodes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMutation } from "@tanstack/react-query";

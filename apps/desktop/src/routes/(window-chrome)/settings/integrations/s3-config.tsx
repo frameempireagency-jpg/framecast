@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import { createWritableMemo } from "@solid-primitives/memo";
 import { useMutation } from "@tanstack/solid-query";
 import { createResource, Show, Suspense } from "solid-js";

@@ -3,7 +3,7 @@
 
 use std::sync::Arc;
 
-use cap_desktop_lib::DynLoggingLayer;
+use framecast_desktop_lib::DynLoggingLayer;
 use tracing_subscriber::{Layer, layer::SubscriberExt, util::SubscriberInitExt};
 
 const TOKIO_WORKER_THREAD_STACK_SIZE: usize = 16 * 1024 * 1024;
@@ -68,12 +68,12 @@ fn main() {
         let path = dirs::home_dir()
             .unwrap()
             .join("Library/Logs")
-            .join("so.cap.desktop");
+            .join("uk.co.frameempire.framecast");
 
         #[cfg(not(target_os = "macos"))]
         let path = dirs::data_local_dir()
             .unwrap()
-            .join("so.cap.desktop")
+            .join("uk.co.frameempire.framecast")
             .join("logs");
 
         path
@@ -84,11 +84,11 @@ fn main() {
         eprintln!("Failed to create logs directory: {e}");
     });
 
-    let info_file_appender = tracing_appender::rolling::daily(&logs_dir, "cap-desktop.log");
+    let info_file_appender = tracing_appender::rolling::daily(&logs_dir, "framecast-desktop.log");
     let (info_file_writer, _info_logger_guard) = tracing_appender::non_blocking(info_file_appender);
 
     let errors_file_appender =
-        tracing_appender::rolling::daily(&logs_dir, "cap-desktop-errors.log");
+        tracing_appender::rolling::daily(&logs_dir, "framecast-desktop-errors.log");
 
     let (otel_layer, _tracer) = if cfg!(debug_assertions) {
         use opentelemetry::trace::TracerProvider;
@@ -105,13 +105,13 @@ fn main() {
             )
             .with_resource(
                 opentelemetry_sdk::Resource::builder()
-                    .with_service_name("cap-desktop")
+                    .with_service_name("framecast-desktop")
                     .build(),
             )
             .build();
 
         let layer = tracing_opentelemetry::layer()
-            .with_tracer(tracer.tracer("cap-desktop"))
+            .with_tracer(tracer.tracer("framecast-desktop"))
             .boxed();
 
         opentelemetry::global::set_tracer_provider(tracer.clone());
@@ -167,7 +167,7 @@ fn main() {
         .thread_stack_size(TOKIO_WORKER_THREAD_STACK_SIZE)
         .build()
         .expect("Failed to build multi threaded tokio runtime")
-        .block_on(cap_desktop_lib::run(handle, logs_dir));
+        .block_on(framecast_desktop_lib::run(handle, logs_dir));
 }
 
 fn install_panic_hook(logs_dir: std::path::PathBuf) {
@@ -201,7 +201,7 @@ fn install_panic_hook(logs_dir: std::path::PathBuf) {
         );
 
         tracing::error!(
-            target: "cap_desktop_panic",
+            target: "framecast_desktop_panic",
             location = %location,
             thread = %thread_name,
             message = %message,
@@ -209,7 +209,7 @@ fn install_panic_hook(logs_dir: std::path::PathBuf) {
             "panic"
         );
         eprintln!(
-            "[cap-desktop panic] thread '{thread_name}' at {location}: {message}\nbacktrace:\n{backtrace}"
+            "[framecast-desktop panic] thread '{thread_name}' at {location}: {message}\nbacktrace:\n{backtrace}"
         );
         prev(info);
     }));

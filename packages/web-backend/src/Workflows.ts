@@ -1,4 +1,4 @@
-import { Loom } from "@cap/web-domain";
+import { Loom } from "@framecast/web-domain";
 import { HttpApi, type HttpApiClient } from "@effect/platform";
 import * as Rpc from "@effect/rpc";
 import { WorkflowProxy, WorkflowProxyServer } from "@effect/workflow";

@@ -1,4 +1,4 @@
-import { buildEnv } from "@cap/env";
+import { buildEnv } from "@framecast/env";
 
 export function calculateProSeats(organization: {
 	inviteQuota?: number;

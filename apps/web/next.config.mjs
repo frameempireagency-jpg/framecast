@@ -24,12 +24,12 @@ const nextConfig = {
 		"/api/tools/loom-download": ffmpegTracingIncludes,
 	},
 	transpilePackages: [
-		"@cap/ui",
-		"@cap/utils",
-		"@cap/web-api-contract",
-		"@cap/web-domain",
-		"@cap/env",
-		"@cap/database",
+		"@framecast/ui",
+		"@framecast/utils",
+		"@framecast/web-api-contract",
+		"@framecast/web-domain",
+		"@framecast/env",
+		"@framecast/database",
 		"next-mdx-remote",
 	],
 	typescript: {
@@ -37,8 +37,8 @@ const nextConfig = {
 	},
 	experimental: {
 		optimizePackageImports: [
-			"@cap/ui",
-			"@cap/utils",
+			"@framecast/ui",
+			"@framecast/utils",
 			"lucide-react",
 			"framer-motion",
 			"motion",

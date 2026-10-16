@@ -1,6 +1,6 @@
 "use client";
 
-import { Label } from "@cap/ui";
+import { Label } from "@framecast/ui";
 import { Check, Copy, Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";

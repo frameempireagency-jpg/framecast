@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui";
+import { Button } from "@framecast/ui";
 import Link from "next/link";
 import type { User } from "next-auth";
 

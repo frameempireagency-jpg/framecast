@@ -1,4 +1,4 @@
-import { buildEnv } from "@cap/env";
+import { buildEnv } from "@framecast/env";
 import { redirect } from "next/navigation";
 import type { PropsWithChildren } from "react";
 import { formatStarCount, getGitHubStars } from "@/utils/github";

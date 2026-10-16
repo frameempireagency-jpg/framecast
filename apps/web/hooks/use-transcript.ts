@@ -1,4 +1,4 @@
-import type { Video } from "@cap/web-domain";
+import type { Video } from "@framecast/web-domain";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useEffect, useRef } from "react";
 import { getTranscript } from "@/actions/videos/get-transcript";

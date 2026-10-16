@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import { createMutation, useQueryClient } from "@tanstack/solid-query";
 import { getCurrentWindow, Window } from "@tauri-apps/api/window";
 import { type Accessor, createSignal, Show } from "solid-js";

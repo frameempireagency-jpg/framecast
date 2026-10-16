@@ -1,7 +1,7 @@
-import { db } from "@cap/database";
-import { nanoId } from "@cap/database/helpers";
-import { developerCreditAccounts, developerVideos } from "@cap/database/schema";
-import { buildEnv } from "@cap/env";
+import { db } from "@framecast/database";
+import { nanoId } from "@framecast/database/helpers";
+import { developerCreditAccounts, developerVideos } from "@framecast/database/schema";
+import { buildEnv } from "@framecast/env";
 import { zValidator } from "@hono/zod-validator";
 import { eq } from "drizzle-orm";
 import { Hono } from "hono";

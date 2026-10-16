@@ -1,4 +1,4 @@
-import type { MessengerAgent } from "@cap/database/schema";
+import type { MessengerAgent } from "@framecast/database/schema";
 
 export const MESSENGER_ADMIN_EMAIL = "richie@cap.so";
 export const MESSENGER_ANON_COOKIE = "cap-messenger-anon-id";

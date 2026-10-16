@@ -1,9 +1,9 @@
 "use server";
 
 import { randomUUID } from "node:crypto";
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { nanoId } from "@cap/database/helpers";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { nanoId } from "@framecast/database/helpers";
 import {
 	importedVideos,
 	organizationMembers,
@@ -14,17 +14,17 @@ import {
 	users,
 	videos,
 	videoUploads,
-} from "@cap/database/schema";
-import { buildEnv, NODE_ENV, serverEnv } from "@cap/env";
-import { dub, userIsPro } from "@cap/utils";
-import { Storage } from "@cap/web-backend";
+} from "@framecast/database/schema";
+import { buildEnv, NODE_ENV, serverEnv } from "@framecast/env";
+import { dub, userIsPro } from "@framecast/utils";
+import { Storage } from "@framecast/web-backend";
 import {
 	type Organisation,
 	Space,
 	SpaceMemberId,
 	type User,
 	Video,
-} from "@cap/web-domain";
+} from "@framecast/web-domain";
 import { checkRateLimit } from "@vercel/firewall";
 import { and, eq, isNull } from "drizzle-orm";
 import { Option } from "effect";

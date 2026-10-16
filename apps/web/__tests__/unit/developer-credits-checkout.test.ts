@@ -28,15 +28,15 @@ function resetMockDb() {
 	mockDb.values.mockReturnValue(Promise.resolve());
 }
 
-vi.mock("@cap/database", () => ({
+vi.mock("@framecast/database", () => ({
 	db: () => mockDb,
 }));
 
-vi.mock("@cap/database/auth/session", () => ({
+vi.mock("@framecast/database/auth/session", () => ({
 	getCurrentUser: vi.fn(),
 }));
 
-vi.mock("@cap/database/schema", () => ({
+vi.mock("@framecast/database/schema", () => ({
 	developerApps: {
 		id: "id",
 		ownerId: "ownerId",
@@ -50,7 +50,7 @@ vi.mock("@cap/database/schema", () => ({
 	users: { id: "id" },
 }));
 
-vi.mock("@cap/env", () => ({
+vi.mock("@framecast/env", () => ({
 	buildEnv: {
 		NEXT_PUBLIC_IS_CAP: "",
 		NEXT_PUBLIC_WEB_URL: "https://cap.test",
@@ -73,7 +73,7 @@ const mockStripe = {
 	},
 };
 
-vi.mock("@cap/utils", () => ({
+vi.mock("@framecast/utils", () => ({
 	STRIPE_DEVELOPER_CREDITS_PRODUCT_ID: {
 		development: "prod_dev_test",
 		production: "prod_live_test",
@@ -87,7 +87,7 @@ vi.mock("drizzle-orm", () => ({
 	isNull: vi.fn((a: unknown) => ({ isNull: a })),
 }));
 
-import { getCurrentUser } from "@cap/database/auth/session";
+import { getCurrentUser } from "@framecast/database/auth/session";
 
 const mockGetCurrentUser = getCurrentUser as ReturnType<typeof vi.fn>;
 

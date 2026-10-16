@@ -14,7 +14,7 @@ app.route("/video", video);
 
 app.get("/", (c) => {
 	return c.json({
-		name: "@cap/media-server",
+		name: "@framecast/media-server",
 		version: "1.0.0",
 		endpoints: [
 			"/health",

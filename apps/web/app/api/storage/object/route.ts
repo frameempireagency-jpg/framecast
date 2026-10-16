@@ -4,8 +4,8 @@ import {
 	Videos,
 	VideosRepo,
 	verifyStorageObjectToken,
-} from "@cap/web-backend";
-import { Storage as StorageDomain, Video } from "@cap/web-domain";
+} from "@framecast/web-backend";
+import { Storage as StorageDomain, Video } from "@framecast/web-domain";
 import { Effect, Option } from "effect";
 import type { NextRequest } from "next/server";
 import { runPromise } from "@/lib/server";

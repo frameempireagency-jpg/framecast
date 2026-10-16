@@ -1,5 +1,5 @@
-import { Videos } from "@cap/web-backend";
-import { HttpAuthMiddleware, Video } from "@cap/web-domain";
+import { Videos } from "@framecast/web-backend";
+import { HttpAuthMiddleware, Video } from "@framecast/web-domain";
 import {
 	HttpApi,
 	HttpApiBuilder,

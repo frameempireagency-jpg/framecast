@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import { action, useAction, useSubmission } from "@solidjs/router";
 import { getVersion } from "@tauri-apps/api/app";
 import { type OsType, type as ostype } from "@tauri-apps/plugin-os";

@@ -1,5 +1,5 @@
-import { buildEnv } from "@cap/env";
-import { Button } from "@cap/ui";
+import { buildEnv } from "@framecast/env";
+import { Button } from "@framecast/ui";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRive } from "@rive-app/react-canvas";

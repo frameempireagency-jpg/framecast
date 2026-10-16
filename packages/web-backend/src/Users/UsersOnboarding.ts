@@ -1,6 +1,6 @@
-import { nanoId } from "@cap/database/helpers";
-import * as Db from "@cap/database/schema";
-import { CurrentUser, Organisation } from "@cap/web-domain";
+import { nanoId } from "@framecast/database/helpers";
+import * as Db from "@framecast/database/schema";
+import { CurrentUser, Organisation } from "@framecast/web-domain";
 import * as Dz from "drizzle-orm";
 import { Effect, Option } from "effect";
 

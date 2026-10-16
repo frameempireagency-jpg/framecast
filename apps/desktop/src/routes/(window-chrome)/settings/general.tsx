@@ -1,4 +1,4 @@
-import { Button } from "@cap/ui-solid";
+import { Button } from "@framecast/ui-solid";
 import { createWritableMemo } from "@solid-primitives/memo";
 import {
 	isPermissionGranted,
@@ -181,7 +181,7 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 
 	const scrollToSection = (section: string) => {
 		try {
-			localStorage.removeItem("cap.settings.scrollToSection");
+			localStorage.removeItem("framecast.settings.scrollToSection");
 		} catch {}
 		const attempt = (remaining: number) => {
 			const target = document.getElementById(`settings-section-${section}`);
@@ -208,7 +208,7 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 	onMount(() => {
 		let pending: string | null = null;
 		try {
-			pending = localStorage.getItem("cap.settings.scrollToSection");
+			pending = localStorage.getItem("framecast.settings.scrollToSection");
 		} catch {}
 		if (pending) {
 			scrollToSection(pending);
@@ -277,10 +277,10 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 
 	const isManagedWindowsApp = (window: CaptureWindow) => {
 		const bundle = window.bundle_identifier?.toLowerCase() ?? "";
-		if (bundle.includes("so.cap.desktop")) {
+		if (bundle.includes("uk.co.frameempire.framecast")) {
 			return true;
 		}
-		return window.owner_name.toLowerCase().includes("cap");
+		return window.owner_name.toLowerCase().includes("framecast");
 	};
 
 	const isWindowAvailable = (window: CaptureWindow) => {

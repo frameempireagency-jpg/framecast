@@ -1,16 +1,16 @@
 import { promises as fs } from "node:fs";
-import { db } from "@cap/database";
+import { db } from "@framecast/database";
 import {
 	organizations,
 	users,
 	videos,
 	videoUploads,
-} from "@cap/database/schema";
-import type { VideoMetadata } from "@cap/database/types";
-import { serverEnv } from "@cap/env";
-import { userIsPro } from "@cap/utils";
-import { Storage } from "@cap/web-backend";
-import type { Video } from "@cap/web-domain";
+} from "@framecast/database/schema";
+import type { VideoMetadata } from "@framecast/database/types";
+import { serverEnv } from "@framecast/env";
+import { userIsPro } from "@framecast/utils";
+import { Storage } from "@framecast/web-backend";
+import type { Video } from "@framecast/web-domain";
 import { createClient } from "@deepgram/sdk";
 import { eq } from "drizzle-orm";
 import { FatalError } from "workflow";

@@ -1,11 +1,11 @@
-import { db } from "@cap/database";
-import { nanoId } from "@cap/database/helpers";
+import { db } from "@framecast/database";
+import { nanoId } from "@framecast/database/helpers";
 import {
 	developerCreditAccounts,
 	developerCreditTransactions,
 	developerVideos,
-} from "@cap/database/schema";
-import { provideOptionalAuth, S3Buckets } from "@cap/web-backend";
+} from "@framecast/database/schema";
+import { provideOptionalAuth, S3Buckets } from "@framecast/web-backend";
 import { zValidator } from "@hono/zod-validator";
 import { and, eq, sql } from "drizzle-orm";
 import { Effect, Option } from "effect";

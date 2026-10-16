@@ -1,7 +1,7 @@
 "use client";
 
-import { Button, Input, LogoBadge } from "@cap/ui";
-import { Organisation } from "@cap/web-domain";
+import { Button, Input, LogoBadge } from "@framecast/ui";
+import { Organisation } from "@framecast/web-domain";
 import {
 	faArrowLeft,
 	faEnvelope,

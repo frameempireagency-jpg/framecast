@@ -1,5 +1,5 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
-import { serverEnv } from "@cap/env";
+import { serverEnv } from "@framecast/env";
 
 type StorageObjectTokenPayload = {
 	videoId: string;

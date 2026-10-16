@@ -1,4 +1,4 @@
-import { LoadingSpinner } from "@cap/ui";
+import { LoadingSpinner } from "@framecast/ui";
 import type { FontAwesomeIconProps } from "@fortawesome/react-fontawesome";
 import type { ReactElement } from "react";
 import React from "react";

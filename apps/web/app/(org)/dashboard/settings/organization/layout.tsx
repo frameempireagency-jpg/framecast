@@ -1,5 +1,5 @@
-import { getCurrentUser } from "@cap/database/auth/session";
-import { Card, CardDescription, CardHeader, CardTitle } from "@cap/ui";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { Card, CardDescription, CardHeader, CardTitle } from "@framecast/ui";
 import { redirect } from "next/navigation";
 import { getOrganizationAccess } from "@/actions/organization/authorization";
 import { canViewOrganizationSettings } from "@/lib/permissions/roles";

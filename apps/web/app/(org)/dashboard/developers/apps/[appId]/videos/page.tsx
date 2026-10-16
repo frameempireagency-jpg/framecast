@@ -1,6 +1,6 @@
-import { db } from "@cap/database";
-import { getCurrentUser } from "@cap/database/auth/session";
-import { developerApps } from "@cap/database/schema";
+import { db } from "@framecast/database";
+import { getCurrentUser } from "@framecast/database/auth/session";
+import { developerApps } from "@framecast/database/schema";
 import { and, eq, isNull } from "drizzle-orm";
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";

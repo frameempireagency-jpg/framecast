@@ -1,6 +1,6 @@
-import { db } from "@cap/database";
-import { organizations } from "@cap/database/schema";
-import { buildEnv, serverEnv } from "@cap/env";
+import { db } from "@framecast/database";
+import { organizations } from "@framecast/database/schema";
+import { buildEnv, serverEnv } from "@framecast/env";
 import { eq } from "drizzle-orm";
 import { notFound } from "next/navigation";
 import { type NextRequest, NextResponse, userAgent } from "next/server";

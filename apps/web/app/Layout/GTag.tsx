@@ -1,6 +1,6 @@
 "use client";
 
-import { buildEnv } from "@cap/env";
+import { buildEnv } from "@framecast/env";
 import Script from "next/script";
 import { useId, useRef } from "react";
 

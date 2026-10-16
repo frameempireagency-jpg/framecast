@@ -1,5 +1,5 @@
 "use client";
-import { buildEnv } from "@cap/env";
+import { buildEnv } from "@framecast/env";
 import {
 	Button,
 	Command,
@@ -16,8 +16,8 @@ import {
 	Popover,
 	PopoverContent,
 	PopoverTrigger,
-} from "@cap/ui";
-import { classNames } from "@cap/utils";
+} from "@framecast/ui";
+import { classNames } from "@framecast/utils";
 import {
 	faBuilding,
 	faCircleInfo,

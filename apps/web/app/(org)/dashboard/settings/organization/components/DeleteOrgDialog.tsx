@@ -6,7 +6,7 @@ import {
 	DialogHeader,
 	DialogTitle,
 	Input,
-} from "@cap/ui";
+} from "@framecast/ui";
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Effect } from "effect";

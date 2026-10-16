@@ -21,19 +21,19 @@ const mockDb = {
 	transaction: vi.fn((callback) => callback(mockDb)),
 };
 
-vi.mock("@cap/database", () => ({
+vi.mock("@framecast/database", () => ({
 	db: vi.fn(() => mockDb),
 }));
 
-vi.mock("@cap/database/auth/session", () => ({
+vi.mock("@framecast/database/auth/session", () => ({
 	getCurrentUser: vi.fn(),
 }));
 
-vi.mock("@cap/database/helpers", () => ({
+vi.mock("@framecast/database/helpers", () => ({
 	nanoId: vi.fn(() => "video-123"),
 }));
 
-vi.mock("@cap/database/schema", () => ({
+vi.mock("@framecast/database/schema", () => ({
 	importedVideos: {
 		id: "id",
 		orgId: "orgId",
@@ -83,7 +83,7 @@ vi.mock("@cap/database/schema", () => ({
 	},
 }));
 
-vi.mock("@cap/env", () => ({
+vi.mock("@framecast/env", () => ({
 	buildEnv: { NEXT_PUBLIC_IS_CAP: false },
 	NODE_ENV: "production",
 	serverEnv: vi.fn(() => ({
@@ -92,7 +92,7 @@ vi.mock("@cap/env", () => ({
 	})),
 }));
 
-vi.mock("@cap/utils", () => ({
+vi.mock("@framecast/utils", () => ({
 	dub: vi.fn(() => ({
 		links: {
 			create: vi.fn(),
@@ -101,13 +101,13 @@ vi.mock("@cap/utils", () => ({
 	userIsPro: vi.fn(() => true),
 }));
 
-vi.mock("@cap/web-backend", () => ({
+vi.mock("@framecast/web-backend", () => ({
 	Storage: {
 		getWritableAccessForUser: storageGetWritableAccessForUserMock,
 	},
 }));
 
-vi.mock("@cap/web-domain", () => ({
+vi.mock("@framecast/web-domain", () => ({
 	Space: {
 		SpaceId: {
 			make: vi.fn((value: string) => value),
@@ -158,7 +158,7 @@ vi.mock("@/workflows/import-loom-video", () => ({
 	importLoomVideoWorkflow: Symbol("importLoomVideoWorkflow"),
 }));
 
-import { getCurrentUser } from "@cap/database/auth/session";
+import { getCurrentUser } from "@framecast/database/auth/session";
 
 const mockGetCurrentUser = getCurrentUser as ReturnType<typeof vi.fn>;
 

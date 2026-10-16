@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@cap/ui";
+import { Button } from "@framecast/ui";
 import { useRouter } from "next/navigation";
 import { signOut } from "next-auth/react";
 import { startTransition } from "react";

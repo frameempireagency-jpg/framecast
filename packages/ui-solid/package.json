@@ -1,5 +1,5 @@
 {
-	"name": "@cap/ui-solid",
+	"name": "@framecast/ui-solid",
 	"type": "module",
 	"main": "./src/index.ts",
 	"types": "./src/index.ts",

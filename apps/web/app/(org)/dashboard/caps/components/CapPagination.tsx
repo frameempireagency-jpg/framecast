@@ -6,7 +6,7 @@ import {
 	PaginationLink,
 	PaginationNext,
 	PaginationPrevious,
-} from "@cap/ui";
+} from "@framecast/ui";
 
 interface CapPaginationProps {
 	currentPage: number;

@@ -1,10 +1,10 @@
-import { db } from "@cap/database";
-import { nanoId } from "@cap/database/helpers";
+import { db } from "@framecast/database";
+import { nanoId } from "@framecast/database/helpers";
 import {
 	type DeveloperCreditReferenceType,
 	developerCreditAccounts,
 	developerCreditTransactions,
-} from "@cap/database/schema";
+} from "@framecast/database/schema";
 import { eq, sql } from "drizzle-orm";
 
 const MICRO_CREDITS_PER_DOLLAR = 100_000;

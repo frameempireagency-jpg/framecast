@@ -1,5 +1,5 @@
-import { db } from "@cap/database";
-import { DatabaseError } from "@cap/web-domain";
+import { db } from "@framecast/database";
+import { DatabaseError } from "@framecast/web-domain";
 import { Effect } from "effect";
 
 export type DbClient = ReturnType<typeof db>;

@@ -8,7 +8,7 @@ import { message } from "@tauri-apps/plugin-dialog";
 import { createEffect, lazy, onCleanup, onMount, Suspense } from "solid-js";
 import { Toaster } from "solid-toast";
 
-import "@cap/ui-solid/main.css";
+import "@framecast/ui-solid/main.css";
 import "unfonts.css";
 import "./styles/theme.css";
 
@@ -240,9 +240,9 @@ function createThemeListener(currentWindow: WebviewWindow) {
 
 		try {
 			if (appTheme === "system") {
-				localStorage.removeItem("cap-theme");
+				localStorage.removeItem("framecast-theme");
 			} else {
-				localStorage.setItem("cap-theme", appTheme);
+				localStorage.setItem("framecast-theme", appTheme);
 			}
 		} catch {}
 

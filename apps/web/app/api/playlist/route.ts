@@ -1,12 +1,12 @@
-import * as Db from "@cap/database/schema";
-import { serverEnv } from "@cap/env";
+import * as Db from "@framecast/database/schema";
+import { serverEnv } from "@framecast/env";
 import {
 	Database,
 	provideOptionalAuth,
 	Storage,
 	Videos,
-} from "@cap/web-backend";
-import { Video } from "@cap/web-domain";
+} from "@framecast/web-backend";
+import { Video } from "@framecast/web-domain";
 import {
 	HttpApi,
 	HttpApiBuilder,
