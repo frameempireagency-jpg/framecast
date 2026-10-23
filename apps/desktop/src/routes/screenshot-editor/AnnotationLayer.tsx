@@ -564,8 +564,8 @@ export function AnnotationLayer(props: {
 					transition: fill 0.15s, stroke 0.15s;
 				}
 				.group:hover .text-hover-overlay {
-					fill: rgba(59, 130, 246, 0.05);
-					stroke: rgba(59, 130, 246, 0.4);
+					fill: rgba(139, 79, 214, 0.06);
+					stroke: rgba(139, 79, 214, 0.45);
 				}
 			`}</style>
 			<For each={annotations}>
@@ -869,8 +869,8 @@ function SelectionHandles(props: {
 						y={selectionRect().y}
 						width={selectionRect().width}
 						height={selectionRect().height}
-						fill="rgba(59, 130, 246, 0.1)"
-						stroke="#3b82f6"
+						fill="rgba(139, 79, 214, 0.1)"
+						stroke="#8b4fd6"
 						stroke-width={2}
 						rx={4}
 						ry={4}
@@ -909,8 +909,8 @@ function Handle(props: {
 			cx={props.cx}
 			cy={props.cy}
 			r={props.r}
-			fill={props.isText ? "#3b82f6" : "white"}
-			stroke={props.isText ? "white" : "#3b82f6"}
+			fill={props.isText ? "#8b4fd6" : "white"}
+			stroke={props.isText ? "white" : "#8b4fd6"}
 			stroke-width={props.isText ? 1.5 : 1}
 			class="cursor-pointer"
 			style={{

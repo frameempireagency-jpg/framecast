@@ -20,7 +20,6 @@ module.exports = {
 		extend: {
 			colors: {
 				"gray-a": getColorScale("gray", true),
-				indigo: getColorScale("indigo"),
 				transparent: "rgba(0,0,0,0)",
 				"solid-white": "#ffffff",
 				"transparent-window": "var(--transparent-window)",
@@ -65,6 +64,11 @@ module.exports = {
 					200: "var(--blue-200)",
 					300: "var(--blue-300)",
 					400: "var(--blue-400)",
+					500: "var(--blue-500)",
+					600: "var(--blue-600)",
+					700: "var(--blue-700)",
+					800: "var(--blue-800)",
+					900: "var(--blue-900)",
 					...getColorScale("blue"),
 				},
 				"blue-transparent": {

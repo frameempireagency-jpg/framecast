@@ -7,5 +7,10 @@ body {
 }
 
 .custom-bg {
-	background: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%);
+	background:
+		radial-gradient(
+			80% 70% at 22% 18%,
+			rgba(255, 255, 255, 0.16) 0%,
+			rgba(255, 255, 255, 0) 70%
+		), linear-gradient(135deg, #6a2bb3 0%, #521f88 55%, #26093f 100%);
 }

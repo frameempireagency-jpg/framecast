@@ -1,5 +1,4 @@
 import { Button } from "@framecast/ui-solid";
-import { makePersisted } from "@solid-primitives/storage";
 import { getCurrentWindow } from "@tauri-apps/api/window";
 import { ask } from "@tauri-apps/plugin-dialog";
 import { type as ostype } from "@tauri-apps/plugin-os";
@@ -16,7 +15,6 @@ import {
 	onMount,
 	Show,
 } from "solid-js";
-import { createStore } from "solid-js/store";
 import { generalSettingsStore } from "~/store";
 import {
 	isPermissionGranted as isPermitted,
@@ -48,12 +46,6 @@ import IconLucideCopy from "~icons/lucide/copy";
 import IconLucideExternalLink from "~icons/lucide/external-link";
 import IconLucideSave from "~icons/lucide/save";
 import IconLucideShield from "~icons/lucide/shield";
-import IconLucideVolume2 from "~icons/lucide/volume-2";
-import IconLucideVolumeX from "~icons/lucide/volume-x";
-import cloud1 from "../../assets/illustrations/cloud-1.png";
-import cloud2 from "../../assets/illustrations/cloud-2.png";
-import cloud3 from "../../assets/illustrations/cloud-3.png";
-import startupAudio from "../../assets/tears-and-fireflies-adi-goldstein.mp3";
 import { WindowChromeHeader } from "./Context";
 
 type ModeId = "instant" | "studio" | "screenshot";
@@ -192,113 +184,12 @@ function createLoopingPhase(
 }
 
 function OnboardingAmbientBackdrop() {
-	let cloud1Animation: Animation | undefined;
-	let cloud2Animation: Animation | undefined;
-	let cloud3Animation: Animation | undefined;
-
-	const bindCloud1 = (el: HTMLDivElement | null) => {
-		cloud1Animation?.cancel();
-		cloud1Animation = undefined;
-		if (!el) return;
-		requestAnimationFrame(() => {
-			requestAnimationFrame(() => {
-				cloud1Animation = el.animate(
-					[
-						{ transform: "translate(0, 0)" },
-						{ transform: "translate(-20px, 10px)" },
-						{ transform: "translate(0, 0)" },
-					],
-					{ duration: 30000, iterations: Infinity, easing: "linear" },
-				);
-			});
-		});
-	};
-
-	const bindCloud2 = (el: HTMLDivElement | null) => {
-		cloud2Animation?.cancel();
-		cloud2Animation = undefined;
-		if (!el) return;
-		requestAnimationFrame(() => {
-			requestAnimationFrame(() => {
-				cloud2Animation = el.animate(
-					[
-						{ transform: "translate(0, 0)" },
-						{ transform: "translate(20px, 10px)" },
-						{ transform: "translate(0, 0)" },
-					],
-					{ duration: 35000, iterations: Infinity, easing: "linear" },
-				);
-			});
-		});
-	};
-
-	const bindCloud3Inner = (el: HTMLDivElement | null) => {
-		cloud3Animation?.cancel();
-		cloud3Animation = undefined;
-		if (!el) return;
-		requestAnimationFrame(() => {
-			requestAnimationFrame(() => {
-				cloud3Animation = el.animate(
-					[
-						{ transform: "translate(0, 20px)" },
-						{ transform: "translate(2%, 0)" },
-						{ transform: "translate(0, 0)" },
-					],
-					{
-						duration: 60000,
-						iterations: Infinity,
-						easing: "linear",
-						direction: "alternate",
-					},
-				);
-			});
-		});
-	};
-
-	onMount(() => {
-		onCleanup(() => {
-			cloud1Animation?.cancel();
-			cloud2Animation?.cancel();
-			cloud3Animation?.cancel();
-		});
-	});
-
 	return (
 		<div
 			class="absolute inset-0 z-0 overflow-hidden pointer-events-none opacity-[0.1]"
 			aria-hidden="true"
 		>
 			<div class="absolute inset-0 custom-bg" />
-			<div class="startup-grain" />
-			<div
-				ref={bindCloud1}
-				class="absolute top-0 right-0 opacity-70 pointer-events-none z-[1]"
-			>
-				<img
-					class="startup-cloud-image w-[100vw] md:w-[80vw] -mr-40"
-					src={cloud1}
-					alt=""
-				/>
-			</div>
-			<div
-				ref={bindCloud2}
-				class="absolute top-0 left-0 opacity-70 pointer-events-none z-[1]"
-			>
-				<img
-					class="startup-cloud-image w-[100vw] md:w-[80vw] -ml-40"
-					src={cloud2}
-					alt=""
-				/>
-			</div>
-			<div class="absolute -bottom-[15%] left-1/2 -translate-x-1/2 opacity-70 pointer-events-none z-[1]">
-				<div ref={bindCloud3Inner}>
-					<img
-						class="startup-cloud-image w-[180vw] md:w-[180vw]"
-						src={cloud3}
-						alt=""
-					/>
-				</div>
-			</div>
 		</div>
 	);
 }
@@ -447,39 +338,25 @@ export default function OnboardingPage() {
 					.custom-bg {
 						transition: all 600ms cubic-bezier(0.4, 0, 0.2, 1);
 					}
-					.startup-grain {
+					.startup-glow {
 						position: absolute;
-						top: -150%;
-						left: -50%;
-						right: -50%;
-						bottom: -150%;
-						width: 200%;
-						height: 400%;
-						background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+						inset: -20%;
 						pointer-events: none;
-						opacity: 0.5;
-						z-index: 200;
-						mix-blend-mode: overlay;
+						background:
+							radial-gradient(38% 34% at 30% 28%, rgba(196, 169, 236, 0.32) 0%, rgba(196, 169, 236, 0) 100%),
+							radial-gradient(30% 28% at 74% 78%, rgba(37, 211, 102, 0.10) 0%, rgba(37, 211, 102, 0) 100%);
+						animation: startup-glow-drift 18s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
+						transition: opacity 600ms cubic-bezier(0.16, 1, 0.3, 1), transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
 					}
-					.startup-cloud-transition {
-						transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1),
-							opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+					.startup-glow.exiting {
+						opacity: 0;
 					}
-					.startup-cloud-1.exiting {
-						transform: translate(-200px, -150px) !important;
-						opacity: 0 !important;
+					@keyframes startup-glow-drift {
+						from { transform: translate3d(-3%, -2%, 0) scale(1); }
+						to { transform: translate3d(3%, 2%, 0) scale(1.06); }
 					}
-					.startup-cloud-2.exiting {
-						transform: translate(200px, -150px) !important;
-						opacity: 0 !important;
-					}
-					.startup-cloud-3.exiting {
-						transform: translate(-50%, 200px) !important;
-						opacity: 0 !important;
-					}
-					.startup-cloud-image {
-						max-width: 100vw;
-						height: auto;
+					@media (prefers-reduced-motion: reduce) {
+						.startup-glow { animation: none; }
 					}
 					@keyframes bounce {
 						0%, 100% { transform: translateY(0); }
@@ -1593,7 +1470,7 @@ function StudioMockup(props: { active: boolean }) {
 									class="absolute inset-0"
 									style={{
 										background:
-											"linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+											"linear-gradient(135deg, #6a2bb3 0%, #521f88 55%, #26093f 100%)",
 									}}
 								/>
 								<div class="relative m-2.5 h-[80px] rounded-md bg-white/95 dark:bg-gray-1/95 border border-gray-3 shadow-md flex items-center justify-center">
@@ -1696,16 +1573,6 @@ function StartupOverlay(props: {
 	isExiting: boolean;
 	onGetStarted: () => void;
 }) {
-	const [audioState, setAudioState] = makePersisted(
-		createStore({ isMuted: false }),
-		{ name: "audioSettings" },
-	);
-
-	let audioEl: HTMLAudioElement | undefined;
-	let cloud1Animation: Animation | undefined;
-	let cloud2Animation: Animation | undefined;
-	let cloud3Animation: Animation | undefined;
-
 	const [isLogoAnimating, setIsLogoAnimating] = createSignal(false);
 
 	const handleLogoClick = () => {
@@ -1715,103 +1582,7 @@ function StartupOverlay(props: {
 		}
 	};
 
-	const bindCloud1 = (el: HTMLDivElement | null) => {
-		cloud1Animation?.cancel();
-		cloud1Animation = undefined;
-		if (!el) return;
-		requestAnimationFrame(() => {
-			requestAnimationFrame(() => {
-				cloud1Animation = el.animate(
-					[
-						{ transform: "translate(0, 0)" },
-						{ transform: "translate(-20px, 10px)" },
-						{ transform: "translate(0, 0)" },
-					],
-					{ duration: 30000, iterations: Infinity, easing: "linear" },
-				);
-			});
-		});
-	};
-
-	const bindCloud2 = (el: HTMLDivElement | null) => {
-		cloud2Animation?.cancel();
-		cloud2Animation = undefined;
-		if (!el) return;
-		requestAnimationFrame(() => {
-			requestAnimationFrame(() => {
-				cloud2Animation = el.animate(
-					[
-						{ transform: "translate(0, 0)" },
-						{ transform: "translate(20px, 10px)" },
-						{ transform: "translate(0, 0)" },
-					],
-					{ duration: 35000, iterations: Infinity, easing: "linear" },
-				);
-			});
-		});
-	};
-
-	const bindCloud3Inner = (el: HTMLDivElement | null) => {
-		cloud3Animation?.cancel();
-		cloud3Animation = undefined;
-		if (!el) return;
-		requestAnimationFrame(() => {
-			requestAnimationFrame(() => {
-				cloud3Animation = el.animate(
-					[
-						{ transform: "translate(0, 20px)" },
-						{ transform: "translate(2%, 0)" },
-						{ transform: "translate(0, 0)" },
-					],
-					{
-						duration: 60000,
-						iterations: 1,
-						easing: "cubic-bezier(0.4, 0, 0.2, 1)",
-						fill: "forwards",
-					},
-				);
-			});
-		});
-	};
-
-	onMount(() => {
-		audioEl = new Audio(startupAudio);
-		audioEl.preload = "auto";
-		audioEl.loop = false;
-		audioEl.muted = audioState.isMuted;
-
-		const tryPlay = () => {
-			if (!audioEl || audioEl.muted) return;
-			void audioEl.play().catch(() => {});
-		};
-
-		tryPlay();
-		const resumeAudio = () => tryPlay();
-		window.addEventListener("pointerdown", resumeAudio, { passive: true });
-
-		onCleanup(() => {
-			window.removeEventListener("pointerdown", resumeAudio);
-			cloud1Animation?.cancel();
-			cloud2Animation?.cancel();
-			cloud3Animation?.cancel();
-			audioEl?.pause();
-			audioEl = undefined;
-		});
-	});
-
-	const toggleMute = () => {
-		const next = !audioState.isMuted;
-		setAudioState("isMuted", next);
-		if (audioEl) {
-			audioEl.muted = next;
-			if (!next) void audioEl.play().catch(() => {});
-		}
-	};
-
 	const handleGetStarted = () => {
-		cloud1Animation?.cancel();
-		cloud2Animation?.cancel();
-		cloud3Animation?.cancel();
 		props.onGetStarted();
 	};
 
@@ -1834,70 +1605,10 @@ function StartupOverlay(props: {
 				props.isExiting && "opacity-0 scale-105 pointer-events-none",
 			)}
 		>
-			<div class="startup-grain" />
-
 			<div
-				class="absolute top-3 z-[210]"
-				style={{
-					[ostype() === "macos" ? "right" : "left"]: "12px",
-				}}
-			>
-				<button
-					type="button"
-					onClick={toggleMute}
-					class={cx(
-						"mx-1 text-solid-white hover:text-[#DDD] transition-colors p-1",
-						props.isExiting && "opacity-0",
-					)}
-				>
-					{audioState.isMuted ? (
-						<IconLucideVolumeX class="w-6 h-6" />
-					) : (
-						<IconLucideVolume2 class="w-6 h-6" />
-					)}
-				</button>
-			</div>
-
-			<div
-				ref={bindCloud1}
-				class={cx(
-					"absolute top-0 right-0 opacity-70 pointer-events-none startup-cloud-1 z-[1]",
-					props.isExiting && "startup-cloud-transition exiting",
-				)}
-			>
-				<img
-					class="startup-cloud-image w-[100vw] md:w-[80vw] -mr-40"
-					src={cloud1}
-					alt=""
-				/>
-			</div>
-			<div
-				ref={bindCloud2}
-				class={cx(
-					"absolute top-0 left-0 opacity-70 pointer-events-none startup-cloud-2 z-[1]",
-					props.isExiting && "startup-cloud-transition exiting",
-				)}
-			>
-				<img
-					class="startup-cloud-image w-[100vw] md:w-[80vw] -ml-40"
-					src={cloud2}
-					alt=""
-				/>
-			</div>
-			<div
-				class={cx(
-					"absolute -bottom-[15%] left-1/2 -translate-x-1/2 opacity-70 pointer-events-none z-[1]",
-					props.isExiting && "startup-cloud-transition startup-cloud-3 exiting",
-				)}
-			>
-				<div ref={bindCloud3Inner}>
-					<img
-						class="startup-cloud-image w-[180vw] md:w-[180vw]"
-						src={cloud3}
-						alt=""
-					/>
-				</div>
-			</div>
+				class={cx("startup-glow", props.isExiting && "exiting")}
+				aria-hidden="true"
+			/>
 
 			<div
 				class={cx(
@@ -1910,7 +1621,7 @@ function StartupOverlay(props: {
 					<div onClick={handleLogoClick} class="cursor-pointer inline-block">
 						<IconCapLogo
 							class={cx(
-								"w-20 h-24 mx-auto drop-shadow-[0_0_100px_rgba(0,0,0,0.2)]",
+								"w-24 h-24 mx-auto drop-shadow-[0_18px_32px_rgba(18,4,38,0.45)]",
 								isLogoAnimating() && "startup-logo-bounce",
 							)}
 						/>
@@ -2327,7 +2038,7 @@ function ScreenshotMockup(props: { active: boolean }) {
 									class="absolute inset-0 transition-opacity duration-[1000ms] ease-out"
 									style={{
 										background:
-											"linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+											"linear-gradient(135deg, #6a2bb3 0%, #521f88 55%, #26093f 100%)",
 										opacity: phase() >= 7 ? 1 : 0,
 									}}
 								/>

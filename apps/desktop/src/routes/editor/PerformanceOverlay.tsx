@@ -237,7 +237,7 @@ export function PerformanceOverlay(_props: PerformanceOverlayProps) {
 						</div>
 						<div style={{ color: "rgba(255, 255, 255, 0.7)" }}>
 							<span>Frame: </span>
-							<span style={{ color: "#93c5fd" }}>
+							<span style={{ color: "#c4a9ec" }}>
 								{formatMs(stats().avgFrameMs)}ms
 							</span>
 							<span style={{ color: "rgba(255, 255, 255, 0.4)" }}> avg</span>

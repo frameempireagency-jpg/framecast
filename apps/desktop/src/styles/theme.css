@@ -3,10 +3,6 @@
 @import "@radix-ui/colors/gray.css";
 @import "@radix-ui/colors/gray-alpha.css";
 @import "@radix-ui/colors/gray-dark.css";
-@import "@radix-ui/colors/blue.css";
-@import "@radix-ui/colors/blue-dark.css";
-@import "@radix-ui/colors/indigo.css";
-@import "@radix-ui/colors/indigo-dark.css";
 @import "@radix-ui/colors/yellow.css";
 @import "@radix-ui/colors/yellow-dark.css";
 
@@ -52,16 +48,40 @@
 
 	--solid-white: #ffffff;
 
-	--blue-50: #ebf1ff;
-	--blue-100: #adc9ff;
-	--blue-200: #85adff;
-	--blue-300: #4785ff;
-	--blue-400: #3f75e0;
-	--blue-500: rgb(54, 102, 197);
+	/* The blue-* names stay so existing classes resolve; the values are FrameCast purple. */
+	--blue-1: #fdfbff;
+	--blue-2: #f8f3fd;
+	--blue-3: #f1e8fb;
+	--blue-4: #e9dcf8;
+	--blue-5: #dfcdf3;
+	--blue-6: #d2bbec;
+	--blue-7: #c0a0e2;
+	--blue-8: #a67cd4;
+	--blue-9: #521f88;
+	--blue-10: #46197a;
+	--blue-11: #5e2a9a;
+	--blue-12: #2b0d4b;
 
-	--blue-transparent-0: rgba(34, 64, 122, 0);
-	--blue-transparent-10: rgba(34, 64, 122, 0.1);
-	--blue-transparent-20: rgba(34, 64, 122, 0.2);
+	--blue-50: #f3ecfb;
+	--blue-100: #dcc9f2;
+	--blue-200: #c4a9ec;
+	--blue-300: #521f88;
+	--blue-400: #46197a;
+	--blue-500: #521f88;
+	--blue-600: #521f88;
+	--blue-700: #46197a;
+	--blue-800: #3a1466;
+	--blue-900: #2b0d4b;
+
+	--blue-transparent-0: rgba(82, 31, 136, 0);
+	--blue-transparent-10: rgba(82, 31, 136, 0.1);
+	--blue-transparent-20: rgba(82, 31, 136, 0.2);
+
+	--brand-purple: #521f88;
+	--brand-lilac: #c4a9ec;
+	--brand-green: #25d366;
+	--brand-ink: #0c0a0c;
+	--brand-cream: #efe9f8;
 
 	--red-50: #ffebee;
 	--red-100: #ffadbb;
@@ -120,14 +140,33 @@
 	--solid-white: #ffffff;
 
 	/* Accent colors remain mostly the same but adjusted for dark theme */
-	--blue-50: #1a2438;
-	--blue-100: #243352;
-	--blue-200: #2e426b;
-	--blue-300: #4785ff;
-	--blue-400: #5c8fff;
+	--blue-1: #141019;
+	--blue-2: #1a1422;
+	--blue-3: #271a38;
+	--blue-4: #311f48;
+	--blue-5: #3a2655;
+	--blue-6: #452e64;
+	--blue-7: #563a7c;
+	--blue-8: #7a55b0;
+	--blue-9: #8b4fd6;
+	--blue-10: #7e44c9;
+	--blue-11: #c4a9ec;
+	--blue-12: #efe9f8;
 
-	--blue-transparent-10: rgba(71, 133, 255, 0.1);
-	--blue-transparent-20: rgba(71, 133, 255, 0.2);
+	--blue-50: #1f1530;
+	--blue-100: #2d1d45;
+	--blue-200: #3d275c;
+	--blue-300: #8b4fd6;
+	--blue-400: #7e44c9;
+	--blue-500: #8b4fd6;
+	--blue-600: #8b4fd6;
+	--blue-700: #7e44c9;
+	--blue-800: #5a2a99;
+	--blue-900: #3a1c63;
+
+	--blue-transparent-0: rgba(139, 79, 214, 0);
+	--blue-transparent-10: rgba(139, 79, 214, 0.12);
+	--blue-transparent-20: rgba(139, 79, 214, 0.22);
 
 	--red-50: #2c1a1e;
 	--red-100: #52232c;
@@ -170,6 +209,15 @@
 
 .dark-button-border {
 	@apply border-gray-12;
+}
+
+::selection {
+	background: rgba(139, 79, 214, 0.32);
+}
+
+:root {
+	accent-color: var(--blue-9);
+	caret-color: var(--blue-9);
 }
 
 [data-transparent-window] {
@@ -239,13 +287,13 @@
 
 @keyframes settings-section-pulse {
 	0% {
-		box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+		box-shadow: 0 0 0 0 rgba(139, 79, 214, 0);
 	}
 	30% {
-		box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.45);
+		box-shadow: 0 0 0 4px rgba(139, 79, 214, 0.45);
 	}
 	100% {
-		box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+		box-shadow: 0 0 0 0 rgba(139, 79, 214, 0);
 	}
 }
 
@@ -302,8 +350,8 @@
 	border: 1px solid rgba(255, 255, 255, 0.82);
 	background: linear-gradient(
 		135deg,
-		rgba(113, 205, 255, 0.4),
-		rgba(45, 97, 255, 0.2)
+		rgba(196, 169, 236, 0.45),
+		rgba(82, 31, 136, 0.25)
 	);
 	box-shadow: 0 16px 35px rgba(0, 0, 0, 0.4);
 	opacity: 1;
