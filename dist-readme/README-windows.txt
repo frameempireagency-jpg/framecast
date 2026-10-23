@@ -1,67 +1,63 @@
 FrameCast for Windows
 =====================
 
-Internal screen recorder for the Frame Empire team.
+The Frame Empire screen recorder.
 Record. Share. Move on.
 
 
 What is in this zip
 -------------------
-FrameCast_x.x.x_x64_en-US.msi  — the installer. Double-click it to install.
+FrameCast_0.4.90_x64-setup.exe    The installer. No administrator password needed.
+README.txt                        This file.
 
 
 Install
 -------
-1. Double-click FrameCast_x.x.x_x64_en-US.msi.
-2. Windows SmartScreen may say "Windows protected your PC". If so:
-     Click "More info", then click "Run anyway".
-3. The installer window opens. Click Next, pick the install folder (default
-   is fine), then click Install.
-4. When Windows asks for permission (UAC prompt), click Yes.
-5. Click Finish.
+1. Double-click FrameCast_0.4.90_x64-setup.exe.
+2. Windows may say "Windows protected your PC".
+   Click "More info", then click "Run anyway".
+   (It says this because the app is for our team only and is not sold in a store.)
+3. Click Next, then Install, then Finish.
 
 FrameCast is now in your Start menu.
 
 
-Open the app
-------------
-Click Start, type FrameCast, press Enter.
-Pin it to your taskbar if you want it one click away.
-
-
-Grant permissions
------------------
-The first time you record, Windows may ask to confirm screen capture.
-Click Yes / Allow on every prompt.
-
-
-Making your first recording
----------------------------
-1. Click the FrameCast icon in your system tray, bottom-right (purple square with an F).
-   If you do not see it, click the up-arrow to show hidden icons.
-2. Pick what to capture: Full Screen, Window, or Area.
-3. Click Record.
-4. When finished, click the Stop button in the tray.
-5. The recording opens for review. From there you can share, trim, and export.
-
-
-Trouble
+Open it
 -------
-"Windows protected your PC" (SmartScreen)
+Click Start, type FrameCast, press Enter.
+Right-click it in the taskbar and choose "Pin to taskbar" to keep it one click away.
+
+
+Your first recording
+--------------------
+1. Click the FrameCast icon in the system tray, bottom right of the screen.
+   It is the purple square with an F and a green play arrow.
+   If you cannot see it, click the small up arrow next to the clock.
+2. Choose what to record: the whole screen, one window, or an area.
+3. Click Record.
+4. Click Stop when you are done.
+5. The recording opens. Trim it, then export it as a video file to share.
+
+Recordings save to your own computer. No login needed.
+
+
+If something goes wrong
+-----------------------
+"Windows protected your PC"
   Click "More info", then "Run anyway".
 
-Antivirus flagging the installer
-  Add FrameCast to your antivirus exceptions list, or temporarily
-  disable real-time protection while installing. The installer is clean.
+Avast or another antivirus blocks the installer
+  Choose "Allow" or add FrameCast to the exceptions, then run it again.
 
-Nothing happens when you click the icon
-  Open Task Manager and check if FrameCast.exe is already running.
-  If so, right-click it and End Task, then try again.
+Nothing happens when you open it
+  Open Task Manager (Ctrl + Shift + Esc). If FrameCast is listed,
+  right-click it, choose End task, then open FrameCast again.
 
-Logs for debugging
-  %LOCALAPPDATA%\uk.co.frameempire.framecast\logs\
+Logs, if Andrei asks for them
+  Press Windows + R, paste this, press Enter:
+  %LOCALAPPDATA%\uk.co.frameempire.framecast\logs
 
 
 Help
 ----
-Message Andrei. Or email hello@frameempire.co.uk with a screenshot and a short description.
+Message Andrei, or email hello@frameempire.co.uk with a screenshot.

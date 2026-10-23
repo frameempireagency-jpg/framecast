@@ -43,7 +43,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  APP_VERSION: "0.4.88"
+  APP_VERSION: "0.4.90"
   FRAMECAST_URL: "https://framecast.frameempire.co.uk"
 
 jobs:
@@ -140,6 +140,11 @@ jobs:
           else
             echo "::warning::No .dmg was produced; the zipped .app is the Mac download for this run."
           fi
+          # The zip the team gets: the app plus the install steps, side by side.
+          mkdir -p team
+          ditto "$B/macos/FrameCast.app" team/FrameCast.app
+          cp dist-readme/README-mac.txt team/README.txt
+          ditto -c -k --sequesterRsrc team dist/FrameCast-Mac.zip
           ls -la dist
 
       - name: Build app (Windows)
@@ -161,6 +166,16 @@ jobs:
           # administrator password. The .msi installs for every user and does.
           cp target/${{ matrix.settings.target }}/release/bundle/nsis/*-setup.exe dist/
           ls -la dist
+
+      - name: Team zip (Windows)
+        if: ${{ env.ENABLED == 'true' && runner.os == 'Windows' }}
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force team | Out-Null
+          Copy-Item dist/*-setup.exe team/
+          Copy-Item dist-readme/README-windows.txt team/README.txt
+          Compress-Archive -Path team/* -DestinationPath dist/FrameCast-Windows.zip -Force
+          Get-ChildItem dist
 
       - name: Upload artifacts
         if: ${{ env.ENABLED == 'true' }}
@@ -195,6 +210,8 @@ jobs:
           name: FrameCast ${{ inputs.tag || github.ref_name }}
           body: |
             FrameCast desktop, the Frame Empire screen recorder.
+
+            Send these to the team: `FrameCast-Windows.zip` and `FrameCast-Mac.zip`. Each has the installer and a README.txt with the steps.
 
             - Windows (64-bit): `FrameCast_${{ env.APP_VERSION }}_x64-setup.exe`. Installs for you only, no administrator password needed.
             - Windows, installing for every user on the PC: `FrameCast_${{ env.APP_VERSION }}_x64_en-US.msi` (needs an administrator).

@@ -1,69 +1,70 @@
-FrameCast for macOS
-===================
+FrameCast for Mac
+=================
 
-Internal screen recorder for the Frame Empire team.
+The Frame Empire screen recorder.
 Record. Share. Move on.
+Needs a Mac with Apple Silicon (M1 or newer) and macOS 13.1 or later.
 
 
 What is in this zip
 -------------------
-FrameCast.app  — the application. That is all you need.
+FrameCast.app    The app.
+README.txt       This file.
 
 
 Install
 -------
-1. Double-click FrameCast-mac.zip to unzip it. You will see FrameCast.app.
-2. Drag FrameCast.app into your /Applications folder.
-3. Delete the zip when you are done. Keep the app in /Applications.
+1. Double-click the zip. You get FrameCast.app.
+2. Drag FrameCast.app into your Applications folder.
+3. You can delete the zip afterwards.
 
 
-Open the app for the FIRST TIME ONLY
-------------------------------------
-macOS does not know who signed this app so a plain double-click will refuse
-to open it. Do this once:
+Open it the FIRST time
+----------------------
+macOS blocks apps that are not from the App Store the first time.
+Do this once:
 
-1. Open your /Applications folder (Finder sidebar, Applications).
-2. Right-click FrameCast.app.
-3. Click Open.
-4. A popup appears saying "FrameCast cannot be verified". Click Open.
+1. Open Applications and double-click FrameCast.
+   macOS says it cannot be opened. Click Done (or OK).
+2. Open System Settings, then Privacy & Security.
+3. Scroll down. Next to "FrameCast was blocked", click Open Anyway.
+4. Confirm with your password or Touch ID, then click Open.
 
-After that one time you can open FrameCast normally.
-
-
-Grant permissions
------------------
-The first time you record, macOS will ask for permission to capture:
-  - Your screen (Screen Recording)
-  - Your microphone, if you turn one on
-  - Your camera, if you turn one on
-
-Click Allow on every prompt. If you miss one, open System Settings,
-go to Privacy & Security, find FrameCast in each list, and switch it on.
+From then on FrameCast opens normally.
 
 
-Making your first recording
----------------------------
-1. Click the FrameCast icon in your menu bar (purple square with an F).
-2. Pick what to capture: Full Screen, Window, or Area.
+Allow recording
+---------------
+The first time you record, macOS asks for permission:
+  Screen Recording (needed), Microphone and Camera (only if you use them).
+Click Allow. If you missed one: System Settings, Privacy & Security,
+find the list (Screen Recording, Microphone or Camera) and switch FrameCast on.
+macOS may ask you to quit and reopen FrameCast after that.
+
+
+Your first recording
+--------------------
+1. Click the FrameCast icon in the menu bar at the top of the screen.
+2. Choose what to record: the whole screen, one window, or an area.
 3. Click Record.
-4. When finished, click the Stop button in the menu bar.
-5. The recording opens for review. From there you can share, trim, and export.
+4. Click the stop icon in the menu bar when you are done.
+5. The recording opens. Trim it, then export it as a video file to share.
+
+Recordings save to your own Mac. No login needed.
 
 
-Trouble
--------
-"The app is damaged and cannot be opened"
-  Run this once in Terminal:
-    xattr -d com.apple.quarantine /Applications/FrameCast.app
-  Then open the app normally.
+If something goes wrong
+-----------------------
+"FrameCast is damaged and cannot be opened"
+  Open Terminal and paste this line, then press Return:
+    xattr -dr com.apple.quarantine /Applications/FrameCast.app
+  Then open FrameCast again.
 
-"FrameCast will damage your computer. Move to Bin."
-  System Settings → Privacy & Security → scroll down to "FrameCast was blocked" → Open Anyway.
-
-Logs for debugging
-  ~/Library/Logs/uk.co.frameempire.framecast/
+Logs, if Andrei asks for them
+  In Finder press Cmd + Shift + G and paste:
+  ~/Library/Logs/uk.co.frameempire.framecast
 
 
 Help
 ----
-Message Andrei. Or email hello@frameempire.co.uk with a screenshot and a short description.
+Message Andrei, or email hello@frameempire.co.uk with a screenshot.

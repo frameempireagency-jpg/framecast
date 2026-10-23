@@ -1,4 +1,26 @@
-<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="80" height="80" rx="18" fill="#521F88"/>
-  <path d="M22 18 H58 V28 H34 V37 H50 V46 H34 V64 H22 Z" fill="#EFE9F8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="8 8 240 240" width="80" height="80">
+  <defs>
+    <linearGradient id="fcl-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6A2BB3"/>
+      <stop offset="0.55" stop-color="#521F88"/>
+      <stop offset="1" stop-color="#26093F"/>
+    </linearGradient>
+    <radialGradient id="fcl-glow" cx="0.3" cy="0.25" r="0.8">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#fcl-bg)"/>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#fcl-glow)"/>
+  <rect x="9.5" y="9.5" width="237" height="237" rx="54.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="3"/>
+  <g fill="#EFE9F8">
+    <rect x="46" y="62" width="34" height="132" rx="9"/>
+    <rect x="46" y="62" width="84" height="32" rx="9"/>
+    <rect x="46" y="112" width="66" height="32" rx="9"/>
+  </g>
+  <path d="M 142 108 L 142 148 L 168 128 Z" fill="#25D366" stroke="#25D366" stroke-width="12" stroke-linejoin="round"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 186 102 L 208 128 L 186 154" stroke="#C4A9EC" stroke-width="12"/>
+    <path d="M 212 94 L 236 128 L 212 162" stroke="#EFE9F8" stroke-opacity="0.55" stroke-width="11"/>
+  </g>
 </svg>

@@ -1,6 +1,6 @@
 [package]
 name = "framecast-desktop"
-version = "0.4.88"
+version = "0.4.90"
 description = "FrameCast - Internal screen recordings for Frame Empire"
 authors = ["Frame Empire"]
 edition = "2024"
