@@ -43,7 +43,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  APP_VERSION: "0.4.90"
+  APP_VERSION: "0.4.91"
   FRAMECAST_URL: "https://framecast.frameempire.co.uk"
 
 jobs:

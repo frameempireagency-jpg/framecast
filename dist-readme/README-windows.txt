@@ -7,13 +7,13 @@ Record. Share. Move on.
 
 What is in this zip
 -------------------
-FrameCast_0.4.90_x64-setup.exe    The installer. No administrator password needed.
+FrameCast_0.4.91_x64-setup.exe    The installer. No administrator password needed.
 README.txt                        This file.
 
 
 Install
 -------
-1. Double-click FrameCast_0.4.90_x64-setup.exe.
+1. Double-click FrameCast_0.4.91_x64-setup.exe.
 2. Windows may say "Windows protected your PC".
    Click "More info", then click "Run anyway".
    (It says this because the app is for our team only and is not sold in a store.)

@@ -3360,7 +3360,7 @@ checksum = "42da99970737c0150e3c5cd1cdc510735a2511739f5c3aa3c6bfc9f31441488d"
 
 [[package]]
 name = "framecast-desktop"
-version = "0.4.90"
+version = "0.4.91"
 dependencies = [
  "aho-corasick",
  "anyhow",
