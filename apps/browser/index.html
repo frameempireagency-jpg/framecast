@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FrameCast</title>
+<meta name="description" content="Record your screen, voice and face in the browser. Nothing to install, and nothing leaves your computer.">
+<meta name="theme-color" content="#0e0b12">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preload" href="fonts/geist-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/geist-sans-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script type="module" src="js/app.js"></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+	<symbol id="i-screen" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+	<symbol id="i-cam" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m22 8-6 4 6 4V8z"/></symbol>
+	<symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 19v3"/></symbol>
+	<symbol id="i-sound" viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></symbol>
+	<symbol id="i-frame" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="4"/><rect x="6" y="7" width="12" height="9" rx="1.5"/></symbol>
+	<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+	<symbol id="i-import" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></symbol>
+	<symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+	<symbol id="i-back" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+</svg>
+
+<header class="bar">
+	<a class="brand" href="./" aria-label="FrameCast home">
+		<img src="icons/icon.svg" alt="" width="30" height="30">
+		<span>FrameCast</span>
+	</a>
+	<p class="promise"><span>Nothing leaves this <span data-device-word>computer</span></span></p>
+	<button type="button" class="ghost small" data-install hidden>Install as an app</button>
+</header>
+
+<div class="blocked" data-blocked hidden>
+	<h1>This browser cannot record</h1>
+	<p>Open this page in Google Chrome or Microsoft Edge on a computer, or in Chrome or Safari on a phone.</p>
+</div>
+
+<main class="page" data-app>
+	<section class="card" data-view="setup" aria-labelledby="new-title">
+		<h1 id="new-title">New recording</h1>
+
+		<label class="row" data-row="what">
+			<svg class="ic"><use href="#i-screen"/></svg>
+			<span class="sr">What to record</span>
+			<select data-what>
+				<option value="monitor">Whole screen</option>
+				<option value="window">One window</option>
+				<option value="browser">A browser tab</option>
+				<option value="camera">Just my camera</option>
+			</select>
+			<svg class="ic chev"><use href="#i-down"/></svg>
+		</label>
+
+		<label class="row">
+			<svg class="ic"><use href="#i-mic"/></svg>
+			<span class="sr">Microphone</span>
+			<select data-mic><option value="">Microphone</option><option value="off">No microphone</option></select>
+			<span class="lvl" aria-hidden="true" hidden><i></i><i></i><i></i><i></i></span>
+			<svg class="ic chev"><use href="#i-down"/></svg>
+		</label>
+
+		<label class="row">
+			<svg class="ic"><use href="#i-cam"/></svg>
+			<span class="sr">Camera</span>
+			<select data-cam><option value="">Camera</option><option value="off">No camera</option></select>
+			<video class="cam-dot" data-cam-preview muted playsinline autoplay hidden></video>
+			<svg class="ic chev"><use href="#i-down"/></svg>
+		</label>
+
+		<label class="row" data-row="system">
+			<svg class="ic"><use href="#i-sound"/></svg>
+			<span class="grow">Computer sound</span>
+			<input type="checkbox" class="toggle" data-system>
+		</label>
+
+		<label class="row" data-row="studio">
+			<svg class="ic"><use href="#i-frame"/></svg>
+			<span class="grow">Studio frame <small>purple border around the screen</small></span>
+			<input type="checkbox" class="toggle" data-studio>
+		</label>
+
+		<label class="row">
+			<svg class="ic"><use href="#i-user"/></svg>
+			<span class="for-label">For</span>
+			<input type="text" class="for" data-for placeholder="anyone (adds a name card)" maxlength="60" autocomplete="off">
+		</label>
+
+		<button type="button" class="record" data-record><span class="rec-dot" aria-hidden="true"></span>Start recording</button>
+		<p class="hint center" data-key-hint>Or press <kbd>R</kbd>. You get 3, 2, 1 first.</p>
+
+		<label class="row import">
+			<svg class="ic"><use href="#i-import"/></svg>
+			<span class="grow">Polish a video you already have <small>trim it, add the name card and end card</small></span>
+			<input type="file" accept="video/*" class="sr" data-import>
+		</label>
+	</section>
+
+	<section class="card live" data-view="live" hidden aria-live="polite">
+		<p class="live-state"><span class="rec-dot" aria-hidden="true"></span><span data-live-state>Recording</span></p>
+		<video class="live-cam" data-live-cam muted playsinline autoplay hidden></video>
+		<p class="countdown" data-countdown hidden></p>
+		<p class="clock" data-clock>0:00</p>
+		<div class="live-actions">
+			<button type="button" class="secondary" data-live-pause>Pause</button>
+			<button type="button" class="secondary" data-live-mute aria-pressed="false">Mute mic</button>
+		</div>
+		<button type="button" class="stop" data-live-stop>Stop and review</button>
+		<p class="hint center" data-live-hint>The controls also float above your other windows.</p>
+		<label class="notes"><span>Notes only you can see</span><textarea data-live-notes rows="4" placeholder="Points to cover. They are not in the video."></textarea></label>
+	</section>
+
+	<section class="card review" data-view="review" hidden>
+		<div class="review-head">
+			<button type="button" class="ghost small" data-back><svg class="ic"><use href="#i-back"/></svg>New recording</button>
+			<p class="badge" data-review-badge hidden></p>
+		</div>
+		<video class="player" data-player controls playsinline></video>
+		<div class="trim" data-trim>
+			<div class="strip" data-strip></div>
+			<div class="shade" data-shade="l"></div>
+			<div class="shade" data-shade="r"></div>
+			<div class="keep" data-keep></div>
+			<button type="button" class="handle" data-handle="start" aria-label="Start of the video. Use arrow keys to trim."></button>
+			<button type="button" class="handle" data-handle="end" aria-label="End of the video. Use arrow keys to trim."></button>
+		</div>
+		<p class="trim-read"><span data-trim-start>0:00</span><span data-trim-len></span><span data-trim-end>0:00</span></p>
+		<label class="row"><span class="for-label">Name</span><input type="text" class="for" data-title maxlength="90"></label>
+		<label class="row" data-row="cards">
+			<svg class="ic"><use href="#i-user"/></svg>
+			<span class="for-label">For</span>
+			<input type="text" class="for" data-review-for placeholder="add a name card and end card" maxlength="60" autocomplete="off">
+		</label>
+		<div class="review-actions">
+			<button type="button" class="primary" data-save>Save video</button>
+			<button type="button" class="secondary" data-share hidden>Share</button>
+			<button type="button" class="ghost danger" data-delete>Delete</button>
+		</div>
+		<div class="progress" data-progress hidden><span data-progress-bar></span></div>
+		<p class="hint" data-review-hint></p>
+	</section>
+
+	<ul class="notices" data-notices></ul>
+
+	<section class="library" aria-labelledby="lib-title">
+		<h2 id="lib-title">Your recordings</h2>
+		<p class="hint" data-lib-empty>Nothing yet. Your recordings stay in this browser, on this <span data-device-word>computer</span>.</p>
+		<ol class="grid" data-lib></ol>
+		<p class="space" data-space></p>
+	</section>
+</main>
+
+<audio data-sound="start" src="sounds/start-recording.ogg" preload="auto"></audio>
+<audio data-sound="stop" src="sounds/stop-recording.ogg" preload="auto"></audio>
+<audio data-sound="action" src="sounds/action.ogg" preload="auto"></audio>
+</body>
+</html>

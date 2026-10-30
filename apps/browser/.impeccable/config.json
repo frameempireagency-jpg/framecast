@@ -1,0 +1,18 @@
+{
+  "buildPath": "code",
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "geist",
+        "files": [
+          "apps/browser/**"
+        ],
+        "createdAt": "2026-10-30T03:36:05.201Z",
+        "reason": "Claude: Geist is the FrameCast desktop app's own typeface (packages/ui-solid, @fontsource/geist-sans); the browser version keeps it so both read as one product"
+      }
+    ]
+  }
+}
